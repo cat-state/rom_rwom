@@ -1,0 +1,3368 @@
+{
+  "run_id": "engram_l2_bf5_dim1536_h8_ng3_1500_analysis_v2_20260513_022252",
+  "checkpoint_path": "logs/engram_l2_bf5_dim1536_h8_ng3_1500_ckpt_20260513_005359/state_step001500.pt",
+  "checkpoint_step": 1500,
+  "analysis_tokens": 262144,
+  "loss": 3.259305715560913,
+  "engram_dim": 1536,
+  "engram_heads": 8,
+  "engram_max_ngram": 3,
+  "total_hash_heads": 16,
+  "head_dim": 96,
+  "gate": {
+    "mean": 0.4894791543483734,
+    "std": 0.3358709514141083,
+    "quantiles": {
+      "0.01": 0.06560483574867249,
+      "0.05": 0.08632347732782364,
+      "0.1": 0.1037486344575882,
+      "0.5": 0.37570643424987793,
+      "0.9": 0.9046505093574524,
+      "0.95": 0.9252299070358276,
+      "0.99": 0.9504110217094421
+    },
+    "frac_gt_0_5": 0.48040008544921875,
+    "frac_gt_0_75": 0.38762664794921875,
+    "frac_gt_0_9": 0.11186599731445312
+  },
+  "gate_pre_sigmoid": {
+    "mean": -0.035739511251449585,
+    "std": 1.771712064743042,
+    "quantiles": {
+      "0.01": -2.65625,
+      "0.05": -2.359375,
+      "0.1": -2.15625,
+      "0.5": -0.5078125,
+      "0.9": 2.25,
+      "0.95": 2.515625,
+      "0.99": 2.953125
+    }
+  },
+  "value_norm": {
+    "mean": 229.89195251464844,
+    "quantiles": {
+      "0.01": 164.4246063232422,
+      "0.05": 173.35301208496094,
+      "0.1": 178.80624389648438,
+      "0.5": 212.77239990234375,
+      "0.9": 308.3359375,
+      "0.95": 343.2892150878906,
+      "0.99": 408.093017578125
+    }
+  },
+  "output_norm": {
+    "mean": 127.77721405029297,
+    "quantiles": {
+      "0.01": 18.64779281616211,
+      "0.05": 22.931346893310547,
+      "0.1": 26.489105224609375,
+      "0.5": 86.46190643310547,
+      "0.9": 267.0990295410156,
+      "0.95": 300.2357482910156,
+      "0.99": 369.5085754394531
+    }
+  },
+  "head_summaries": [
+    {
+      "head_idx": 0,
+      "ngram": 2,
+      "hash_head": 0,
+      "rows": 251527,
+      "unique_rows": 108797,
+      "unique_fraction": 0.4325460195541382,
+      "max_count": 2811,
+      "mean_count_per_touched_row": 2.409478187561035
+    },
+    {
+      "head_idx": 1,
+      "ngram": 2,
+      "hash_head": 1,
+      "rows": 251533,
+      "unique_rows": 108875,
+      "unique_fraction": 0.432845801115036,
+      "max_count": 2810,
+      "mean_count_per_touched_row": 2.40775203704834
+    },
+    {
+      "head_idx": 2,
+      "ngram": 2,
+      "hash_head": 2,
+      "rows": 251539,
+      "unique_rows": 108842,
+      "unique_fraction": 0.43270426988601685,
+      "max_count": 2810,
+      "mean_count_per_touched_row": 2.408482074737549
+    },
+    {
+      "head_idx": 3,
+      "ngram": 2,
+      "hash_head": 3,
+      "rows": 251543,
+      "unique_rows": 108700,
+      "unique_fraction": 0.43213286995887756,
+      "max_count": 2810,
+      "mean_count_per_touched_row": 2.411628246307373
+    },
+    {
+      "head_idx": 4,
+      "ngram": 2,
+      "hash_head": 4,
+      "rows": 251561,
+      "unique_rows": 108661,
+      "unique_fraction": 0.43194693326950073,
+      "max_count": 2810,
+      "mean_count_per_touched_row": 2.412493944168091
+    },
+    {
+      "head_idx": 5,
+      "ngram": 2,
+      "hash_head": 5,
+      "rows": 251567,
+      "unique_rows": 108893,
+      "unique_fraction": 0.4328588545322418,
+      "max_count": 2811,
+      "mean_count_per_touched_row": 2.4073541164398193
+    },
+    {
+      "head_idx": 6,
+      "ngram": 2,
+      "hash_head": 6,
+      "rows": 251609,
+      "unique_rows": 108697,
+      "unique_fraction": 0.4320076107978821,
+      "max_count": 2810,
+      "mean_count_per_touched_row": 2.4116950035095215
+    },
+    {
+      "head_idx": 7,
+      "ngram": 2,
+      "hash_head": 7,
+      "rows": 251611,
+      "unique_rows": 108896,
+      "unique_fraction": 0.43279507756233215,
+      "max_count": 2812,
+      "mean_count_per_touched_row": 2.40728759765625
+    },
+    {
+      "head_idx": 8,
+      "ngram": 3,
+      "hash_head": 0,
+      "rows": 251621,
+      "unique_rows": 146048,
+      "unique_fraction": 0.5804284811019897,
+      "max_count": 594,
+      "mean_count_per_touched_row": 1.7949167490005493
+    },
+    {
+      "head_idx": 9,
+      "ngram": 3,
+      "hash_head": 1,
+      "rows": 251623,
+      "unique_rows": 146135,
+      "unique_fraction": 0.5807696580886841,
+      "max_count": 594,
+      "mean_count_per_touched_row": 1.7938481569290161
+    },
+    {
+      "head_idx": 10,
+      "ngram": 3,
+      "hash_head": 2,
+      "rows": 251639,
+      "unique_rows": 146435,
+      "unique_fraction": 0.5819249153137207,
+      "max_count": 595,
+      "mean_count_per_touched_row": 1.7901731729507446
+    },
+    {
+      "head_idx": 11,
+      "ngram": 3,
+      "hash_head": 3,
+      "rows": 251653,
+      "unique_rows": 146443,
+      "unique_fraction": 0.581924319267273,
+      "max_count": 594,
+      "mean_count_per_touched_row": 1.7900753021240234
+    },
+    {
+      "head_idx": 12,
+      "ngram": 3,
+      "hash_head": 4,
+      "rows": 251663,
+      "unique_rows": 146198,
+      "unique_fraction": 0.5809276700019836,
+      "max_count": 594,
+      "mean_count_per_touched_row": 1.7930752038955688
+    },
+    {
+      "head_idx": 13,
+      "ngram": 3,
+      "hash_head": 5,
+      "rows": 251677,
+      "unique_rows": 146135,
+      "unique_fraction": 0.5806450247764587,
+      "max_count": 598,
+      "mean_count_per_touched_row": 1.7938481569290161
+    },
+    {
+      "head_idx": 14,
+      "ngram": 3,
+      "hash_head": 6,
+      "rows": 251701,
+      "unique_rows": 146012,
+      "unique_fraction": 0.5801010131835938,
+      "max_count": 596,
+      "mean_count_per_touched_row": 1.7953592538833618
+    },
+    {
+      "head_idx": 15,
+      "ngram": 3,
+      "hash_head": 7,
+      "rows": 251707,
+      "unique_rows": 146046,
+      "unique_fraction": 0.5802222490310669,
+      "max_count": 594,
+      "mean_count_per_touched_row": 1.7949413061141968
+    }
+  ],
+  "top_slots": [
+    {
+      "head_idx": 13,
+      "ngram": 3,
+      "hash_head": 5,
+      "row": 125393,
+      "absolute_row": 3396082,
+      "count": 81,
+      "avg_gate": 0.892501175403595,
+      "avg_output_norm": 429.97479248046875,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 3797,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": "\n- Upload photos<|endoftext|>|Facility Type:||Full Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations",
+          "gate": 0.9099069833755493,
+          "output_norm": 438.04144287109375
+        },
+        {
+          "position": 3809,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations:||3|\n|Number of non-critical violations",
+          "gate": 0.9032942056655884,
+          "output_norm": 434.8190612792969
+        }
+      ]
+    },
+    {
+      "head_idx": 14,
+      "ngram": 3,
+      "hash_head": 6,
+      "row": 125321,
+      "absolute_row": 3647687,
+      "count": 81,
+      "avg_gate": 0.892501175403595,
+      "avg_output_norm": 429.97479248046875,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 3797,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": "\n- Upload photos<|endoftext|>|Facility Type:||Full Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations",
+          "gate": 0.9099069833755493,
+          "output_norm": 438.04144287109375
+        },
+        {
+          "position": 3809,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations:||3|\n|Number of non-critical violations",
+          "gate": 0.9032942056655884,
+          "output_norm": 434.8190612792969
+        }
+      ]
+    },
+    {
+      "head_idx": 15,
+      "ngram": 3,
+      "hash_head": 7,
+      "row": 125303,
+      "absolute_row": 3899370,
+      "count": 81,
+      "avg_gate": 0.892501175403595,
+      "avg_output_norm": 429.97479248046875,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 3797,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": "\n- Upload photos<|endoftext|>|Facility Type:||Full Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations",
+          "gate": 0.9099069833755493,
+          "output_norm": 438.04144287109375
+        },
+        {
+          "position": 3809,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations:||3|\n|Number of non-critical violations",
+          "gate": 0.9032942056655884,
+          "output_norm": 434.8190612792969
+        }
+      ]
+    },
+    {
+      "head_idx": 8,
+      "ngram": 3,
+      "hash_head": 0,
+      "row": 125561,
+      "absolute_row": 2138051,
+      "count": 82,
+      "avg_gate": 0.8843660354614258,
+      "avg_output_norm": 425.31396484375,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 3797,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": "\n- Upload photos<|endoftext|>|Facility Type:||Full Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations",
+          "gate": 0.9099069833755493,
+          "output_norm": 438.04144287109375
+        },
+        {
+          "position": 3809,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations:||3|\n|Number of non-critical violations",
+          "gate": 0.9032942056655884,
+          "output_norm": 434.8190612792969
+        }
+      ]
+    },
+    {
+      "head_idx": 10,
+      "ngram": 3,
+      "hash_head": 2,
+      "row": 125507,
+      "absolute_row": 2641241,
+      "count": 83,
+      "avg_gate": 0.8860586881637573,
+      "avg_output_norm": 423.7787170410156,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 3797,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": "\n- Upload photos<|endoftext|>|Facility Type:||Full Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations",
+          "gate": 0.9099069833755493,
+          "output_norm": 438.04144287109375
+        },
+        {
+          "position": 3809,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations:||3|\n|Number of non-critical violations",
+          "gate": 0.9032942056655884,
+          "output_norm": 434.8190612792969
+        }
+      ]
+    },
+    {
+      "head_idx": 12,
+      "ngram": 3,
+      "hash_head": 4,
+      "row": 110002,
+      "absolute_row": 3129028,
+      "count": 46,
+      "avg_gate": 0.914043664932251,
+      "avg_output_norm": 422.3451232910156,
+      "examples": [
+        {
+          "position": 2018,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": "LANDO, Fla. \u2014 While the Rapid Recall Exchange, the 2-year-old industry recall portal, has signed up more than 600 manufacturer and retailer subscribers,",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.31707763671875
+        },
+        {
+          "position": 31771,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " drinking age in every state. Thirty one percent of 15- to 20-year-old drivers who were killed in crashes nationally in 2006 had been drinking.\nAccording",
+          "gate": 0.9136765599250793,
+          "output_norm": 422.3851318359375
+        },
+        {
+          "position": 31879,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " to 2010 as a result of a crash involving a 15- to 20-year-old driver with a blood alcohol content of 0.01 or above. In 2010",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.66119384765625
+        }
+      ]
+    },
+    {
+      "head_idx": 13,
+      "ngram": 3,
+      "hash_head": 5,
+      "row": 109092,
+      "absolute_row": 3379781,
+      "count": 46,
+      "avg_gate": 0.914043664932251,
+      "avg_output_norm": 422.3451232910156,
+      "examples": [
+        {
+          "position": 2018,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": "LANDO, Fla. \u2014 While the Rapid Recall Exchange, the 2-year-old industry recall portal, has signed up more than 600 manufacturer and retailer subscribers,",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.31707763671875
+        },
+        {
+          "position": 31771,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " drinking age in every state. Thirty one percent of 15- to 20-year-old drivers who were killed in crashes nationally in 2006 had been drinking.\nAccording",
+          "gate": 0.9136765599250793,
+          "output_norm": 422.3851318359375
+        },
+        {
+          "position": 31879,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " to 2010 as a result of a crash involving a 15- to 20-year-old driver with a blood alcohol content of 0.01 or above. In 2010",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.66119384765625
+        }
+      ]
+    },
+    {
+      "head_idx": 11,
+      "ngram": 3,
+      "hash_head": 3,
+      "row": 125465,
+      "absolute_row": 2892838,
+      "count": 83,
+      "avg_gate": 0.8739579916000366,
+      "avg_output_norm": 420.46795654296875,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 3797,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": "\n- Upload photos<|endoftext|>|Facility Type:||Full Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations",
+          "gate": 0.9099069833755493,
+          "output_norm": 438.04144287109375
+        },
+        {
+          "position": 3809,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations:||3|\n|Number of non-critical violations",
+          "gate": 0.9032942056655884,
+          "output_norm": 434.8190612792969
+        }
+      ]
+    },
+    {
+      "head_idx": 12,
+      "ngram": 3,
+      "hash_head": 4,
+      "row": 125435,
+      "absolute_row": 3144461,
+      "count": 84,
+      "avg_gate": 0.8837004899978638,
+      "avg_output_norm": 420.2744140625,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 3797,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": "\n- Upload photos<|endoftext|>|Facility Type:||Full Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations",
+          "gate": 0.9099069833755493,
+          "output_norm": 438.04144287109375
+        },
+        {
+          "position": 3809,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations:||3|\n|Number of non-critical violations",
+          "gate": 0.9032942056655884,
+          "output_norm": 434.8190612792969
+        }
+      ]
+    },
+    {
+      "head_idx": 10,
+      "ngram": 3,
+      "hash_head": 2,
+      "row": 111562,
+      "absolute_row": 2627296,
+      "count": 47,
+      "avg_gate": 0.900959849357605,
+      "avg_output_norm": 415.24176025390625,
+      "examples": [
+        {
+          "position": 2018,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": "LANDO, Fla. \u2014 While the Rapid Recall Exchange, the 2-year-old industry recall portal, has signed up more than 600 manufacturer and retailer subscribers,",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.31707763671875
+        },
+        {
+          "position": 31771,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " drinking age in every state. Thirty one percent of 15- to 20-year-old drivers who were killed in crashes nationally in 2006 had been drinking.\nAccording",
+          "gate": 0.9136765599250793,
+          "output_norm": 422.3851318359375
+        },
+        {
+          "position": 31879,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " to 2010 as a result of a crash involving a 15- to 20-year-old driver with a blood alcohol content of 0.01 or above. In 2010",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.66119384765625
+        }
+      ]
+    },
+    {
+      "head_idx": 9,
+      "ngram": 3,
+      "hash_head": 1,
+      "row": 112602,
+      "absolute_row": 2376713,
+      "count": 48,
+      "avg_gate": 0.9030987620353699,
+      "avg_output_norm": 412.6029968261719,
+      "examples": [
+        {
+          "position": 2018,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": "LANDO, Fla. \u2014 While the Rapid Recall Exchange, the 2-year-old industry recall portal, has signed up more than 600 manufacturer and retailer subscribers,",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.31707763671875
+        },
+        {
+          "position": 31771,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " drinking age in every state. Thirty one percent of 15- to 20-year-old drivers who were killed in crashes nationally in 2006 had been drinking.\nAccording",
+          "gate": 0.9136765599250793,
+          "output_norm": 422.3851318359375
+        },
+        {
+          "position": 31879,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " to 2010 as a result of a crash involving a 15- to 20-year-old driver with a blood alcohol content of 0.01 or above. In 2010",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.66119384765625
+        }
+      ]
+    },
+    {
+      "head_idx": 9,
+      "ngram": 3,
+      "hash_head": 1,
+      "row": 125555,
+      "absolute_row": 2389666,
+      "count": 86,
+      "avg_gate": 0.8723578453063965,
+      "avg_output_norm": 412.2515563964844,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 3797,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": "\n- Upload photos<|endoftext|>|Facility Type:||Full Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations",
+          "gate": 0.9099069833755493,
+          "output_norm": 438.04144287109375
+        },
+        {
+          "position": 3809,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations:||3|\n|Number of non-critical violations",
+          "gate": 0.9032942056655884,
+          "output_norm": 434.8190612792969
+        }
+      ]
+    },
+    {
+      "head_idx": 8,
+      "ngram": 3,
+      "hash_head": 0,
+      "row": 112732,
+      "absolute_row": 2125222,
+      "count": 48,
+      "avg_gate": 0.8952257633209229,
+      "avg_output_norm": 410.1200256347656,
+      "examples": [
+        {
+          "position": 2018,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": "LANDO, Fla. \u2014 While the Rapid Recall Exchange, the 2-year-old industry recall portal, has signed up more than 600 manufacturer and retailer subscribers,",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.31707763671875
+        },
+        {
+          "position": 3627,
+          "ngram_token_ids": [
+            4706,
+            11088,
+            27698
+          ],
+          "ngram_text": " manager Bruce Newman",
+          "window_text": " value share of the chocolate spread market.\nKraft Foods UK marketing manager Bruce Newman said:\n\u201cThe UK product would be positioned as a snack.\n",
+          "gate": 0.07585817575454712,
+          "output_norm": 20.91910171508789
+        },
+        {
+          "position": 31771,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " drinking age in every state. Thirty one percent of 15- to 20-year-old drivers who were killed in crashes nationally in 2006 had been drinking.\nAccording",
+          "gate": 0.9136765599250793,
+          "output_norm": 422.3851318359375
+        }
+      ]
+    },
+    {
+      "head_idx": 10,
+      "ngram": 3,
+      "hash_head": 2,
+      "row": 228746,
+      "absolute_row": 2744480,
+      "count": 70,
+      "avg_gate": 0.9337491989135742,
+      "avg_output_norm": 409.2957458496094,
+      "examples": [
+        {
+          "position": 2167,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " industry relations, education and research for Food Marketing Institute, Arlington, Va.\n\u201cWe have good penetration [among manufacturers] on the dry grocery side \u2014 though",
+          "gate": 0.9441768527030945,
+          "output_norm": 414.67535400390625
+        },
+        {
+          "position": 2393,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": "disappointed\u201d in the number of manufacturers using the Rapid Recall Exchange.\n\u201cOnly 222 of our grocery suppliers are signed up, and more than 1,",
+          "gate": 0.9381240010261536,
+          "output_norm": 410.4688415527344
+        },
+        {
+          "position": 3644,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " said:\n\u201cThe UK product would be positioned as a snack.\n\u201cThe breakfast market in countries such as Germany is more developed, and our consumer",
+          "gate": 0.9252299070358276,
+          "output_norm": 405.80792236328125
+        }
+      ]
+    },
+    {
+      "head_idx": 11,
+      "ngram": 3,
+      "hash_head": 3,
+      "row": 228522,
+      "absolute_row": 2995895,
+      "count": 70,
+      "avg_gate": 0.9337491989135742,
+      "avg_output_norm": 409.2957458496094,
+      "examples": [
+        {
+          "position": 2167,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " industry relations, education and research for Food Marketing Institute, Arlington, Va.\n\u201cWe have good penetration [among manufacturers] on the dry grocery side \u2014 though",
+          "gate": 0.9441768527030945,
+          "output_norm": 414.67535400390625
+        },
+        {
+          "position": 2393,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": "disappointed\u201d in the number of manufacturers using the Rapid Recall Exchange.\n\u201cOnly 222 of our grocery suppliers are signed up, and more than 1,",
+          "gate": 0.9381240010261536,
+          "output_norm": 410.4688415527344
+        },
+        {
+          "position": 3644,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " said:\n\u201cThe UK product would be positioned as a snack.\n\u201cThe breakfast market in countries such as Germany is more developed, and our consumer",
+          "gate": 0.9252299070358276,
+          "output_norm": 405.80792236328125
+        }
+      ]
+    },
+    {
+      "head_idx": 11,
+      "ngram": 3,
+      "hash_head": 3,
+      "row": 110652,
+      "absolute_row": 2878025,
+      "count": 48,
+      "avg_gate": 0.8950790762901306,
+      "avg_output_norm": 408.7915344238281,
+      "examples": [
+        {
+          "position": 2018,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": "LANDO, Fla. \u2014 While the Rapid Recall Exchange, the 2-year-old industry recall portal, has signed up more than 600 manufacturer and retailer subscribers,",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.31707763671875
+        },
+        {
+          "position": 16278,
+          "ngram_token_ids": [
+            36095,
+            198,
+            18712
+          ],
+          "ngram_text": " Experts\nSmall",
+          "window_text": " 20, 2013) - Over 100 Game Changing PPC Strategies From 12 Experts\nSmall Biz Trends (March 19, 2013) - 5 Lessons You Can Learn from",
+          "gate": 0.15713684260845184,
+          "output_norm": 36.207523345947266
+        },
+        {
+          "position": 24772,
+          "ngram_token_ids": [
+            484,
+            743,
+            1575
+          ],
+          "ngram_text": " they may cost",
+          "window_text": ", though, by saying wings will be available. He added that although they may cost a bit more, \u201cThe good news for consumers is that restaurants plan well",
+          "gate": 0.7606506943702698,
+          "output_norm": 157.91038513183594
+        }
+      ]
+    },
+    {
+      "head_idx": 12,
+      "ngram": 3,
+      "hash_head": 4,
+      "row": 228362,
+      "absolute_row": 3247388,
+      "count": 71,
+      "avg_gate": 0.9330713152885437,
+      "avg_output_norm": 406.95111083984375,
+      "examples": [
+        {
+          "position": 2167,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " industry relations, education and research for Food Marketing Institute, Arlington, Va.\n\u201cWe have good penetration [among manufacturers] on the dry grocery side \u2014 though",
+          "gate": 0.9441768527030945,
+          "output_norm": 414.67535400390625
+        },
+        {
+          "position": 2393,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": "disappointed\u201d in the number of manufacturers using the Rapid Recall Exchange.\n\u201cOnly 222 of our grocery suppliers are signed up, and more than 1,",
+          "gate": 0.9381240010261536,
+          "output_norm": 410.4688415527344
+        },
+        {
+          "position": 3644,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " said:\n\u201cThe UK product would be positioned as a snack.\n\u201cThe breakfast market in countries such as Germany is more developed, and our consumer",
+          "gate": 0.9252299070358276,
+          "output_norm": 405.80792236328125
+        }
+      ]
+    },
+    {
+      "head_idx": 9,
+      "ngram": 3,
+      "hash_head": 1,
+      "row": 229002,
+      "absolute_row": 2493113,
+      "count": 71,
+      "avg_gate": 0.9329206347465515,
+      "avg_output_norm": 406.449951171875,
+      "examples": [
+        {
+          "position": 2167,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " industry relations, education and research for Food Marketing Institute, Arlington, Va.\n\u201cWe have good penetration [among manufacturers] on the dry grocery side \u2014 though",
+          "gate": 0.9441768527030945,
+          "output_norm": 414.67535400390625
+        },
+        {
+          "position": 2393,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": "disappointed\u201d in the number of manufacturers using the Rapid Recall Exchange.\n\u201cOnly 222 of our grocery suppliers are signed up, and more than 1,",
+          "gate": 0.9381240010261536,
+          "output_norm": 410.4688415527344
+        },
+        {
+          "position": 3644,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " said:\n\u201cThe UK product would be positioned as a snack.\n\u201cThe breakfast market in countries such as Germany is more developed, and our consumer",
+          "gate": 0.9252299070358276,
+          "output_norm": 405.80792236328125
+        }
+      ]
+    },
+    {
+      "head_idx": 14,
+      "ngram": 3,
+      "hash_head": 6,
+      "row": 227754,
+      "absolute_row": 3750120,
+      "count": 71,
+      "avg_gate": 0.9337716102600098,
+      "avg_output_norm": 406.38800048828125,
+      "examples": [
+        {
+          "position": 2167,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " industry relations, education and research for Food Marketing Institute, Arlington, Va.\n\u201cWe have good penetration [among manufacturers] on the dry grocery side \u2014 though",
+          "gate": 0.9441768527030945,
+          "output_norm": 414.67535400390625
+        },
+        {
+          "position": 2393,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": "disappointed\u201d in the number of manufacturers using the Rapid Recall Exchange.\n\u201cOnly 222 of our grocery suppliers are signed up, and more than 1,",
+          "gate": 0.9381240010261536,
+          "output_norm": 410.4688415527344
+        },
+        {
+          "position": 3644,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " said:\n\u201cThe UK product would be positioned as a snack.\n\u201cThe breakfast market in countries such as Germany is more developed, and our consumer",
+          "gate": 0.9252299070358276,
+          "output_norm": 405.80792236328125
+        }
+      ]
+    },
+    {
+      "head_idx": 14,
+      "ngram": 3,
+      "hash_head": 6,
+      "row": 107532,
+      "absolute_row": 3629898,
+      "count": 48,
+      "avg_gate": 0.8815777897834778,
+      "avg_output_norm": 406.2315368652344,
+      "examples": [
+        {
+          "position": 2018,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": "LANDO, Fla. \u2014 While the Rapid Recall Exchange, the 2-year-old industry recall portal, has signed up more than 600 manufacturer and retailer subscribers,",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.31707763671875
+        },
+        {
+          "position": 31771,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " drinking age in every state. Thirty one percent of 15- to 20-year-old drivers who were killed in crashes nationally in 2006 had been drinking.\nAccording",
+          "gate": 0.9136765599250793,
+          "output_norm": 422.3851318359375
+        },
+        {
+          "position": 31879,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " to 2010 as a result of a crash involving a 15- to 20-year-old driver with a blood alcohol content of 0.01 or above. In 2010",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.66119384765625
+        }
+      ]
+    },
+    {
+      "head_idx": 15,
+      "ngram": 3,
+      "hash_head": 7,
+      "row": 107142,
+      "absolute_row": 3881209,
+      "count": 48,
+      "avg_gate": 0.8799313902854919,
+      "avg_output_norm": 405.7232971191406,
+      "examples": [
+        {
+          "position": 2018,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": "LANDO, Fla. \u2014 While the Rapid Recall Exchange, the 2-year-old industry recall portal, has signed up more than 600 manufacturer and retailer subscribers,",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.31707763671875
+        },
+        {
+          "position": 31771,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " drinking age in every state. Thirty one percent of 15- to 20-year-old drivers who were killed in crashes nationally in 2006 had been drinking.\nAccording",
+          "gate": 0.9136765599250793,
+          "output_norm": 422.3851318359375
+        },
+        {
+          "position": 31879,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " to 2010 as a result of a crash involving a 15- to 20-year-old driver with a blood alcohol content of 0.01 or above. In 2010",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.66119384765625
+        }
+      ]
+    },
+    {
+      "head_idx": 13,
+      "ngram": 3,
+      "hash_head": 5,
+      "row": 228138,
+      "absolute_row": 3498827,
+      "count": 71,
+      "avg_gate": 0.9245278835296631,
+      "avg_output_norm": 404.3762512207031,
+      "examples": [
+        {
+          "position": 2167,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " industry relations, education and research for Food Marketing Institute, Arlington, Va.\n\u201cWe have good penetration [among manufacturers] on the dry grocery side \u2014 though",
+          "gate": 0.9441768527030945,
+          "output_norm": 414.67535400390625
+        },
+        {
+          "position": 2393,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": "disappointed\u201d in the number of manufacturers using the Rapid Recall Exchange.\n\u201cOnly 222 of our grocery suppliers are signed up, and more than 1,",
+          "gate": 0.9381240010261536,
+          "output_norm": 410.4688415527344
+        },
+        {
+          "position": 3644,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " said:\n\u201cThe UK product would be positioned as a snack.\n\u201cThe breakfast market in countries such as Germany is more developed, and our consumer",
+          "gate": 0.9252299070358276,
+          "output_norm": 405.80792236328125
+        }
+      ]
+    },
+    {
+      "head_idx": 15,
+      "ngram": 3,
+      "hash_head": 7,
+      "row": 227658,
+      "absolute_row": 4001725,
+      "count": 71,
+      "avg_gate": 0.9221428632736206,
+      "avg_output_norm": 403.88751220703125,
+      "examples": [
+        {
+          "position": 2167,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " industry relations, education and research for Food Marketing Institute, Arlington, Va.\n\u201cWe have good penetration [among manufacturers] on the dry grocery side \u2014 though",
+          "gate": 0.9441768527030945,
+          "output_norm": 414.67535400390625
+        },
+        {
+          "position": 2393,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": "disappointed\u201d in the number of manufacturers using the Rapid Recall Exchange.\n\u201cOnly 222 of our grocery suppliers are signed up, and more than 1,",
+          "gate": 0.9381240010261536,
+          "output_norm": 410.4688415527344
+        },
+        {
+          "position": 3644,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " said:\n\u201cThe UK product would be positioned as a snack.\n\u201cThe breakfast market in countries such as Germany is more developed, and our consumer",
+          "gate": 0.9252299070358276,
+          "output_norm": 405.80792236328125
+        }
+      ]
+    },
+    {
+      "head_idx": 8,
+      "ngram": 3,
+      "hash_head": 0,
+      "row": 229034,
+      "absolute_row": 2241524,
+      "count": 72,
+      "avg_gate": 0.9296913146972656,
+      "avg_output_norm": 403.5692138671875,
+      "examples": [
+        {
+          "position": 2167,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " industry relations, education and research for Food Marketing Institute, Arlington, Va.\n\u201cWe have good penetration [among manufacturers] on the dry grocery side \u2014 though",
+          "gate": 0.9441768527030945,
+          "output_norm": 414.67535400390625
+        },
+        {
+          "position": 2393,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": "disappointed\u201d in the number of manufacturers using the Rapid Recall Exchange.\n\u201cOnly 222 of our grocery suppliers are signed up, and more than 1,",
+          "gate": 0.9381240010261536,
+          "output_norm": 410.4688415527344
+        },
+        {
+          "position": 3644,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " said:\n\u201cThe UK product would be positioned as a snack.\n\u201cThe breakfast market in countries such as Germany is more developed, and our consumer",
+          "gate": 0.9252299070358276,
+          "output_norm": 405.80792236328125
+        }
+      ]
+    },
+    {
+      "head_idx": 9,
+      "ngram": 3,
+      "hash_head": 1,
+      "row": 82567,
+      "absolute_row": 2346678,
+      "count": 69,
+      "avg_gate": 0.9658574461936951,
+      "avg_output_norm": 400.6341857910156,
+      "examples": [
+        {
+          "position": 2110,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " information with individual stores. The exchange's retail membership represents 85% of U.S. grocery volume \u2014 including 21 of the 24 largest supermarket chains based in the United",
+          "gate": 0.9669140577316284,
+          "output_norm": 401.6498718261719
+        },
+        {
+          "position": 2875,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " four nationally ranked teams.\nAugustana, ranked sixth in the latest U.S. Track & Field/Cross Country Coaches Association Division III Mideast Regional",
+          "gate": 0.9664104580879211,
+          "output_norm": 400.1831970214844
+        },
+        {
+          "position": 10426,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": "swire/ -- In a show of solidarity in providing healthy meals to U.S. students, the Urban School Food Alliance (USFA), which consists of some",
+          "gate": 0.9678993225097656,
+          "output_norm": 401.4249572753906
+        }
+      ]
+    },
+    {
+      "head_idx": 13,
+      "ngram": 3,
+      "hash_head": 5,
+      "row": 82297,
+      "absolute_row": 3352986,
+      "count": 69,
+      "avg_gate": 0.9658574461936951,
+      "avg_output_norm": 400.6341857910156,
+      "examples": [
+        {
+          "position": 2110,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " information with individual stores. The exchange's retail membership represents 85% of U.S. grocery volume \u2014 including 21 of the 24 largest supermarket chains based in the United",
+          "gate": 0.9669140577316284,
+          "output_norm": 401.6498718261719
+        },
+        {
+          "position": 2875,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " four nationally ranked teams.\nAugustana, ranked sixth in the latest U.S. Track & Field/Cross Country Coaches Association Division III Mideast Regional",
+          "gate": 0.9664104580879211,
+          "output_norm": 400.1831970214844
+        },
+        {
+          "position": 10426,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": "swire/ -- In a show of solidarity in providing healthy meals to U.S. students, the Urban School Food Alliance (USFA), which consists of some",
+          "gate": 0.9678993225097656,
+          "output_norm": 401.4249572753906
+        }
+      ]
+    },
+    {
+      "head_idx": 14,
+      "ngram": 3,
+      "hash_head": 6,
+      "row": 82177,
+      "absolute_row": 3604543,
+      "count": 69,
+      "avg_gate": 0.9658574461936951,
+      "avg_output_norm": 400.6341857910156,
+      "examples": [
+        {
+          "position": 2110,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " information with individual stores. The exchange's retail membership represents 85% of U.S. grocery volume \u2014 including 21 of the 24 largest supermarket chains based in the United",
+          "gate": 0.9669140577316284,
+          "output_norm": 401.6498718261719
+        },
+        {
+          "position": 2875,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " four nationally ranked teams.\nAugustana, ranked sixth in the latest U.S. Track & Field/Cross Country Coaches Association Division III Mideast Regional",
+          "gate": 0.9664104580879211,
+          "output_norm": 400.1831970214844
+        },
+        {
+          "position": 10426,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": "swire/ -- In a show of solidarity in providing healthy meals to U.S. students, the Urban School Food Alliance (USFA), which consists of some",
+          "gate": 0.9678993225097656,
+          "output_norm": 401.4249572753906
+        }
+      ]
+    },
+    {
+      "head_idx": 0,
+      "ngram": 2,
+      "hash_head": 0,
+      "row": 236335,
+      "absolute_row": 236335,
+      "count": 164,
+      "avg_gate": 0.8878418803215027,
+      "avg_output_norm": 398.419677734375,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 120,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": ", STEFANO, STEFANO!!!! :cheer:\n|Spoilers for the Week of February 11th \u00b7 DAYS: News,",
+          "gate": 0.8872045874595642,
+          "output_norm": 376.7011413574219
+        },
+        {
+          "position": 2726,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": "September 28, 2010\n2010 Season - Bowman pulls down CCIW honor\n|Matt Bowman was named CCIW \"Runner of the Week\" after his fourth",
+          "gate": 0.8887587189674377,
+          "output_norm": 314.6532287597656
+        }
+      ]
+    },
+    {
+      "head_idx": 1,
+      "ngram": 2,
+      "hash_head": 1,
+      "row": 236323,
+      "absolute_row": 487850,
+      "count": 164,
+      "avg_gate": 0.8878418803215027,
+      "avg_output_norm": 398.419677734375,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 120,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": ", STEFANO, STEFANO!!!! :cheer:\n|Spoilers for the Week of February 11th \u00b7 DAYS: News,",
+          "gate": 0.8872045874595642,
+          "output_norm": 376.7011413574219
+        },
+        {
+          "position": 2726,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": "September 28, 2010\n2010 Season - Bowman pulls down CCIW honor\n|Matt Bowman was named CCIW \"Runner of the Week\" after his fourth",
+          "gate": 0.8887587189674377,
+          "output_norm": 314.6532287597656
+        }
+      ]
+    },
+    {
+      "head_idx": 3,
+      "ngram": 2,
+      "hash_head": 3,
+      "row": 236303,
+      "absolute_row": 990902,
+      "count": 164,
+      "avg_gate": 0.8878418803215027,
+      "avg_output_norm": 398.419677734375,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 120,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": ", STEFANO, STEFANO!!!! :cheer:\n|Spoilers for the Week of February 11th \u00b7 DAYS: News,",
+          "gate": 0.8872045874595642,
+          "output_norm": 376.7011413574219
+        },
+        {
+          "position": 2726,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": "September 28, 2010\n2010 Season - Bowman pulls down CCIW honor\n|Matt Bowman was named CCIW \"Runner of the Week\" after his fourth",
+          "gate": 0.8887587189674377,
+          "output_norm": 314.6532287597656
+        }
+      ]
+    },
+    {
+      "head_idx": 4,
+      "ngram": 2,
+      "hash_head": 4,
+      "row": 236267,
+      "absolute_row": 1242409,
+      "count": 164,
+      "avg_gate": 0.8878418803215027,
+      "avg_output_norm": 398.419677734375,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 120,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": ", STEFANO, STEFANO!!!! :cheer:\n|Spoilers for the Week of February 11th \u00b7 DAYS: News,",
+          "gate": 0.8872045874595642,
+          "output_norm": 376.7011413574219
+        },
+        {
+          "position": 2726,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": "September 28, 2010\n2010 Season - Bowman pulls down CCIW honor\n|Matt Bowman was named CCIW \"Runner of the Week\" after his fourth",
+          "gate": 0.8887587189674377,
+          "output_norm": 314.6532287597656
+        }
+      ]
+    },
+    {
+      "head_idx": 6,
+      "ngram": 2,
+      "hash_head": 6,
+      "row": 236171,
+      "absolute_row": 1745441,
+      "count": 164,
+      "avg_gate": 0.8878418803215027,
+      "avg_output_norm": 398.419677734375,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 120,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": ", STEFANO, STEFANO!!!! :cheer:\n|Spoilers for the Week of February 11th \u00b7 DAYS: News,",
+          "gate": 0.8872045874595642,
+          "output_norm": 376.7011413574219
+        },
+        {
+          "position": 2726,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": "September 28, 2010\n2010 Season - Bowman pulls down CCIW honor\n|Matt Bowman was named CCIW \"Runner of the Week\" after his fourth",
+          "gate": 0.8887587189674377,
+          "output_norm": 314.6532287597656
+        }
+      ]
+    },
+    {
+      "head_idx": 7,
+      "ngram": 2,
+      "hash_head": 7,
+      "row": 236167,
+      "absolute_row": 1997046,
+      "count": 164,
+      "avg_gate": 0.8878418803215027,
+      "avg_output_norm": 398.419677734375,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 120,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": ", STEFANO, STEFANO!!!! :cheer:\n|Spoilers for the Week of February 11th \u00b7 DAYS: News,",
+          "gate": 0.8872045874595642,
+          "output_norm": 376.7011413574219
+        },
+        {
+          "position": 2726,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": "September 28, 2010\n2010 Season - Bowman pulls down CCIW honor\n|Matt Bowman was named CCIW \"Runner of the Week\" after his fourth",
+          "gate": 0.8887587189674377,
+          "output_norm": 314.6532287597656
+        }
+      ]
+    },
+    {
+      "head_idx": 8,
+      "ngram": 3,
+      "hash_head": 0,
+      "row": 82577,
+      "absolute_row": 2095067,
+      "count": 70,
+      "avg_gate": 0.9633156061172485,
+      "avg_output_norm": 397.5773620605469,
+      "examples": [
+        {
+          "position": 2110,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " information with individual stores. The exchange's retail membership represents 85% of U.S. grocery volume \u2014 including 21 of the 24 largest supermarket chains based in the United",
+          "gate": 0.9669140577316284,
+          "output_norm": 401.6498718261719
+        },
+        {
+          "position": 2875,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " four nationally ranked teams.\nAugustana, ranked sixth in the latest U.S. Track & Field/Cross Country Coaches Association Division III Mideast Regional",
+          "gate": 0.9664104580879211,
+          "output_norm": 400.1831970214844
+        },
+        {
+          "position": 10426,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": "swire/ -- In a show of solidarity in providing healthy meals to U.S. students, the Urban School Food Alliance (USFA), which consists of some",
+          "gate": 0.9678993225097656,
+          "output_norm": 401.4249572753906
+        }
+      ]
+    },
+    {
+      "head_idx": 10,
+      "ngram": 3,
+      "hash_head": 2,
+      "row": 82487,
+      "absolute_row": 2598221,
+      "count": 70,
+      "avg_gate": 0.9599770903587341,
+      "avg_output_norm": 396.87322998046875,
+      "examples": [
+        {
+          "position": 2110,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " information with individual stores. The exchange's retail membership represents 85% of U.S. grocery volume \u2014 including 21 of the 24 largest supermarket chains based in the United",
+          "gate": 0.9669140577316284,
+          "output_norm": 401.6498718261719
+        },
+        {
+          "position": 2875,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " four nationally ranked teams.\nAugustana, ranked sixth in the latest U.S. Track & Field/Cross Country Coaches Association Division III Mideast Regional",
+          "gate": 0.9664104580879211,
+          "output_norm": 400.1831970214844
+        },
+        {
+          "position": 10426,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": "swire/ -- In a show of solidarity in providing healthy meals to U.S. students, the Urban School Food Alliance (USFA), which consists of some",
+          "gate": 0.9678993225097656,
+          "output_norm": 401.4249572753906
+        }
+      ]
+    },
+    {
+      "head_idx": 5,
+      "ngram": 2,
+      "hash_head": 5,
+      "row": 236255,
+      "absolute_row": 1493958,
+      "count": 165,
+      "avg_gate": 0.8831735253334045,
+      "avg_output_norm": 396.175048828125,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 120,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": ", STEFANO, STEFANO!!!! :cheer:\n|Spoilers for the Week of February 11th \u00b7 DAYS: News,",
+          "gate": 0.8872045874595642,
+          "output_norm": 376.7011413574219
+        },
+        {
+          "position": 2726,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": "September 28, 2010\n2010 Season - Bowman pulls down CCIW honor\n|Matt Bowman was named CCIW \"Runner of the Week\" after his fourth",
+          "gate": 0.8887587189674377,
+          "output_norm": 314.6532287597656
+        }
+      ]
+    },
+    {
+      "head_idx": 2,
+      "ngram": 2,
+      "hash_head": 2,
+      "row": 236311,
+      "absolute_row": 739371,
+      "count": 167,
+      "avg_gate": 0.8883247375488281,
+      "avg_output_norm": 396.0915832519531,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 120,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": ", STEFANO, STEFANO!!!! :cheer:\n|Spoilers for the Week of February 11th \u00b7 DAYS: News,",
+          "gate": 0.8872045874595642,
+          "output_norm": 376.7011413574219
+        },
+        {
+          "position": 2726,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": "September 28, 2010\n2010 Season - Bowman pulls down CCIW honor\n|Matt Bowman was named CCIW \"Runner of the Week\" after his fourth",
+          "gate": 0.8887587189674377,
+          "output_norm": 314.6532287597656
+        }
+      ]
+    },
+    {
+      "head_idx": 12,
+      "ngram": 3,
+      "hash_head": 4,
+      "row": 82367,
+      "absolute_row": 3101393,
+      "count": 70,
+      "avg_gate": 0.9551453590393066,
+      "avg_output_norm": 395.599365234375,
+      "examples": [
+        {
+          "position": 2110,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " information with individual stores. The exchange's retail membership represents 85% of U.S. grocery volume \u2014 including 21 of the 24 largest supermarket chains based in the United",
+          "gate": 0.9669140577316284,
+          "output_norm": 401.6498718261719
+        },
+        {
+          "position": 2875,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " four nationally ranked teams.\nAugustana, ranked sixth in the latest U.S. Track & Field/Cross Country Coaches Association Division III Mideast Regional",
+          "gate": 0.9664104580879211,
+          "output_norm": 400.1831970214844
+        },
+        {
+          "position": 10426,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": "swire/ -- In a show of solidarity in providing healthy meals to U.S. students, the Urban School Food Alliance (USFA), which consists of some",
+          "gate": 0.9678993225097656,
+          "output_norm": 401.4249572753906
+        }
+      ]
+    },
+    {
+      "head_idx": 11,
+      "ngram": 3,
+      "hash_head": 3,
+      "row": 82417,
+      "absolute_row": 2849790,
+      "count": 70,
+      "avg_gate": 0.9542169570922852,
+      "avg_output_norm": 395.380859375,
+      "examples": [
+        {
+          "position": 2110,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " information with individual stores. The exchange's retail membership represents 85% of U.S. grocery volume \u2014 including 21 of the 24 largest supermarket chains based in the United",
+          "gate": 0.9669140577316284,
+          "output_norm": 401.6498718261719
+        },
+        {
+          "position": 2875,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " four nationally ranked teams.\nAugustana, ranked sixth in the latest U.S. Track & Field/Cross Country Coaches Association Division III Mideast Regional",
+          "gate": 0.9664104580879211,
+          "output_norm": 400.1831970214844
+        },
+        {
+          "position": 10426,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": "swire/ -- In a show of solidarity in providing healthy meals to U.S. students, the Urban School Food Alliance (USFA), which consists of some",
+          "gate": 0.9678993225097656,
+          "output_norm": 401.4249572753906
+        }
+      ]
+    },
+    {
+      "head_idx": 9,
+      "ngram": 3,
+      "hash_head": 1,
+      "row": 12258,
+      "absolute_row": 2276369,
+      "count": 57,
+      "avg_gate": 0.8769073486328125,
+      "avg_output_norm": 391.88055419921875,
+      "examples": [
+        {
+          "position": 4623,
+          "ngram_token_ids": [
+            355,
+            880,
+            355
+          ],
+          "ngram_text": " as well as",
+          "window_text": " this weekend to check out works I have created over the last year, as well as find some neat works from my artistic past in tje awesome sales bins created just",
+          "gate": 0.8558511734008789,
+          "output_norm": 382.3868408203125
+        },
+        {
+          "position": 6168,
+          "ngram_token_ids": [
+            355,
+            880,
+            355
+          ],
+          "ngram_text": " as well as",
+          "window_text": " those funds, Michigan will have to let go of the temporary workers, as well as 225 permanent staffers, totaling about one-fifth of the Department of Licensing and",
+          "gate": 0.8365545868873596,
+          "output_norm": 373.5010070800781
+        },
+        {
+          "position": 10871,
+          "ngram_token_ids": [
+            355,
+            880,
+            355
+          ],
+          "ngram_text": " as well as",
+          "window_text": " to school meals including expanded options for reaching more students with breakfast on campus as well as supper after school in order to meet the needs of students.\n\u00a92012 PR",
+          "gate": 0.9099069833755493,
+          "output_norm": 406.6019287109375
+        }
+      ]
+    }
+  ],
+  "token_category_stats": {
+    "alpha": {
+      "count": 209466,
+      "avg_gate": 0.5192354090687102,
+      "avg_output_norm": 134.56235944889556
+    },
+    "digit": {
+      "count": 7925,
+      "avg_gate": 0.34044115457531027,
+      "avg_output_norm": 81.15185180230847
+    },
+    "mixed": {
+      "count": 1542,
+      "avg_gate": 0.49502398977454765,
+      "avg_output_norm": 125.6984957956
+    },
+    "newline": {
+      "count": 5881,
+      "avg_gate": 0.225201095980946,
+      "avg_output_norm": 65.62149414434823
+    },
+    "pipe": {
+      "count": 1067,
+      "avg_gate": 0.389581774187736,
+      "avg_output_norm": 125.04354766874305
+    },
+    "punct": {
+      "count": 36201,
+      "avg_gate": 0.39595687189911605,
+      "avg_output_norm": 109.11409000064691
+    },
+    "whitespace": {
+      "count": 62,
+      "avg_gate": 0.2647480314537402,
+      "avg_output_norm": 55.77483823222499
+    }
+  },
+  "top_tokens_by_output_norm": [
+    {
+      "position": 11069,
+      "token_id": 14206,
+      "token_text": " Single",
+      "category": "alpha",
+      "metric": 543.9257202148438,
+      "gate": 0.9539660811424255,
+      "output_norm": 543.9257202148438,
+      "window_text": " mobile alerts<|endoftext|>Chat Box Chicks ~ Welcoming the New Year!\nView Single Post\n02-10-2013, 03:02 PM\nJoin Date:"
+    },
+    {
+      "position": 107425,
+      "token_id": 14206,
+      "token_text": " Single",
+      "category": "alpha",
+      "metric": 543.8366088867188,
+      "gate": 0.9532750844955444,
+      "output_norm": 543.8366088867188,
+      "window_text": " hour multiple choice type exam<|endoftext|>The Lockout (is over!!!!!)\nView Single Post\n12-05-2012, 04:34 PM\nJoin Date:"
+    },
+    {
+      "position": 149157,
+      "token_id": 290,
+      "token_text": " and",
+      "category": "alpha",
+      "metric": 519.6888427734375,
+      "gate": 0.937210738658905,
+      "output_norm": 519.6888427734375,
+      "window_text": " and rockets coming out. I had the best shot on restarts, to try and get Alex. He was very clean, we were bumping, but it was"
+    },
+    {
+      "position": 149056,
+      "token_id": 290,
+      "token_text": " and",
+      "category": "alpha",
+      "metric": 516.3557739257812,
+      "gate": 0.9284088015556335,
+      "output_norm": 516.3557739257812,
+      "window_text": ",\u201d Pilgrim said. \u201cOf course, I was going to try and get to Alex Figge, because I wanted him to be a cushion between us"
+    },
+    {
+      "position": 25254,
+      "token_id": 290,
+      "token_text": " and",
+      "category": "alpha",
+      "metric": 515.96337890625,
+      "gate": 0.9314625263214111,
+      "output_norm": 515.96337890625,
+      "window_text": " roster.\nJersey, even with the rumours that they are going to try and hide Mogilny and Malakhov on the IR to resolve their salary situation"
+    },
+    {
+      "position": 41975,
+      "token_id": 1021,
+      "token_text": " hand",
+      "category": "alpha",
+      "metric": 511.0661315917969,
+      "gate": 0.9458011984825134,
+      "output_norm": 511.0661315917969,
+      "window_text": " want to show up and put that kind of heat on him. On the one hand, it\u2019s nice to support for your kid. Whether I\u2019"
+    },
+    {
+      "position": 115078,
+      "token_id": 340,
+      "token_text": " it",
+      "category": "alpha",
+      "metric": 509.5218505859375,
+      "gate": 0.9099069833755493,
+      "output_norm": 509.5218505859375,
+      "window_text": "ressing me beside the desserts of Chef Yuko.\nLet\u2019s face it, Nobu is a business, not a restaurant. The place is packed to"
+    },
+    {
+      "position": 104208,
+      "token_id": 10398,
+      "token_text": " printed",
+      "category": "alpha",
+      "metric": 509.4612731933594,
+      "gate": 0.9407896995544434,
+      "output_norm": 509.4612731933594,
+      "window_text": " the best lemon bars I\u2019ve ever eaten \u2013 bar none!\nArticle printed from Sticky, Gooey, Creamy, Chewy: http://"
+    },
+    {
+      "position": 227011,
+      "token_id": 2058,
+      "token_text": " comes",
+      "category": "alpha",
+      "metric": 508.0950927734375,
+      "gate": 0.8976953029632568,
+      "output_norm": 508.0950927734375,
+      "window_text": " sulfate helps us absorb other nutrients better.\nMore isn't better when it comes to your health. After all, magnesium is a laxative, and you can"
+    },
+    {
+      "position": 58174,
+      "token_id": 2058,
+      "token_text": " comes",
+      "category": "alpha",
+      "metric": 508.09307861328125,
+      "gate": 0.8991213440895081,
+      "output_norm": 508.09307861328125,
+      "window_text": " well-developed infrastructure is without doubt part of what creates a worldwide interest when it comes to Properties for sale in Alanya.\nA fast growing population with strong growth"
+    },
+    {
+      "position": 103868,
+      "token_id": 881,
+      "token_text": " much",
+      "category": "alpha",
+      "metric": 507.12139892578125,
+      "gate": 0.9304582476615906,
+      "output_norm": 507.12139892578125,
+      "window_text": " cured and fresh meat. Yes, I said SIX! One slice is pretty much a complete meal in itself. A Pizza Rustica does take some time to put"
+    },
+    {
+      "position": 81156,
+      "token_id": 881,
+      "token_text": " much",
+      "category": "alpha",
+      "metric": 507.0582275390625,
+      "gate": 0.9304582476615906,
+      "output_norm": 507.0582275390625,
+      "window_text": " is soft and luscious and medium-bodied.\nSo this is pretty much the consummate red blend that\u2019s uber-popular right now. It"
+    },
+    {
+      "position": 254408,
+      "token_id": 2642,
+      "token_text": " wrong",
+      "category": "alpha",
+      "metric": 499.6574401855469,
+      "gate": 0.917302668094635,
+      "output_norm": 499.6574401855469,
+      "window_text": "ises are on the heavy side of the carbon emissions scale. Don't get me wrong, we all deserve vacations to exotic places during our mountain winters. When choosing your"
+    },
+    {
+      "position": 258373,
+      "token_id": 584,
+      "token_text": " other",
+      "category": "alpha",
+      "metric": 498.02301025390625,
+      "gate": 0.9314625263214111,
+      "output_norm": 498.02301025390625,
+      "window_text": " before hitting the stage. \"We all arrived separately and didn't communicate with each other until ten minutes before we went on. At that point I don't know what"
+    },
+    {
+      "position": 115347,
+      "token_id": 584,
+      "token_text": " other",
+      "category": "alpha",
+      "metric": 497.8485412597656,
+      "gate": 0.9314625263214111,
+      "output_norm": 497.8485412597656,
+      "window_text": " discovery questions, and tips for helping your small group grow spiritually and bond with each other as well as with the eternal message of Easter.\nAlso available are the \""
+    },
+    {
+      "position": 37256,
+      "token_id": 2058,
+      "token_text": " comes",
+      "category": "alpha",
+      "metric": 497.5383605957031,
+      "gate": 0.8807970285415649,
+      "output_norm": 497.5383605957031,
+      "window_text": " to have a \"serendipitous experience\" with friends, particularly when it comes to music. The founder demonstrated how with Open Graph and music social network Spotify,"
+    },
+    {
+      "position": 227017,
+      "token_id": 477,
+      "token_text": " all",
+      "category": "alpha",
+      "metric": 497.2608947753906,
+      "gate": 0.8918110132217407,
+      "output_norm": 497.2608947753906,
+      "window_text": " nutrients better.\nMore isn't better when it comes to your health. After all, magnesium is a laxative, and you can also get that result by soaking"
+    },
+    {
+      "position": 260813,
+      "token_id": 340,
+      "token_text": " it",
+      "category": "alpha",
+      "metric": 496.6930847167969,
+      "gate": 0.8856314420700073,
+      "output_norm": 496.6930847167969,
+      "window_text": " of the exhibits are inspiring in their existential explorations, let\u2019s face it: contemporary art can be depressing. When facing topics of mankind\u2019s disconnected"
+    },
+    {
+      "position": 186187,
+      "token_id": 1479,
+      "token_text": " free",
+      "category": "alpha",
+      "metric": 495.9541320800781,
+      "gate": 0.9324532747268677,
+      "output_norm": 495.9541320800781,
+      "window_text": "\n(More shows may be added to this list as information becomes available. Feel free to check back.)\nTo report additional shows or corrections to this listing, email"
+    },
+    {
+      "position": 121953,
+      "token_id": 31,
+      "token_text": "@",
+      "category": "punct",
+      "metric": 493.4488830566406,
+      "gate": 0.9136765599250793,
+      "output_norm": 493.4488830566406,
+      "window_text": " at Sierra Club to reserve a canoe. (contact Mark with any questions: email@example.com/ 305 632 7514)\n(Miami, February 28"
+    },
+    {
+      "position": 34103,
+      "token_id": 31,
+      "token_text": "@",
+      "category": "punct",
+      "metric": 493.0376281738281,
+      "gate": 0.9343951344490051,
+      "output_norm": 493.0376281738281,
+      "window_text": " email confirmation within 48hrs of placing your order, please contact us at email@example.com.\nAlthough packed for shipment, your Citizen Bike will arrive approximately"
+    },
+    {
+      "position": 240523,
+      "token_id": 12,
+      "token_text": "-",
+      "category": "punct",
+      "metric": 492.0863342285156,
+      "gate": 0.9184802770614624,
+      "output_norm": 492.0863342285156,
+      "window_text": " Dr. Alan Miller:\nView the full profile to get information on:\n- What's important to you\nView full profile\nWrite a Review\nEducation &"
+    },
+    {
+      "position": 240565,
+      "token_id": 12,
+      "token_text": "-",
+      "category": "punct",
+      "metric": 491.43182373046875,
+      "gate": 0.9184802770614624,
+      "output_norm": 491.43182373046875,
+      "window_text": " of Texas at Houston.\nDr. Miller has 1 hospital affiliations:\n- University Medical Center - Lubbock\nSimilar doctors nearby\n- Additional Information\n"
+    },
+    {
+      "position": 34331,
+      "token_id": 31,
+      "token_text": "@",
+      "category": "punct",
+      "metric": 491.07623291015625,
+      "gate": 0.9314625263214111,
+      "output_norm": 491.07623291015625,
+      "window_text": ".\nIf you have any questions, please feel free to contact us at email@example.com.\nCitizen Bike warrants the frame and fork of each new"
+    },
+    {
+      "position": 179905,
+      "token_id": 31,
+      "token_text": "@",
+      "category": "punct",
+      "metric": 491.015869140625,
+      "gate": 0.929440438747406,
+      "output_norm": 491.015869140625,
+      "window_text": " submit an \"intent to submit\" e-mail to the RSSC at email@example.com no later than June 30 (for the September 30 deadline) or"
+    },
+    {
+      "position": 39116,
+      "token_id": 14,
+      "token_text": "/",
+      "category": "punct",
+      "metric": 490.3792419433594,
+      "gate": 0.9149009585380554,
+      "output_norm": 490.3792419433594,
+      "window_text": " on ?best practices? for core preservation, the NRC\nstudy, and/or use of core in research; develop presentation material on the\nbenefits of"
+    },
+    {
+      "position": 234842,
+      "token_id": 12,
+      "token_text": "-",
+      "category": "punct",
+      "metric": 489.6370544433594,
+      "gate": 0.9149009585380554,
+      "output_norm": 489.6370544433594,
+      "window_text": "\n- Per person pricing\nNeed more options? Choose from the following:\n- Breakfast, Lunch and Dinner options\n- Healthy and fun break options to enhance energy"
+    },
+    {
+      "position": 226893,
+      "token_id": 31,
+      "token_text": "@",
+      "category": "punct",
+      "metric": 488.67059326171875,
+      "gate": 0.9273632764816284,
+      "output_norm": 488.67059326171875,
+      "window_text": " But what can you do?\u201d\nContact Barry Federovitch at email@example.com<|endoftext|>I take a long, hot bath in Epsom salt about"
+    },
+    {
+      "position": 234803,
+      "token_id": 12,
+      "token_text": "-",
+      "category": "punct",
+      "metric": 487.586181640625,
+      "gate": 0.9099069833755493,
+      "output_norm": 487.586181640625,
+      "window_text": " get right back to you with a quote.\nOur Meeting Package includes:\n- Meeting room\n- Basic meeting WiFi\n- Flip chart & markers\n- All"
+    },
+    {
+      "position": 76478,
+      "token_id": 31,
+      "token_text": "@",
+      "category": "punct",
+      "metric": 486.85626220703125,
+      "gate": 0.9219217896461487,
+      "output_norm": 486.85626220703125,
+      "window_text": "ilow LPs etc.) Matt is looking forward to hearing from you at email@example.com Tel: 01603 697515.\nOur thanks to Climate"
+    },
+    {
+      "position": 246272,
+      "token_id": 319,
+      "token_text": " on",
+      "category": "alpha",
+      "metric": 486.6796875,
+      "gate": 0.8856314420700073,
+      "output_norm": 486.6796875,
+      "window_text": " ability to relate one book to the other, one idea to the next and so on? Think about it, Islam is much more profound, deeper and wider than medicine"
+    },
+    {
+      "position": 7501,
+      "token_id": 881,
+      "token_text": " much",
+      "category": "alpha",
+      "metric": 486.5680236816406,
+      "gate": 0.9304582476615906,
+      "output_norm": 486.5680236816406,
+      "window_text": " if Martinez pulls off another performance like he did last week, then it's pretty much game over right there.\nIdaho Will Win If:\nIt can force"
+    },
+    {
+      "position": 42758,
+      "token_id": 31,
+      "token_text": "@",
+      "category": "punct",
+      "metric": 486.3709716796875,
+      "gate": 0.9207897186279297,
+      "output_norm": 486.3709716796875,
+      "window_text": "i Yun is a USGA senior staff writer. E-mail him at email@example.com.<|endoftext|>Experience Designer, Entrepreneur, Author, Musician,"
+    },
+    {
+      "position": 97236,
+      "token_id": 12,
+      "token_text": "-",
+      "category": "punct",
+      "metric": 485.4940185546875,
+      "gate": 0.9046505093574524,
+      "output_norm": 485.4940185546875,
+      "window_text": "\nKnow your H20.\nIncrease your water quality with these tips:\n- The longer water has been sitting in pipes, the more lead it may contain."
+    },
+    {
+      "position": 180013,
+      "token_id": 12,
+      "token_text": "-",
+      "category": "punct",
+      "metric": 485.28167724609375,
+      "gate": 0.9046505093574524,
+      "output_norm": 485.28167724609375,
+      "window_text": ". Proposals will be evaluated using the following non-exclusive criteria:\n- Does the proposal contain a Project Summary that describes information about project goals, rationale and"
+    },
+    {
+      "position": 56387,
+      "token_id": 12,
+      "token_text": "-",
+      "category": "punct",
+      "metric": 485.2153625488281,
+      "gate": 0.9046505093574524,
+      "output_norm": 485.2153625488281,
+      "window_text": "pm. To provide access to its peer support service the organisation now has:\n- Skype Video Conferencing and\n- Online Chat capabilities\nThis important service enables"
+    },
+    {
+      "position": 152336,
+      "token_id": 12,
+      "token_text": "-",
+      "category": "punct",
+      "metric": 484.9728088378906,
+      "gate": 0.9059898257255554,
+      "output_norm": 484.9728088378906,
+      "window_text": " the Wireless 6205 all is fine!\nWhat I have already tried:\n-Windows new install (Lenovo clean install tutorial)\n-Newest Intel driver"
+    },
+    {
+      "position": 159556,
+      "token_id": 2058,
+      "token_text": " comes",
+      "category": "alpha",
+      "metric": 484.9443664550781,
+      "gate": 0.8568122982978821,
+      "output_norm": 484.9443664550781,
+      "window_text": " Anna Karenina, moviegoers will be spoiled for choice this winter, when it comes to luxurious adaptations of novels that explore ill-fated love in high society."
+    },
+    {
+      "position": 96617,
+      "token_id": 12,
+      "token_text": "-",
+      "category": "punct",
+      "metric": 484.8429870605469,
+      "gate": 0.9059898257255554,
+      "output_norm": 484.8429870605469,
+      "window_text": " ask yourself some questions to evaluate your current house or apartment's environmental health:\n- Are you free of the \"big three?\" Radon, mold, and lead"
+    },
+    {
+      "position": 38642,
+      "token_id": 12,
+      "token_text": "-",
+      "category": "punct",
+      "metric": 484.666259765625,
+      "gate": 0.9059898257255554,
+      "output_norm": 484.666259765625,
+      "window_text": "\nHotel, Denver, Colorado. Highlights of the reports and discussion:\n- Chris Maples, Chairman of\nthe National Research Council study on Geoscience"
+    }
+  ],
+  "top_tokens_by_gate": [
+    {
+      "position": 249585,
+      "token_id": 2634,
+      "token_text": "\u00e9",
+      "category": "alpha",
+      "metric": 0.9736446738243103,
+      "gate": 0.9736446738243103,
+      "output_norm": 239.68673706054688,
+      "window_text": " to date and diverse. The messy interior may not suggest past seasons of Chlo\u00e9 or Matthew Williamson dresses and for a third of the prime cost with dresses from 200"
+    },
+    {
+      "position": 121746,
+      "token_id": 330,
+      "token_text": "ac",
+      "category": "alpha",
+      "metric": 0.9736446738243103,
+      "gate": 0.9736446738243103,
+      "output_norm": 322.849853515625,
+      "window_text": "iscayne Bay Waterkeeper and Sierra Club put on a clean-up at Peacock Park in the Grove. Volunteers paddled nearby waters and gathered a huge amount"
+    },
+    {
+      "position": 260223,
+      "token_id": 75,
+      "token_text": "l",
+      "category": "alpha",
+      "metric": 0.9736446738243103,
+      "gate": 0.9736446738243103,
+      "output_norm": 235.2977294921875,
+      "window_text": " Democrats, Qurban Hussain (9,567 votes), Conservative Nigel Huddleston (12,396 votes) and Mr Shuker (14,725"
+    },
+    {
+      "position": 157393,
+      "token_id": 265,
+      "token_text": "at",
+      "category": "alpha",
+      "metric": 0.9719924926757812,
+      "gate": 0.9719924926757812,
+      "output_norm": 230.63645935058594,
+      "window_text": " comments\nSkyfall, Lincoln And More Nominated By The American Society Of Cinematographers\nSkyfall may be seen by some as just another silly blockbuster action movie"
+    },
+    {
+      "position": 103804,
+      "token_id": 89,
+      "token_text": "z",
+      "category": "alpha",
+      "metric": 0.9719924926757812,
+      "gate": 0.9719924926757812,
+      "output_norm": 320.97027587890625,
+      "window_text": "\nPizza Rustica \nOf course, no Easter Sunday brunch at Chez SGCC would be complete without a few traditional Italian Easter pies, like this Pizza"
+    },
+    {
+      "position": 249924,
+      "token_id": 2634,
+      "token_text": "\u00e9",
+      "category": "alpha",
+      "metric": 0.9719924926757812,
+      "gate": 0.9719924926757812,
+      "output_norm": 239.8675079345703,
+      "window_text": " selected choice of clothing by Miu Miu, Wunderkind and Chlo\u00e9 (dresses ca. 120\u20ac), as well as a remarkable assortment of jewelry"
+    },
+    {
+      "position": 165072,
+      "token_id": 89,
+      "token_text": "z",
+      "category": "alpha",
+      "metric": 0.9719924926757812,
+      "gate": 0.9719924926757812,
+      "output_norm": 203.8502960205078,
+      "window_text": " for bicycling in February, in Montana. Our plan was to ride from Bozeman to the tiny cowboy town of Pony, 55 miles away. There we would"
+    },
+    {
+      "position": 72032,
+      "token_id": 417,
+      "token_text": "el",
+      "category": "alpha",
+      "metric": 0.971563994884491,
+      "gate": 0.971563994884491,
+      "output_norm": 271.1747741699219,
+      "window_text": "\"The worst thing about this government (of conservative Prime Minister Pedro Passos Coelho) is its complete insensitivity and indifference towards the plight of the people,\""
+    },
+    {
+      "position": 252167,
+      "token_id": 273,
+      "token_text": "or",
+      "category": "alpha",
+      "metric": 0.971563994884491,
+      "gate": 0.971563994884491,
+      "output_norm": 264.5664978027344,
+      "window_text": " Mt. Rainier.\nOur lab studies the nematode, Caenorhabditis elegans as a model system to understand the mechanisms that control development"
+    },
+    {
+      "position": 38290,
+      "token_id": 439,
+      "token_text": "all",
+      "category": "alpha",
+      "metric": 0.9711290597915649,
+      "gate": 0.9711290597915649,
+      "output_norm": 262.9349060058594,
+      "window_text": " she was riding in was struck by a 1986 Toyota 4-Runner at Turner McCall Boulevard and North Broad Street around 7:25 p.m., according to G"
+    },
+    {
+      "position": 244884,
+      "token_id": 3828,
+      "token_text": "rog",
+      "category": "alpha",
+      "metric": 0.9711290597915649,
+      "gate": 0.9711290597915649,
+      "output_norm": 280.0780944824219,
+      "window_text": ". The future president will also posses modesty, and courage in abundance. Arrogance and the lack of capacity or willingness to listen to others are diagonally"
+    },
+    {
+      "position": 119285,
+      "token_id": 272,
+      "token_text": "an",
+      "category": "alpha",
+      "metric": 0.9711290597915649,
+      "gate": 0.9711290597915649,
+      "output_norm": 298.482177734375,
+      "window_text": " pop culture or fashion. It's OK with me\u2014in moderation.\"\nJoan Pierce is a 64-year-old retired nurse from Oklahoma City, Okla"
+    },
+    {
+      "position": 82693,
+      "token_id": 293,
+      "token_text": "le",
+      "category": "alpha",
+      "metric": 0.9711290597915649,
+      "gate": 0.9711290597915649,
+      "output_norm": 269.77911376953125,
+      "window_text": " Wraps\nAnkle Wrap \u2013 \u20ac 38\nThe Back on Track Ankle Wrap achieves excellent results in reducing pain and inflammation in the ankle area. It is"
+    },
+    {
+      "position": 5340,
+      "token_id": 261,
+      "token_text": "on",
+      "category": "alpha",
+      "metric": 0.970687747001648,
+      "gate": 0.970687747001648,
+      "output_norm": 245.49171447753906,
+      "window_text": " be filibustered in the Senate, so passing it means something. As Seton Motley said: This is our first opportunity | Read More \u00bb<|endoftext|>Game Index"
+    },
+    {
+      "position": 240656,
+      "token_id": 72,
+      "token_text": "i",
+      "category": "alpha",
+      "metric": 0.9702399373054504,
+      "gate": 0.9702399373054504,
+      "output_norm": 299.5204772949219,
+      "window_text": "ostic Radiology near Lubbock, TX.\nSee Lubbock Radiologists.<|endoftext|>If talking a fantasy setting I would do the following\n- Using"
+    },
+    {
+      "position": 253808,
+      "token_id": 312,
+      "token_text": "id",
+      "category": "alpha",
+      "metric": 0.9702399373054504,
+      "gate": 0.9702399373054504,
+      "output_norm": 356.3248596191406,
+      "window_text": " your bets for the ISC'12 Student Cluster Competition\n? Our intrepid reporter, Dan Olds has posted a series of profiles on each of the teams"
+    },
+    {
+      "position": 182272,
+      "token_id": 316,
+      "token_text": "et",
+      "category": "alpha",
+      "metric": 0.9702399373054504,
+      "gate": 0.9702399373054504,
+      "output_norm": 208.8984375,
+      "window_text": ", according to Forbes. He leases the 800-acre property from the Calumet Investment Group, which bought the farm for about $40 million last year. The"
+    },
+    {
+      "position": 229069,
+      "token_id": 328,
+      "token_text": "ig",
+      "category": "alpha",
+      "metric": 0.9702399373054504,
+      "gate": 0.9702399373054504,
+      "output_norm": 276.0154724121094,
+      "window_text": " Includes a zip line, spring loaded projectile, floors that fall out, an effigy of Shredder for the Turtles to practice their ninja skills and much,"
+    },
+    {
+      "position": 70852,
+      "token_id": 263,
+      "token_text": "er",
+      "category": "alpha",
+      "metric": 0.9702399373054504,
+      "gate": 0.9702399373054504,
+      "output_norm": 209.72097778320312,
+      "window_text": " and Cabins will close for the winter season on Sunday.\nThe Geyser Grill, Bear Den Gift Shop and the Old Faithful Visitor Education Center will"
+    },
+    {
+      "position": 90255,
+      "token_id": 77,
+      "token_text": "n",
+      "category": "alpha",
+      "metric": 0.9702399373054504,
+      "gate": 0.9702399373054504,
+      "output_norm": 328.379150390625,
+      "window_text": " commitment to the Brajkovich legacy has been duly recognized \u2013 their Chardonnays are considered amongst the best in the world and they have been consistently named in"
+    },
+    {
+      "position": 180000,
+      "token_id": 874,
+      "token_text": "als",
+      "category": "alpha",
+      "metric": 0.9702399373054504,
+      "gate": 0.9702399373054504,
+      "output_norm": 320.72027587890625,
+      "window_text": "@example.org by January 31 or September 30 of each year. Proposals will be evaluated using the following non-exclusive criteria:\n- Does the proposal"
+    },
+    {
+      "position": 179655,
+      "token_id": 874,
+      "token_text": "als",
+      "category": "alpha",
+      "metric": 0.9702399373054504,
+      "gate": 0.9702399373054504,
+      "output_norm": 321.5192565917969,
+      "window_text": "disciplinary projects. Applications from junior tenure-track faculty are given preference. Proposals receiving departmental and/or college resource commitments are given preference. Only one proposal"
+    },
+    {
+      "position": 10240,
+      "token_id": 541,
+      "token_text": "ip",
+      "category": "alpha",
+      "metric": 0.9702399373054504,
+      "gate": 0.9702399373054504,
+      "output_norm": 317.2080078125,
+      "window_text": " Johann Sebastian Bach's Werke, Bach-Gesellschaft, Leipzig, 1860 and 1879.\nThis book was printed in the United States"
+    },
+    {
+      "position": 181582,
+      "token_id": 320,
+      "token_text": "im",
+      "category": "alpha",
+      "metric": 0.9702399373054504,
+      "gate": 0.9702399373054504,
+      "output_norm": 323.25970458984375,
+      "window_text": " the beginning of the year, used a daring ride to clinch an anti-climatic second leg of the Triple Crown at Pimlico Race Course on Saturday"
+    },
+    {
+      "position": 33465,
+      "token_id": 2763,
+      "token_text": "ham",
+      "category": "alpha",
+      "metric": 0.9697853922843933,
+      "gate": 0.9697853922843933,
+      "output_norm": 289.20391845703125,
+      "window_text": ", Gotham1/Gotham2|\n$39 / Barcelona, Alhambra\n|Accessories||Varies based on size and weight|\nDepending"
+    },
+    {
+      "position": 139600,
+      "token_id": 324,
+      "token_text": "ad",
+      "category": "alpha",
+      "metric": 0.9697853922843933,
+      "gate": 0.9697853922843933,
+      "output_norm": 246.63607788085938,
+      "window_text": " a dilapidated and skanky trailer that serves up gamy egg-salad sandwiches was already popularly ingrained in the American psyche. And the Board of Super"
+    },
+    {
+      "position": 122737,
+      "token_id": 2304,
+      "token_text": "isc",
+      "category": "alpha",
+      "metric": 0.9697853922843933,
+      "gate": 0.9697853922843933,
+      "output_norm": 287.5830993652344,
+      "window_text": " in planning for a wastewater treatment plant on this Key particularly alarming.\nKey Biscayne supports the County\u2019s immediate plans to address Clean Water Act outflow"
+    },
+    {
+      "position": 213429,
+      "token_id": 1785,
+      "token_text": " event",
+      "category": "alpha",
+      "metric": 0.9697853922843933,
+      "gate": 0.9697853922843933,
+      "output_norm": 320.39141845703125,
+      "window_text": " display also may provide the operator with other useful information. For example, in the event that network communications with any of the master computer 25, the printer 16, the"
+    },
+    {
+      "position": 103205,
+      "token_id": 259,
+      "token_text": "in",
+      "category": "alpha",
+      "metric": 0.9697853922843933,
+      "gate": 0.9697853922843933,
+      "output_norm": 317.031494140625,
+      "window_text": "\ufffdnests\u201d are made from shredded potatoes that are baked in a muffin tin, which are then served filled with scrambled or poached eggs. You can"
+    },
+    {
+      "position": 250279,
+      "token_id": 1077,
+      "token_text": "ash",
+      "category": "alpha",
+      "metric": 0.9697853922843933,
+      "gate": 0.9697853922843933,
+      "output_norm": 241.9176788330078,
+      "window_text": ", Boxhagener Platz<|endoftext|>Interactive Whiteboards | News\nSplashtop Releases Whiteboard App for Android Tablets\nSplashtop, a California"
+    },
+    {
+      "position": 226907,
+      "token_id": 296,
+      "token_text": "om",
+      "category": "alpha",
+      "metric": 0.9697853922843933,
+      "gate": 0.9697853922843933,
+      "output_norm": 270.89227294921875,
+      "window_text": " at email@example.com<|endoftext|>I take a long, hot bath in Epsom salt about once a week. One cup to a tub full of water and I"
+    },
+    {
+      "position": 26882,
+      "token_id": 260,
+      "token_text": "re",
+      "category": "alpha",
+      "metric": 0.9697853922843933,
+      "gate": 0.9697853922843933,
+      "output_norm": 340.4097595214844,
+      "window_text": " & Films\nVideos & Films\nSend As Email\nBrowse By Genre/Topic\nTotal Items = 10\nA high school student's insightful perspective\n"
+    },
+    {
+      "position": 159635,
+      "token_id": 404,
+      "token_text": "op",
+      "category": "alpha",
+      "metric": 0.9697853922843933,
+      "gate": 0.9697853922843933,
+      "output_norm": 215.1725616455078,
+      "window_text": ".\nby Kristy Puchko June 20, 2012 comments\nRobocop Sets August 2013 Release, Anna Karenina Coming This Oscar Season\nIt's hard"
+    },
+    {
+      "position": 248772,
+      "token_id": 397,
+      "token_text": "ab",
+      "category": "alpha",
+      "metric": 0.9697853922843933,
+      "gate": 0.9697853922843933,
+      "output_norm": 193.9355926513672,
+      "window_text": " they had \u201cNo choice but to respond to the mortar attacks from Alshabab who are hiding behind civilians\u201d. One would expect AMISOM,"
+    },
+    {
+      "position": 164313,
+      "token_id": 291,
+      "token_text": "ic",
+      "category": "alpha",
+      "metric": 0.9697853922843933,
+      "gate": 0.9697853922843933,
+      "output_norm": 247.86253356933594,
+      "window_text": " and Pablo at Ipswich, that\u2019s in the book. Schmeichel at Man United too. And yeah, it happens occasionally. I was in"
+    },
+    {
+      "position": 108989,
+      "token_id": 988,
+      "token_text": "ek",
+      "category": "alpha",
+      "metric": 0.9697853922843933,
+      "gate": 0.9697853922843933,
+      "output_norm": 310.4763488769531,
+      "window_text": " attention -- and the business -- of drug lord Tuco. Old Walt, meek Walt, would never have had the nerve to stand up to the menacing Tuco"
+    },
+    {
+      "position": 212339,
+      "token_id": 1785,
+      "token_text": " event",
+      "category": "alpha",
+      "metric": 0.9693241715431213,
+      "gate": 0.9693241715431213,
+      "output_norm": 320.3562927246094,
+      "window_text": " to the store owner through use of the unique identification number. Further, in the event that a POS station is disconnected, either intentionally or unintentionally, the central computer can"
+    },
+    {
+      "position": 74913,
+      "token_id": 265,
+      "token_text": "at",
+      "category": "alpha",
+      "metric": 0.9693241715431213,
+      "gate": 0.9693241715431213,
+      "output_norm": 239.43243408203125,
+      "window_text": ").\nNaming a bird after the sound it makes is known as onomatopoeia and two other species that occur in the UK the cuckoo"
+    },
+    {
+      "position": 92876,
+      "token_id": 1503,
+      "token_text": "AR",
+      "category": "alpha",
+      "metric": 0.9693241715431213,
+      "gate": 0.9693241715431213,
+      "output_norm": 226.83009338378906,
+      "window_text": "- Prince Fielder helps Tigers rally past Minnesota (1328)\n- DEAR ABBY May 24: Wedding thank-you note fails to deliver intended message ("
+    },
+    {
+      "position": 121844,
+      "token_id": 330,
+      "token_text": "ac",
+      "category": "alpha",
+      "metric": 0.9693241715431213,
+      "gate": 0.9693241715431213,
+      "output_norm": 321.243408203125,
+      "window_text": " Sierra Club this Sunday, March 17th, for a paddle clean up at Peacock Park in the Grove (2820 Mcfarland Road, Miami, FL"
+    }
+  ],
+  "bottom_tokens_by_gate": [
+    {
+      "position": 100919,
+      "token_id": 198,
+      "token_text": "\n",
+      "category": "newline",
+      "metric": 0.02517884224653244,
+      "gate": 0.02517884224653244,
+      "output_norm": 11.15743637084961,
+      "window_text": "!<|endoftext|>LONDON, January 14, 2013 /PRNewswire/ --\nSavvy consumers looking to save money on their energy bills on comparethemarket."
+    },
+    {
+      "position": 140263,
+      "token_id": 33960,
+      "token_text": " fret",
+      "category": "alpha",
+      "metric": 0.03021458350121975,
+      "gate": 0.03021458350121975,
+      "output_norm": 13.308510780334473,
+      "window_text": " both possibilities are far more prosaic than fears of E. coli or local restaurants fretting about competition.\nThe Middle of the Road\nThat fear, one of"
+    },
+    {
+      "position": 255099,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.034100424498319626,
+      "gate": 0.034100424498319626,
+      "output_norm": 12.923517227172852,
+      "window_text": " condensation that collects in the bilge of the ship and is eventually pumped out. Grey water comes from onboard showers and sinks. Last is the dreaded black water,"
+    },
+    {
+      "position": 193676,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.035678550601005554,
+      "gate": 0.035678550601005554,
+      "output_norm": 14.781865119934082,
+      "window_text": " 1% of the 125,000 rooms that have been rented out during that time. Mr. Caswell is fighting the seizure of his property and is being represented by"
+    },
+    {
+      "position": 127831,
+      "token_id": 11,
+      "token_text": ",",
+      "category": "punct",
+      "metric": 0.035678550601005554,
+      "gate": 0.035678550601005554,
+      "output_norm": 13.853086471557617,
+      "window_text": " and finalists. Gold and silver medals were awarded to the winners and runners-up, respectively, whereas both semi-final losers were awarded bronze medals. The trophy given"
+    },
+    {
+      "position": 203374,
+      "token_id": 38831,
+      "token_text": " 322",
+      "category": "digit",
+      "metric": 0.03676946833729744,
+      "gate": 0.03676946833729744,
+      "output_norm": 13.515705108642578,
+      "window_text": " 308 and 310 are respectively connected to the parallel ports of the data taps by cables 322 and 330 and from there to the server 302 and terminal 306 by way of the"
+    },
+    {
+      "position": 216580,
+      "token_id": 13454,
+      "token_text": " 160",
+      "category": "digit",
+      "metric": 0.03676946833729744,
+      "gate": 0.03676946833729744,
+      "output_norm": 13.054018020629883,
+      "window_text": " be transferred between the circuits of the SFT.\nThe unique serial number circuit 160, LAN I/O circuit 164 and the power supply circuit 166 are substantially similar"
+    },
+    {
+      "position": 120376,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.03676946833729744,
+      "gate": 0.03676946833729744,
+      "output_norm": 13.557218551635742,
+      "window_text": " must consider this warning as we rebuild Miami-Dade\u2019s sewage system. As sea levels rise storm surges will increase in intensity and frequency. Miami-D"
+    },
+    {
+      "position": 224663,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.03676946833729744,
+      "gate": 0.03676946833729744,
+      "output_norm": 14.935026168823242,
+      "window_text": " is whether I should test code that I know will be changed in a short time. I'm doing TDD in ruby, and I often meet with this question."
+    },
+    {
+      "position": 7158,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.03676946833729744,
+      "gate": 0.03676946833729744,
+      "output_norm": 13.443342208862305,
+      "window_text": " they're going to handle Idaho's explosive passing attack led by quarterback Nathan Enderle. The Huskers' secondary is considered one of the biggest strengths of the defense,"
+    },
+    {
+      "position": 208925,
+      "token_id": 1600,
+      "token_text": "\",",
+      "category": "punct",
+      "metric": 0.037892427295446396,
+      "gate": 0.037892427295446396,
+      "output_norm": 15.263788223266602,
+      "window_text": " fifth line from the top of Screen 2 includes the terms \"DAYS CHARGE\", \"MEMB PRICING TYPE\" and \"ITEM NUMBER\"."
+    },
+    {
+      "position": 177034,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.037892427295446396,
+      "gate": 0.037892427295446396,
+      "output_norm": 12.868016242980957,
+      "window_text": " hands up as they breathe in, and bringing their hands down as they breathe out.\nReturn the reading to the Opening Words Basket and extinguish the chal"
+    },
+    {
+      "position": 176042,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.0384661927819252,
+      "gate": 0.0384661927819252,
+      "output_norm": 14.638092041015625,
+      "window_text": ", creating a grand total of 12,436 square feet for all football office areas. All of the offices will be equipped with the latest technology.\nThe cornerstone of"
+    },
+    {
+      "position": 64513,
+      "token_id": 290,
+      "token_text": " and",
+      "category": "alpha",
+      "metric": 0.0384661927819252,
+      "gate": 0.0384661927819252,
+      "output_norm": 14.157057762145996,
+      "window_text": ", clearly indicating his opposition.\nWhich means any hope of relief for Curtin and other senior citizens in his situation are pinned on all three remaining commissioners being convinced to"
+    },
+    {
+      "position": 78254,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.0384661927819252,
+      "gate": 0.0384661927819252,
+      "output_norm": 13.976706504821777,
+      "window_text": " about this and let us know in about another year or 2 how it turns out. America seems to have fallen in love with regulation, or at least they voted for"
+    },
+    {
+      "position": 45038,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.0384661927819252,
+      "gate": 0.0384661927819252,
+      "output_norm": 14.846635818481445,
+      "window_text": " gained their trust, as well as access to the corp hangers, with time. It all concluded in a perfectly timed climax, with a massive theft in multiple corp"
+    },
+    {
+      "position": 86262,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.0384661927819252,
+      "gate": 0.0384661927819252,
+      "output_norm": 15.353473663330078,
+      "window_text": " is striking as much as the advances in packaging that have taken place over that time.\nIn 1980, for example, one of the leading suppliers of microwave mixers"
+    },
+    {
+      "position": 196095,
+      "token_id": 11,
+      "token_text": ",",
+      "category": "punct",
+      "metric": 0.0384661927819252,
+      "gate": 0.0384661927819252,
+      "output_norm": 14.600377082824707,
+      "window_text": " sale or rental steps, including the steps of recording sales or rentals of video records, in which said analyzing step comprises selecting the signals representing sales or rentals of video records"
+    },
+    {
+      "position": 105644,
+      "token_id": 24666,
+      "token_text": " Rig",
+      "category": "alpha",
+      "metric": 0.039048291742801666,
+      "gate": 0.039048291742801666,
+      "output_norm": 13.83090877532959,
+      "window_text": "<|endoftext|>NASCAR\u00ae K'NEX Jeff Gordon #24 DuPont Transporter Rig Building Set\u2122\n- 1:27 scale truck measures 23.5\u201d"
+    },
+    {
+      "position": 10025,
+      "token_id": 11,
+      "token_text": ",",
+      "category": "punct",
+      "metric": 0.039048291742801666,
+      "gate": 0.039048291742801666,
+      "output_norm": 13.064047813415527,
+      "window_text": "\nCaprices and Etudes for Solo Violin by Nico\u1e37 Paganini, Henryk Wieniawski Here, in one large-format playing edition"
+    },
+    {
+      "position": 9642,
+      "token_id": 8593,
+      "token_text": " unp",
+      "category": "alpha",
+      "metric": 0.039048291742801666,
+      "gate": 0.039048291742801666,
+      "output_norm": 13.927132606506348,
+      "window_text": " Devel-NYTProf-2.07_95.tar.gz unpacked into a Devel-NYTProf-2.07_95 directory"
+    },
+    {
+      "position": 119646,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.03963883966207504,
+      "gate": 0.03963883966207504,
+      "output_norm": 14.067228317260742,
+      "window_text": ", N.Y. who has watched \"Today\" for more than 20 years. \"It was always delivered in a friendly, engaging and informative manner. Some of"
+    },
+    {
+      "position": 124330,
+      "token_id": 737,
+      "token_text": ").",
+      "category": "punct",
+      "metric": 0.03963883966207504,
+      "gate": 0.03963883966207504,
+      "output_norm": 14.375940322875977,
+      "window_text": " of Belgium\u2013Netherlands (2000) and Austria\u2013Switzerland (2008). Their bid received an absolute majority of votes, and was therefore announced the winner,"
+    },
+    {
+      "position": 236719,
+      "token_id": 11,
+      "token_text": ",",
+      "category": "punct",
+      "metric": 0.03963883966207504,
+      "gate": 0.03963883966207504,
+      "output_norm": 14.943422317504883,
+      "window_text": ".\nYA COLFER, E.\nIn Victorian London, Albert Garrick, an assassin-for-hire, and his reluctant young apprentice, Riley, are"
+    },
+    {
+      "position": 239642,
+      "token_id": 32928,
+      "token_text": " firewall",
+      "category": "alpha",
+      "metric": 0.03963883966207504,
+      "gate": 0.03963883966207504,
+      "output_norm": 12.77230167388916,
+      "window_text": " the setup of ARP-level static entries of known peers, IP-level firewall, DHCP configuration, and local DNS cache, up to an application layer transparent proxy"
+    },
+    {
+      "position": 213749,
+      "token_id": 37526,
+      "token_text": " clears",
+      "category": "alpha",
+      "metric": 0.03963883966207504,
+      "gate": 0.03963883966207504,
+      "output_norm": 13.212969779968262,
+      "window_text": " and a Back Space key 524.\nPressing the Clear All key 502 clears all items or entries in the current transaction, and returns the display 148 to a"
+    },
+    {
+      "position": 195050,
+      "token_id": 11,
+      "token_text": ",",
+      "category": "punct",
+      "metric": 0.03963883966207504,
+      "gate": 0.03963883966207504,
+      "output_norm": 14.67587947845459,
+      "window_text": " terminal for entering sales and rentals of merchandise, including sales and rentals of video records, said terminal comprising, in combination, a housing, a small display in said housing"
+    },
+    {
+      "position": 196631,
+      "token_id": 11,
+      "token_text": ",",
+      "category": "punct",
+      "metric": 0.04023794084787369,
+      "gate": 0.04023794084787369,
+      "output_norm": 14.813937187194824,
+      "window_text": " terminal for entering sales and rentals of merchandise, including sales and rentals of video records, said terminal comprising, in combination, a housing, a small display in said housing"
+    },
+    {
+      "position": 213587,
+      "token_id": 11074,
+      "token_text": "\").",
+      "category": "punct",
+      "metric": 0.04023794084787369,
+      "gate": 0.04023794084787369,
+      "output_norm": 14.41400146484375,
+      "window_text": " two-line by 40 character wide reflective dot matrix liquid crystal display (\"LCD\"). Alternatively, the display can be a two-line by 24 character wide LED or"
+    },
+    {
+      "position": 201119,
+      "token_id": 30237,
+      "token_text": " terminals",
+      "category": "alpha",
+      "metric": 0.04084571450948715,
+      "gate": 0.04084571450948715,
+      "output_norm": 14.787612915039062,
+      "window_text": "print Terminals\" (\"SFT's\") 23 and 24. The small footprint terminals will be described in greater detail below.\nWith the use of the small footprint"
+    },
+    {
+      "position": 37806,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.04084571450948715,
+      "gate": 0.04084571450948715,
+      "output_norm": 14.580121040344238,
+      "window_text": "shore Homes has been building custom estate homes in South Florida for more than 20 years. The company is located at 8891 Brighton Lane, Suite 101, Bonita"
+    },
+    {
+      "position": 52,
+      "token_id": 72,
+      "token_text": "i",
+      "category": "alpha",
+      "metric": 0.04084571450948715,
+      "gate": 0.04084571450948715,
+      "output_norm": 14.935684204101562,
+      "window_text": " care about Chloe/Taniel/Jen-Jen. Don't care about Sami, really, but hoping that we get some good \"SAMANTHA GEN"
+    },
+    {
+      "position": 57217,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.04084571450948715,
+      "gate": 0.04084571450948715,
+      "output_norm": 14.651274681091309,
+      "window_text": ": Justice at Last \u2013 Canada\u2019s Specific Claims Action Plan in June 2007. The reforms proposed in the action plan included an independent tribunal to make binding decisions on"
+    },
+    {
+      "position": 235744,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.04084571450948715,
+      "gate": 0.04084571450948715,
+      "output_norm": 14.253213882446289,
+      "window_text": "oted from big-city Chicago to a windswept town on the Irish Sea. Surviving on care packages of Spin magazine and Twizzlers from her rocker"
+    },
+    {
+      "position": 203927,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.04146226868033409,
+      "gate": 0.04146226868033409,
+      "output_norm": 15.177247047424316,
+      "window_text": " an installer, to create the templates and trapper routines in a given POS system.\nThe templates for use with display screen data are created, in the manner to"
+    },
+    {
+      "position": 66371,
+      "token_id": 15575,
+      "token_text": " puzz",
+      "category": "alpha",
+      "metric": 0.04146226868033409,
+      "gate": 0.04146226868033409,
+      "output_norm": 13.691231727600098,
+      "window_text": " however, seemingly a golden age for independent games. Enter Vessel, the fluid based puzzler and first game from the liberated ex-EA employees over at Strange Loop Games"
+    },
+    {
+      "position": 82126,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.04146226868033409,
+      "gate": 0.04146226868033409,
+      "output_norm": 15.733433723449707,
+      "window_text": "disorder American habit of adding \u2018disorder\u2019 to states of mind. Stress disorder, panic disorder, narcissistic personality disorder. A bit like \"situation"
+    },
+    {
+      "position": 47505,
+      "token_id": 17156,
+      "token_text": " ner",
+      "category": "alpha",
+      "metric": 0.04146226868033409,
+      "gate": 0.04146226868033409,
+      "output_norm": 13.923388481140137,
+      "window_text": " Menz MHM (2009) New records of Hypolimnas bolina nerina (Fabricius) (Lepidoptera: Nymphalid"
+    },
+    {
+      "position": 9556,
+      "token_id": 8593,
+      "token_text": " unp",
+      "category": "alpha",
+      "metric": 0.04146226868033409,
+      "gate": 0.04146226868033409,
+      "output_norm": 14.440240859985352,
+      "window_text": " Devel-NYTProf-2.07_94.tar.gz unpacked itself into a directory called Devel-NYTProf-2.07"
+    },
+    {
+      "position": 87805,
+      "token_id": 6187,
+      "token_text": "Dr",
+      "category": "alpha",
+      "metric": 0.04146226868033409,
+      "gate": 0.04146226868033409,
+      "output_norm": 15.901784896850586,
+      "window_text": " robotic equipment.\nPlease contact us to discuss any new or ongoing projects.\nDr Pierre Faou\nPhone +61 3 9479 2402\nThe technique of"
+    }
+  ]
+}

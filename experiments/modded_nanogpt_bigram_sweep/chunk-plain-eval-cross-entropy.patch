@@ -1,0 +1,48 @@
+From 7cdd63e442e47c13c05c91cc08624c01409a9371 Mon Sep 17 00:00:00 2001
+From: ROM Benchmark <rom-benchmark@local>
+Date: Mon, 11 May 2026 17:26:29 -0400
+Subject: [PATCH] Chunk plain eval cross entropy
+
+---
+ train_gpt.py | 18 ++++++++++++++----
+ 1 file changed, 14 insertions(+), 4 deletions(-)
+
+diff --git a/train_gpt.py b/train_gpt.py
+index 989f097..ecc53d0 100644
+--- a/train_gpt.py
++++ b/train_gpt.py
+@@ -958,6 +958,19 @@ def norm(x: Tensor):
+     return F.rms_norm(x, (x.size(-1),))
+ 
+ 
++def chunked_softcapped_cross_entropy(x: Tensor, targets: Tensor, lm_head: nn.Module) -> Tensor:
++    x_flat = x.view(-1, x.size(-1))
++    targets_flat = targets.view(-1)
++    chunk_rows = int(os.environ.get("PLAIN_CE_CHUNK_ROWS", "4096"))
++    losses = torch.empty(targets_flat.shape, dtype=torch.float32, device=targets_flat.device)
++    for start in range(0, x_flat.size(0), chunk_rows):
++        end = min(start + chunk_rows, x_flat.size(0))
++        logits = lm_head(x_flat[start:end])
++        logits = 23 * torch.sigmoid((logits + 5) / 7.5)
++        losses[start:end] = F.cross_entropy(logits.float(), targets_flat[start:end], reduction="none")
++    return losses
++
++
+ class CastedLinearT(nn.Module):
+     """
+     Linear layer with transposed weight storage (in_features, out_features) which
+@@ -1415,10 +1428,7 @@ class GPT(nn.Module):
+         if self.training or use_fused_ce_eval:
+             loss_per_token = FusedSoftcappedCrossEntropy.apply(x.view(-1, x.size(-1)), target_seq, mtp_weights, self.lm_head.weight, self.lm_head.x_s, self.lm_head.w_s, self.lm_head.grad_s, grad_scale)
+         else:
+-            logits = self.lm_head(x)
+-            logits = 23 * torch.sigmoid((logits + 5) / 7.5)
+-            logits_for_loss = logits.float()
+-            loss_per_token = F.cross_entropy(logits_for_loss.view(-1, logits_for_loss.size(-1)), target_seq, reduction="none")
++            loss_per_token = chunked_softcapped_cross_entropy(x, target_seq, self.lm_head)
+         return loss_per_token
+ # -----------------------------------------------------------------------------
+ # Distributed data loader
+-- 
+2.39.3 (Apple Git-146)
+

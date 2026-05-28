@@ -1,0 +1,33 @@
+From 6a923f30628d8aa0b6881bd3639775e83e0f71b3 Mon Sep 17 00:00:00 2001
+From: ROM Benchmark <rom-benchmark@local>
+Date: Mon, 11 May 2026 15:00:40 -0400
+Subject: [PATCH] Materialize FlexAttention inputs
+
+---
+ train_gpt.py | 9 ++++++---
+ 1 file changed, 6 insertions(+), 3 deletions(-)
+
+diff --git a/train_gpt.py b/train_gpt.py
+index 5bdd553..4e6fff8 100644
+--- a/train_gpt.py
++++ b/train_gpt.py
+@@ -1081,10 +1081,13 @@ def flex_varlen_window_attention(q: Tensor, k: Tensor, v: Tensor, seqlens: Tenso
+         device=q.device,
+         BLOCK_SIZE=128,
+     )
++    q = q.transpose(1, 2).contiguous()
++    k = k.transpose(1, 2).contiguous()
++    v = v.transpose(1, 2).contiguous()
+     return compiled_flex_attention(
+-        q.transpose(1, 2),
+-        k.transpose(1, 2),
+-        v.transpose(1, 2),
++        q,
++        k,
++        v,
+         block_mask=block_mask,
+         scale=scale,
+     ).transpose(1, 2)
+-- 
+2.39.3 (Apple Git-146)
+

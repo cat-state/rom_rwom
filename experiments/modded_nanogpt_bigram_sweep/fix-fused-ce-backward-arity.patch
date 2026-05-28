@@ -1,0 +1,23 @@
+From fe136ed8b00a6634ebd59648c164db3ee7143539 Mon Sep 17 00:00:00 2001
+From: ROM Benchmark <rom-benchmark@local>
+Date: Mon, 11 May 2026 15:12:53 -0400
+Subject: [PATCH] Fix fused CE backward arity
+
+---
+ triton_kernels.py | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/triton_kernels.py b/triton_kernels.py
+index 4f377ce..eb1a610 100644
+--- a/triton_kernels.py
++++ b/triton_kernels.py
+@@ -1003,5 +1003,4 @@ class FusedSoftcappedCrossEntropy(torch.autograd.Function):
+             use_fast_accum=False,
+         )
+ 
+-        return grad_x, None, None, grad_w, None, None, None
+-
++        return grad_x, None, None, grad_w, None, None, None, None
+-- 
+2.39.3 (Apple Git-146)
+

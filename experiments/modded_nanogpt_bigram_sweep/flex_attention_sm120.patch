@@ -1,0 +1,72 @@
+From 8f6adba9cd1056783344f567638853b48c010c52 Mon Sep 17 00:00:00 2001
+From: ROM Benchmark <rom-benchmark@local>
+Date: Mon, 11 May 2026 14:59:02 -0400
+Subject: [PATCH] Use compiled FlexAttention on SM120
+
+---
+ train_gpt.py | 35 ++++++++++++++++++++++++++++++-----
+ 1 file changed, 30 insertions(+), 5 deletions(-)
+
+diff --git a/train_gpt.py b/train_gpt.py
+index 9443a21..819efd5 100644
+--- a/train_gpt.py
++++ b/train_gpt.py
+@@ -30,6 +30,7 @@ torch.empty(
+ import torch._dynamo as dynamo
+ import torch.distributed as dist
+ import torch.nn.functional as F
++from torch.nn.attention.flex_attention import create_block_mask, flex_attention
+ 
+ # torch._inductor.config.coordinate_descent_tuning = True # we have banned this flag for new records because it causes compilation to take 30min
+ from kernels import get_kernel
+@@ -1059,7 +1060,34 @@ class AttnArgs:
+     ve_gate_w: torch.Tensor
+     train_max_seq_len: torch.Tensor
+ 
+-flash_attn_interface = get_kernel('kernels-community/flash-attn3', trust_remote_code=True).flash_attn_interface
++compiled_flex_attention = torch.compile(flex_attention, dynamic=False)
++
++def flex_varlen_window_attention(q: Tensor, k: Tensor, v: Tensor, seqlens: Tensor, bm_size: int, scale: float) -> Tensor:
++    B, T, _, _ = q.shape
++    assert B == 1
++    positions = torch.arange(T, device=q.device, dtype=seqlens.dtype)
++    docs = torch.searchsorted(seqlens, positions, right=True) - 1
++
++    def document_causal_window(b, h, q_idx, kv_idx):
++        return (q_idx >= kv_idx) & ((q_idx - kv_idx) <= bm_size) & (docs[q_idx] == docs[kv_idx])
++
++    block_mask = create_block_mask(
++        document_causal_window,
++        B=None,
++        H=None,
++        Q_LEN=T,
++        KV_LEN=T,
++        device=q.device,
++        BLOCK_SIZE=128,
++        _compile=True,
++    )
++    return compiled_flex_attention(
++        q.transpose(1, 2),
++        k.transpose(1, 2),
++        v.transpose(1, 2),
++        block_mask=block_mask,
++        scale=scale,
++    ).transpose(1, 2)
+ 
+ class CausalSelfAttention(nn.Module):
+     def __init__(self, dim: int, head_dim: int, num_heads: int, paired: bool = False):
+@@ -1123,10 +1151,7 @@ class CausalSelfAttention(nn.Module):
+             seqlens = 2 * seqlens
+             max_len = 2 * max_len
+ 
+-        # use flash_attn over flex_attn @varunneal. flash_attn_varlen suggested by @YouJiacheng
+-        y = flash_attn_interface.flash_attn_varlen_func(q[0], k[0], v[0], cu_seqlens_q=seqlens, cu_seqlens_k=seqlens,
+-                                                        max_seqlen_q=max_len, max_seqlen_k=max_len,
+-                                                        causal=True, softmax_scale=yarn.attn_scale, window_size=(bm_size, 0))
++        y = flex_varlen_window_attention(q, k, v, seqlens, bm_size, yarn.attn_scale)
+         y = y.view(B, T, self.num_heads, self.head_dim)
+         y = y * torch.sigmoid(F.linear(x[..., :12], attn_gate_w)).view(B, T, self.num_heads, 1)
+         y = y.contiguous().view(B, T, self.num_heads * self.head_dim) # re-assemble all head outputs side by side
+-- 
+2.39.3 (Apple Git-146)
+

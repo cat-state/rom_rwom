@@ -1,0 +1,25 @@
+From f529db58381382f3d7eed603a2174c696ae4e99f Mon Sep 17 00:00:00 2001
+From: ROM Benchmark <rom-benchmark@local>
+Date: Mon, 11 May 2026 15:07:30 -0400
+Subject: [PATCH] Fix eval MLP projection layout
+
+---
+ train_gpt.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/train_gpt.py b/train_gpt.py
+index 7bb384d..b366d83 100644
+--- a/train_gpt.py
++++ b/train_gpt.py
+@@ -1388,7 +1388,7 @@ class GPT(nn.Module):
+             if self.training:
+                 mlp_out = ReLUSqrdMLP(mlp_in, c_fc, c_proj)
+             else:
+-                mlp_out = F.linear(F.relu(F.linear(mlp_in, c_fc)).square(), c_proj)
++                mlp_out = F.relu(F.linear(mlp_in, c_fc)).square() @ c_proj
+             x = resid_lambdas_mlp[i] * x + post_lambdas_mlp[i] * mlp_out
+             if i == 3:
+                 skip_connection = x
+-- 
+2.39.3 (Apple Git-146)
+

@@ -1,0 +1,70 @@
+From 64898807ead20d28c3e9cce0fe6fc98a9b5173e8 Mon Sep 17 00:00:00 2001
+From: ROM Benchmark <rom-benchmark@local>
+Date: Mon, 11 May 2026 15:11:49 -0400
+Subject: [PATCH] Gate full compile on SM120
+
+---
+ train_gpt.py | 20 ++++++++++++++++----
+ 1 file changed, 16 insertions(+), 4 deletions(-)
+
+diff --git a/train_gpt.py b/train_gpt.py
+index b366d83..8ad8be0 100644
+--- a/train_gpt.py
++++ b/train_gpt.py
+@@ -56,6 +56,17 @@ torch.cuda.set_device(device)
+ dist.init_process_group(backend="cuda:nccl,cpu:gloo", device_id=device)
+ dist.barrier()
+ master_process = (rank == 0) # this process will do logging, checkpointing etc.
++device_capability = torch.cuda.get_device_capability(device)
++
++def env_flag(name: str, default: bool) -> bool:
++    value = os.environ.get(name)
++    if value is None:
++        return default
++    return bool(int(value))
++
++is_sm120_or_newer = device_capability[0] >= 12
++compile_model = env_flag("COMPILE_MODEL", not is_sm120_or_newer)
++plain_mlp_train = env_flag("PLAIN_MLP_TRAIN", is_sm120_or_newer)
+ 
+ # -----------------------------------------------------------------------------
+ # Custom operators: FP8 matmul by @YouJiacheng
+@@ -1385,7 +1396,7 @@ class GPT(nn.Module):
+                 attn_out = attn(norm(attn_in), attn_args, qkvo_w)
+                 x = resid_lambdas_attn[i] * x + post_lambdas_attn[i] * attn_out + x0_inject[i]
+             mlp_in = norm(x)
+-            if self.training:
++            if self.training and not plain_mlp_train:
+                 mlp_out = ReLUSqrdMLP(mlp_in, c_fc, c_proj)
+             else:
+                 mlp_out = F.relu(F.linear(mlp_in, c_fc)).square() @ c_proj
+@@ -1923,7 +1934,7 @@ def nvidia_smi():
+     import subprocess  # avoid top level import
+     return subprocess.run(["nvidia-smi"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
+ print0(nvidia_smi())
+-print0(f"Experiment config: world_size={world_size} grad_accum_steps={grad_accum_steps} bigram_vocab_size={args.bigram_vocab_size} run_id={args.run_id}", console=True)
++print0(f"Experiment config: world_size={world_size} grad_accum_steps={grad_accum_steps} bigram_vocab_size={args.bigram_vocab_size} run_id={args.run_id} device_capability=sm{device_capability[0]}{device_capability[1]} compile_model={int(compile_model)} plain_mlp_train={int(plain_mlp_train)}", console=True)
+ print0("="*100)
+ 
+ model: nn.Module = GPT(
+@@ -1945,14 +1956,15 @@ model.mlp_bank.data = model.mlp_bank.data.bfloat16()
+ for param in model.parameters():
+     dist.broadcast(param.detach(), 0)
+ 
+-model: nn.Module = torch.compile(model, dynamic=False, fullgraph=True)
++if compile_model:
++    model: nn.Module = torch.compile(model, dynamic=False, fullgraph=True)
+ training_manager = TrainingManager(model)
+ 
+ 
+ ########################################
+ #            Warmup kernels            #
+ ########################################
+-print0("Compiling model and warming up kernels (~7 minutes on first execution)", console=True)
++print0("Warming up kernels (~7 minutes on first execution)", console=True)
+ # Warmup the training kernels, then re-initialize the state so we aren't cheating
+ initial_state = dict(model=copy.deepcopy(model.state_dict()),
+                      optimizer=training_manager.get_state()) # save the initial state
+-- 
+2.39.3 (Apple Git-146)
+

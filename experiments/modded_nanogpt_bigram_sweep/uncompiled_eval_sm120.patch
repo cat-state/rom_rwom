@@ -1,0 +1,40 @@
+From 4bf7c97c1838159a358dffc855cdc1be5d41a105 Mon Sep 17 00:00:00 2001
+From: ROM Benchmark <rom-benchmark@local>
+Date: Mon, 11 May 2026 15:05:28 -0400
+Subject: [PATCH] Run eval through uncompiled module
+
+---
+ train_gpt.py | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+diff --git a/train_gpt.py b/train_gpt.py
+index 618cd94..e9a59c1 100644
+--- a/train_gpt.py
++++ b/train_gpt.py
+@@ -1965,7 +1965,8 @@ for step in warmup_steps:
+         inputs, targets, cum_seqlens, bigram_inputs, _ = next(val_loader)
+         forward_args = training_manager.get_forward_args()
+         block_masks = build_flex_block_masks(cum_seqlens, forward_args, inputs.numel())
+-        model(inputs, targets, cum_seqlens, bigram_inputs, forward_args, block_masks).mean()
++        eval_model = model._orig_mod if hasattr(model, "_orig_mod") else model
++        eval_model(inputs, targets, cum_seqlens, bigram_inputs, forward_args, block_masks).mean()
+     model.train()
+     for idx in range(grad_accum_steps):
+         send_args = training_manager.train_loader_send_args
+@@ -2014,11 +2015,12 @@ for step in range(train_steps + 1):
+         val_loader = distributed_data_generator(args.val_files, args.val_batch_size, -1, grad_accum_steps=grad_accum_steps, align_to_bos=False)
+         val_loss = 0
+         with torch.no_grad():
++            eval_model = model._orig_mod if hasattr(model, "_orig_mod") else model
+             for _ in range(val_steps):
+                 inputs, targets, cum_seqlens, bigram_inputs, _ = next(val_loader)
+                 forward_args = training_manager.get_forward_args()
+                 block_masks = build_flex_block_masks(cum_seqlens, forward_args, inputs.numel())
+-                val_loss += model(inputs, targets, cum_seqlens, bigram_inputs, forward_args, block_masks).mean()
++                val_loss += eval_model(inputs, targets, cum_seqlens, bigram_inputs, forward_args, block_masks).mean()
+         val_loss /= val_steps
+         del val_loader
+         dist.reduce(val_loss, 0, op=dist.ReduceOp.AVG)
+-- 
+2.39.3 (Apple Git-146)
+

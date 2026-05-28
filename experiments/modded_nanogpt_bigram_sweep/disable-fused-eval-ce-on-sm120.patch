@@ -1,0 +1,43 @@
+From 66d33dd90aff82c1202c86be5552439017e41f0e Mon Sep 17 00:00:00 2001
+From: ROM Benchmark <rom-benchmark@local>
+Date: Mon, 11 May 2026 18:20:29 -0400
+Subject: [PATCH] Disable fused eval CE on SM120
+
+---
+ train_gpt.py | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/train_gpt.py b/train_gpt.py
+index a7adf1b..49e8137 100644
+--- a/train_gpt.py
++++ b/train_gpt.py
+@@ -67,6 +67,7 @@ def env_flag(name: str, default: bool) -> bool:
+ is_sm120_or_newer = device_capability[0] >= 12
+ compile_model = env_flag("COMPILE_MODEL", not is_sm120_or_newer)
+ plain_mlp_train = env_flag("PLAIN_MLP_TRAIN", is_sm120_or_newer)
++fused_ce_eval = env_flag("FUSED_CE_EVAL", not is_sm120_or_newer)
+ 
+ # -----------------------------------------------------------------------------
+ # Custom operators: FP8 matmul by @YouJiacheng
+@@ -1431,8 +1432,7 @@ class GPT(nn.Module):
+         x = norm(x)
+         # @Grad62304977 added tanh softcapping following Gemma 2 paper, @KoszarskyB reduced it from 30 to 15
+         # @YouJiacheng shifted it by +15 (2*sigmoid(2*x)=tanh(x)+1). @classiclarryd updated to 23*sigmoid((logits+5)/7.5)
+-        use_fused_ce_eval = bool(int(os.environ.get("FUSED_CE_EVAL", "1")))
+-        if self.training or use_fused_ce_eval:
++        if self.training or fused_ce_eval:
+             loss_per_token = FusedSoftcappedCrossEntropy.apply(x.view(-1, x.size(-1)), target_seq, mtp_weights, self.lm_head.weight, self.lm_head.x_s, self.lm_head.w_s, self.lm_head.grad_s, grad_scale)
+         else:
+             loss_per_token = chunked_softcapped_cross_entropy(x, target_seq, mtp_weights, self.lm_head)
+@@ -1951,7 +1951,7 @@ def nvidia_smi():
+     import subprocess  # avoid top level import
+     return subprocess.run(["nvidia-smi"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
+ print0(nvidia_smi())
+-print0(f"Experiment config: world_size={world_size} grad_accum_steps={grad_accum_steps} bigram_vocab_size={args.bigram_vocab_size} run_id={args.run_id} device_capability=sm{device_capability[0]}{device_capability[1]} compile_model={int(compile_model)} plain_mlp_train={int(plain_mlp_train)}", console=True)
++print0(f"Experiment config: world_size={world_size} grad_accum_steps={grad_accum_steps} bigram_vocab_size={args.bigram_vocab_size} run_id={args.run_id} device_capability=sm{device_capability[0]}{device_capability[1]} compile_model={int(compile_model)} plain_mlp_train={int(plain_mlp_train)} fused_ce_eval={int(fused_ce_eval)}", console=True)
+ print0("="*100)
+ 
+ model: nn.Module = GPT(
+-- 
+2.39.3 (Apple Git-146)
+

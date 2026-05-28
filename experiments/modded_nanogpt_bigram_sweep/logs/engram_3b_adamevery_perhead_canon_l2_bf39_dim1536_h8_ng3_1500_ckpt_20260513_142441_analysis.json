@@ -1,0 +1,3389 @@
+{
+  "run_id": "engram_3b_adamevery_perhead_canon_l2_bf39_dim1536_h8_ng3_1500_ckpt_20260513_142441_analysis",
+  "checkpoint_path": "logs/engram_3b_adamevery_perhead_canon_l2_bf39_dim1536_h8_ng3_1500_ckpt_20260513_142441/state_step001500.pt",
+  "checkpoint_step": 1500,
+  "analysis_tokens": 262144,
+  "loss": 3.2481017112731934,
+  "engram_dim": 1536,
+  "engram_heads": 8,
+  "engram_max_ngram": 3,
+  "total_hash_heads": 16,
+  "head_dim": 96,
+  "gate": {
+    "mean": 0.4947218894958496,
+    "std": 0.2878233790397644,
+    "quantiles": {
+      "0.01": 0.07807816565036774,
+      "0.05": 0.1127954050898552,
+      "0.1": 0.13753245770931244,
+      "0.5": 0.5112895965576172,
+      "0.9": 0.8449215292930603,
+      "0.95": 0.8723474144935608,
+      "0.99": 0.9111796617507935
+    },
+    "frac_gt_0_5": 0.5002851486206055,
+    "frac_gt_0_75": 0.3135855197906494,
+    "frac_gt_0_9": 0.01816844940185547,
+    "token_mean_quantiles": {
+      "0.01": 0.22436180710792542,
+      "0.05": 0.29865139722824097,
+      "0.1": 0.3396550714969635,
+      "0.5": 0.4894571602344513,
+      "0.9": 0.6593912243843079,
+      "0.95": 0.7062755823135376,
+      "0.99": 0.7890843749046326
+    }
+  },
+  "gate_pre_sigmoid": {
+    "mean": -0.0383833572268486,
+    "std": 0.615468442440033,
+    "quantiles": {
+      "0.01": -1.4060754776000977,
+      "0.05": -1.0163482427597046,
+      "0.1": -0.8018798828125,
+      "0.5": -0.067626953125,
+      "0.9": 0.77734375,
+      "0.95": 1.0302734375,
+      "0.99": 1.48974609375
+    }
+  },
+  "value_norm": {
+    "mean": 67.30117797851562,
+    "quantiles": {
+      "0.01": 56.63119888305664,
+      "0.05": 58.80029296875,
+      "0.1": 60.16242218017578,
+      "0.5": 66.81451416015625,
+      "0.9": 74.7419662475586,
+      "0.95": 77.76045989990234,
+      "0.99": 84.50436401367188
+    }
+  },
+  "output_norm": {
+    "mean": 66.28169250488281,
+    "quantiles": {
+      "0.01": 20.686464309692383,
+      "0.05": 25.41583251953125,
+      "0.1": 28.729032516479492,
+      "0.5": 55.50423812866211,
+      "0.9": 121.07941436767578,
+      "0.95": 142.40455627441406,
+      "0.99": 182.9424591064453
+    }
+  },
+  "head_summaries": [
+    {
+      "head_idx": 0,
+      "ngram": 2,
+      "hash_head": 0,
+      "rows": 1961857,
+      "unique_rows": 128276,
+      "unique_fraction": 0.06538499146699905,
+      "max_count": 2821,
+      "mean_count_per_touched_row": 2.043593406677246
+    },
+    {
+      "head_idx": 1,
+      "ngram": 2,
+      "hash_head": 1,
+      "rows": 1961863,
+      "unique_rows": 128338,
+      "unique_fraction": 0.06541639566421509,
+      "max_count": 2821,
+      "mean_count_per_touched_row": 2.0426063537597656
+    },
+    {
+      "head_idx": 2,
+      "ngram": 2,
+      "hash_head": 2,
+      "rows": 1961873,
+      "unique_rows": 128205,
+      "unique_fraction": 0.06534826755523682,
+      "max_count": 2821,
+      "mean_count_per_touched_row": 2.044725179672241
+    },
+    {
+      "head_idx": 3,
+      "ngram": 2,
+      "hash_head": 3,
+      "rows": 1961887,
+      "unique_rows": 128222,
+      "unique_fraction": 0.06535646319389343,
+      "max_count": 2821,
+      "mean_count_per_touched_row": 2.0444540977478027
+    },
+    {
+      "head_idx": 4,
+      "ngram": 2,
+      "hash_head": 4,
+      "rows": 1961893,
+      "unique_rows": 128194,
+      "unique_fraction": 0.0653419941663742,
+      "max_count": 2821,
+      "mean_count_per_touched_row": 2.04490065574646
+    },
+    {
+      "head_idx": 5,
+      "ngram": 2,
+      "hash_head": 5,
+      "rows": 1961899,
+      "unique_rows": 128243,
+      "unique_fraction": 0.06536676734685898,
+      "max_count": 2821,
+      "mean_count_per_touched_row": 2.044119358062744
+    },
+    {
+      "head_idx": 6,
+      "ngram": 2,
+      "hash_head": 6,
+      "rows": 1961903,
+      "unique_rows": 128361,
+      "unique_fraction": 0.0654267817735672,
+      "max_count": 2821,
+      "mean_count_per_touched_row": 2.0422401428222656
+    },
+    {
+      "head_idx": 7,
+      "ngram": 2,
+      "hash_head": 7,
+      "rows": 1961909,
+      "unique_rows": 128143,
+      "unique_fraction": 0.06531546264886856,
+      "max_count": 2821,
+      "mean_count_per_touched_row": 2.0457146167755127
+    },
+    {
+      "head_idx": 8,
+      "ngram": 3,
+      "hash_head": 0,
+      "rows": 1961917,
+      "unique_rows": 204070,
+      "unique_fraction": 0.10401561111211777,
+      "max_count": 595,
+      "mean_count_per_touched_row": 1.284578800201416
+    },
+    {
+      "head_idx": 9,
+      "ngram": 3,
+      "hash_head": 1,
+      "rows": 1961929,
+      "unique_rows": 204290,
+      "unique_fraction": 0.10412710905075073,
+      "max_count": 595,
+      "mean_count_per_touched_row": 1.2831954956054688
+    },
+    {
+      "head_idx": 10,
+      "ngram": 3,
+      "hash_head": 2,
+      "rows": 1961933,
+      "unique_rows": 204296,
+      "unique_fraction": 0.10412995517253876,
+      "max_count": 595,
+      "mean_count_per_touched_row": 1.2831578254699707
+    },
+    {
+      "head_idx": 11,
+      "ngram": 3,
+      "hash_head": 3,
+      "rows": 1961957,
+      "unique_rows": 204124,
+      "unique_fraction": 0.10404101759195328,
+      "max_count": 595,
+      "mean_count_per_touched_row": 1.2842389345169067
+    },
+    {
+      "head_idx": 12,
+      "ngram": 3,
+      "hash_head": 4,
+      "rows": 1961963,
+      "unique_rows": 204207,
+      "unique_fraction": 0.10408300161361694,
+      "max_count": 595,
+      "mean_count_per_touched_row": 1.2837170362472534
+    },
+    {
+      "head_idx": 13,
+      "ngram": 3,
+      "hash_head": 5,
+      "rows": 1961983,
+      "unique_rows": 204183,
+      "unique_fraction": 0.10406970977783203,
+      "max_count": 595,
+      "mean_count_per_touched_row": 1.2838679552078247
+    },
+    {
+      "head_idx": 14,
+      "ngram": 3,
+      "hash_head": 6,
+      "rows": 1961989,
+      "unique_rows": 204239,
+      "unique_fraction": 0.10409793257713318,
+      "max_count": 595,
+      "mean_count_per_touched_row": 1.2835159301757812
+    },
+    {
+      "head_idx": 15,
+      "ngram": 3,
+      "hash_head": 7,
+      "rows": 1962001,
+      "unique_rows": 204186,
+      "unique_fraction": 0.104070283472538,
+      "max_count": 595,
+      "mean_count_per_touched_row": 1.2838490009307861
+    }
+  ],
+  "top_slots": [
+    {
+      "head_idx": 10,
+      "ngram": 3,
+      "hash_head": 2,
+      "row": 385106,
+      "absolute_row": 20004036,
+      "count": 72,
+      "avg_gate": 0.8341290950775146,
+      "avg_output_norm": 92.366943359375,
+      "examples": [
+        {
+          "position": 2110,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " information with individual stores. The exchange's retail membership represents 85% of U.S. grocery volume \u2014 including 21 of the 24 largest supermarket chains based in the United",
+          "gate": 0.8824278712272644,
+          "output_norm": 97.73489379882812
+        },
+        {
+          "position": 2875,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " four nationally ranked teams.\nAugustana, ranked sixth in the latest U.S. Track & Field/Cross Country Coaches Association Division III Mideast Regional",
+          "gate": 0.8164063692092896,
+          "output_norm": 90.39557647705078
+        },
+        {
+          "position": 10426,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": "swire/ -- In a show of solidarity in providing healthy meals to U.S. students, the Urban School Food Alliance (USFA), which consists of some",
+          "gate": 0.8824278712272644,
+          "output_norm": 97.73489379882812
+        }
+      ]
+    },
+    {
+      "head_idx": 8,
+      "ngram": 3,
+      "hash_head": 0,
+      "row": 385154,
+      "absolute_row": 16080238,
+      "count": 72,
+      "avg_gate": 0.8837538361549377,
+      "avg_output_norm": 91.60025024414062,
+      "examples": [
+        {
+          "position": 2110,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " information with individual stores. The exchange's retail membership represents 85% of U.S. grocery volume \u2014 including 21 of the 24 largest supermarket chains based in the United",
+          "gate": 0.9099069833755493,
+          "output_norm": 94.3330307006836
+        },
+        {
+          "position": 2875,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " four nationally ranked teams.\nAugustana, ranked sixth in the latest U.S. Track & Field/Cross Country Coaches Association Division III Mideast Regional",
+          "gate": 0.854884684085846,
+          "output_norm": 88.64665985107422
+        },
+        {
+          "position": 10426,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": "swire/ -- In a show of solidarity in providing healthy meals to U.S. students, the Urban School Food Alliance (USFA), which consists of some",
+          "gate": 0.9111796617507935,
+          "output_norm": 94.3330307006836
+        }
+      ]
+    },
+    {
+      "head_idx": 9,
+      "ngram": 3,
+      "hash_head": 1,
+      "row": 1681859,
+      "absolute_row": 19338860,
+      "count": 47,
+      "avg_gate": 0.8255188465118408,
+      "avg_output_norm": 88.42814636230469,
+      "examples": [
+        {
+          "position": 1460,
+          "ngram_token_ids": [
+            23917,
+            447,
+            247
+          ],
+          "ngram_text": " DON\u2019",
+          "window_text": " it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SHARE. Is it safe to say we live in a society that places",
+          "gate": 0.8459424376487732,
+          "output_norm": 90.77046203613281
+        },
+        {
+          "position": 5618,
+          "ngram_token_ids": [
+            836,
+            447,
+            247
+          ],
+          "ngram_text": " don\u2019",
+          "window_text": "! And if you\u2019re a fan of a band and you don\u2019t own the Black Band Tee then what kind of fan are you? Hey??",
+          "gate": 0.8489722013473511,
+          "output_norm": 90.77046203613281
+        },
+        {
+          "position": 24612,
+          "ngram_token_ids": [
+            836,
+            447,
+            247
+          ],
+          "ngram_text": " don\u2019",
+          "window_text": "\u201d\nThe council says 1.23 billion wing segments \u2013 they don\u2019t sound as tasty when called \u201csegments\u201d do they? \u2014",
+          "gate": 0.7813306450843811,
+          "output_norm": 83.65902709960938
+        }
+      ]
+    },
+    {
+      "head_idx": 13,
+      "ngram": 3,
+      "hash_head": 5,
+      "row": 384956,
+      "absolute_row": 25889739,
+      "count": 72,
+      "avg_gate": 0.8614006638526917,
+      "avg_output_norm": 84.6169662475586,
+      "examples": [
+        {
+          "position": 2110,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " information with individual stores. The exchange's retail membership represents 85% of U.S. grocery volume \u2014 including 21 of the 24 largest supermarket chains based in the United",
+          "gate": 0.8991213440895081,
+          "output_norm": 88.27993774414062
+        },
+        {
+          "position": 2875,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " four nationally ranked teams.\nAugustana, ranked sixth in the latest U.S. Track & Field/Cross Country Coaches Association Division III Mideast Regional",
+          "gate": 0.8449215292930603,
+          "output_norm": 82.87796020507812
+        },
+        {
+          "position": 10426,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": "swire/ -- In a show of solidarity in providing healthy meals to U.S. students, the Urban School Food Alliance (USFA), which consists of some",
+          "gate": 0.894789457321167,
+          "output_norm": 87.8445053100586
+        }
+      ]
+    },
+    {
+      "head_idx": 15,
+      "ngram": 3,
+      "hash_head": 7,
+      "row": 384902,
+      "absolute_row": 29813657,
+      "count": 73,
+      "avg_gate": 0.8723519444465637,
+      "avg_output_norm": 84.16881561279297,
+      "examples": [
+        {
+          "position": 2110,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " information with individual stores. The exchange's retail membership represents 85% of U.S. grocery volume \u2014 including 21 of the 24 largest supermarket chains based in the United",
+          "gate": 0.9086179733276367,
+          "output_norm": 87.82653045654297
+        },
+        {
+          "position": 2875,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " four nationally ranked teams.\nAugustana, ranked sixth in the latest U.S. Track & Field/Cross Country Coaches Association Division III Mideast Regional",
+          "gate": 0.869714617729187,
+          "output_norm": 84.06053161621094
+        },
+        {
+          "position": 10426,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": "swire/ -- In a show of solidarity in providing healthy meals to U.S. students, the Urban School Food Alliance (USFA), which consists of some",
+          "gate": 0.9046505093574524,
+          "output_norm": 87.44947814941406
+        }
+      ]
+    },
+    {
+      "head_idx": 11,
+      "ngram": 3,
+      "hash_head": 3,
+      "row": 385034,
+      "absolute_row": 21965897,
+      "count": 72,
+      "avg_gate": 0.8641531467437744,
+      "avg_output_norm": 81.17320251464844,
+      "examples": [
+        {
+          "position": 2110,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " information with individual stores. The exchange's retail membership represents 85% of U.S. grocery volume \u2014 including 21 of the 24 largest supermarket chains based in the United",
+          "gate": 0.9099069833755493,
+          "output_norm": 85.49127197265625
+        },
+        {
+          "position": 2875,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " four nationally ranked teams.\nAugustana, ranked sixth in the latest U.S. Track & Field/Cross Country Coaches Association Division III Mideast Regional",
+          "gate": 0.8652240633964539,
+          "output_norm": 81.08809661865234
+        },
+        {
+          "position": 10426,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": "swire/ -- In a show of solidarity in providing healthy meals to U.S. students, the Urban School Food Alliance (USFA), which consists of some",
+          "gate": 0.8991213440895081,
+          "output_norm": 84.40007781982422
+        }
+      ]
+    },
+    {
+      "head_idx": 9,
+      "ngram": 3,
+      "hash_head": 1,
+      "row": 385118,
+      "absolute_row": 18042119,
+      "count": 72,
+      "avg_gate": 0.8316714763641357,
+      "avg_output_norm": 81.06307983398438,
+      "examples": [
+        {
+          "position": 2110,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " information with individual stores. The exchange's retail membership represents 85% of U.S. grocery volume \u2014 including 21 of the 24 largest supermarket chains based in the United",
+          "gate": 0.8887587189674377,
+          "output_norm": 86.83898162841797
+        },
+        {
+          "position": 2875,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " four nationally ranked teams.\nAugustana, ranked sixth in the latest U.S. Track & Field/Cross Country Coaches Association Division III Mideast Regional",
+          "gate": 0.8233283758163452,
+          "output_norm": 80.35609436035156
+        },
+        {
+          "position": 10426,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": "swire/ -- In a show of solidarity in providing healthy meals to U.S. students, the Urban School Food Alliance (USFA), which consists of some",
+          "gate": 0.8791467547416687,
+          "output_norm": 85.67882537841797
+        }
+      ]
+    },
+    {
+      "head_idx": 14,
+      "ngram": 3,
+      "hash_head": 6,
+      "row": 384938,
+      "absolute_row": 27851704,
+      "count": 72,
+      "avg_gate": 0.7936957478523254,
+      "avg_output_norm": 79.32689666748047,
+      "examples": [
+        {
+          "position": 2110,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " information with individual stores. The exchange's retail membership represents 85% of U.S. grocery volume \u2014 including 21 of the 24 largest supermarket chains based in the United",
+          "gate": 0.8824278712272644,
+          "output_norm": 88.24349212646484
+        },
+        {
+          "position": 2875,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " four nationally ranked teams.\nAugustana, ranked sixth in the latest U.S. Track & Field/Cross Country Coaches Association Division III Mideast Regional",
+          "gate": 0.7866228222846985,
+          "output_norm": 78.4649429321289
+        },
+        {
+          "position": 10426,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": "swire/ -- In a show of solidarity in providing healthy meals to U.S. students, the Urban School Food Alliance (USFA), which consists of some",
+          "gate": 0.8740772008895874,
+          "output_norm": 87.44243621826172
+        }
+      ]
+    },
+    {
+      "head_idx": 14,
+      "ngram": 3,
+      "hash_head": 6,
+      "row": 1681379,
+      "absolute_row": 29148145,
+      "count": 47,
+      "avg_gate": 0.8329117298126221,
+      "avg_output_norm": 78.28469848632812,
+      "examples": [
+        {
+          "position": 1460,
+          "ngram_token_ids": [
+            23917,
+            447,
+            247
+          ],
+          "ngram_text": " DON\u2019",
+          "window_text": " it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SHARE. Is it safe to say we live in a society that places",
+          "gate": 0.8577680587768555,
+          "output_norm": 80.78182220458984
+        },
+        {
+          "position": 5618,
+          "ngram_token_ids": [
+            836,
+            447,
+            247
+          ],
+          "ngram_text": " don\u2019",
+          "window_text": "! And if you\u2019re a fan of a band and you don\u2019t own the Black Band Tee then what kind of fan are you? Hey??",
+          "gate": 0.8407825827598572,
+          "output_norm": 78.94316864013672
+        },
+        {
+          "position": 24612,
+          "ngram_token_ids": [
+            836,
+            447,
+            247
+          ],
+          "ngram_text": " don\u2019",
+          "window_text": "\u201d\nThe council says 1.23 billion wing segments \u2013 they don\u2019t sound as tasty when called \u201csegments\u201d do they? \u2014",
+          "gate": 0.8104788661003113,
+          "output_norm": 76.01791381835938
+        }
+      ]
+    },
+    {
+      "head_idx": 12,
+      "ngram": 3,
+      "hash_head": 4,
+      "row": 385016,
+      "absolute_row": 23927836,
+      "count": 72,
+      "avg_gate": 0.7930178642272949,
+      "avg_output_norm": 77.42263793945312,
+      "examples": [
+        {
+          "position": 2110,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " information with individual stores. The exchange's retail membership represents 85% of U.S. grocery volume \u2014 including 21 of the 24 largest supermarket chains based in the United",
+          "gate": 0.8354835510253906,
+          "output_norm": 81.59952545166016
+        },
+        {
+          "position": 2875,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " four nationally ranked teams.\nAugustana, ranked sixth in the latest U.S. Track & Field/Cross Country Coaches Association Division III Mideast Regional",
+          "gate": 0.7918210625648499,
+          "output_norm": 77.40872192382812
+        },
+        {
+          "position": 10426,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": "swire/ -- In a show of solidarity in providing healthy meals to U.S. students, the Urban School Food Alliance (USFA), which consists of some",
+          "gate": 0.8449215292930603,
+          "output_norm": 82.37462615966797
+        }
+      ]
+    },
+    {
+      "head_idx": 14,
+      "ngram": 3,
+      "hash_head": 6,
+      "row": 984559,
+      "absolute_row": 28451325,
+      "count": 49,
+      "avg_gate": 0.7982091307640076,
+      "avg_output_norm": 75.28800964355469,
+      "examples": [
+        {
+          "position": 2018,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": "LANDO, Fla. \u2014 While the Rapid Recall Exchange, the 2-year-old industry recall portal, has signed up more than 600 manufacturer and retailer subscribers,",
+          "gate": 0.8031737804412842,
+          "output_norm": 75.89708709716797
+        },
+        {
+          "position": 31771,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " drinking age in every state. Thirty one percent of 15- to 20-year-old drivers who were killed in crashes nationally in 2006 had been drinking.\nAccording",
+          "gate": 0.7549149990081787,
+          "output_norm": 71.11834716796875
+        },
+        {
+          "position": 31879,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " to 2010 as a result of a crash involving a 15- to 20-year-old driver with a blood alcohol content of 0.01 or above. In 2010",
+          "gate": 0.7279754281044006,
+          "output_norm": 68.5299301147461
+        }
+      ]
+    },
+    {
+      "head_idx": 10,
+      "ngram": 3,
+      "hash_head": 2,
+      "row": 1681827,
+      "absolute_row": 21300757,
+      "count": 47,
+      "avg_gate": 0.8077497482299805,
+      "avg_output_norm": 75.19327545166016,
+      "examples": [
+        {
+          "position": 1460,
+          "ngram_token_ids": [
+            23917,
+            447,
+            247
+          ],
+          "ngram_text": " DON\u2019",
+          "window_text": " it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SHARE. Is it safe to say we live in a society that places",
+          "gate": 0.8311430811882019,
+          "output_norm": 77.45758056640625
+        },
+        {
+          "position": 5618,
+          "ngram_token_ids": [
+            836,
+            447,
+            247
+          ],
+          "ngram_text": " don\u2019",
+          "window_text": "! And if you\u2019re a fan of a band and you don\u2019t own the Black Band Tee then what kind of fan are you? Hey??",
+          "gate": 0.8344069123268127,
+          "output_norm": 77.8252944946289
+        },
+        {
+          "position": 24612,
+          "ngram_token_ids": [
+            836,
+            447,
+            247
+          ],
+          "ngram_text": " don\u2019",
+          "window_text": "\u201d\nThe council says 1.23 billion wing segments \u2013 they don\u2019t sound as tasty when called \u201csegments\u201d do they? \u2014",
+          "gate": 0.7620701193809509,
+          "output_norm": 70.91602325439453
+        }
+      ]
+    },
+    {
+      "head_idx": 8,
+      "ngram": 3,
+      "hash_head": 0,
+      "row": 1681955,
+      "absolute_row": 17377039,
+      "count": 47,
+      "avg_gate": 0.8226258158683777,
+      "avg_output_norm": 74.98441314697266,
+      "examples": [
+        {
+          "position": 1460,
+          "ngram_token_ids": [
+            23917,
+            447,
+            247
+          ],
+          "ngram_text": " DON\u2019",
+          "window_text": " it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SHARE. Is it safe to say we live in a society that places",
+          "gate": 0.8311430811882019,
+          "output_norm": 75.85157775878906
+        },
+        {
+          "position": 5618,
+          "ngram_token_ids": [
+            836,
+            447,
+            247
+          ],
+          "ngram_text": " don\u2019",
+          "window_text": "! And if you\u2019re a fan of a band and you don\u2019t own the Black Band Tee then what kind of fan are you? Hey??",
+          "gate": 0.8255897164344788,
+          "output_norm": 75.1555404663086
+        },
+        {
+          "position": 24612,
+          "ngram_token_ids": [
+            836,
+            447,
+            247
+          ],
+          "ngram_text": " don\u2019",
+          "window_text": "\u201d\nThe council says 1.23 billion wing segments \u2013 they don\u2019t sound as tasty when called \u201csegments\u201d do they? \u2014",
+          "gate": 0.7648916244506836,
+          "output_norm": 69.80210876464844
+        }
+      ]
+    },
+    {
+      "head_idx": 13,
+      "ngram": 3,
+      "hash_head": 5,
+      "row": 1786530,
+      "absolute_row": 27291313,
+      "count": 46,
+      "avg_gate": 0.844316840171814,
+      "avg_output_norm": 73.91615295410156,
+      "examples": [
+        {
+          "position": 34084,
+          "ngram_token_ids": [
+            345,
+            466,
+            407
+          ],
+          "ngram_text": " you do not",
+          "window_text": ". Please save these email invoices for your records.\nIf you do not receive an email confirmation within 48hrs of placing your order, please contact us",
+          "gate": 0.740174412727356,
+          "output_norm": 64.617431640625
+        },
+        {
+          "position": 49145,
+          "ngram_token_ids": [
+            345,
+            466,
+            407
+          ],
+          "ngram_text": " you do not",
+          "window_text": " For example, an engineer may service your air-conditioning, but you do not own the service, the engineer or his equipment. You cannot sell it on once",
+          "gate": 0.20946967601776123,
+          "output_norm": 18.292469024658203
+        },
+        {
+          "position": 121929,
+          "ngram_token_ids": [
+            345,
+            466,
+            407
+          ],
+          "ngram_text": " you do not",
+          "window_text": " bring their own kayaks, canoes, or paddle boards. If you do not have a boat, please contact Mark at Sierra Club to reserve a canoe. (",
+          "gate": 0.24798744916915894,
+          "output_norm": 21.717487335205078
+        }
+      ]
+    },
+    {
+      "head_idx": 11,
+      "ngram": 3,
+      "hash_head": 3,
+      "row": 817973,
+      "absolute_row": 22398836,
+      "count": 68,
+      "avg_gate": 0.8294361233711243,
+      "avg_output_norm": 73.91342163085938,
+      "examples": [
+        {
+          "position": 4955,
+          "ngram_token_ids": [
+            1881,
+            286,
+            262
+          ],
+          "ngram_text": " One of the",
+          "window_text": " to speak with them directly and get some immediate feedback to my work. One of the coolest things about the Latcham gallery, is that it is right beside the",
+          "gate": 0.8509646654129028,
+          "output_norm": 75.88277435302734
+        },
+        {
+          "position": 7168,
+          "ngram_token_ids": [
+            530,
+            286,
+            262
+          ],
+          "ngram_text": " one of the",
+          "window_text": " led by quarterback Nathan Enderle. The Huskers' secondary is considered one of the biggest strengths of the defense, but it certainly wasn't tested much at all last",
+          "gate": 0.8652240633964539,
+          "output_norm": 76.93219757080078
+        },
+        {
+          "position": 7542,
+          "ngram_token_ids": [
+            530,
+            286,
+            262
+          ],
+          "ngram_text": " one of the",
+          "window_text": " turnovers while also putting up some points through the air. Enderle is one of the better quarterbacks in the country right now, and if he can get enough time in",
+          "gate": 0.8587185740470886,
+          "output_norm": 76.57369232177734
+        }
+      ]
+    },
+    {
+      "head_idx": 12,
+      "ngram": 3,
+      "hash_head": 4,
+      "row": 1681587,
+      "absolute_row": 25224407,
+      "count": 47,
+      "avg_gate": 0.7991219162940979,
+      "avg_output_norm": 73.54856872558594,
+      "examples": [
+        {
+          "position": 1460,
+          "ngram_token_ids": [
+            23917,
+            447,
+            247
+          ],
+          "ngram_text": " DON\u2019",
+          "window_text": " it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SHARE. Is it safe to say we live in a society that places",
+          "gate": 0.8469578623771667,
+          "output_norm": 78.04719543457031
+        },
+        {
+          "position": 5618,
+          "ngram_token_ids": [
+            836,
+            447,
+            247
+          ],
+          "ngram_text": " don\u2019",
+          "window_text": "! And if you\u2019re a fan of a band and you don\u2019t own the Black Band Tee then what kind of fan are you? Hey??",
+          "gate": 0.8255897164344788,
+          "output_norm": 75.88317108154297
+        },
+        {
+          "position": 24612,
+          "ngram_token_ids": [
+            836,
+            447,
+            247
+          ],
+          "ngram_text": " don\u2019",
+          "window_text": "\u201d\nThe council says 1.23 billion wing segments \u2013 they don\u2019t sound as tasty when called \u201csegments\u201d do they? \u2014",
+          "gate": 0.740174412727356,
+          "output_norm": 67.96366119384766
+        }
+      ]
+    },
+    {
+      "head_idx": 12,
+      "ngram": 3,
+      "hash_head": 4,
+      "row": 235081,
+      "absolute_row": 23777901,
+      "count": 88,
+      "avg_gate": 0.8391702175140381,
+      "avg_output_norm": 72.99978637695312,
+      "examples": [
+        {
+          "position": 1446,
+          "ngram_token_ids": [
+            340,
+            447,
+            247
+          ],
+          "ngram_text": " it\u2019",
+          "window_text": " Working Together to Reduce Waste\nIn a blog about how people share, it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SH",
+          "gate": 0.8577680587768555,
+          "output_norm": 74.75894165039062
+        },
+        {
+          "position": 1526,
+          "ngram_token_ids": [
+            340,
+            447,
+            247
+          ],
+          "ngram_text": " it\u2019",
+          "window_text": " CA have separate caged stalls for eight separate trash cans? I know it\u2019s not nice to stare, but I walked by these incarcerated cans and could not",
+          "gate": 0.8568122982978821,
+          "output_norm": 74.41764068603516
+        },
+        {
+          "position": 1719,
+          "ngram_token_ids": [
+            340,
+            447,
+            247
+          ],
+          "ngram_text": " it\u2019",
+          "window_text": ". If your city doesn\u2019t do this yet, tell them it\u2019s a great idea and they could be as cool and cutting edge as Oakland.",
+          "gate": 0.8322367072105408,
+          "output_norm": 72.38375091552734
+        }
+      ]
+    },
+    {
+      "head_idx": 11,
+      "ngram": 3,
+      "hash_head": 3,
+      "row": 1681635,
+      "absolute_row": 23262498,
+      "count": 47,
+      "avg_gate": 0.8226048350334167,
+      "avg_output_norm": 72.61150360107422,
+      "examples": [
+        {
+          "position": 1460,
+          "ngram_token_ids": [
+            23917,
+            447,
+            247
+          ],
+          "ngram_text": " DON\u2019",
+          "window_text": " it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SHARE. Is it safe to say we live in a society that places",
+          "gate": 0.8577680587768555,
+          "output_norm": 75.85657501220703
+        },
+        {
+          "position": 5618,
+          "ngram_token_ids": [
+            836,
+            447,
+            247
+          ],
+          "ngram_text": " don\u2019",
+          "window_text": "! And if you\u2019re a fan of a band and you don\u2019t own the Black Band Tee then what kind of fan are you? Hey??",
+          "gate": 0.8116759657859802,
+          "output_norm": 71.71272277832031
+        },
+        {
+          "position": 24612,
+          "ngram_token_ids": [
+            836,
+            447,
+            247
+          ],
+          "ngram_text": " don\u2019",
+          "window_text": "\u201d\nThe council says 1.23 billion wing segments \u2013 they don\u2019t sound as tasty when called \u201csegments\u201d do they? \u2014",
+          "gate": 0.7866228222846985,
+          "output_norm": 69.29744720458984
+        }
+      ]
+    },
+    {
+      "head_idx": 11,
+      "ngram": 3,
+      "hash_head": 3,
+      "row": 235141,
+      "absolute_row": 21816004,
+      "count": 88,
+      "avg_gate": 0.8590280413627625,
+      "avg_output_norm": 71.67613220214844,
+      "examples": [
+        {
+          "position": 1446,
+          "ngram_token_ids": [
+            340,
+            447,
+            247
+          ],
+          "ngram_text": " it\u2019",
+          "window_text": " Working Together to Reduce Waste\nIn a blog about how people share, it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SH",
+          "gate": 0.8840392827987671,
+          "output_norm": 73.65369415283203
+        },
+        {
+          "position": 1526,
+          "ngram_token_ids": [
+            340,
+            447,
+            247
+          ],
+          "ngram_text": " it\u2019",
+          "window_text": " CA have separate caged stalls for eight separate trash cans? I know it\u2019s not nice to stare, but I walked by these incarcerated cans and could not",
+          "gate": 0.8807970285415649,
+          "output_norm": 73.3460464477539
+        },
+        {
+          "position": 1719,
+          "ngram_token_ids": [
+            340,
+            447,
+            247
+          ],
+          "ngram_text": " it\u2019",
+          "window_text": ". If your city doesn\u2019t do this yet, tell them it\u2019s a great idea and they could be as cool and cutting edge as Oakland.",
+          "gate": 0.8766343593597412,
+          "output_norm": 73.02670288085938
+        }
+      ]
+    },
+    {
+      "head_idx": 8,
+      "ngram": 3,
+      "hash_head": 0,
+      "row": 985135,
+      "absolute_row": 16680219,
+      "count": 46,
+      "avg_gate": 0.7951909899711609,
+      "avg_output_norm": 71.621337890625,
+      "examples": [
+        {
+          "position": 2018,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": "LANDO, Fla. \u2014 While the Rapid Recall Exchange, the 2-year-old industry recall portal, has signed up more than 600 manufacturer and retailer subscribers,",
+          "gate": 0.7718434929847717,
+          "output_norm": 69.65154266357422
+        },
+        {
+          "position": 31771,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " drinking age in every state. Thirty one percent of 15- to 20-year-old drivers who were killed in crashes nationally in 2006 had been drinking.\nAccording",
+          "gate": 0.7049732804298401,
+          "output_norm": 63.33214569091797
+        },
+        {
+          "position": 31879,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " to 2010 as a result of a crash involving a 15- to 20-year-old driver with a blood alcohol content of 0.01 or above. In 2010",
+          "gate": 0.6451199054718018,
+          "output_norm": 58.0582389831543
+        }
+      ]
+    },
+    {
+      "head_idx": 11,
+      "ngram": 3,
+      "hash_head": 3,
+      "row": 984815,
+      "absolute_row": 22565678,
+      "count": 46,
+      "avg_gate": 0.7895039916038513,
+      "avg_output_norm": 71.59452056884766,
+      "examples": [
+        {
+          "position": 2018,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": "LANDO, Fla. \u2014 While the Rapid Recall Exchange, the 2-year-old industry recall portal, has signed up more than 600 manufacturer and retailer subscribers,",
+          "gate": 0.8092759251594543,
+          "output_norm": 73.35385131835938
+        },
+        {
+          "position": 31771,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " drinking age in every state. Thirty one percent of 15- to 20-year-old drivers who were killed in crashes nationally in 2006 had been drinking.\nAccording",
+          "gate": 0.730289876461029,
+          "output_norm": 66.27057647705078
+        },
+        {
+          "position": 31879,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " to 2010 as a result of a crash involving a 15- to 20-year-old driver with a blood alcohol content of 0.01 or above. In 2010",
+          "gate": 0.6884684562683105,
+          "output_norm": 62.371524810791016
+        }
+      ]
+    },
+    {
+      "head_idx": 15,
+      "ngram": 3,
+      "hash_head": 7,
+      "row": 984463,
+      "absolute_row": 30413218,
+      "count": 46,
+      "avg_gate": 0.8179169297218323,
+      "avg_output_norm": 71.50238037109375,
+      "examples": [
+        {
+          "position": 2018,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": "LANDO, Fla. \u2014 While the Rapid Recall Exchange, the 2-year-old industry recall portal, has signed up more than 600 manufacturer and retailer subscribers,",
+          "gate": 0.8116759657859802,
+          "output_norm": 71.05319213867188
+        },
+        {
+          "position": 31771,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " drinking age in every state. Thirty one percent of 15- to 20-year-old drivers who were killed in crashes nationally in 2006 had been drinking.\nAccording",
+          "gate": 0.7634837031364441,
+          "output_norm": 66.61992645263672
+        },
+        {
+          "position": 31879,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " to 2010 as a result of a crash involving a 15- to 20-year-old driver with a blood alcohol content of 0.01 or above. In 2010",
+          "gate": 0.7310585379600525,
+          "output_norm": 63.896541595458984
+        }
+      ]
+    },
+    {
+      "head_idx": 13,
+      "ngram": 3,
+      "hash_head": 5,
+      "row": 234881,
+      "absolute_row": 25739664,
+      "count": 88,
+      "avg_gate": 0.8515903353691101,
+      "avg_output_norm": 70.92290496826172,
+      "examples": [
+        {
+          "position": 1446,
+          "ngram_token_ids": [
+            340,
+            447,
+            247
+          ],
+          "ngram_text": " it\u2019",
+          "window_text": " Working Together to Reduce Waste\nIn a blog about how people share, it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SH",
+          "gate": 0.854884684085846,
+          "output_norm": 71.23175811767578
+        },
+        {
+          "position": 1526,
+          "ngram_token_ids": [
+            340,
+            447,
+            247
+          ],
+          "ngram_text": " it\u2019",
+          "window_text": " CA have separate caged stalls for eight separate trash cans? I know it\u2019s not nice to stare, but I walked by these incarcerated cans and could not",
+          "gate": 0.8652240633964539,
+          "output_norm": 71.89566802978516
+        },
+        {
+          "position": 1719,
+          "ngram_token_ids": [
+            340,
+            447,
+            247
+          ],
+          "ngram_text": " it\u2019",
+          "window_text": ". If your city doesn\u2019t do this yet, tell them it\u2019s a great idea and they could be as cool and cutting edge as Oakland.",
+          "gate": 0.8509646654129028,
+          "output_norm": 70.91211700439453
+        }
+      ]
+    },
+    {
+      "head_idx": 8,
+      "ngram": 3,
+      "hash_head": 0,
+      "row": 818573,
+      "absolute_row": 16513657,
+      "count": 68,
+      "avg_gate": 0.7927607893943787,
+      "avg_output_norm": 70.8652114868164,
+      "examples": [
+        {
+          "position": 4955,
+          "ngram_token_ids": [
+            1881,
+            286,
+            262
+          ],
+          "ngram_text": " One of the",
+          "window_text": " to speak with them directly and get some immediate feedback to my work. One of the coolest things about the Latcham gallery, is that it is right beside the",
+          "gate": 0.8407825827598572,
+          "output_norm": 75.05683898925781
+        },
+        {
+          "position": 7168,
+          "ngram_token_ids": [
+            530,
+            286,
+            262
+          ],
+          "ngram_text": " one of the",
+          "window_text": " led by quarterback Nathan Enderle. The Huskers' secondary is considered one of the biggest strengths of the defense, but it certainly wasn't tested much at all last",
+          "gate": 0.8749346137046814,
+          "output_norm": 78.19940185546875
+        },
+        {
+          "position": 7542,
+          "ngram_token_ids": [
+            530,
+            286,
+            262
+          ],
+          "ngram_text": " one of the",
+          "window_text": " turnovers while also putting up some points through the air. Enderle is one of the better quarterbacks in the country right now, and if he can get enough time in",
+          "gate": 0.8624675869941711,
+          "output_norm": 77.15096282958984
+        }
+      ]
+    },
+    {
+      "head_idx": 1,
+      "ngram": 2,
+      "hash_head": 1,
+      "row": 438103,
+      "absolute_row": 2399960,
+      "count": 164,
+      "avg_gate": 0.8356388211250305,
+      "avg_output_norm": 70.2090835571289,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8449215292930603,
+          "output_norm": 70.88594818115234
+        },
+        {
+          "position": 120,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": ", STEFANO, STEFANO!!!! :cheer:\n|Spoilers for the Week of February 11th \u00b7 DAYS: News,",
+          "gate": 0.854884684085846,
+          "output_norm": 71.8714370727539
+        },
+        {
+          "position": 2726,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": "September 28, 2010\n2010 Season - Bowman pulls down CCIW honor\n|Matt Bowman was named CCIW \"Runner of the Week\" after his fourth",
+          "gate": 0.8783142566680908,
+          "output_norm": 73.85589599609375
+        }
+      ]
+    },
+    {
+      "head_idx": 14,
+      "ngram": 3,
+      "hash_head": 6,
+      "row": 234821,
+      "absolute_row": 27701587,
+      "count": 88,
+      "avg_gate": 0.8664771914482117,
+      "avg_output_norm": 70.16787719726562,
+      "examples": [
+        {
+          "position": 1446,
+          "ngram_token_ids": [
+            340,
+            447,
+            247
+          ],
+          "ngram_text": " it\u2019",
+          "window_text": " Working Together to Reduce Waste\nIn a blog about how people share, it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SH",
+          "gate": 0.8774768114089966,
+          "output_norm": 71.15465545654297
+        },
+        {
+          "position": 1526,
+          "ngram_token_ids": [
+            340,
+            447,
+            247
+          ],
+          "ngram_text": " it\u2019",
+          "window_text": " CA have separate caged stalls for eight separate trash cans? I know it\u2019s not nice to stare, but I walked by these incarcerated cans and could not",
+          "gate": 0.8749346137046814,
+          "output_norm": 70.8520736694336
+        },
+        {
+          "position": 1719,
+          "ngram_token_ids": [
+            340,
+            447,
+            247
+          ],
+          "ngram_text": " it\u2019",
+          "window_text": ". If your city doesn\u2019t do this yet, tell them it\u2019s a great idea and they could be as cool and cutting edge as Oakland.",
+          "gate": 0.8652240633964539,
+          "output_norm": 69.9023208618164
+        }
+      ]
+    },
+    {
+      "head_idx": 3,
+      "ngram": 2,
+      "hash_head": 3,
+      "row": 1864639,
+      "absolute_row": 7750232,
+      "count": 157,
+      "avg_gate": 0.8045270442962646,
+      "avg_output_norm": 70.08902740478516,
+      "examples": [
+        {
+          "position": 19,
+          "ngram_token_ids": [
+            91,
+            198
+          ],
+          "ngram_text": "|\n",
+          "window_text": "ing Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't",
+          "gate": 0.8568122982978821,
+          "output_norm": 74.52674102783203
+        },
+        {
+          "position": 33,
+          "ngram_token_ids": [
+            91,
+            198
+          ],
+          "ngram_text": "|\n",
+          "window_text": "th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care about Chloe/Taniel/Jen-Jen. Don't care",
+          "gate": 0.8705973029136658,
+          "output_norm": 75.89743041992188
+        },
+        {
+          "position": 2766,
+          "ngram_token_ids": [
+            91,
+            198
+          ],
+          "ngram_text": "|\n",
+          "window_text": "-Lundeen Invitational in Rock Island, Illinois on September 24.|\nAugustana senior Matt Bowman (Geneva HS, Elburn, Ill.) was",
+          "gate": 0.8643104434013367,
+          "output_norm": 75.2125473022461
+        }
+      ]
+    },
+    {
+      "head_idx": 9,
+      "ngram": 3,
+      "hash_head": 1,
+      "row": 818393,
+      "absolute_row": 18475394,
+      "count": 68,
+      "avg_gate": 0.7938442826271057,
+      "avg_output_norm": 70.084228515625,
+      "examples": [
+        {
+          "position": 4955,
+          "ngram_token_ids": [
+            1881,
+            286,
+            262
+          ],
+          "ngram_text": " One of the",
+          "window_text": " to speak with them directly and get some immediate feedback to my work. One of the coolest things about the Latcham gallery, is that it is right beside the",
+          "gate": 0.8140527606010437,
+          "output_norm": 71.73408508300781
+        },
+        {
+          "position": 7168,
+          "ngram_token_ids": [
+            530,
+            286,
+            262
+          ],
+          "ngram_text": " one of the",
+          "window_text": " led by quarterback Nathan Enderle. The Huskers' secondary is considered one of the biggest strengths of the defense, but it certainly wasn't tested much at all last",
+          "gate": 0.8587185740470886,
+          "output_norm": 75.8806381225586
+        },
+        {
+          "position": 7542,
+          "ngram_token_ids": [
+            530,
+            286,
+            262
+          ],
+          "ngram_text": " one of the",
+          "window_text": " turnovers while also putting up some points through the air. Enderle is one of the better quarterbacks in the country right now, and if he can get enough time in",
+          "gate": 0.837619960308075,
+          "output_norm": 73.80039978027344
+        }
+      ]
+    },
+    {
+      "head_idx": 14,
+      "ngram": 3,
+      "hash_head": 6,
+      "row": 1788892,
+      "absolute_row": 29255658,
+      "count": 49,
+      "avg_gate": 0.8167763352394104,
+      "avg_output_norm": 70.0148696899414,
+      "examples": [
+        {
+          "position": 2019,
+          "ngram_token_ids": [
+            1941,
+            12,
+            727
+          ],
+          "ngram_text": "year-old",
+          "window_text": "O, Fla. \u2014 While the Rapid Recall Exchange, the 2-year-old industry recall portal, has signed up more than 600 manufacturer and retailer subscribers, it",
+          "gate": 0.7839884757995605,
+          "output_norm": 67.30731964111328
+        },
+        {
+          "position": 31772,
+          "ngram_token_ids": [
+            1941,
+            12,
+            727
+          ],
+          "ngram_text": "year-old",
+          "window_text": " age in every state. Thirty one percent of 15- to 20-year-old drivers who were killed in crashes nationally in 2006 had been drinking.\nAccording to",
+          "gate": 0.730289876461029,
+          "output_norm": 62.60979461669922
+        },
+        {
+          "position": 31880,
+          "ngram_token_ids": [
+            1941,
+            12,
+            727
+          ],
+          "ngram_text": "year-old",
+          "window_text": " 2010 as a result of a crash involving a 15- to 20-year-old driver with a blood alcohol content of 0.01 or above. In 2010 alone",
+          "gate": 0.7431679368019104,
+          "output_norm": 63.61674118041992
+        }
+      ]
+    },
+    {
+      "head_idx": 2,
+      "ngram": 2,
+      "hash_head": 2,
+      "row": 1599120,
+      "absolute_row": 5522840,
+      "count": 175,
+      "avg_gate": 0.8141852617263794,
+      "avg_output_norm": 69.56177520751953,
+      "examples": [
+        {
+          "position": 2693,
+          "ngram_token_ids": [
+            481,
+            307
+          ],
+          "ngram_text": " will be",
+          "window_text": " FMI and GS1 US, Lawrenceville, N.J., which will be issuing a new version of the exchange, 2.3, in August.<|endoftext|>",
+          "gate": 0.8723474144935608,
+          "output_norm": 74.43321228027344
+        },
+        {
+          "position": 3434,
+          "ngram_token_ids": [
+            481,
+            307
+          ],
+          "ngram_text": " will be",
+          "window_text": ".\nThe new cheese and chocolate spread is being launched on 1 February and will be appear in the chilled dairy aisle next to plain Philadelphia Light.\nIt is launching",
+          "gate": 0.8887587189674377,
+          "output_norm": 76.1060791015625
+        },
+        {
+          "position": 4854,
+          "ngram_token_ids": [
+            481,
+            307
+          ],
+          "ngram_text": " will be",
+          "window_text": " pm.\nI just found out that one of my mixed media textiles will be featured in the Latcham Gallery Annual Juried Exhibition this year. Selected by",
+          "gate": 0.859663724899292,
+          "output_norm": 73.42385864257812
+        }
+      ]
+    },
+    {
+      "head_idx": 10,
+      "ngram": 3,
+      "hash_head": 2,
+      "row": 131439,
+      "absolute_row": 19750369,
+      "count": 71,
+      "avg_gate": 0.7796818614006042,
+      "avg_output_norm": 69.42972564697266,
+      "examples": [
+        {
+          "position": 2423,
+          "ngram_token_ids": [
+            13,
+            564,
+            250
+          ],
+          "ngram_text": ". \u201c",
+          "window_text": " than 1,000 have not yet joined,\u201d Roberson said. \u201cWe need to have the entire food industry collaborating on the Rapid Recall Exchange.\ufffd",
+          "gate": 0.7969253659248352,
+          "output_norm": 70.947509765625
+        },
+        {
+          "position": 2553,
+          "ngram_token_ids": [
+            13,
+            564,
+            250
+          ],
+          "ngram_text": ". \u201c",
+          "window_text": " (global trade identification numbers), the reason for the recall, and photos. \u201cIf we get this information from our trading partners using RRE, then we eliminate",
+          "gate": 0.8311430811882019,
+          "output_norm": 74.09033966064453
+        },
+        {
+          "position": 31952,
+          "ngram_token_ids": [
+            13,
+            564,
+            250
+          ],
+          "ngram_text": ". \u201c",
+          "window_text": " young person can end and destroy lives,\u201d Malmborg said. \u201cWe know we have more work to do, but if we got across to just",
+          "gate": 0.8006919622421265,
+          "output_norm": 71.30335235595703
+        }
+      ]
+    },
+    {
+      "head_idx": 12,
+      "ngram": 3,
+      "hash_head": 4,
+      "row": 984767,
+      "absolute_row": 24527587,
+      "count": 46,
+      "avg_gate": 0.8017846941947937,
+      "avg_output_norm": 69.34693908691406,
+      "examples": [
+        {
+          "position": 2018,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": "LANDO, Fla. \u2014 While the Rapid Recall Exchange, the 2-year-old industry recall portal, has signed up more than 600 manufacturer and retailer subscribers,",
+          "gate": 0.8019358515739441,
+          "output_norm": 69.27631378173828
+        },
+        {
+          "position": 31771,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " drinking age in every state. Thirty one percent of 15- to 20-year-old drivers who were killed in crashes nationally in 2006 had been drinking.\nAccording",
+          "gate": 0.7178037762641907,
+          "output_norm": 62.17073059082031
+        },
+        {
+          "position": 31879,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " to 2010 as a result of a crash involving a 15- to 20-year-old driver with a blood alcohol content of 0.01 or above. In 2010",
+          "gate": 0.666279673576355,
+          "output_norm": 57.77246856689453
+        }
+      ]
+    },
+    {
+      "head_idx": 13,
+      "ngram": 3,
+      "hash_head": 5,
+      "row": 1681427,
+      "absolute_row": 27186210,
+      "count": 47,
+      "avg_gate": 0.782076895236969,
+      "avg_output_norm": 69.16635131835938,
+      "examples": [
+        {
+          "position": 1460,
+          "ngram_token_ids": [
+            23917,
+            447,
+            247
+          ],
+          "ngram_text": " DON\u2019",
+          "window_text": " it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SHARE. Is it safe to say we live in a society that places",
+          "gate": 0.8407825827598572,
+          "output_norm": 74.25628662109375
+        },
+        {
+          "position": 5618,
+          "ngram_token_ids": [
+            836,
+            447,
+            247
+          ],
+          "ngram_text": " don\u2019",
+          "window_text": "! And if you\u2019re a fan of a band and you don\u2019t own the Black Band Tee then what kind of fan are you? Hey??",
+          "gate": 0.8006919622421265,
+          "output_norm": 70.80767059326172
+        },
+        {
+          "position": 24612,
+          "ngram_token_ids": [
+            836,
+            447,
+            247
+          ],
+          "ngram_text": " don\u2019",
+          "window_text": "\u201d\nThe council says 1.23 billion wing segments \u2013 they don\u2019t sound as tasty when called \u201csegments\u201d do they? \u2014",
+          "gate": 0.7431679368019104,
+          "output_norm": 65.6223373413086
+        }
+      ]
+    },
+    {
+      "head_idx": 10,
+      "ngram": 3,
+      "hash_head": 2,
+      "row": 1790852,
+      "absolute_row": 21409782,
+      "count": 49,
+      "avg_gate": 0.8348788022994995,
+      "avg_output_norm": 69.12333679199219,
+      "examples": [
+        {
+          "position": 2019,
+          "ngram_token_ids": [
+            1941,
+            12,
+            727
+          ],
+          "ngram_text": "year-old",
+          "window_text": "O, Fla. \u2014 While the Rapid Recall Exchange, the 2-year-old industry recall portal, has signed up more than 600 manufacturer and retailer subscribers, it",
+          "gate": 0.8278281688690186,
+          "output_norm": 68.5732192993164
+        },
+        {
+          "position": 31772,
+          "ngram_token_ids": [
+            1941,
+            12,
+            727
+          ],
+          "ngram_text": "year-old",
+          "window_text": " age in every state. Thirty one percent of 15- to 20-year-old drivers who were killed in crashes nationally in 2006 had been drinking.\nAccording to",
+          "gate": 0.8140527606010437,
+          "output_norm": 67.2514877319336
+        },
+        {
+          "position": 31880,
+          "ngram_token_ids": [
+            1941,
+            12,
+            727
+          ],
+          "ngram_text": "year-old",
+          "window_text": " 2010 as a result of a crash involving a 15- to 20-year-old driver with a blood alcohol content of 0.01 or above. In 2010 alone",
+          "gate": 0.8140527606010437,
+          "output_norm": 67.2514877319336
+        }
+      ]
+    },
+    {
+      "head_idx": 13,
+      "ngram": 3,
+      "hash_head": 5,
+      "row": 1789102,
+      "absolute_row": 27293885,
+      "count": 49,
+      "avg_gate": 0.8217781782150269,
+      "avg_output_norm": 68.90351104736328,
+      "examples": [
+        {
+          "position": 2019,
+          "ngram_token_ids": [
+            1941,
+            12,
+            727
+          ],
+          "ngram_text": "year-old",
+          "window_text": "O, Fla. \u2014 While the Rapid Recall Exchange, the 2-year-old industry recall portal, has signed up more than 600 manufacturer and retailer subscribers, it",
+          "gate": 0.7892336845397949,
+          "output_norm": 66.18212127685547
+        },
+        {
+          "position": 31772,
+          "ngram_token_ids": [
+            1941,
+            12,
+            727
+          ],
+          "ngram_text": "year-old",
+          "window_text": " age in every state. Thirty one percent of 15- to 20-year-old drivers who were killed in crashes nationally in 2006 had been drinking.\nAccording to",
+          "gate": 0.7476159334182739,
+          "output_norm": 62.56992721557617
+        },
+        {
+          "position": 31880,
+          "ngram_token_ids": [
+            1941,
+            12,
+            727
+          ],
+          "ngram_text": "year-old",
+          "window_text": " 2010 as a result of a crash involving a 15- to 20-year-old driver with a blood alcohol content of 0.01 or above. In 2010 alone",
+          "gate": 0.7718434929847717,
+          "output_norm": 64.85956573486328
+        }
+      ]
+    },
+    {
+      "head_idx": 5,
+      "ngram": 2,
+      "hash_head": 5,
+      "row": 438067,
+      "absolute_row": 10247440,
+      "count": 164,
+      "avg_gate": 0.8235210180282593,
+      "avg_output_norm": 68.86695098876953,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8300437331199646,
+          "output_norm": 69.2470703125
+        },
+        {
+          "position": 120,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": ", STEFANO, STEFANO!!!! :cheer:\n|Spoilers for the Week of February 11th \u00b7 DAYS: News,",
+          "gate": 0.8278281688690186,
+          "output_norm": 69.2470703125
+        },
+        {
+          "position": 2726,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": "September 28, 2010\n2010 Season - Bowman pulls down CCIW honor\n|Matt Bowman was named CCIW \"Runner of the Week\" after his fourth",
+          "gate": 0.854884684085846,
+          "output_norm": 71.54450988769531
+        }
+      ]
+    },
+    {
+      "head_idx": 10,
+      "ngram": 3,
+      "hash_head": 2,
+      "row": 818333,
+      "absolute_row": 20437263,
+      "count": 68,
+      "avg_gate": 0.82154381275177,
+      "avg_output_norm": 68.72175598144531,
+      "examples": [
+        {
+          "position": 4955,
+          "ngram_token_ids": [
+            1881,
+            286,
+            262
+          ],
+          "ngram_text": " One of the",
+          "window_text": " to speak with them directly and get some immediate feedback to my work. One of the coolest things about the Latcham gallery, is that it is right beside the",
+          "gate": 0.8479677438735962,
+          "output_norm": 70.9029312133789
+        },
+        {
+          "position": 7168,
+          "ngram_token_ids": [
+            530,
+            286,
+            262
+          ],
+          "ngram_text": " one of the",
+          "window_text": " led by quarterback Nathan Enderle. The Huskers' secondary is considered one of the biggest strengths of the defense, but it certainly wasn't tested much at all last",
+          "gate": 0.8740772008895874,
+          "output_norm": 73.19078826904297
+        },
+        {
+          "position": 7542,
+          "ngram_token_ids": [
+            530,
+            286,
+            262
+          ],
+          "ngram_text": " one of the",
+          "window_text": " turnovers while also putting up some points through the air. Enderle is one of the better quarterbacks in the country right now, and if he can get enough time in",
+          "gate": 0.8652240633964539,
+          "output_norm": 72.21060943603516
+        }
+      ]
+    },
+    {
+      "head_idx": 14,
+      "ngram": 3,
+      "hash_head": 6,
+      "row": 817493,
+      "absolute_row": 28284259,
+      "count": 69,
+      "avg_gate": 0.8078908920288086,
+      "avg_output_norm": 68.1505355834961,
+      "examples": [
+        {
+          "position": 4955,
+          "ngram_token_ids": [
+            1881,
+            286,
+            262
+          ],
+          "ngram_text": " One of the",
+          "window_text": " to speak with them directly and get some immediate feedback to my work. One of the coolest things about the Latcham gallery, is that it is right beside the",
+          "gate": 0.8529354333877563,
+          "output_norm": 71.81497192382812
+        },
+        {
+          "position": 7168,
+          "ngram_token_ids": [
+            530,
+            286,
+            262
+          ],
+          "ngram_text": " one of the",
+          "window_text": " led by quarterback Nathan Enderle. The Huskers' secondary is considered one of the biggest strengths of the defense, but it certainly wasn't tested much at all last",
+          "gate": 0.859663724899292,
+          "output_norm": 72.45960998535156
+        },
+        {
+          "position": 7542,
+          "ngram_token_ids": [
+            530,
+            286,
+            262
+          ],
+          "ngram_text": " one of the",
+          "window_text": " turnovers while also putting up some points through the air. Enderle is one of the better quarterbacks in the country right now, and if he can get enough time in",
+          "gate": 0.8615382313728333,
+          "output_norm": 72.79513549804688
+        }
+      ]
+    },
+    {
+      "head_idx": 15,
+      "ngram": 3,
+      "hash_head": 7,
+      "row": 817313,
+      "absolute_row": 30246068,
+      "count": 68,
+      "avg_gate": 0.8058066964149475,
+      "avg_output_norm": 68.06880950927734,
+      "examples": [
+        {
+          "position": 4955,
+          "ngram_token_ids": [
+            1881,
+            286,
+            262
+          ],
+          "ngram_text": " One of the",
+          "window_text": " to speak with them directly and get some immediate feedback to my work. One of the coolest things about the Latcham gallery, is that it is right beside the",
+          "gate": 0.8469578623771667,
+          "output_norm": 71.59672546386719
+        },
+        {
+          "position": 7168,
+          "ngram_token_ids": [
+            530,
+            286,
+            262
+          ],
+          "ngram_text": " one of the",
+          "window_text": " led by quarterback Nathan Enderle. The Huskers' secondary is considered one of the biggest strengths of the defense, but it certainly wasn't tested much at all last",
+          "gate": 0.8661325573921204,
+          "output_norm": 73.24422454833984
+        },
+        {
+          "position": 7542,
+          "ngram_token_ids": [
+            530,
+            286,
+            262
+          ],
+          "ngram_text": " one of the",
+          "window_text": " turnovers while also putting up some points through the air. Enderle is one of the better quarterbacks in the country right now, and if he can get enough time in",
+          "gate": 0.8633915781974792,
+          "output_norm": 72.92497253417969
+        }
+      ]
+    },
+    {
+      "head_idx": 12,
+      "ngram": 3,
+      "hash_head": 4,
+      "row": 1317077,
+      "absolute_row": 24859897,
+      "count": 101,
+      "avg_gate": 0.8454504013061523,
+      "avg_output_norm": 67.70365905761719,
+      "examples": [
+        {
+          "position": 2211,
+          "ngram_token_ids": [
+            11,
+            447,
+            251
+          ],
+          "ngram_text": ",\u201d",
+          "window_text": " other fresh food verticals like meat, produce, deli and bakery,\u201d said Walsh, who participated in a session on the RRE at the U Connect",
+          "gate": 0.9005298018455505,
+          "output_norm": 72.25471496582031
+        },
+        {
+          "position": 2417,
+          "ngram_token_ids": [
+            11,
+            447,
+            251
+          ],
+          "ngram_text": ",\u201d",
+          "window_text": " are signed up, and more than 1,000 have not yet joined,\u201d Roberson said. \u201cWe need to have the entire food industry collaborating on",
+          "gate": 0.8840392827987671,
+          "output_norm": 70.693359375
+        },
+        {
+          "position": 2531,
+          "ngram_token_ids": [
+            11,
+            447,
+            251
+          ],
+          "ngram_text": ",\u201d",
+          "window_text": " Roberson observed \u201cthe absolute excellence in the information that was communicated,\u201d including product GTINs (global trade identification numbers), the reason for the recall",
+          "gate": 0.879974365234375,
+          "output_norm": 70.3978042602539
+        }
+      ]
+    }
+  ],
+  "token_category_stats": {
+    "alpha": {
+      "count": 209466,
+      "avg_gate": 0.5064207537745891,
+      "avg_output_norm": 68.07079663024032
+    },
+    "digit": {
+      "count": 7925,
+      "avg_gate": 0.4440623777296265,
+      "avg_output_norm": 50.66439429815635
+    },
+    "mixed": {
+      "count": 1542,
+      "avg_gate": 0.45384713751294115,
+      "avg_output_norm": 65.9355914564912
+    },
+    "newline": {
+      "count": 5881,
+      "avg_gate": 0.45722899851882526,
+      "avg_output_norm": 58.44278518019678
+    },
+    "pipe": {
+      "count": 1067,
+      "avg_gate": 0.49320243893936627,
+      "avg_output_norm": 62.808180840303656
+    },
+    "punct": {
+      "count": 36201,
+      "avg_gate": 0.4460751196957995,
+      "avg_output_norm": 60.781267948840316
+    },
+    "whitespace": {
+      "count": 62,
+      "avg_gate": 0.4490327311138953,
+      "avg_output_norm": 41.61910653883411
+    }
+  },
+  "top_tokens_by_output_norm": [
+    {
+      "position": 149157,
+      "token_id": 290,
+      "token_text": " and",
+      "category": "alpha",
+      "metric": 297.3251647949219,
+      "gate": 0.8727012276649475,
+      "output_norm": 297.3251647949219,
+      "window_text": " and rockets coming out. I had the best shot on restarts, to try and get Alex. He was very clean, we were bumping, but it was"
+    },
+    {
+      "position": 149056,
+      "token_id": 290,
+      "token_text": " and",
+      "category": "alpha",
+      "metric": 290.8871154785156,
+      "gate": 0.8541208505630493,
+      "output_norm": 290.8871154785156,
+      "window_text": ",\u201d Pilgrim said. \u201cOf course, I was going to try and get to Alex Figge, because I wanted him to be a cushion between us"
+    },
+    {
+      "position": 25254,
+      "token_id": 290,
+      "token_text": " and",
+      "category": "alpha",
+      "metric": 286.51287841796875,
+      "gate": 0.8416686654090881,
+      "output_norm": 286.51287841796875,
+      "window_text": " roster.\nJersey, even with the rumours that they are going to try and hide Mogilny and Malakhov on the IR to resolve their salary situation"
+    },
+    {
+      "position": 176473,
+      "token_id": 1845,
+      "token_text": "par",
+      "category": "alpha",
+      "metric": 285.2881164550781,
+      "gate": 0.8506651520729065,
+      "output_norm": 285.2881164550781,
+      "window_text": " the Unitarian Universalist hymnbook, Singing the Living Tradition\nPreparation for Activity\n- Set up the chalice on the cloth to create"
+    },
+    {
+      "position": 184504,
+      "token_id": 3891,
+      "token_text": " names",
+      "category": "alpha",
+      "metric": 281.9064025878906,
+      "gate": 0.8614322543144226,
+      "output_norm": 281.9064025878906,
+      "window_text": " A copies for 15 bucks too. I wonder how they perform?\nSeparate names with a comma.<|endoftext|>FiltersShow / Hide\n- All Events\n-"
+    },
+    {
+      "position": 222994,
+      "token_id": 10395,
+      "token_text": " reserved",
+      "category": "alpha",
+      "metric": 281.14227294921875,
+      "gate": 0.8968229293823242,
+      "output_norm": 281.14227294921875,
+      "window_text": " Participation.\nCopyright \u00a9 2015, Oracle and/or its affiliates. All rights reserved. Oracle and Java are registered trademarks of Oracle and/or its affiliates. Other"
+    },
+    {
+      "position": 100446,
+      "token_id": 475,
+      "token_text": " but",
+      "category": "alpha",
+      "metric": 281.0679931640625,
+      "gate": 0.848261296749115,
+      "output_norm": 281.0679931640625,
+      "window_text": " such as checking up on me with mutual friends. I can\u2019t help but think this is part of a much greater plan to get me out of the picture"
+    },
+    {
+      "position": 5426,
+      "token_id": 33876,
+      "token_text": " Reserved",
+      "category": "alpha",
+      "metric": 281.007080078125,
+      "gate": 0.8970490097999573,
+      "output_norm": 281.007080078125,
+      "window_text": " \u00a9 1996-2009 Skotos Tech, Inc. & individual authors, All Rights Reserved\nCompilation copyright \u00a9 1996-2009 Skotos Tech, Inc.\nRPG"
+    },
+    {
+      "position": 222434,
+      "token_id": 10395,
+      "token_text": " reserved",
+      "category": "alpha",
+      "metric": 280.51348876953125,
+      "gate": 0.8956668376922607,
+      "output_norm": 280.51348876953125,
+      "window_text": " and Database Copyright 2013 Football DataCo Ltd, The Football League Ltd. All rights reserved. No part of this publication may be reproduced, stored in a retrieval system or"
+    },
+    {
+      "position": 115078,
+      "token_id": 340,
+      "token_text": " it",
+      "category": "alpha",
+      "metric": 279.1461181640625,
+      "gate": 0.8453227877616882,
+      "output_norm": 279.1461181640625,
+      "window_text": "ressing me beside the desserts of Chef Yuko.\nLet\u2019s face it, Nobu is a business, not a restaurant. The place is packed to"
+    },
+    {
+      "position": 244182,
+      "token_id": 33876,
+      "token_text": " Reserved",
+      "category": "alpha",
+      "metric": 278.7189636230469,
+      "gate": 0.8906060457229614,
+      "output_norm": 278.7189636230469,
+      "window_text": " more.\nCopyright \u00a9 2007-2015 Lakelubbers LLC. All Rights Reserved.\nPlease LINK to our homepage or to\nthis Winchester Lake page.<|endoftext|>"
+    },
+    {
+      "position": 192366,
+      "token_id": 1336,
+      "token_text": " full",
+      "category": "alpha",
+      "metric": 278.6606140136719,
+      "gate": 0.8564077019691467,
+      "output_norm": 278.6606140136719,
+      "window_text": " than 40,000 injuries each year related to the use of machines.<|endoftext|>view full screen\nBi-Stretch Bootcut Pant\nOut of Stock\nClean-tail"
+    },
+    {
+      "position": 229881,
+      "token_id": 10395,
+      "token_text": " reserved",
+      "category": "alpha",
+      "metric": 278.1481018066406,
+      "gate": 0.8872629404067993,
+      "output_norm": 278.1481018066406,
+      "window_text": "Sequences and Series|\n\u00a9 1994- Drexel University. All rights reserved.\nThe Math Forum is a research and educational enterprise of the Drexel"
+    },
+    {
+      "position": 47984,
+      "token_id": 33876,
+      "token_text": " Reserved",
+      "category": "alpha",
+      "metric": 278.0981750488281,
+      "gate": 0.8878837823867798,
+      "output_norm": 278.0981750488281,
+      "window_text": " no Reviews\n\u00a9 2007-2013 Camping Road Trip, LLC. All Rights Reserved.<|endoftext|>What is services marketing?\nA service is the action of doing something"
+    },
+    {
+      "position": 140766,
+      "token_id": 393,
+      "token_text": " or",
+      "category": "alpha",
+      "metric": 277.6407470703125,
+      "gate": 0.8296492695808411,
+      "output_norm": 277.6407470703125,
+      "window_text": " to attend a food truck gathering at Servite High School, a gathering that may or may not have been a fundraiser for the football team\u2014I was too busy eating"
+    },
+    {
+      "position": 218679,
+      "token_id": 691,
+      "token_text": " only",
+      "category": "alpha",
+      "metric": 277.6308288574219,
+      "gate": 0.8636705875396729,
+      "output_norm": 277.6308288574219,
+      "window_text": ", and matches it with a secret unique image displayed on your login page. Not only is your identity proven to the IBT website, but our website also proves its"
+    },
+    {
+      "position": 10409,
+      "token_id": 3791,
+      "token_text": "New",
+      "category": "alpha",
+      "metric": 277.0811462402344,
+      "gate": 0.7820969820022583,
+      "output_norm": 277.0811462402344,
+      "window_text": " 2.9 Million Students\nLOS ANGELES, March 20, 2013 /PRNewswire/ -- In a show of solidarity in providing healthy meals to U."
+    },
+    {
+      "position": 234514,
+      "token_id": 33876,
+      "token_text": " Reserved",
+      "category": "alpha",
+      "metric": 277.0672912597656,
+      "gate": 0.8850969076156616,
+      "output_norm": 277.0672912597656,
+      "window_text": " Sequence Foundations Section|\n|Table of Contents provided by Publisher. All Rights Reserved.|<|endoftext|>GETTING off to a slow start came back to haunt Nowra"
+    },
+    {
+      "position": 5458,
+      "token_id": 10395,
+      "token_text": " reserved",
+      "category": "alpha",
+      "metric": 275.83587646484375,
+      "gate": 0.8821592330932617,
+      "output_norm": 275.83587646484375,
+      "window_text": "RPGnet\u00ae is a registered trademark of Skotos Tech, Inc., all rights reserved.<|endoftext|>Great decorating addition\nI have a grape/Italian theme in my"
+    },
+    {
+      "position": 8906,
+      "token_id": 691,
+      "token_text": " only",
+      "category": "alpha",
+      "metric": 275.64984130859375,
+      "gate": 0.8575563430786133,
+      "output_norm": 275.64984130859375,
+      "window_text": "risk-on\" trade with its strong inverse earnings sensitivity to oil prices. Not only does an increase in gasoline cost increase Amazon's shipping expense, it also lowers consumer"
+    },
+    {
+      "position": 107425,
+      "token_id": 14206,
+      "token_text": " Single",
+      "category": "alpha",
+      "metric": 275.04827880859375,
+      "gate": 0.9002852439880371,
+      "output_norm": 275.04827880859375,
+      "window_text": " hour multiple choice type exam<|endoftext|>The Lockout (is over!!!!!)\nView Single Post\n12-05-2012, 04:34 PM\nJoin Date:"
+    },
+    {
+      "position": 248762,
+      "token_id": 475,
+      "token_text": " but",
+      "category": "alpha",
+      "metric": 274.4659423828125,
+      "gate": 0.866652250289917,
+      "output_norm": 274.4659423828125,
+      "window_text": " was highlighted by one of the famous remarks claiming that they had \u201cNo choice but to respond to the mortar attacks from Alshabab who are hiding behind civilians"
+    },
+    {
+      "position": 2091,
+      "token_id": 1210,
+      "token_text": " turn",
+      "category": "alpha",
+      "metric": 274.12872314453125,
+      "gate": 0.8559259176254272,
+      "output_norm": 274.12872314453125,
+      "window_text": " and accurate product recall and withdrawal notifications to retailer and wholesaler headquarters, which in turn share the information with individual stores. The exchange's retail membership represents 85% of"
+    },
+    {
+      "position": 11069,
+      "token_id": 14206,
+      "token_text": " Single",
+      "category": "alpha",
+      "metric": 273.98834228515625,
+      "gate": 0.8956357836723328,
+      "output_norm": 273.98834228515625,
+      "window_text": " mobile alerts<|endoftext|>Chat Box Chicks ~ Welcoming the New Year!\nView Single Post\n02-10-2013, 03:02 PM\nJoin Date:"
+    },
+    {
+      "position": 254408,
+      "token_id": 2642,
+      "token_text": " wrong",
+      "category": "alpha",
+      "metric": 273.9674072265625,
+      "gate": 0.8069641590118408,
+      "output_norm": 273.9674072265625,
+      "window_text": "ises are on the heavy side of the carbon emissions scale. Don't get me wrong, we all deserve vacations to exotic places during our mountain winters. When choosing your"
+    },
+    {
+      "position": 231342,
+      "token_id": 531,
+      "token_text": " said",
+      "category": "alpha",
+      "metric": 273.7396545410156,
+      "gate": 0.8513984680175781,
+      "output_norm": 273.7396545410156,
+      "window_text": " \"shrimp safe\" and will probably be eaten at some point. That being said, some people have luck keeping them with bettas, rainbows and most"
+    },
+    {
+      "position": 30309,
+      "token_id": 3791,
+      "token_text": "New",
+      "category": "alpha",
+      "metric": 273.66265869140625,
+      "gate": 0.7725358605384827,
+      "output_norm": 273.66265869140625,
+      "window_text": "ividend Payout\nDALLAS, Nov. 23, 2012 /PRNewswire/ -- Southridge Enterprises Inc. (Pink Sheets: SRGE"
+    },
+    {
+      "position": 227017,
+      "token_id": 477,
+      "token_text": " all",
+      "category": "alpha",
+      "metric": 273.3167419433594,
+      "gate": 0.8476150631904602,
+      "output_norm": 273.3167419433594,
+      "window_text": " nutrients better.\nMore isn't better when it comes to your health. After all, magnesium is a laxative, and you can also get that result by soaking"
+    },
+    {
+      "position": 186187,
+      "token_id": 1479,
+      "token_text": " free",
+      "category": "alpha",
+      "metric": 272.84075927734375,
+      "gate": 0.812824010848999,
+      "output_norm": 272.84075927734375,
+      "window_text": "\n(More shows may be added to this list as information becomes available. Feel free to check back.)\nTo report additional shows or corrections to this listing, email"
+    },
+    {
+      "position": 107440,
+      "token_id": 7536,
+      "token_text": " Date",
+      "category": "alpha",
+      "metric": 272.80645751953125,
+      "gate": 0.8778749108314514,
+      "output_norm": 272.80645751953125,
+      "window_text": "View Single Post\n12-05-2012, 04:34 PM\nJoin Date: Mar 2011\nOriginally Posted by\nBruce Arthur @bruce_arthur"
+    },
+    {
+      "position": 12699,
+      "token_id": 7536,
+      "token_text": " Date",
+      "category": "alpha",
+      "metric": 271.5906982421875,
+      "gate": 0.8735372424125671,
+      "output_norm": 271.5906982421875,
+      "window_text": " your teeth.<|endoftext|>09-01-2012, 12:04 PM\nJoin Date: Feb 2012\nYou're toooo funny!! We call Addison \"our"
+    },
+    {
+      "position": 100914,
+      "token_id": 3791,
+      "token_text": "New",
+      "category": "alpha",
+      "metric": 271.4459228515625,
+      "gate": 0.7650125026702881,
+      "output_norm": 271.4459228515625,
+      "window_text": " happens. Best of luck!<|endoftext|>LONDON, January 14, 2013 /PRNewswire/ --\nSavvy consumers looking to save money on their energy bills"
+    },
+    {
+      "position": 73638,
+      "token_id": 691,
+      "token_text": " only",
+      "category": "alpha",
+      "metric": 271.059814453125,
+      "gate": 0.8371897339820862,
+      "output_norm": 271.059814453125,
+      "window_text": "/?lg=En in Leon. I really am liking the vibe. Not only do we have clean and functional rooms, but we are getting for well under $"
+    },
+    {
+      "position": 11084,
+      "token_id": 7536,
+      "token_text": " Date",
+      "category": "alpha",
+      "metric": 270.47491455078125,
+      "gate": 0.8706626892089844,
+      "output_norm": 270.47491455078125,
+      "window_text": "View Single Post\n02-10-2013, 03:02 PM\nJoin Date: Sep 2006\nDoes anyone have the long rectangle nesties? They're on"
+    },
+    {
+      "position": 47223,
+      "token_id": 1210,
+      "token_text": " turn",
+      "category": "alpha",
+      "metric": 270.3079833984375,
+      "gate": 0.8453074097633362,
+      "output_norm": 270.3079833984375,
+      "window_text": "i will yield information on movements and vital rates of the wasp, which in turn can affect gene-flow of D. elastica. This research will allow the"
+    },
+    {
+      "position": 96479,
+      "token_id": 10395,
+      "token_text": " reserved",
+      "category": "alpha",
+      "metric": 270.28326416015625,
+      "gate": 0.8626919388771057,
+      "output_norm": 270.28326416015625,
+      "window_text": " our Content Guidelines before posting.\n2013 Hanley Wood, LLC. All rights reserved.<|endoftext|>Year Round Savings\nEvery item in this category is buy one get one"
+    },
+    {
+      "position": 247210,
+      "token_id": 1210,
+      "token_text": " turn",
+      "category": "alpha",
+      "metric": 270.0259704589844,
+      "gate": 0.9048162698745728,
+      "output_norm": 270.0259704589844,
+      "window_text": "The TFG gave the nod to a number of these tribal states and, in turn, others formed because other tribes were weary of being left out of the political process"
+    },
+    {
+      "position": 100638,
+      "token_id": 835,
+      "token_text": " way",
+      "category": "alpha",
+      "metric": 269.59234619140625,
+      "gate": 0.8756455779075623,
+      "output_norm": 269.59234619140625,
+      "window_text": " having 2 hot guys pine after him, he could also be completely clueless. Either way, don\u2019t let this guy\u2019s actions sweat you because he"
+    },
+    {
+      "position": 167258,
+      "token_id": 691,
+      "token_text": " only",
+      "category": "alpha",
+      "metric": 269.5405578613281,
+      "gate": 0.8355926275253296,
+      "output_norm": 269.5405578613281,
+      "window_text": " a whole. The being inside Regan is the Devil, Satan himself. Not only that, but Old Scratch appears to have no plan. He just wants to"
+    },
+    {
+      "position": 158370,
+      "token_id": 612,
+      "token_text": " there",
+      "category": "alpha",
+      "metric": 269.48199462890625,
+      "gate": 0.8665298819541931,
+      "output_norm": 269.48199462890625,
+      "window_text": " affair, as we review Joe Wright's gorgeous new movie Anna Karenina. From there we bring you the newest installment of OpKino Indie, in which Da7"
+    }
+  ],
+  "top_tokens_by_gate": [
+    {
+      "position": 16021,
+      "token_id": 590,
+      "token_text": "ance",
+      "category": "alpha",
+      "metric": 0.9231739044189453,
+      "gate": 0.9231739044189453,
+      "output_norm": 212.50071716308594,
+      "window_text": " Word is Important\nSearch Engine Journal (April 25, 2013) - The Importance of Quality Score in 2013\nMarketingProfs Daily Fix Blog (April 22"
+    },
+    {
+      "position": 157151,
+      "token_id": 8605,
+      "token_text": "aters",
+      "category": "alpha",
+      "metric": 0.9213566780090332,
+      "gate": 0.9213566780090332,
+      "output_norm": 199.9859161376953,
+      "window_text": " family, friends, and community.\nAnna Karenina Release Date\nIn Theaters November 16, 2012\nAnna Karenina Credits\nStarring: Keira Knight"
+    },
+    {
+      "position": 13140,
+      "token_id": 4188,
+      "token_text": "que",
+      "category": "alpha",
+      "metric": 0.9211227297782898,
+      "gate": 0.9211227297782898,
+      "output_norm": 204.9955291748047,
+      "window_text": " have to watch their kid go through that\", and the next day sent a cheque for $75,000 to the Hermosa Beach Police Association, which had started"
+    },
+    {
+      "position": 155612,
+      "token_id": 12473,
+      "token_text": "BE",
+      "category": "alpha",
+      "metric": 0.9204620718955994,
+      "gate": 0.9204620718955994,
+      "output_norm": 218.29100036621094,
+      "window_text": "inars\nCopyright \u00a9 2011 KDnuggets. |\nSUBSCRIBE to KDnuggets News email |<|endoftext|>Post Number: 5136\n|Posted"
+    },
+    {
+      "position": 246378,
+      "token_id": 1806,
+      "token_text": "ring",
+      "category": "alpha",
+      "metric": 0.9154044389724731,
+      "gate": 0.9154044389724731,
+      "output_norm": 215.34344482421875,
+      "window_text": " the private sector is the driving force of the nation\u2019s economy. Barring from attention external factors which contribute to economic development, our future government\u2019s"
+    },
+    {
+      "position": 168047,
+      "token_id": 9760,
+      "token_text": "itty",
+      "category": "alpha",
+      "metric": 0.9143419861793518,
+      "gate": 0.9143419861793518,
+      "output_norm": 179.10914611816406,
+      "window_text": " this arrangement, sitting in a plush lounge while looking at a nitty-gritty view, as I think it\u2019s a part of what makes Seattle,"
+    },
+    {
+      "position": 249916,
+      "token_id": 84,
+      "token_text": "u",
+      "category": "alpha",
+      "metric": 0.9142698645591736,
+      "gate": 0.9142698645591736,
+      "output_norm": 146.7993621826172,
+      "window_text": " walls painted in a discreet grey hangs a selected choice of clothing by Miu Miu, Wunderkind and Chlo\u00e9 (dresses ca. 120\u20ac),"
+    },
+    {
+      "position": 160361,
+      "token_id": 2056,
+      "token_text": " media",
+      "category": "alpha",
+      "metric": 0.9112449288368225,
+      "gate": 0.9112449288368225,
+      "output_norm": 225.31893920898438,
+      "window_text": "Find a look you love in our latest lookbooks. Join the party on social media and get the lowdown on all things dressing up with our exclusive etiquette guides."
+    },
+    {
+      "position": 16875,
+      "token_id": 78,
+      "token_text": "o",
+      "category": "alpha",
+      "metric": 0.9105777144432068,
+      "gate": 0.9105777144432068,
+      "output_norm": 222.673095703125,
+      "window_text": "March 6, 2013) - The 20 Ways Google Makes Money from Mobile\nIntoMobile (March 6, 2013) - Infographic: How Google Monetizes"
+    },
+    {
+      "position": 213560,
+      "token_id": 880,
+      "token_text": " well",
+      "category": "alpha",
+      "metric": 0.9097792506217957,
+      "gate": 0.9097792506217957,
+      "output_norm": 234.84950256347656,
+      "window_text": " drawer also may be displayed.\nReferring now to FIG. 10, as well as FIG. 8, the display preferably is a two-line by 40 character"
+    },
+    {
+      "position": 153690,
+      "token_id": 945,
+      "token_text": "ars",
+      "category": "alpha",
+      "metric": 0.9065549373626709,
+      "gate": 0.9065549373626709,
+      "output_norm": 150.66795349121094,
+      "window_text": " wasps, which lay eggs in parasitic wasps that lay eggs in caterpillars, are sometimes parasitized by other hyperparasitic wasps. Germany moved"
+    },
+    {
+      "position": 181509,
+      "token_id": 354,
+      "token_text": "ch",
+      "category": "alpha",
+      "metric": 0.9065051078796387,
+      "gate": 0.9065051078796387,
+      "output_norm": 156.64686584472656,
+      "window_text": " usually shower their horses, too.\nStevens shook his head from his perch atop Oxbow, the wire-to-wire winner of the 138th Pre"
+    },
+    {
+      "position": 247210,
+      "token_id": 1210,
+      "token_text": " turn",
+      "category": "alpha",
+      "metric": 0.9048162698745728,
+      "gate": 0.9048162698745728,
+      "output_norm": 270.0259704589844,
+      "window_text": "The TFG gave the nod to a number of these tribal states and, in turn, others formed because other tribes were weary of being left out of the political process"
+    },
+    {
+      "position": 184546,
+      "token_id": 3754,
+      "token_text": "ius",
+      "category": "alpha",
+      "metric": 0.9042698740959167,
+      "gate": 0.9042698740959167,
+      "output_norm": 171.89239501953125,
+      "window_text": " Anywhere In The UK\n- Location: Anywhere in the UK\nRadius: ... miles\nSorry - no tickets available\nCall 0844 412 4642"
+    },
+    {
+      "position": 221578,
+      "token_id": 1295,
+      "token_text": " place",
+      "category": "alpha",
+      "metric": 0.9025329351425171,
+      "gate": 0.9025329351425171,
+      "output_norm": 235.5342559814453,
+      "window_text": "\n5.2 You must not try to get round any protections we put in place for the security and operation of the Site.\n5.3 You must not"
+    },
+    {
+      "position": 59338,
+      "token_id": 16785,
+      "token_text": "mos",
+      "category": "alpha",
+      "metric": 0.9020388126373291,
+      "gate": 0.9020388126373291,
+      "output_norm": 165.82920837402344,
+      "window_text": "This morning, after announcing a boatload of brand new iPod and iTunes gizmos , Steve Jobs had one final piece of news for all you Apple lovers out there"
+    },
+    {
+      "position": 28478,
+      "token_id": 11,
+      "token_text": ",",
+      "category": "punct",
+      "metric": 0.9019261002540588,
+      "gate": 0.9019261002540588,
+      "output_norm": 225.2716064453125,
+      "window_text": "AA! I'd love to boldly go where no man has gone before. Ok, so little wheeled robots have, but...\nI realize I'm posting things"
+    },
+    {
+      "position": 242186,
+      "token_id": 1122,
+      "token_text": "ton",
+      "category": "alpha",
+      "metric": 0.9017081260681152,
+      "gate": 0.9017081260681152,
+      "output_norm": 181.26019287109375,
+      "window_text": "0-2 West Valley) on the season.\nYamhill-Carlton 13, Astoria 9\nYamhill-Carlton won consecutive games for"
+    },
+    {
+      "position": 99672,
+      "token_id": 1339,
+      "token_text": " case",
+      "category": "alpha",
+      "metric": 0.9015234112739563,
+      "gate": 0.9015234112739563,
+      "output_norm": 238.26229858398438,
+      "window_text": " junk (not really).\nCheck out last week\u2019s column just in case you missed it.\nDear Bottom Whisperer,\nI recently came out"
+    },
+    {
+      "position": 7033,
+      "token_id": 11,
+      "token_text": ",",
+      "category": "punct",
+      "metric": 0.901268720626831,
+      "gate": 0.901268720626831,
+      "output_norm": 252.57090759277344,
+      "window_text": " doesn't present nearly the challenge WKU was in the run game. Sure, they rushed for nearly 150 yards and three touchdowns against UND, but the V"
+    },
+    {
+      "position": 107425,
+      "token_id": 14206,
+      "token_text": " Single",
+      "category": "alpha",
+      "metric": 0.9002852439880371,
+      "gate": 0.9002852439880371,
+      "output_norm": 275.04827880859375,
+      "window_text": " hour multiple choice type exam<|endoftext|>The Lockout (is over!!!!!)\nView Single Post\n12-05-2012, 04:34 PM\nJoin Date:"
+    },
+    {
+      "position": 175408,
+      "token_id": 1479,
+      "token_text": " free",
+      "category": "alpha",
+      "metric": 0.8994578123092651,
+      "gate": 0.8994578123092651,
+      "output_norm": 179.7535400390625,
+      "window_text": " you with any banking need\nThanks for visiting FatWallet.com. Join for free to remove this ad.\nposted: Feb. 1, 2013 @ 11:"
+    },
+    {
+      "position": 154599,
+      "token_id": 286,
+      "token_text": " of",
+      "category": "alpha",
+      "metric": 0.8992164134979248,
+      "gate": 0.8992164134979248,
+      "output_norm": 187.85250854492188,
+      "window_text": " for purchase from our fast, efficient document delivery service.\nThis is just one of over 150 subjects available as a published search. For a complete listing please click here"
+    },
+    {
+      "position": 172294,
+      "token_id": 907,
+      "token_text": "ms",
+      "category": "alpha",
+      "metric": 0.897669792175293,
+      "gate": 0.897669792175293,
+      "output_norm": 168.08380126953125,
+      "window_text": " for Productive Living\nSynonym Finder \u00bb Find synonyms, antonyms & definition for...\nSynonym-Finder.com is the best place"
+    },
+    {
+      "position": 24166,
+      "token_id": 6379,
+      "token_text": " Land",
+      "category": "alpha",
+      "metric": 0.8972520232200623,
+      "gate": 0.8972520232200623,
+      "output_norm": 182.28111267089844,
+      "window_text": "ating AdWords Expertise for Small and Mid-sized Businesses\nSearch Engine Land (Mar. 16, 2012) - Using Wordstream\u2019s AdWords"
+    },
+    {
+      "position": 5426,
+      "token_id": 33876,
+      "token_text": " Reserved",
+      "category": "alpha",
+      "metric": 0.8970490097999573,
+      "gate": 0.8970490097999573,
+      "output_norm": 281.007080078125,
+      "window_text": " \u00a9 1996-2009 Skotos Tech, Inc. & individual authors, All Rights Reserved\nCompilation copyright \u00a9 1996-2009 Skotos Tech, Inc.\nRPG"
+    },
+    {
+      "position": 222994,
+      "token_id": 10395,
+      "token_text": " reserved",
+      "category": "alpha",
+      "metric": 0.8968229293823242,
+      "gate": 0.8968229293823242,
+      "output_norm": 281.14227294921875,
+      "window_text": " Participation.\nCopyright \u00a9 2015, Oracle and/or its affiliates. All rights reserved. Oracle and Java are registered trademarks of Oracle and/or its affiliates. Other"
+    },
+    {
+      "position": 114831,
+      "token_id": 2879,
+      "token_text": "ino",
+      "category": "alpha",
+      "metric": 0.8967479467391968,
+      "gate": 0.8967479467391968,
+      "output_norm": 181.93515014648438,
+      "window_text": " tea mousse.\nMy favourite was the Suntory whisky cappuccino layered with crunchy coffee crumble, coffee cr\u00e8me, milk ice cream and"
+    },
+    {
+      "position": 104208,
+      "token_id": 10398,
+      "token_text": " printed",
+      "category": "alpha",
+      "metric": 0.8961527347564697,
+      "gate": 0.8961527347564697,
+      "output_norm": 266.6754150390625,
+      "window_text": " the best lemon bars I\u2019ve ever eaten \u2013 bar none!\nArticle printed from Sticky, Gooey, Creamy, Chewy: http://"
+    },
+    {
+      "position": 224736,
+      "token_id": 3539,
+      "token_text": "IA",
+      "category": "alpha",
+      "metric": 0.8957595229148865,
+      "gate": 0.8957595229148865,
+      "output_norm": 192.95480346679688,
+      "window_text": " the code will change soon' and make decision.<|endoftext|>PHILADELPHIA - Michael Vick's peers appreciate his tough journey back to the NFL.\nV"
+    },
+    {
+      "position": 222434,
+      "token_id": 10395,
+      "token_text": " reserved",
+      "category": "alpha",
+      "metric": 0.8956668376922607,
+      "gate": 0.8956668376922607,
+      "output_norm": 280.51348876953125,
+      "window_text": " and Database Copyright 2013 Football DataCo Ltd, The Football League Ltd. All rights reserved. No part of this publication may be reproduced, stored in a retrieval system or"
+    },
+    {
+      "position": 11069,
+      "token_id": 14206,
+      "token_text": " Single",
+      "category": "alpha",
+      "metric": 0.8956357836723328,
+      "gate": 0.8956357836723328,
+      "output_norm": 273.98834228515625,
+      "window_text": " mobile alerts<|endoftext|>Chat Box Chicks ~ Welcoming the New Year!\nView Single Post\n02-10-2013, 03:02 PM\nJoin Date:"
+    },
+    {
+      "position": 242198,
+      "token_id": 1122,
+      "token_text": "ton",
+      "category": "alpha",
+      "metric": 0.8956295251846313,
+      "gate": 0.8956295251846313,
+      "output_norm": 179.9927520751953,
+      "window_text": "amhill-Carlton 13, Astoria 9\nYamhill-Carlton won consecutive games for the first time since 2007 as the Tigers dispatched the Fishermen"
+    },
+    {
+      "position": 142106,
+      "token_id": 11,
+      "token_text": ",",
+      "category": "punct",
+      "metric": 0.895443320274353,
+      "gate": 0.895443320274353,
+      "output_norm": 251.010009765625,
+      "window_text": " don't think people are out there on the water trying to make money. Sure, we'd all like to get a Barry Bonds homer, especially a milestone shot."
+    },
+    {
+      "position": 73895,
+      "token_id": 785,
+      "token_text": "com",
+      "category": "alpha",
+      "metric": 0.8953177332878113,
+      "gate": 0.8953177332878113,
+      "output_norm": 193.874755859375,
+      "window_text": " Canada on F650GS single and Pedro from Redmond https://www.facebook.com/pages/Redmond-to-Rio/523014447726"
+    },
+    {
+      "position": 1582,
+      "token_id": 845,
+      "token_text": " very",
+      "category": "alpha",
+      "metric": 0.8952202200889587,
+      "gate": 0.8952202200889587,
+      "output_norm": 239.49317932128906,
+      "window_text": "\ufffdt people share trash cans or a single dumpster? Or, at the very least, why can\u2019t the cans share driveway space?\nThe Zero"
+    },
+    {
+      "position": 172096,
+      "token_id": 3862,
+      "token_text": " Time",
+      "category": "alpha",
+      "metric": 0.8949306607246399,
+      "gate": 0.8949306607246399,
+      "output_norm": 234.0042724609375,
+      "window_text": "peggios to Get Smooth\n100 Most Inspirational Quotes Of All Time\nCourtesy of My-Inspirational-Quotes.com 1. Twenty years"
+    },
+    {
+      "position": 19418,
+      "token_id": 6379,
+      "token_text": " Land",
+      "category": "alpha",
+      "metric": 0.8947513103485107,
+      "gate": 0.8947513103485107,
+      "output_norm": 181.70408630371094,
+      "window_text": ") - Google, Bing & Yahoo Tracking the 2012 Presidential Election Results\nSearch Engine Land (Nov. 6, 2012) - Can Search Queries And Social Data Predict"
+    },
+    {
+      "position": 16446,
+      "token_id": 6379,
+      "token_text": " Land",
+      "category": "alpha",
+      "metric": 0.8942385315895081,
+      "gate": 0.8942385315895081,
+      "output_norm": 181.52743530273438,
+      "window_text": " 14, 2013) - Clearly eBay Needs New AdWords Specialists\nSearch Engine Land (March 14, 2013) - AdWords \u201cIneffective\ufffd"
+    },
+    {
+      "position": 21056,
+      "token_id": 6379,
+      "token_text": " Land",
+      "category": "alpha",
+      "metric": 0.894216001033783,
+      "gate": 0.894216001033783,
+      "output_norm": 181.71255493164062,
+      "window_text": " 19, 2012) - Paid search and SEO thrive when paired together\nSearch Engine Land (July 17, 2012) - Study: Clicks On Google Ads Are Double"
+    }
+  ],
+  "bottom_tokens_by_gate": [
+    {
+      "position": 200019,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.07301753014326096,
+      "gate": 0.07301753014326096,
+      "output_norm": 10.302897453308105,
+      "window_text": " are in widespread use in video stores throughout the United States and elsewhere in the world. However, in order for such systems to operate with the central computer 12, the"
+    },
+    {
+      "position": 69500,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.07345234602689743,
+      "gate": 0.07345234602689743,
+      "output_norm": 10.327808380126953,
+      "window_text": " speakers like Tony Robbins and repackaged those mortgages into securities sold around the world. . . .\n* * *\nBelow are some excerpts from the introduction of"
+    },
+    {
+      "position": 191206,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.07360302656888962,
+      "gate": 0.07360302656888962,
+      "output_norm": 10.324118614196777,
+      "window_text": " throughout the country as it brings to London and the great concert halls of the world. The Orchestra's extensive touring schedule this season also includes a Beethoven Cycle at"
+    },
+    {
+      "position": 30781,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.07845457643270493,
+      "gate": 0.07845457643270493,
+      "output_norm": 11.24386978149414,
+      "window_text": " acquiring and developing mineral resources in geologically permissible and politically stable areas of the world. The Company seeks out early stage opportunities with good mineralization indicators that exhibit significant blue"
+    },
+    {
+      "position": 262028,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.07961223274469376,
+      "gate": 0.07961223274469376,
+      "output_norm": 11.589751243591309,
+      "window_text": " What that child is taught in the home is what that child brings into the world. And then once you bring it into the world, that kid has to make a"
+    },
+    {
+      "position": 167737,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.08225981146097183,
+      "gate": 0.08225981146097183,
+      "output_norm": 12.039071083068848,
+      "window_text": " I am not denying that it holds power for thousands, even millions across the world. For that fact alone, it should be viewed with some amount of reverence, if"
+    },
+    {
+      "position": 184164,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.08523611724376678,
+      "gate": 0.08523611724376678,
+      "output_norm": 12.488903999328613,
+      "window_text": " would be a dream come true even if I was the richest gal in the world. Give me millions of dollars and I will still take the old over the new."
+    },
+    {
+      "position": 142841,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.09058751910924911,
+      "gate": 0.09058751910924911,
+      "output_norm": 13.268227577209473,
+      "window_text": "The Blue Man Group is a creative theatrical performance that is performed all over the world. The Blue Man Group is based off a whimsical percussion that began with three friends"
+    },
+    {
+      "position": 110487,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.09293888509273529,
+      "gate": 0.09293888509273529,
+      "output_norm": 13.881913185119629,
+      "window_text": ", who is at work in our midst as \u201cthe life of the world.\u201d\nAnd the Eucharist reminds us how we are to regard ourselves"
+    },
+    {
+      "position": 93017,
+      "token_id": 1510,
+      "token_text": " million",
+      "category": "alpha",
+      "metric": 0.09471616894006729,
+      "gate": 0.09471616894006729,
+      "output_norm": 14.327383041381836,
+      "window_text": " home (8)\n- Auburn Hills chamber eyes lawsuit over $7.8 million Pontiac schools tax bill (8)\n- Property owners in eight communities may"
+    },
+    {
+      "position": 115670,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.09490111470222473,
+      "gate": 0.09490111470222473,
+      "output_norm": 14.341626167297363,
+      "window_text": " and we will ship them direct to you no matter where you are in the world.\nNow that\u2019s quality and service for you, the one stop sheep"
+    },
+    {
+      "position": 69802,
+      "token_id": 318,
+      "token_text": " is",
+      "category": "alpha",
+      "metric": 0.09619539976119995,
+      "gate": 0.09619539976119995,
+      "output_norm": 16.377729415893555,
+      "window_text": " poorly than it does when only the subjective state of \u201chappiness\u201d is measured. The Happy Planet Index, to give just one example, locates us"
+    },
+    {
+      "position": 92971,
+      "token_id": 1510,
+      "token_text": " million",
+      "category": "alpha",
+      "metric": 0.09620451182126999,
+      "gate": 0.09620451182126999,
+      "output_norm": 14.696454048156738,
+      "window_text": "- Pontiac taxpayers to pay $2.3 million of $7.8 million schools debt, neighbors to pay rest (9)\n- Nearby neighbors concerned"
+    },
+    {
+      "position": 1298,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.09627480804920197,
+      "gate": 0.09627480804920197,
+      "output_norm": 14.470682144165039,
+      "window_text": ", 2011;...\nAnnual meeting brings together cancer experts from around the world. Kari Bohlke, ScD The 2011 Annual... Bone Fractures in"
+    },
+    {
+      "position": 74502,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.09750084578990936,
+      "gate": 0.09750084578990936,
+      "output_norm": 13.68058967590332,
+      "window_text": " this arena, and indicates how support and policy initiatives may be directed in the future.\nPart 1: The Rationality Discourse in Studies of the Small, Family"
+    },
+    {
+      "position": 92847,
+      "token_id": 1510,
+      "token_text": " million",
+      "category": "alpha",
+      "metric": 0.098098024725914,
+      "gate": 0.098098024725914,
+      "output_norm": 15.06294059753418,
+      "window_text": "- Pontiac taxpayers to pay $2.3 million of $7.8 million schools debt, neighbors to pay rest (1507)\n- Prince Fielder"
+    },
+    {
+      "position": 191827,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.09997756779193878,
+      "gate": 0.09997756779193878,
+      "output_norm": 15.05584716796875,
+      "window_text": " if this news is true, hopefully Drew is ready to share it with the world. And if so, congrats to the happy couple!<|endoftext|>GRAND RAP"
+    },
+    {
+      "position": 64969,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.10194803774356842,
+      "gate": 0.10194803774356842,
+      "output_norm": 12.511819839477539,
+      "window_text": " in Social Security, while his property taxes ran about $1,400 per year.\nHe added that he once used his federal income tax rebate to pay his property"
+    },
+    {
+      "position": 239562,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.104343481361866,
+      "gate": 0.104343481361866,
+      "output_norm": 12.887166976928711,
+      "window_text": "routing network designed to improve people\u2019s privacy and security on the Internet. It includes unit-tests with 96%+ coverage, multiple examples, and documentation"
+    },
+    {
+      "position": 53637,
+      "token_id": 1722,
+      "token_text": "As",
+      "category": "alpha",
+      "metric": 0.10478724539279938,
+      "gate": 0.10478724539279938,
+      "output_norm": 21.717130661010742,
+      "window_text": "as,\u201d is not always put for likeness: when we say \u201cAs,\u201d it sometimes refers to the actual case, sometimes to likeness: here"
+    },
+    {
+      "position": 131093,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.10510638356208801,
+      "gate": 0.10510638356208801,
+      "output_norm": 13.150379180908203,
+      "window_text": ") to protect your visitors' sensitive data from flowing in clear form over the Internet. SSL/TLS support enables you to host E-commerce sites and accept credit"
+    },
+    {
+      "position": 63685,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.10579036176204681,
+      "gate": 0.10579036176204681,
+      "output_norm": 13.835585594177246,
+      "window_text": " Ravens' victory in Super Bowl XLVII with a raucous celebration on Tuesday.\nAn overflow crowd reveled in Sunday's 34-31 victory over the San"
+    },
+    {
+      "position": 138756,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.10586871206760406,
+      "gate": 0.10586871206760406,
+      "output_norm": 13.958816528320312,
+      "window_text": " that drives human history in the direction of inconstant but accumulative improvement over time. The criers of havoc keep being proved wrong. A fundamental optimism about human affairs"
+    },
+    {
+      "position": 60998,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.10924412310123444,
+      "gate": 0.10924412310123444,
+      "output_norm": 15.68544864654541,
+      "window_text": " him.\nLet's stipulate the following: no one can predict the future. But when the Mets were in fourth place on September 1 of last year, 13"
+    },
+    {
+      "position": 41695,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.10924742370843887,
+      "gate": 0.10924742370843887,
+      "output_norm": 13.81699275970459,
+      "window_text": " benefits package, a 401k retirement plan and three weeks of paid vacation per year.\nSalary and Benefits (U.S.)\nNexant offers competitive"
+    },
+    {
+      "position": 66262,
+      "token_id": 3198,
+      "token_text": "One",
+      "category": "alpha",
+      "metric": 0.10946020483970642,
+      "gate": 0.10946020483970642,
+      "output_norm": 18.04799461364746,
+      "window_text": " of the greatest threats to the newly rejuvenated working class was automation. \u201cOne day, the robots will come and destroy everything we\u2019ve worked for in"
+    },
+    {
+      "position": 241713,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.10952271521091461,
+      "gate": 0.10952271521091461,
+      "output_norm": 15.048349380493164,
+      "window_text": " thanks to Clark's 8-yard run on Dayton's first possession of the game. The rest of the half was played in a total downpour, and both teams"
+    },
+    {
+      "position": 242348,
+      "token_id": 5756,
+      "token_text": "Let",
+      "category": "alpha",
+      "metric": 0.11076758801937103,
+      "gate": 0.11076758801937103,
+      "output_norm": 20.034826278686523,
+      "window_text": " any president, to go into Iran,\u201d she said erroneously.\nLet's break this one down carefully, because we are dealing with two travesties"
+    },
+    {
+      "position": 71385,
+      "token_id": 1510,
+      "token_text": " million",
+      "category": "alpha",
+      "metric": 0.1109478771686554,
+      "gate": 0.1109478771686554,
+      "output_norm": 17.487106323242188,
+      "window_text": " troops \u2013 an enormous figure compared to a population at the time of 8.8 million (10.6 million today).\nIn the 1960s, one million people"
+    },
+    {
+      "position": 48198,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.11177343130111694,
+      "gate": 0.11177343130111694,
+      "output_norm": 11.359940528869629,
+      "window_text": " - from the point where it is consumed, and from the provider of the service. For example, you cannot take a live theatre performance home to consume it (a"
+    },
+    {
+      "position": 208800,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.11209547519683838,
+      "gate": 0.11209547519683838,
+      "output_norm": 10.605462074279785,
+      "window_text": " set the standard time period for the rental of a video cassette to be one day.\nThe \"MEMBERSHIP FEE\" term indicates the total"
+    },
+    {
+      "position": 106732,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.11269336938858032,
+      "gate": 0.11269336938858032,
+      "output_norm": 11.840035438537598,
+      "window_text": " Office Captain Harry Hamilton and Investigator Michael Raley were the final two witnesses of day.\nRaley testified as to what Calhoun told deputies when they caught him in"
+    },
+    {
+      "position": 152149,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.11275378614664078,
+      "gate": 0.11275378614664078,
+      "output_norm": 10.668112754821777,
+      "window_text": " start seeds, transplant herbs and get everything done that you can in just one day.\nWhat other tips do you have for handling the logistics of gardening in the city"
+    },
+    {
+      "position": 68871,
+      "token_id": 11,
+      "token_text": ",",
+      "category": "punct",
+      "metric": 0.1130300760269165,
+      "gate": 0.1130300760269165,
+      "output_norm": 13.768070220947266,
+      "window_text": " there are the cliches: the squabbling kids pulling together as a team, the evocative arm gestures. Finally, after acting like a bitch most of the"
+    },
+    {
+      "position": 82122,
+      "token_id": 284,
+      "token_text": " to",
+      "category": "alpha",
+      "metric": 0.11509206891059875,
+      "gate": 0.11509206891059875,
+      "output_norm": 15.994645118713379,
+      "window_text": ", 2012...)\ndisorder American habit of adding \u2018disorder\u2019 to states of mind. Stress disorder, panic disorder, narcissistic personality disorder. A bit"
+    },
+    {
+      "position": 64913,
+      "token_id": 1510,
+      "token_text": " million",
+      "category": "alpha",
+      "metric": 0.11634062230587006,
+      "gate": 0.11634062230587006,
+      "output_norm": 16.345884323120117,
+      "window_text": " year. That's about $800,000 more than the $44.5 million the county budgeted for property tax revenues for 2013.\nIn his pro-"
+    },
+    {
+      "position": 225800,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.1171175092458725,
+      "gate": 0.1171175092458725,
+      "output_norm": 16.27657699584961,
+      "window_text": " again, for the second week in a row, throwing a 646 on Tuesday.\nDebbie Miller attained a personal best on Sunday night, shooting her first ever"
+    },
+    {
+      "position": 226005,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.11724518239498138,
+      "gate": 0.11724518239498138,
+      "output_norm": 16.07903480529785,
+      "window_text": " weekly column on the bowling leagues at Classic Lanes. His column appears on Tuesday.<|endoftext|>WEST AMWELL \u2014 They call the South Hunterdon vs. New"
+    },
+    {
+      "position": 227395,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.1176551878452301,
+      "gate": 0.1176551878452301,
+      "output_norm": 17.340087890625,
+      "window_text": " are not a crystal ball and cannot predict what a person will do in the future.\nOur officers are deeply saddened and disgusted that someone who wore the uniform could commit"
+    },
+    {
+      "position": 134807,
+      "token_id": 13,
+      "token_text": ".",
+      "category": "punct",
+      "metric": 0.11774718016386032,
+      "gate": 0.11774718016386032,
+      "output_norm": 15.96863079071045,
+      "window_text": " used in research for the treatment and potential cure of disabling and terminal diseases and conditions.\nAccording to the company, the cell lines have been extensively tested with its H"
+    }
+  ]
+}

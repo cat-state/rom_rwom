@@ -1,0 +1,42 @@
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+logs/lr_sweep_l2_hashrom_sparseadam0p5_beta2one_bf5_h6k4v16_500_20260512_225116.txt
+Experiment config: world_size=1 grad_accum_steps=8 bigram_vocab_size=251520 run_id=lr_sweep_l2_hashrom_sparseadam0p5_beta2one_bf5_h6k4v16_500_20260512_225116 device_capability=sm120 compile_model=0 plain_mlp_train=0 fused_ce_eval=0 rom_bigram=1 rom_token=0 rom_engram_gate=0 rom_write=1 rom_heads=6 rom_key_dim=4 rom_value_dim=16 rom_mqa=0 rom_layer_only=2 rom_output_scale=1.0 rom_short_conv=0 rom_short_conv_kernel=4 rom_state_sparse_embedding=1 rom_state_sparse_adam=1 rom_sparse_adam_lr_mul=0.5 rom_sparse_adam_beta2=1.0 rom_table_nonemb_mult=0.0 rom_non_embedding_params= rom_target_state_params=
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/ubuntu/modded-nanogpt/train_gpt.py", line 2367, in <module>
+[rank0]:     training_manager = TrainingManager(model)
+[rank0]:   File "/home/ubuntu/modded-nanogpt/train_gpt.py", line 2149, in __init__
+[rank0]:     self.sparse_adam = torch.optim.SparseAdam(
+[rank0]:   File "/home/ubuntu/.venvs/modded-nanogpt/lib/python3.10/site-packages/torch/optim/sparse_adam.py", line 31, in __init__
+[rank0]:     raise ValueError(f"Invalid beta parameter at index 1: {betas[1]}")
+[rank0]: ValueError: Invalid beta parameter at index 1: 1.0
+[rank0]:[W512 22:51:24.490207569 ProcessGroupNCCL.cpp:1553] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+E0512 22:51:26.404000 46702 torch/distributed/elastic/multiprocessing/api.py:984] failed (exitcode: 1) local_rank: 0 (pid: 46725) of binary: /home/ubuntu/.venvs/modded-nanogpt/bin/python
+Traceback (most recent call last):
+  File "/home/ubuntu/.venvs/modded-nanogpt/bin/torchrun", line 10, in <module>
+    sys.exit(main())
+  File "/home/ubuntu/.venvs/modded-nanogpt/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+  File "/home/ubuntu/.venvs/modded-nanogpt/lib/python3.10/site-packages/torch/distributed/run.py", line 991, in main
+    run(args)
+  File "/home/ubuntu/.venvs/modded-nanogpt/lib/python3.10/site-packages/torch/distributed/run.py", line 982, in run
+    elastic_launch(
+  File "/home/ubuntu/.venvs/modded-nanogpt/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/ubuntu/.venvs/modded-nanogpt/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train_gpt.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-05-12_22:51:26
+  host      : 0525-dca-csp6bk-prxmx160035
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 46725)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

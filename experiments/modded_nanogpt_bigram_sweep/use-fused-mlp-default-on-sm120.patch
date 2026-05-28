@@ -1,0 +1,25 @@
+From 5f10acd6804e5518e9717b9df56c14ab110c00de Mon Sep 17 00:00:00 2001
+From: ROM Benchmark <rom-benchmark@local>
+Date: Mon, 11 May 2026 19:06:23 -0400
+Subject: [PATCH] Use fused MLP by default on SM120
+
+---
+ train_gpt.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/train_gpt.py b/train_gpt.py
+index 49e8137..ba451df 100644
+--- a/train_gpt.py
++++ b/train_gpt.py
+@@ -66,7 +66,7 @@ def env_flag(name: str, default: bool) -> bool:
+ 
+ is_sm120_or_newer = device_capability[0] >= 12
+ compile_model = env_flag("COMPILE_MODEL", not is_sm120_or_newer)
+-plain_mlp_train = env_flag("PLAIN_MLP_TRAIN", is_sm120_or_newer)
++plain_mlp_train = env_flag("PLAIN_MLP_TRAIN", False)
+ fused_ce_eval = env_flag("FUSED_CE_EVAL", not is_sm120_or_newer)
+ 
+ # -----------------------------------------------------------------------------
+-- 
+2.39.3 (Apple Git-146)
+

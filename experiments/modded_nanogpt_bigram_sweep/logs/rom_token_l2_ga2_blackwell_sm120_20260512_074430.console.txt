@@ -1,0 +1,5 @@
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+logs/rom_token_l2_ga2_blackwell_sm120_20260512_074430.txt
+Experiment config: world_size=1 grad_accum_steps=2 bigram_vocab_size=251520 run_id=rom_token_l2_ga2_blackwell_sm120_20260512_074430 device_capability=sm120 compile_model=0 plain_mlp_train=0 fused_ce_eval=0 rom_bigram=1 rom_token=1 rom_write=1 rom_heads=6 rom_key_dim=4 rom_value_dim=16 rom_layer_only=2
+Warming up kernels (~7 minutes on first execution)
+Sampling steps [0, 1, 478, 479, 480, 481, 958, 959, 960, 961, 1438, 1439, 1440, 1441] for warmup

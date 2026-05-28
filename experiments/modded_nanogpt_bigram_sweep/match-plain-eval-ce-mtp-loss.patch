@@ -1,0 +1,50 @@
+From 838b8e7b49f5d15e1594107f660d9b01e3498e02 Mon Sep 17 00:00:00 2001
+From: ROM Benchmark <rom-benchmark@local>
+Date: Mon, 11 May 2026 17:33:01 -0400
+Subject: [PATCH] Match plain eval CE to MTP loss
+
+---
+ train_gpt.py | 13 ++++++++++---
+ 1 file changed, 10 insertions(+), 3 deletions(-)
+
+diff --git a/train_gpt.py b/train_gpt.py
+index ecc53d0..a7adf1b 100644
+--- a/train_gpt.py
++++ b/train_gpt.py
+@@ -958,7 +958,7 @@ def norm(x: Tensor):
+     return F.rms_norm(x, (x.size(-1),))
+ 
+ 
+-def chunked_softcapped_cross_entropy(x: Tensor, targets: Tensor, lm_head: nn.Module) -> Tensor:
++def chunked_softcapped_cross_entropy(x: Tensor, targets: Tensor, mtp_weights: Tensor, lm_head: nn.Module) -> Tensor:
+     x_flat = x.view(-1, x.size(-1))
+     targets_flat = targets.view(-1)
+     chunk_rows = int(os.environ.get("PLAIN_CE_CHUNK_ROWS", "4096"))
+@@ -967,7 +967,14 @@ def chunked_softcapped_cross_entropy(x: Tensor, targets: Tensor, lm_head: nn.Mod
+         end = min(start + chunk_rows, x_flat.size(0))
+         logits = lm_head(x_flat[start:end])
+         logits = 23 * torch.sigmoid((logits + 5) / 7.5)
+-        losses[start:end] = F.cross_entropy(logits.float(), targets_flat[start:end], reduction="none")
++        log_probs = F.log_softmax(logits.float(), dim=-1)
++        chunk_loss = torch.zeros(end - start, dtype=torch.float32, device=targets_flat.device)
++        for k, weight in enumerate(mtp_weights):
++            valid = min(end, targets_flat.size(0) - k) - start
++            if valid > 0:
++                target_k = targets_flat[start + k:start + k + valid]
++                chunk_loss[:valid] -= weight.float() * log_probs[:valid].gather(1, target_k[:, None]).squeeze(1)
++        losses[start:end] = chunk_loss
+     return losses
+ 
+ 
+@@ -1428,7 +1435,7 @@ class GPT(nn.Module):
+         if self.training or use_fused_ce_eval:
+             loss_per_token = FusedSoftcappedCrossEntropy.apply(x.view(-1, x.size(-1)), target_seq, mtp_weights, self.lm_head.weight, self.lm_head.x_s, self.lm_head.w_s, self.lm_head.grad_s, grad_scale)
+         else:
+-            loss_per_token = chunked_softcapped_cross_entropy(x, target_seq, self.lm_head)
++            loss_per_token = chunked_softcapped_cross_entropy(x, target_seq, mtp_weights, self.lm_head)
+         return loss_per_token
+ # -----------------------------------------------------------------------------
+ # Distributed data loader
+-- 
+2.39.3 (Apple Git-146)
+

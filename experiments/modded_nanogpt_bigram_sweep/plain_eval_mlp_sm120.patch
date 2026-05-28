@@ -1,0 +1,30 @@
+From a4908eb9457de5df33a678135838ea954c4e0e55 Mon Sep 17 00:00:00 2001
+From: ROM Benchmark <rom-benchmark@local>
+Date: Mon, 11 May 2026 15:06:30 -0400
+Subject: [PATCH] Use plain MLP for SM120 eval
+
+---
+ train_gpt.py | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+diff --git a/train_gpt.py b/train_gpt.py
+index e9a59c1..7bb384d 100644
+--- a/train_gpt.py
++++ b/train_gpt.py
+@@ -1384,7 +1384,12 @@ class GPT(nn.Module):
+                 attn_in = x_backout if x_backout is not None else x
+                 attn_out = attn(norm(attn_in), attn_args, qkvo_w)
+                 x = resid_lambdas_attn[i] * x + post_lambdas_attn[i] * attn_out + x0_inject[i]
+-            x = resid_lambdas_mlp[i] * x + post_lambdas_mlp[i] * ReLUSqrdMLP(norm(x), c_fc, c_proj)
++            mlp_in = norm(x)
++            if self.training:
++                mlp_out = ReLUSqrdMLP(mlp_in, c_fc, c_proj)
++            else:
++                mlp_out = F.linear(F.relu(F.linear(mlp_in, c_fc)).square(), c_proj)
++            x = resid_lambdas_mlp[i] * x + post_lambdas_mlp[i] * mlp_out
+             if i == 3:
+                 skip_connection = x
+             if i == 7:
+-- 
+2.39.3 (Apple Git-146)
+

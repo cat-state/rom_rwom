@@ -1,0 +1,90 @@
+From 181db9008efc6facba89a2a0a773b5f5609d4cd3 Mon Sep 17 00:00:00 2001
+From: ROM Benchmark <rom-benchmark@local>
+Date: Mon, 11 May 2026 18:06:48 +0000
+Subject: [PATCH 1/2] Add ROM bigram sweep controls
+
+---
+ run.sh       |  3 ++-
+ train_gpt.py | 13 +++++++------
+ 2 files changed, 9 insertions(+), 7 deletions(-)
+
+diff --git a/run.sh b/run.sh
+index 85f6814..d0f75d1 100755
+--- a/run.sh
++++ b/run.sh
+@@ -1 +1,2 @@
+-torchrun --standalone --nproc_per_node=8 train_gpt.py
++NPROC_PER_NODE=${NPROC_PER_NODE:-8}
++torchrun --standalone --nproc_per_node="$NPROC_PER_NODE" train_gpt.py
+diff --git a/train_gpt.py b/train_gpt.py
+index da7f7ff..f863215 100644
+--- a/train_gpt.py
++++ b/train_gpt.py
+@@ -1059,7 +1059,7 @@ class AttnArgs:
+     ve_gate_w: torch.Tensor
+     train_max_seq_len: torch.Tensor
+ 
+-flash_attn_interface = get_kernel('varunneal/flash-attention-3').flash_attn_interface
++flash_attn_interface = get_kernel('kernels-community/flash-attn3', trust_remote_code=True).flash_attn_interface
+ 
+ class CausalSelfAttention(nn.Module):
+     def __init__(self, dim: int, head_dim: int, num_heads: int, paired: bool = False):
+@@ -1565,15 +1565,15 @@ class Hyperparameters:
+     # batch sizes
+     val_batch_size: int = 4 * 64 * 1024 * 8
+     # schedule
+-    num_scheduled_iterations: int = 1440  # number of steps to complete lr and ws schedule
+-    num_extension_iterations: int = 40  # number of steps to continue training at final lr and ws
++    num_scheduled_iterations: int = int(os.environ.get("NUM_SCHEDULED_ITERATIONS", "1440"))  # number of steps to complete lr and ws schedule
++    num_extension_iterations: int = int(os.environ.get("NUM_EXTENSION_ITERATIONS", "40"))  # number of steps to continue training at final lr and ws
+     # evaluation and logging
+-    run_id: str = f"{uuid.uuid4()}"
+-    val_loss_every: int = 250  # every how many steps to evaluate val loss? 0 for only at the end
++    run_id: str = os.environ.get("RUN_ID", f"{uuid.uuid4()}")
++    val_loss_every: int = int(os.environ.get("VAL_LOSS_EVERY", "250"))  # every how many steps to evaluate val loss? 0 for only at the end
+     save_checkpoint: bool = False
+     run_evals: bool = False  # run additional evaluations after training is completed
+     # bigram hash embedding
+-    bigram_vocab_size: int = 50304 * 5
++    bigram_vocab_size: int = 50304 * int(os.environ.get("BIGRAM_FACTOR", "5"))
+ 
+ args = Hyperparameters()
+ 
+@@ -1883,6 +1883,7 @@ def nvidia_smi():
+     import subprocess  # avoid top level import
+     return subprocess.run(["nvidia-smi"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
+ print0(nvidia_smi())
++print0(f"Experiment config: world_size={world_size} grad_accum_steps={grad_accum_steps} bigram_vocab_size={args.bigram_vocab_size} run_id={args.run_id}", console=True)
+ print0("="*100)
+ 
+ model: nn.Module = GPT(
+-- 
+2.34.1
+
+
+From a6010fa2b204bac66acf082fc6558df508aa45cb Mon Sep 17 00:00:00 2001
+From: ROM Benchmark <rom-benchmark@local>
+Date: Mon, 11 May 2026 18:08:54 +0000
+Subject: [PATCH 2/2] Use fused CE for eval on Blackwell
+
+---
+ train_gpt.py | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/train_gpt.py b/train_gpt.py
+index f863215..9443a21 100644
+--- a/train_gpt.py
++++ b/train_gpt.py
+@@ -1361,7 +1361,8 @@ class GPT(nn.Module):
+         x = norm(x)
+         # @Grad62304977 added tanh softcapping following Gemma 2 paper, @KoszarskyB reduced it from 30 to 15
+         # @YouJiacheng shifted it by +15 (2*sigmoid(2*x)=tanh(x)+1). @classiclarryd updated to 23*sigmoid((logits+5)/7.5)
+-        if self.training:
++        use_fused_ce_eval = bool(int(os.environ.get("FUSED_CE_EVAL", "1")))
++        if self.training or use_fused_ce_eval:
+             loss_per_token = FusedSoftcappedCrossEntropy.apply(x.view(-1, x.size(-1)), target_seq, mtp_weights, self.lm_head.weight, self.lm_head.x_s, self.lm_head.w_s, self.lm_head.grad_s, grad_scale)
+         else:
+             logits = self.lm_head(x)
+-- 
+2.34.1
+

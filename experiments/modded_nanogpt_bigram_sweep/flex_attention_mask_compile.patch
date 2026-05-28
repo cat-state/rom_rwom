@@ -1,0 +1,41 @@
+From 8a5c0bdf91a25850be86cd753e6ba54541665bed Mon Sep 17 00:00:00 2001
+From: ROM Benchmark <rom-benchmark@local>
+Date: Mon, 11 May 2026 14:59:52 -0400
+Subject: [PATCH] Compile FlexAttention block mask directly
+
+---
+ train_gpt.py | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/train_gpt.py b/train_gpt.py
+index 819efd5..5bdd553 100644
+--- a/train_gpt.py
++++ b/train_gpt.py
+@@ -1060,6 +1060,7 @@ class AttnArgs:
+     ve_gate_w: torch.Tensor
+     train_max_seq_len: torch.Tensor
+ 
++compiled_create_block_mask = torch.compile(create_block_mask, dynamic=False)
+ compiled_flex_attention = torch.compile(flex_attention, dynamic=False)
+ 
+ def flex_varlen_window_attention(q: Tensor, k: Tensor, v: Tensor, seqlens: Tensor, bm_size: int, scale: float) -> Tensor:
+@@ -1071,7 +1072,7 @@ def flex_varlen_window_attention(q: Tensor, k: Tensor, v: Tensor, seqlens: Tenso
+     def document_causal_window(b, h, q_idx, kv_idx):
+         return (q_idx >= kv_idx) & ((q_idx - kv_idx) <= bm_size) & (docs[q_idx] == docs[kv_idx])
+ 
+-    block_mask = create_block_mask(
++    block_mask = compiled_create_block_mask(
+         document_causal_window,
+         B=None,
+         H=None,
+@@ -1079,7 +1080,6 @@ def flex_varlen_window_attention(q: Tensor, k: Tensor, v: Tensor, seqlens: Tenso
+         KV_LEN=T,
+         device=q.device,
+         BLOCK_SIZE=128,
+-        _compile=True,
+     )
+     return compiled_flex_attention(
+         q.transpose(1, 2),
+-- 
+2.39.3 (Apple Git-146)
+

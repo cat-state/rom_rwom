@@ -1,0 +1,2125 @@
+{
+  "run_id": "engram_l2_bf5_dim1536_h8_ng3_1500_analysis_20260513_013250",
+  "checkpoint_path": "logs/engram_l2_bf5_dim1536_h8_ng3_1500_ckpt_20260513_005359/state_step001500.pt",
+  "checkpoint_step": 1500,
+  "analysis_tokens": 262144,
+  "loss": 3.2593812942504883,
+  "engram_dim": 1536,
+  "engram_heads": 8,
+  "engram_max_ngram": 3,
+  "total_hash_heads": 16,
+  "head_dim": 96,
+  "gate": {
+    "mean": 0.4894791543483734,
+    "std": 0.3358709514141083,
+    "quantiles": {
+      "0.01": 0.06560483574867249,
+      "0.05": 0.08632347732782364,
+      "0.1": 0.1037486344575882,
+      "0.5": 0.37570643424987793,
+      "0.9": 0.9046505093574524,
+      "0.95": 0.9252299070358276,
+      "0.99": 0.9504110217094421
+    },
+    "frac_gt_0_5": 0.48040008544921875,
+    "frac_gt_0_75": 0.38762664794921875,
+    "frac_gt_0_9": 0.11186599731445312
+  },
+  "gate_pre_sigmoid": {
+    "mean": -0.035739511251449585,
+    "std": 1.771712064743042,
+    "quantiles": {
+      "0.01": -2.65625,
+      "0.05": -2.359375,
+      "0.1": -2.15625,
+      "0.5": -0.5078125,
+      "0.9": 2.25,
+      "0.95": 2.515625,
+      "0.99": 2.953125
+    }
+  },
+  "value_norm": {
+    "mean": 229.89195251464844,
+    "quantiles": {
+      "0.01": 164.4246063232422,
+      "0.05": 173.35301208496094,
+      "0.1": 178.80624389648438,
+      "0.5": 212.77239990234375,
+      "0.9": 308.3359375,
+      "0.95": 343.2892150878906,
+      "0.99": 408.093017578125
+    }
+  },
+  "output_norm": {
+    "mean": 127.77721405029297,
+    "quantiles": {
+      "0.01": 18.64779281616211,
+      "0.05": 22.931346893310547,
+      "0.1": 26.489105224609375,
+      "0.5": 86.46190643310547,
+      "0.9": 267.0990295410156,
+      "0.95": 300.2357482910156,
+      "0.99": 369.5085754394531
+    }
+  },
+  "head_summaries": [
+    {
+      "head_idx": 0,
+      "ngram": 2,
+      "hash_head": 0,
+      "rows": 251527,
+      "unique_rows": 108797,
+      "unique_fraction": 0.4325460195541382,
+      "max_count": 2811,
+      "mean_count_per_touched_row": 2.409478187561035
+    },
+    {
+      "head_idx": 1,
+      "ngram": 2,
+      "hash_head": 1,
+      "rows": 251533,
+      "unique_rows": 108875,
+      "unique_fraction": 0.432845801115036,
+      "max_count": 2810,
+      "mean_count_per_touched_row": 2.40775203704834
+    },
+    {
+      "head_idx": 2,
+      "ngram": 2,
+      "hash_head": 2,
+      "rows": 251539,
+      "unique_rows": 108842,
+      "unique_fraction": 0.43270426988601685,
+      "max_count": 2810,
+      "mean_count_per_touched_row": 2.408482074737549
+    },
+    {
+      "head_idx": 3,
+      "ngram": 2,
+      "hash_head": 3,
+      "rows": 251543,
+      "unique_rows": 108700,
+      "unique_fraction": 0.43213286995887756,
+      "max_count": 2810,
+      "mean_count_per_touched_row": 2.411628246307373
+    },
+    {
+      "head_idx": 4,
+      "ngram": 2,
+      "hash_head": 4,
+      "rows": 251561,
+      "unique_rows": 108661,
+      "unique_fraction": 0.43194693326950073,
+      "max_count": 2810,
+      "mean_count_per_touched_row": 2.412493944168091
+    },
+    {
+      "head_idx": 5,
+      "ngram": 2,
+      "hash_head": 5,
+      "rows": 251567,
+      "unique_rows": 108893,
+      "unique_fraction": 0.4328588545322418,
+      "max_count": 2811,
+      "mean_count_per_touched_row": 2.4073541164398193
+    },
+    {
+      "head_idx": 6,
+      "ngram": 2,
+      "hash_head": 6,
+      "rows": 251609,
+      "unique_rows": 108697,
+      "unique_fraction": 0.4320076107978821,
+      "max_count": 2810,
+      "mean_count_per_touched_row": 2.4116950035095215
+    },
+    {
+      "head_idx": 7,
+      "ngram": 2,
+      "hash_head": 7,
+      "rows": 251611,
+      "unique_rows": 108896,
+      "unique_fraction": 0.43279507756233215,
+      "max_count": 2812,
+      "mean_count_per_touched_row": 2.40728759765625
+    },
+    {
+      "head_idx": 8,
+      "ngram": 3,
+      "hash_head": 0,
+      "rows": 251621,
+      "unique_rows": 146048,
+      "unique_fraction": 0.5804284811019897,
+      "max_count": 594,
+      "mean_count_per_touched_row": 1.7949167490005493
+    },
+    {
+      "head_idx": 9,
+      "ngram": 3,
+      "hash_head": 1,
+      "rows": 251623,
+      "unique_rows": 146135,
+      "unique_fraction": 0.5807696580886841,
+      "max_count": 594,
+      "mean_count_per_touched_row": 1.7938481569290161
+    },
+    {
+      "head_idx": 10,
+      "ngram": 3,
+      "hash_head": 2,
+      "rows": 251639,
+      "unique_rows": 146435,
+      "unique_fraction": 0.5819249153137207,
+      "max_count": 595,
+      "mean_count_per_touched_row": 1.7901731729507446
+    },
+    {
+      "head_idx": 11,
+      "ngram": 3,
+      "hash_head": 3,
+      "rows": 251653,
+      "unique_rows": 146443,
+      "unique_fraction": 0.581924319267273,
+      "max_count": 594,
+      "mean_count_per_touched_row": 1.7900753021240234
+    },
+    {
+      "head_idx": 12,
+      "ngram": 3,
+      "hash_head": 4,
+      "rows": 251663,
+      "unique_rows": 146198,
+      "unique_fraction": 0.5809276700019836,
+      "max_count": 594,
+      "mean_count_per_touched_row": 1.7930752038955688
+    },
+    {
+      "head_idx": 13,
+      "ngram": 3,
+      "hash_head": 5,
+      "rows": 251677,
+      "unique_rows": 146135,
+      "unique_fraction": 0.5806450247764587,
+      "max_count": 598,
+      "mean_count_per_touched_row": 1.7938481569290161
+    },
+    {
+      "head_idx": 14,
+      "ngram": 3,
+      "hash_head": 6,
+      "rows": 251701,
+      "unique_rows": 146012,
+      "unique_fraction": 0.5801010131835938,
+      "max_count": 596,
+      "mean_count_per_touched_row": 1.7953592538833618
+    },
+    {
+      "head_idx": 15,
+      "ngram": 3,
+      "hash_head": 7,
+      "rows": 251707,
+      "unique_rows": 146046,
+      "unique_fraction": 0.5802222490310669,
+      "max_count": 594,
+      "mean_count_per_touched_row": 1.7949413061141968
+    }
+  ],
+  "top_slots": [
+    {
+      "head_idx": 13,
+      "ngram": 3,
+      "hash_head": 5,
+      "row": 125393,
+      "absolute_row": 3396082,
+      "count": 81,
+      "avg_gate": 0.892501175403595,
+      "avg_output_norm": 429.97479248046875,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 3797,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": "\n- Upload photos<|endoftext|>|Facility Type:||Full Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations",
+          "gate": 0.9099069833755493,
+          "output_norm": 438.04144287109375
+        },
+        {
+          "position": 3809,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations:||3|\n|Number of non-critical violations",
+          "gate": 0.9032942056655884,
+          "output_norm": 434.8190612792969
+        }
+      ]
+    },
+    {
+      "head_idx": 14,
+      "ngram": 3,
+      "hash_head": 6,
+      "row": 125321,
+      "absolute_row": 3647687,
+      "count": 81,
+      "avg_gate": 0.892501175403595,
+      "avg_output_norm": 429.97479248046875,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 3797,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": "\n- Upload photos<|endoftext|>|Facility Type:||Full Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations",
+          "gate": 0.9099069833755493,
+          "output_norm": 438.04144287109375
+        },
+        {
+          "position": 3809,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations:||3|\n|Number of non-critical violations",
+          "gate": 0.9032942056655884,
+          "output_norm": 434.8190612792969
+        }
+      ]
+    },
+    {
+      "head_idx": 15,
+      "ngram": 3,
+      "hash_head": 7,
+      "row": 125303,
+      "absolute_row": 3899370,
+      "count": 81,
+      "avg_gate": 0.892501175403595,
+      "avg_output_norm": 429.97479248046875,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 3797,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": "\n- Upload photos<|endoftext|>|Facility Type:||Full Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations",
+          "gate": 0.9099069833755493,
+          "output_norm": 438.04144287109375
+        },
+        {
+          "position": 3809,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations:||3|\n|Number of non-critical violations",
+          "gate": 0.9032942056655884,
+          "output_norm": 434.8190612792969
+        }
+      ]
+    },
+    {
+      "head_idx": 8,
+      "ngram": 3,
+      "hash_head": 0,
+      "row": 125561,
+      "absolute_row": 2138051,
+      "count": 82,
+      "avg_gate": 0.8843660354614258,
+      "avg_output_norm": 425.31396484375,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 3797,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": "\n- Upload photos<|endoftext|>|Facility Type:||Full Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations",
+          "gate": 0.9099069833755493,
+          "output_norm": 438.04144287109375
+        },
+        {
+          "position": 3809,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations:||3|\n|Number of non-critical violations",
+          "gate": 0.9032942056655884,
+          "output_norm": 434.8190612792969
+        }
+      ]
+    },
+    {
+      "head_idx": 10,
+      "ngram": 3,
+      "hash_head": 2,
+      "row": 125507,
+      "absolute_row": 2641241,
+      "count": 83,
+      "avg_gate": 0.8860586881637573,
+      "avg_output_norm": 423.7787170410156,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 3797,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": "\n- Upload photos<|endoftext|>|Facility Type:||Full Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations",
+          "gate": 0.9099069833755493,
+          "output_norm": 438.04144287109375
+        },
+        {
+          "position": 3809,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations:||3|\n|Number of non-critical violations",
+          "gate": 0.9032942056655884,
+          "output_norm": 434.8190612792969
+        }
+      ]
+    },
+    {
+      "head_idx": 12,
+      "ngram": 3,
+      "hash_head": 4,
+      "row": 110002,
+      "absolute_row": 3129028,
+      "count": 46,
+      "avg_gate": 0.914043664932251,
+      "avg_output_norm": 422.3451232910156,
+      "examples": [
+        {
+          "position": 2018,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": "LANDO, Fla. \u2014 While the Rapid Recall Exchange, the 2-year-old industry recall portal, has signed up more than 600 manufacturer and retailer subscribers,",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.31707763671875
+        },
+        {
+          "position": 31771,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " drinking age in every state. Thirty one percent of 15- to 20-year-old drivers who were killed in crashes nationally in 2006 had been drinking.\nAccording",
+          "gate": 0.9136765599250793,
+          "output_norm": 422.3851318359375
+        },
+        {
+          "position": 31879,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " to 2010 as a result of a crash involving a 15- to 20-year-old driver with a blood alcohol content of 0.01 or above. In 2010",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.66119384765625
+        }
+      ]
+    },
+    {
+      "head_idx": 13,
+      "ngram": 3,
+      "hash_head": 5,
+      "row": 109092,
+      "absolute_row": 3379781,
+      "count": 46,
+      "avg_gate": 0.914043664932251,
+      "avg_output_norm": 422.3451232910156,
+      "examples": [
+        {
+          "position": 2018,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": "LANDO, Fla. \u2014 While the Rapid Recall Exchange, the 2-year-old industry recall portal, has signed up more than 600 manufacturer and retailer subscribers,",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.31707763671875
+        },
+        {
+          "position": 31771,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " drinking age in every state. Thirty one percent of 15- to 20-year-old drivers who were killed in crashes nationally in 2006 had been drinking.\nAccording",
+          "gate": 0.9136765599250793,
+          "output_norm": 422.3851318359375
+        },
+        {
+          "position": 31879,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " to 2010 as a result of a crash involving a 15- to 20-year-old driver with a blood alcohol content of 0.01 or above. In 2010",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.66119384765625
+        }
+      ]
+    },
+    {
+      "head_idx": 11,
+      "ngram": 3,
+      "hash_head": 3,
+      "row": 125465,
+      "absolute_row": 2892838,
+      "count": 83,
+      "avg_gate": 0.8739579916000366,
+      "avg_output_norm": 420.46795654296875,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 3797,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": "\n- Upload photos<|endoftext|>|Facility Type:||Full Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations",
+          "gate": 0.9099069833755493,
+          "output_norm": 438.04144287109375
+        },
+        {
+          "position": 3809,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations:||3|\n|Number of non-critical violations",
+          "gate": 0.9032942056655884,
+          "output_norm": 434.8190612792969
+        }
+      ]
+    },
+    {
+      "head_idx": 12,
+      "ngram": 3,
+      "hash_head": 4,
+      "row": 125435,
+      "absolute_row": 3144461,
+      "count": 84,
+      "avg_gate": 0.8837004899978638,
+      "avg_output_norm": 420.2744140625,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 3797,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": "\n- Upload photos<|endoftext|>|Facility Type:||Full Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations",
+          "gate": 0.9099069833755493,
+          "output_norm": 438.04144287109375
+        },
+        {
+          "position": 3809,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations:||3|\n|Number of non-critical violations",
+          "gate": 0.9032942056655884,
+          "output_norm": 434.8190612792969
+        }
+      ]
+    },
+    {
+      "head_idx": 10,
+      "ngram": 3,
+      "hash_head": 2,
+      "row": 111562,
+      "absolute_row": 2627296,
+      "count": 47,
+      "avg_gate": 0.900959849357605,
+      "avg_output_norm": 415.24176025390625,
+      "examples": [
+        {
+          "position": 2018,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": "LANDO, Fla. \u2014 While the Rapid Recall Exchange, the 2-year-old industry recall portal, has signed up more than 600 manufacturer and retailer subscribers,",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.31707763671875
+        },
+        {
+          "position": 31771,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " drinking age in every state. Thirty one percent of 15- to 20-year-old drivers who were killed in crashes nationally in 2006 had been drinking.\nAccording",
+          "gate": 0.9136765599250793,
+          "output_norm": 422.3851318359375
+        },
+        {
+          "position": 31879,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " to 2010 as a result of a crash involving a 15- to 20-year-old driver with a blood alcohol content of 0.01 or above. In 2010",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.66119384765625
+        }
+      ]
+    },
+    {
+      "head_idx": 9,
+      "ngram": 3,
+      "hash_head": 1,
+      "row": 112602,
+      "absolute_row": 2376713,
+      "count": 48,
+      "avg_gate": 0.9030987620353699,
+      "avg_output_norm": 412.6029968261719,
+      "examples": [
+        {
+          "position": 2018,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": "LANDO, Fla. \u2014 While the Rapid Recall Exchange, the 2-year-old industry recall portal, has signed up more than 600 manufacturer and retailer subscribers,",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.31707763671875
+        },
+        {
+          "position": 31771,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " drinking age in every state. Thirty one percent of 15- to 20-year-old drivers who were killed in crashes nationally in 2006 had been drinking.\nAccording",
+          "gate": 0.9136765599250793,
+          "output_norm": 422.3851318359375
+        },
+        {
+          "position": 31879,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " to 2010 as a result of a crash involving a 15- to 20-year-old driver with a blood alcohol content of 0.01 or above. In 2010",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.66119384765625
+        }
+      ]
+    },
+    {
+      "head_idx": 9,
+      "ngram": 3,
+      "hash_head": 1,
+      "row": 125555,
+      "absolute_row": 2389666,
+      "count": 86,
+      "avg_gate": 0.8723578453063965,
+      "avg_output_norm": 412.2515563964844,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 3797,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": "\n- Upload photos<|endoftext|>|Facility Type:||Full Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations",
+          "gate": 0.9099069833755493,
+          "output_norm": 438.04144287109375
+        },
+        {
+          "position": 3809,
+          "ngram_token_ids": [
+            91,
+            198,
+            91
+          ],
+          "ngram_text": "|\n|",
+          "window_text": " Service Restaurant|\n|Inspection date:||March 27, 2012|\n|Number of critical violations:||3|\n|Number of non-critical violations",
+          "gate": 0.9032942056655884,
+          "output_norm": 434.8190612792969
+        }
+      ]
+    },
+    {
+      "head_idx": 8,
+      "ngram": 3,
+      "hash_head": 0,
+      "row": 112732,
+      "absolute_row": 2125222,
+      "count": 48,
+      "avg_gate": 0.8952257633209229,
+      "avg_output_norm": 410.1200256347656,
+      "examples": [
+        {
+          "position": 2018,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": "LANDO, Fla. \u2014 While the Rapid Recall Exchange, the 2-year-old industry recall portal, has signed up more than 600 manufacturer and retailer subscribers,",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.31707763671875
+        },
+        {
+          "position": 3627,
+          "ngram_token_ids": [
+            4706,
+            11088,
+            27698
+          ],
+          "ngram_text": " manager Bruce Newman",
+          "window_text": " value share of the chocolate spread market.\nKraft Foods UK marketing manager Bruce Newman said:\n\u201cThe UK product would be positioned as a snack.\n",
+          "gate": 0.07585817575454712,
+          "output_norm": 20.91910171508789
+        },
+        {
+          "position": 31771,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " drinking age in every state. Thirty one percent of 15- to 20-year-old drivers who were killed in crashes nationally in 2006 had been drinking.\nAccording",
+          "gate": 0.9136765599250793,
+          "output_norm": 422.3851318359375
+        }
+      ]
+    },
+    {
+      "head_idx": 10,
+      "ngram": 3,
+      "hash_head": 2,
+      "row": 228746,
+      "absolute_row": 2744480,
+      "count": 70,
+      "avg_gate": 0.9337491989135742,
+      "avg_output_norm": 409.2957458496094,
+      "examples": [
+        {
+          "position": 2167,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " industry relations, education and research for Food Marketing Institute, Arlington, Va.\n\u201cWe have good penetration [among manufacturers] on the dry grocery side \u2014 though",
+          "gate": 0.9441768527030945,
+          "output_norm": 414.67535400390625
+        },
+        {
+          "position": 2393,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": "disappointed\u201d in the number of manufacturers using the Rapid Recall Exchange.\n\u201cOnly 222 of our grocery suppliers are signed up, and more than 1,",
+          "gate": 0.9381240010261536,
+          "output_norm": 410.4688415527344
+        },
+        {
+          "position": 3644,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " said:\n\u201cThe UK product would be positioned as a snack.\n\u201cThe breakfast market in countries such as Germany is more developed, and our consumer",
+          "gate": 0.9252299070358276,
+          "output_norm": 405.80792236328125
+        }
+      ]
+    },
+    {
+      "head_idx": 11,
+      "ngram": 3,
+      "hash_head": 3,
+      "row": 228522,
+      "absolute_row": 2995895,
+      "count": 70,
+      "avg_gate": 0.9337491989135742,
+      "avg_output_norm": 409.2957458496094,
+      "examples": [
+        {
+          "position": 2167,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " industry relations, education and research for Food Marketing Institute, Arlington, Va.\n\u201cWe have good penetration [among manufacturers] on the dry grocery side \u2014 though",
+          "gate": 0.9441768527030945,
+          "output_norm": 414.67535400390625
+        },
+        {
+          "position": 2393,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": "disappointed\u201d in the number of manufacturers using the Rapid Recall Exchange.\n\u201cOnly 222 of our grocery suppliers are signed up, and more than 1,",
+          "gate": 0.9381240010261536,
+          "output_norm": 410.4688415527344
+        },
+        {
+          "position": 3644,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " said:\n\u201cThe UK product would be positioned as a snack.\n\u201cThe breakfast market in countries such as Germany is more developed, and our consumer",
+          "gate": 0.9252299070358276,
+          "output_norm": 405.80792236328125
+        }
+      ]
+    },
+    {
+      "head_idx": 11,
+      "ngram": 3,
+      "hash_head": 3,
+      "row": 110652,
+      "absolute_row": 2878025,
+      "count": 48,
+      "avg_gate": 0.8950790762901306,
+      "avg_output_norm": 408.7915344238281,
+      "examples": [
+        {
+          "position": 2018,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": "LANDO, Fla. \u2014 While the Rapid Recall Exchange, the 2-year-old industry recall portal, has signed up more than 600 manufacturer and retailer subscribers,",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.31707763671875
+        },
+        {
+          "position": 16278,
+          "ngram_token_ids": [
+            36095,
+            198,
+            18712
+          ],
+          "ngram_text": " Experts\nSmall",
+          "window_text": " 20, 2013) - Over 100 Game Changing PPC Strategies From 12 Experts\nSmall Biz Trends (March 19, 2013) - 5 Lessons You Can Learn from",
+          "gate": 0.15713684260845184,
+          "output_norm": 36.207523345947266
+        },
+        {
+          "position": 24772,
+          "ngram_token_ids": [
+            484,
+            743,
+            1575
+          ],
+          "ngram_text": " they may cost",
+          "window_text": ", though, by saying wings will be available. He added that although they may cost a bit more, \u201cThe good news for consumers is that restaurants plan well",
+          "gate": 0.7606506943702698,
+          "output_norm": 157.91038513183594
+        }
+      ]
+    },
+    {
+      "head_idx": 12,
+      "ngram": 3,
+      "hash_head": 4,
+      "row": 228362,
+      "absolute_row": 3247388,
+      "count": 71,
+      "avg_gate": 0.9330713152885437,
+      "avg_output_norm": 406.95111083984375,
+      "examples": [
+        {
+          "position": 2167,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " industry relations, education and research for Food Marketing Institute, Arlington, Va.\n\u201cWe have good penetration [among manufacturers] on the dry grocery side \u2014 though",
+          "gate": 0.9441768527030945,
+          "output_norm": 414.67535400390625
+        },
+        {
+          "position": 2393,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": "disappointed\u201d in the number of manufacturers using the Rapid Recall Exchange.\n\u201cOnly 222 of our grocery suppliers are signed up, and more than 1,",
+          "gate": 0.9381240010261536,
+          "output_norm": 410.4688415527344
+        },
+        {
+          "position": 3644,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " said:\n\u201cThe UK product would be positioned as a snack.\n\u201cThe breakfast market in countries such as Germany is more developed, and our consumer",
+          "gate": 0.9252299070358276,
+          "output_norm": 405.80792236328125
+        }
+      ]
+    },
+    {
+      "head_idx": 9,
+      "ngram": 3,
+      "hash_head": 1,
+      "row": 229002,
+      "absolute_row": 2493113,
+      "count": 71,
+      "avg_gate": 0.9329206347465515,
+      "avg_output_norm": 406.449951171875,
+      "examples": [
+        {
+          "position": 2167,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " industry relations, education and research for Food Marketing Institute, Arlington, Va.\n\u201cWe have good penetration [among manufacturers] on the dry grocery side \u2014 though",
+          "gate": 0.9441768527030945,
+          "output_norm": 414.67535400390625
+        },
+        {
+          "position": 2393,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": "disappointed\u201d in the number of manufacturers using the Rapid Recall Exchange.\n\u201cOnly 222 of our grocery suppliers are signed up, and more than 1,",
+          "gate": 0.9381240010261536,
+          "output_norm": 410.4688415527344
+        },
+        {
+          "position": 3644,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " said:\n\u201cThe UK product would be positioned as a snack.\n\u201cThe breakfast market in countries such as Germany is more developed, and our consumer",
+          "gate": 0.9252299070358276,
+          "output_norm": 405.80792236328125
+        }
+      ]
+    },
+    {
+      "head_idx": 14,
+      "ngram": 3,
+      "hash_head": 6,
+      "row": 227754,
+      "absolute_row": 3750120,
+      "count": 71,
+      "avg_gate": 0.9337716102600098,
+      "avg_output_norm": 406.38800048828125,
+      "examples": [
+        {
+          "position": 2167,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " industry relations, education and research for Food Marketing Institute, Arlington, Va.\n\u201cWe have good penetration [among manufacturers] on the dry grocery side \u2014 though",
+          "gate": 0.9441768527030945,
+          "output_norm": 414.67535400390625
+        },
+        {
+          "position": 2393,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": "disappointed\u201d in the number of manufacturers using the Rapid Recall Exchange.\n\u201cOnly 222 of our grocery suppliers are signed up, and more than 1,",
+          "gate": 0.9381240010261536,
+          "output_norm": 410.4688415527344
+        },
+        {
+          "position": 3644,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " said:\n\u201cThe UK product would be positioned as a snack.\n\u201cThe breakfast market in countries such as Germany is more developed, and our consumer",
+          "gate": 0.9252299070358276,
+          "output_norm": 405.80792236328125
+        }
+      ]
+    },
+    {
+      "head_idx": 14,
+      "ngram": 3,
+      "hash_head": 6,
+      "row": 107532,
+      "absolute_row": 3629898,
+      "count": 48,
+      "avg_gate": 0.8815777897834778,
+      "avg_output_norm": 406.2315368652344,
+      "examples": [
+        {
+          "position": 2018,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": "LANDO, Fla. \u2014 While the Rapid Recall Exchange, the 2-year-old industry recall portal, has signed up more than 600 manufacturer and retailer subscribers,",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.31707763671875
+        },
+        {
+          "position": 31771,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " drinking age in every state. Thirty one percent of 15- to 20-year-old drivers who were killed in crashes nationally in 2006 had been drinking.\nAccording",
+          "gate": 0.9136765599250793,
+          "output_norm": 422.3851318359375
+        },
+        {
+          "position": 31879,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " to 2010 as a result of a crash involving a 15- to 20-year-old driver with a blood alcohol content of 0.01 or above. In 2010",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.66119384765625
+        }
+      ]
+    },
+    {
+      "head_idx": 15,
+      "ngram": 3,
+      "hash_head": 7,
+      "row": 107142,
+      "absolute_row": 3881209,
+      "count": 48,
+      "avg_gate": 0.8799313902854919,
+      "avg_output_norm": 405.7232971191406,
+      "examples": [
+        {
+          "position": 2018,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": "LANDO, Fla. \u2014 While the Rapid Recall Exchange, the 2-year-old industry recall portal, has signed up more than 600 manufacturer and retailer subscribers,",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.31707763671875
+        },
+        {
+          "position": 31771,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " drinking age in every state. Thirty one percent of 15- to 20-year-old drivers who were killed in crashes nationally in 2006 had been drinking.\nAccording",
+          "gate": 0.9136765599250793,
+          "output_norm": 422.3851318359375
+        },
+        {
+          "position": 31879,
+          "ngram_token_ids": [
+            12,
+            1941,
+            12
+          ],
+          "ngram_text": "-year-",
+          "window_text": " to 2010 as a result of a crash involving a 15- to 20-year-old driver with a blood alcohol content of 0.01 or above. In 2010",
+          "gate": 0.9099069833755493,
+          "output_norm": 420.66119384765625
+        }
+      ]
+    },
+    {
+      "head_idx": 13,
+      "ngram": 3,
+      "hash_head": 5,
+      "row": 228138,
+      "absolute_row": 3498827,
+      "count": 71,
+      "avg_gate": 0.9245278835296631,
+      "avg_output_norm": 404.3762512207031,
+      "examples": [
+        {
+          "position": 2167,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " industry relations, education and research for Food Marketing Institute, Arlington, Va.\n\u201cWe have good penetration [among manufacturers] on the dry grocery side \u2014 though",
+          "gate": 0.9441768527030945,
+          "output_norm": 414.67535400390625
+        },
+        {
+          "position": 2393,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": "disappointed\u201d in the number of manufacturers using the Rapid Recall Exchange.\n\u201cOnly 222 of our grocery suppliers are signed up, and more than 1,",
+          "gate": 0.9381240010261536,
+          "output_norm": 410.4688415527344
+        },
+        {
+          "position": 3644,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " said:\n\u201cThe UK product would be positioned as a snack.\n\u201cThe breakfast market in countries such as Germany is more developed, and our consumer",
+          "gate": 0.9252299070358276,
+          "output_norm": 405.80792236328125
+        }
+      ]
+    },
+    {
+      "head_idx": 15,
+      "ngram": 3,
+      "hash_head": 7,
+      "row": 227658,
+      "absolute_row": 4001725,
+      "count": 71,
+      "avg_gate": 0.9221428632736206,
+      "avg_output_norm": 403.88751220703125,
+      "examples": [
+        {
+          "position": 2167,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " industry relations, education and research for Food Marketing Institute, Arlington, Va.\n\u201cWe have good penetration [among manufacturers] on the dry grocery side \u2014 though",
+          "gate": 0.9441768527030945,
+          "output_norm": 414.67535400390625
+        },
+        {
+          "position": 2393,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": "disappointed\u201d in the number of manufacturers using the Rapid Recall Exchange.\n\u201cOnly 222 of our grocery suppliers are signed up, and more than 1,",
+          "gate": 0.9381240010261536,
+          "output_norm": 410.4688415527344
+        },
+        {
+          "position": 3644,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " said:\n\u201cThe UK product would be positioned as a snack.\n\u201cThe breakfast market in countries such as Germany is more developed, and our consumer",
+          "gate": 0.9252299070358276,
+          "output_norm": 405.80792236328125
+        }
+      ]
+    },
+    {
+      "head_idx": 8,
+      "ngram": 3,
+      "hash_head": 0,
+      "row": 229034,
+      "absolute_row": 2241524,
+      "count": 72,
+      "avg_gate": 0.9296913146972656,
+      "avg_output_norm": 403.5692138671875,
+      "examples": [
+        {
+          "position": 2167,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " industry relations, education and research for Food Marketing Institute, Arlington, Va.\n\u201cWe have good penetration [among manufacturers] on the dry grocery side \u2014 though",
+          "gate": 0.9441768527030945,
+          "output_norm": 414.67535400390625
+        },
+        {
+          "position": 2393,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": "disappointed\u201d in the number of manufacturers using the Rapid Recall Exchange.\n\u201cOnly 222 of our grocery suppliers are signed up, and more than 1,",
+          "gate": 0.9381240010261536,
+          "output_norm": 410.4688415527344
+        },
+        {
+          "position": 3644,
+          "ngram_token_ids": [
+            13,
+            198,
+            447
+          ],
+          "ngram_text": ".\n\ufffd",
+          "window_text": " said:\n\u201cThe UK product would be positioned as a snack.\n\u201cThe breakfast market in countries such as Germany is more developed, and our consumer",
+          "gate": 0.9252299070358276,
+          "output_norm": 405.80792236328125
+        }
+      ]
+    },
+    {
+      "head_idx": 9,
+      "ngram": 3,
+      "hash_head": 1,
+      "row": 82567,
+      "absolute_row": 2346678,
+      "count": 69,
+      "avg_gate": 0.9658574461936951,
+      "avg_output_norm": 400.6341857910156,
+      "examples": [
+        {
+          "position": 2110,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " information with individual stores. The exchange's retail membership represents 85% of U.S. grocery volume \u2014 including 21 of the 24 largest supermarket chains based in the United",
+          "gate": 0.9669140577316284,
+          "output_norm": 401.6498718261719
+        },
+        {
+          "position": 2875,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " four nationally ranked teams.\nAugustana, ranked sixth in the latest U.S. Track & Field/Cross Country Coaches Association Division III Mideast Regional",
+          "gate": 0.9664104580879211,
+          "output_norm": 400.1831970214844
+        },
+        {
+          "position": 10426,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": "swire/ -- In a show of solidarity in providing healthy meals to U.S. students, the Urban School Food Alliance (USFA), which consists of some",
+          "gate": 0.9678993225097656,
+          "output_norm": 401.4249572753906
+        }
+      ]
+    },
+    {
+      "head_idx": 13,
+      "ngram": 3,
+      "hash_head": 5,
+      "row": 82297,
+      "absolute_row": 3352986,
+      "count": 69,
+      "avg_gate": 0.9658574461936951,
+      "avg_output_norm": 400.6341857910156,
+      "examples": [
+        {
+          "position": 2110,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " information with individual stores. The exchange's retail membership represents 85% of U.S. grocery volume \u2014 including 21 of the 24 largest supermarket chains based in the United",
+          "gate": 0.9669140577316284,
+          "output_norm": 401.6498718261719
+        },
+        {
+          "position": 2875,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " four nationally ranked teams.\nAugustana, ranked sixth in the latest U.S. Track & Field/Cross Country Coaches Association Division III Mideast Regional",
+          "gate": 0.9664104580879211,
+          "output_norm": 400.1831970214844
+        },
+        {
+          "position": 10426,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": "swire/ -- In a show of solidarity in providing healthy meals to U.S. students, the Urban School Food Alliance (USFA), which consists of some",
+          "gate": 0.9678993225097656,
+          "output_norm": 401.4249572753906
+        }
+      ]
+    },
+    {
+      "head_idx": 14,
+      "ngram": 3,
+      "hash_head": 6,
+      "row": 82177,
+      "absolute_row": 3604543,
+      "count": 69,
+      "avg_gate": 0.9658574461936951,
+      "avg_output_norm": 400.6341857910156,
+      "examples": [
+        {
+          "position": 2110,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " information with individual stores. The exchange's retail membership represents 85% of U.S. grocery volume \u2014 including 21 of the 24 largest supermarket chains based in the United",
+          "gate": 0.9669140577316284,
+          "output_norm": 401.6498718261719
+        },
+        {
+          "position": 2875,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " four nationally ranked teams.\nAugustana, ranked sixth in the latest U.S. Track & Field/Cross Country Coaches Association Division III Mideast Regional",
+          "gate": 0.9664104580879211,
+          "output_norm": 400.1831970214844
+        },
+        {
+          "position": 10426,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": "swire/ -- In a show of solidarity in providing healthy meals to U.S. students, the Urban School Food Alliance (USFA), which consists of some",
+          "gate": 0.9678993225097656,
+          "output_norm": 401.4249572753906
+        }
+      ]
+    },
+    {
+      "head_idx": 0,
+      "ngram": 2,
+      "hash_head": 0,
+      "row": 236335,
+      "absolute_row": 236335,
+      "count": 164,
+      "avg_gate": 0.8878418803215027,
+      "avg_output_norm": 398.419677734375,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 120,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": ", STEFANO, STEFANO!!!! :cheer:\n|Spoilers for the Week of February 11th \u00b7 DAYS: News,",
+          "gate": 0.8872045874595642,
+          "output_norm": 376.7011413574219
+        },
+        {
+          "position": 2726,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": "September 28, 2010\n2010 Season - Bowman pulls down CCIW honor\n|Matt Bowman was named CCIW \"Runner of the Week\" after his fourth",
+          "gate": 0.8887587189674377,
+          "output_norm": 314.6532287597656
+        }
+      ]
+    },
+    {
+      "head_idx": 1,
+      "ngram": 2,
+      "hash_head": 1,
+      "row": 236323,
+      "absolute_row": 487850,
+      "count": 164,
+      "avg_gate": 0.8878418803215027,
+      "avg_output_norm": 398.419677734375,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 120,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": ", STEFANO, STEFANO!!!! :cheer:\n|Spoilers for the Week of February 11th \u00b7 DAYS: News,",
+          "gate": 0.8872045874595642,
+          "output_norm": 376.7011413574219
+        },
+        {
+          "position": 2726,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": "September 28, 2010\n2010 Season - Bowman pulls down CCIW honor\n|Matt Bowman was named CCIW \"Runner of the Week\" after his fourth",
+          "gate": 0.8887587189674377,
+          "output_norm": 314.6532287597656
+        }
+      ]
+    },
+    {
+      "head_idx": 3,
+      "ngram": 2,
+      "hash_head": 3,
+      "row": 236303,
+      "absolute_row": 990902,
+      "count": 164,
+      "avg_gate": 0.8878418803215027,
+      "avg_output_norm": 398.419677734375,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 120,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": ", STEFANO, STEFANO!!!! :cheer:\n|Spoilers for the Week of February 11th \u00b7 DAYS: News,",
+          "gate": 0.8872045874595642,
+          "output_norm": 376.7011413574219
+        },
+        {
+          "position": 2726,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": "September 28, 2010\n2010 Season - Bowman pulls down CCIW honor\n|Matt Bowman was named CCIW \"Runner of the Week\" after his fourth",
+          "gate": 0.8887587189674377,
+          "output_norm": 314.6532287597656
+        }
+      ]
+    },
+    {
+      "head_idx": 4,
+      "ngram": 2,
+      "hash_head": 4,
+      "row": 236267,
+      "absolute_row": 1242409,
+      "count": 164,
+      "avg_gate": 0.8878418803215027,
+      "avg_output_norm": 398.419677734375,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 120,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": ", STEFANO, STEFANO!!!! :cheer:\n|Spoilers for the Week of February 11th \u00b7 DAYS: News,",
+          "gate": 0.8872045874595642,
+          "output_norm": 376.7011413574219
+        },
+        {
+          "position": 2726,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": "September 28, 2010\n2010 Season - Bowman pulls down CCIW honor\n|Matt Bowman was named CCIW \"Runner of the Week\" after his fourth",
+          "gate": 0.8887587189674377,
+          "output_norm": 314.6532287597656
+        }
+      ]
+    },
+    {
+      "head_idx": 6,
+      "ngram": 2,
+      "hash_head": 6,
+      "row": 236171,
+      "absolute_row": 1745441,
+      "count": 164,
+      "avg_gate": 0.8878418803215027,
+      "avg_output_norm": 398.419677734375,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 120,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": ", STEFANO, STEFANO!!!! :cheer:\n|Spoilers for the Week of February 11th \u00b7 DAYS: News,",
+          "gate": 0.8872045874595642,
+          "output_norm": 376.7011413574219
+        },
+        {
+          "position": 2726,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": "September 28, 2010\n2010 Season - Bowman pulls down CCIW honor\n|Matt Bowman was named CCIW \"Runner of the Week\" after his fourth",
+          "gate": 0.8887587189674377,
+          "output_norm": 314.6532287597656
+        }
+      ]
+    },
+    {
+      "head_idx": 7,
+      "ngram": 2,
+      "hash_head": 7,
+      "row": 236167,
+      "absolute_row": 1997046,
+      "count": 164,
+      "avg_gate": 0.8878418803215027,
+      "avg_output_norm": 398.419677734375,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 120,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": ", STEFANO, STEFANO!!!! :cheer:\n|Spoilers for the Week of February 11th \u00b7 DAYS: News,",
+          "gate": 0.8872045874595642,
+          "output_norm": 376.7011413574219
+        },
+        {
+          "position": 2726,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": "September 28, 2010\n2010 Season - Bowman pulls down CCIW honor\n|Matt Bowman was named CCIW \"Runner of the Week\" after his fourth",
+          "gate": 0.8887587189674377,
+          "output_norm": 314.6532287597656
+        }
+      ]
+    },
+    {
+      "head_idx": 8,
+      "ngram": 3,
+      "hash_head": 0,
+      "row": 82577,
+      "absolute_row": 2095067,
+      "count": 70,
+      "avg_gate": 0.9633156061172485,
+      "avg_output_norm": 397.5773620605469,
+      "examples": [
+        {
+          "position": 2110,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " information with individual stores. The exchange's retail membership represents 85% of U.S. grocery volume \u2014 including 21 of the 24 largest supermarket chains based in the United",
+          "gate": 0.9669140577316284,
+          "output_norm": 401.6498718261719
+        },
+        {
+          "position": 2875,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " four nationally ranked teams.\nAugustana, ranked sixth in the latest U.S. Track & Field/Cross Country Coaches Association Division III Mideast Regional",
+          "gate": 0.9664104580879211,
+          "output_norm": 400.1831970214844
+        },
+        {
+          "position": 10426,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": "swire/ -- In a show of solidarity in providing healthy meals to U.S. students, the Urban School Food Alliance (USFA), which consists of some",
+          "gate": 0.9678993225097656,
+          "output_norm": 401.4249572753906
+        }
+      ]
+    },
+    {
+      "head_idx": 10,
+      "ngram": 3,
+      "hash_head": 2,
+      "row": 82487,
+      "absolute_row": 2598221,
+      "count": 70,
+      "avg_gate": 0.9599770903587341,
+      "avg_output_norm": 396.87322998046875,
+      "examples": [
+        {
+          "position": 2110,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " information with individual stores. The exchange's retail membership represents 85% of U.S. grocery volume \u2014 including 21 of the 24 largest supermarket chains based in the United",
+          "gate": 0.9669140577316284,
+          "output_norm": 401.6498718261719
+        },
+        {
+          "position": 2875,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " four nationally ranked teams.\nAugustana, ranked sixth in the latest U.S. Track & Field/Cross Country Coaches Association Division III Mideast Regional",
+          "gate": 0.9664104580879211,
+          "output_norm": 400.1831970214844
+        },
+        {
+          "position": 10426,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": "swire/ -- In a show of solidarity in providing healthy meals to U.S. students, the Urban School Food Alliance (USFA), which consists of some",
+          "gate": 0.9678993225097656,
+          "output_norm": 401.4249572753906
+        }
+      ]
+    },
+    {
+      "head_idx": 5,
+      "ngram": 2,
+      "hash_head": 5,
+      "row": 236255,
+      "absolute_row": 1493958,
+      "count": 165,
+      "avg_gate": 0.8831735253334045,
+      "avg_output_norm": 396.175048828125,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 120,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": ", STEFANO, STEFANO!!!! :cheer:\n|Spoilers for the Week of February 11th \u00b7 DAYS: News,",
+          "gate": 0.8872045874595642,
+          "output_norm": 376.7011413574219
+        },
+        {
+          "position": 2726,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": "September 28, 2010\n2010 Season - Bowman pulls down CCIW honor\n|Matt Bowman was named CCIW \"Runner of the Week\" after his fourth",
+          "gate": 0.8887587189674377,
+          "output_norm": 314.6532287597656
+        }
+      ]
+    },
+    {
+      "head_idx": 2,
+      "ngram": 2,
+      "hash_head": 2,
+      "row": 236311,
+      "absolute_row": 739371,
+      "count": 167,
+      "avg_gate": 0.8883247375488281,
+      "avg_output_norm": 396.0915832519531,
+      "examples": [
+        {
+          "position": 20,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": " Single Post From: Spoilers for the Week of February 11th|\n|Lil||Feb 1 2013, 09:58 AM|\nDon't care",
+          "gate": 0.8661325573921204,
+          "output_norm": 417.7334289550781
+        },
+        {
+          "position": 120,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": ", STEFANO, STEFANO!!!! :cheer:\n|Spoilers for the Week of February 11th \u00b7 DAYS: News,",
+          "gate": 0.8872045874595642,
+          "output_norm": 376.7011413574219
+        },
+        {
+          "position": 2726,
+          "ngram_token_ids": [
+            198,
+            91
+          ],
+          "ngram_text": "\n|",
+          "window_text": "September 28, 2010\n2010 Season - Bowman pulls down CCIW honor\n|Matt Bowman was named CCIW \"Runner of the Week\" after his fourth",
+          "gate": 0.8887587189674377,
+          "output_norm": 314.6532287597656
+        }
+      ]
+    },
+    {
+      "head_idx": 12,
+      "ngram": 3,
+      "hash_head": 4,
+      "row": 82367,
+      "absolute_row": 3101393,
+      "count": 70,
+      "avg_gate": 0.9551453590393066,
+      "avg_output_norm": 395.599365234375,
+      "examples": [
+        {
+          "position": 2110,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " information with individual stores. The exchange's retail membership represents 85% of U.S. grocery volume \u2014 including 21 of the 24 largest supermarket chains based in the United",
+          "gate": 0.9669140577316284,
+          "output_norm": 401.6498718261719
+        },
+        {
+          "position": 2875,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " four nationally ranked teams.\nAugustana, ranked sixth in the latest U.S. Track & Field/Cross Country Coaches Association Division III Mideast Regional",
+          "gate": 0.9664104580879211,
+          "output_norm": 400.1831970214844
+        },
+        {
+          "position": 10426,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": "swire/ -- In a show of solidarity in providing healthy meals to U.S. students, the Urban School Food Alliance (USFA), which consists of some",
+          "gate": 0.9678993225097656,
+          "output_norm": 401.4249572753906
+        }
+      ]
+    },
+    {
+      "head_idx": 11,
+      "ngram": 3,
+      "hash_head": 3,
+      "row": 82417,
+      "absolute_row": 2849790,
+      "count": 70,
+      "avg_gate": 0.9542169570922852,
+      "avg_output_norm": 395.380859375,
+      "examples": [
+        {
+          "position": 2110,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " information with individual stores. The exchange's retail membership represents 85% of U.S. grocery volume \u2014 including 21 of the 24 largest supermarket chains based in the United",
+          "gate": 0.9669140577316284,
+          "output_norm": 401.6498718261719
+        },
+        {
+          "position": 2875,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": " four nationally ranked teams.\nAugustana, ranked sixth in the latest U.S. Track & Field/Cross Country Coaches Association Division III Mideast Regional",
+          "gate": 0.9664104580879211,
+          "output_norm": 400.1831970214844
+        },
+        {
+          "position": 10426,
+          "ngram_token_ids": [
+            471,
+            13,
+            50
+          ],
+          "ngram_text": " U.S",
+          "window_text": "swire/ -- In a show of solidarity in providing healthy meals to U.S. students, the Urban School Food Alliance (USFA), which consists of some",
+          "gate": 0.9678993225097656,
+          "output_norm": 401.4249572753906
+        }
+      ]
+    },
+    {
+      "head_idx": 9,
+      "ngram": 3,
+      "hash_head": 1,
+      "row": 12258,
+      "absolute_row": 2276369,
+      "count": 57,
+      "avg_gate": 0.8769073486328125,
+      "avg_output_norm": 391.88055419921875,
+      "examples": [
+        {
+          "position": 4623,
+          "ngram_token_ids": [
+            355,
+            880,
+            355
+          ],
+          "ngram_text": " as well as",
+          "window_text": " this weekend to check out works I have created over the last year, as well as find some neat works from my artistic past in tje awesome sales bins created just",
+          "gate": 0.8558511734008789,
+          "output_norm": 382.3868408203125
+        },
+        {
+          "position": 6168,
+          "ngram_token_ids": [
+            355,
+            880,
+            355
+          ],
+          "ngram_text": " as well as",
+          "window_text": " those funds, Michigan will have to let go of the temporary workers, as well as 225 permanent staffers, totaling about one-fifth of the Department of Licensing and",
+          "gate": 0.8365545868873596,
+          "output_norm": 373.5010070800781
+        },
+        {
+          "position": 10871,
+          "ngram_token_ids": [
+            355,
+            880,
+            355
+          ],
+          "ngram_text": " as well as",
+          "window_text": " to school meals including expanded options for reaching more students with breakfast on campus as well as supper after school in order to meet the needs of students.\n\u00a92012 PR",
+          "gate": 0.9099069833755493,
+          "output_norm": 406.6019287109375
+        }
+      ]
+    }
+  ]
+}

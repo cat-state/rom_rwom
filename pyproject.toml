@@ -1,0 +1,11 @@
+[project]
+name = "rom-rwom"
+version = "0.1.0"
+description = "Rememberance of Memories experiments inspired by Engram and Gated DeltaNet"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
