@@ -1,0 +1,18 @@
+<!doctype html><meta charset='utf-8'><title>Memory Learning Scaling</title><style>body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;margin:28px;line-height:1.35}table{border-collapse:collapse}td,th{border:1px solid #ccc;padding:4px 8px}th{background:#eee}img{max-width:100%;border:1px solid #ddd}</style><h1>Memory Learning Scaling, 2026-05-19</h1><p>Synthetic sparse row memory under noisy MSE. Targets are random row vectors; readouts are linear or frozen RMSNorm+MLP. Methods: row SGD, row Adam, normalized vector write, GDN state write.</p><h2>Best final seen MSE</h2><table><tr><th>target</th><th>readout</th><th>rows</th><th>raw-GDN best</th><th>raw MSE</th><th>norm-GDN best</th><th>norm MSE</th></tr><tr><td>gaussian</td><td>linear</td><td>4096</td><td>adam</td><td>0.0007092</td><td>adam</td><td>0.0007116</td></tr>
+<tr><td>gaussian</td><td>linear</td><td>16384</td><td>adam</td><td>0.08497</td><td>adam</td><td>0.08487</td></tr>
+<tr><td>gaussian</td><td>linear</td><td>65536</td><td>adam</td><td>0.4636</td><td>adam</td><td>0.4637</td></tr>
+<tr><td>gaussian</td><td>mlp</td><td>4096</td><td>sgd</td><td>0.00243</td><td>sgd</td><td>0.002399</td></tr>
+<tr><td>gaussian</td><td>mlp</td><td>16384</td><td>sgd</td><td>0.009958</td><td>sgd</td><td>0.0117</td></tr>
+<tr><td>gaussian</td><td>mlp</td><td>65536</td><td>sgd</td><td>0.08312</td><td>sgd</td><td>0.08888</td></tr>
+<tr><td>mixed</td><td>linear</td><td>4096</td><td>adam</td><td>0.000549</td><td>adam</td><td>0.0005186</td></tr>
+<tr><td>mixed</td><td>linear</td><td>16384</td><td>adam</td><td>0.05039</td><td>adam</td><td>0.05086</td></tr>
+<tr><td>mixed</td><td>linear</td><td>65536</td><td>adam</td><td>0.4112</td><td>adam</td><td>0.411</td></tr>
+<tr><td>mixed</td><td>mlp</td><td>4096</td><td>sgd</td><td>0.002318</td><td>sgd</td><td>0.002253</td></tr>
+<tr><td>mixed</td><td>mlp</td><td>16384</td><td>sgd</td><td>0.01081</td><td>sgd</td><td>0.01109</td></tr>
+<tr><td>mixed</td><td>mlp</td><td>65536</td><td>sgd</td><td>0.08667</td><td>sgd</td><td>0.08594</td></tr>
+<tr><td>rademacher</td><td>linear</td><td>4096</td><td>adam</td><td>0.000356</td><td>adam</td><td>0.0003556</td></tr>
+<tr><td>rademacher</td><td>linear</td><td>16384</td><td>adam</td><td>0.0157</td><td>adam</td><td>0.01535</td></tr>
+<tr><td>rademacher</td><td>linear</td><td>65536</td><td>adam</td><td>0.3609</td><td>adam</td><td>0.3601</td></tr>
+<tr><td>rademacher</td><td>mlp</td><td>4096</td><td>sgd</td><td>0.002455</td><td>sgd</td><td>0.002508</td></tr>
+<tr><td>rademacher</td><td>mlp</td><td>16384</td><td>sgd</td><td>0.01054</td><td>sgd</td><td>0.01109</td></tr>
+<tr><td>rademacher</td><td>mlp</td><td>65536</td><td>sgd</td><td>0.08193</td><td>sgd</td><td>0.08439</td></tr></table><h2>Raw GDN run</h2><img src='memory_learning_scaling_rawgdn_20260519.png'><h2>Normalized GDN run</h2><img src='memory_learning_scaling_normgdn_20260519.png'><h2>Adam LR Sweep, Mixed MLP</h2><p>A focused sweep shows Adam was not fundamentally bad through the MLP readout; the default LR was too aggressive. Best Adam LR was 0.002 for both tested row counts.</p><table><tr><th>rows</th><th>best Adam LR</th><th>Adam final seen MSE</th><th>update/grad ratio</th></tr><tr><td>16384</td><td>0.002</td><td>0.0091235</td><td>4.30</td></tr><tr><td>65536</td><td>0.002</td><td>0.057872</td><td>2.20</td></tr></table><h2>Notes</h2><ul><li>Linear readout: Adam wins across target distributions and row counts.</li><li>MLP readout: SGD wins across target distributions and row counts in this setup.</li><li>Normalizing GDN writes did not change the winner; GDN geometry is not sufficient by itself here.</li></ul>

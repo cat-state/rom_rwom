@@ -1,0 +1,8 @@
+{
+  "checkpoint_path": "logs/engram_bf99_attnres_poshit_normreadout_canon_shortconv_hist_ckpt500_20260517_003531/state_step001500.pt",
+  "checkpoint_step": 1500,
+  "val_tokens": 10485760,
+  "val_loss": 3.2599563598632812,
+  "engram_mask_unhit_eval": true,
+  "engram_hit_hist": "logs/engram_bf99_attnres_poshit_normreadout_canon_shortconv_hist_ckpt500_20260517_003531/engram_hit_hist_step001500_mask_semantic_top50.pt"
+}

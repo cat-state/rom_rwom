@@ -1,0 +1,1266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Engram / ROM Scaling Report</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f7f4;
+      --ink: #161616;
+      --muted: #62665f;
+      --line: #d9d7cf;
+      --panel: #ffffff;
+      --blue: #2563eb;
+      --green: #15803d;
+      --red: #b42318;
+      --amber: #b45309;
+      --violet: #6d28d9;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 14px/1.45 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    header {
+      padding: 28px 36px 18px;
+      border-bottom: 1px solid var(--line);
+      background: #fffdfa;
+    }
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 24px 24px 48px;
+    }
+    h1, h2, h3 { margin: 0; line-height: 1.15; letter-spacing: 0; }
+    h1 { font-size: 30px; }
+    h2 { font-size: 19px; margin: 28px 0 12px; }
+    h3 { font-size: 15px; margin: 18px 0 8px; }
+    p { margin: 8px 0; color: var(--muted); }
+    .kicker { color: var(--muted); margin-top: 8px; }
+    .grid {
+      display: grid;
+      gap: 14px;
+    }
+    .grid.cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .grid.cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .metric {
+      font-size: 26px;
+      font-weight: 700;
+      margin-top: 4px;
+    }
+    .label {
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      text-align: left;
+      padding: 9px 10px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      white-space: nowrap;
+    }
+    th {
+      color: #3f423d;
+      background: #f1f0eb;
+      font-weight: 650;
+    }
+    tr:last-child td { border-bottom: 0; }
+    .note {
+      white-space: normal;
+      min-width: 220px;
+    }
+    .ok { color: var(--green); font-weight: 650; }
+    .warn { color: var(--amber); font-weight: 650; }
+    .bad { color: var(--red); font-weight: 650; }
+    .run { color: var(--blue); font-weight: 650; }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      background: #eeece5;
+      padding: 1px 4px;
+      border-radius: 4px;
+    }
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+    .legend {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .swatch {
+      display: inline-block;
+      width: 12px;
+      height: 3px;
+      margin-right: 6px;
+      vertical-align: middle;
+      border-radius: 2px;
+    }
+    ol, ul { margin: 8px 0 0 20px; padding: 0; }
+    li { margin: 5px 0; color: var(--muted); }
+    @media (max-width: 860px) {
+      header { padding: 24px 20px 16px; }
+      main { padding: 18px 14px 36px; }
+      .grid.cols-4, .grid.cols-2 { grid-template-columns: 1fr; }
+      th, td { white-space: normal; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Engram / ROM Scaling Report</h1>
+    <div class="kicker">Updated May 14, 2026. Latest result: BF5-80 scaling suite completed; loss improves monotonically with table scale and BF80 reaches 3.2816.</div>
+  </header>
+
+  <main>
+    <section class="grid cols-4">
+      <div class="card">
+        <div class="label">Best completed Engram</div>
+        <div class="metric">3.2770</div>
+        <p>BF99, dim 768, 6 heads, per-head/canon, row-count LR scale plus floor 0.5, layers 2+6 with layer-specific hashes and readouts.</p>
+      </div>
+      <div class="card">
+        <div class="label">Best completed scale</div>
+        <div class="metric">~3.82B</div>
+        <p>Approximate Engram table params for the BF99 sparse resident run.</p>
+      </div>
+      <div class="card">
+        <div class="label">Largest completed scale</div>
+        <div class="metric">~7.65B</div>
+        <p>BF198 partition/vector-Adam run finished at 3.2796, but did not beat the shared-bank BF99 best.</p>
+      </div>
+      <div class="card">
+        <div class="label">Scaling suite BF80</div>
+        <div class="metric">3.2816</div>
+        <p>Best BF5-80 suite result; still behind BF99 best, so scale is still paying off.</p>
+      </div>
+    </section>
+
+    <h2>Validation Curves</h2>
+    <svg viewBox="0 0 980 470" role="img" aria-label="Validation loss curves for baseline and Engram runs">
+      <rect x="0" y="0" width="980" height="470" fill="#fff"></rect>
+      <g stroke="#e5e2d9" stroke-width="1">
+        <line x1="76" y1="48" x2="76" y2="390"></line>
+        <line x1="76" y1="390" x2="930" y2="390"></line>
+        <line x1="76" y1="333" x2="930" y2="333"></line>
+        <line x1="76" y1="276" x2="930" y2="276"></line>
+        <line x1="76" y1="219" x2="930" y2="219"></line>
+        <line x1="76" y1="162" x2="930" y2="162"></line>
+        <line x1="76" y1="105" x2="930" y2="105"></line>
+      </g>
+      <g fill="#6b6f68" font-size="12">
+        <text x="42" y="394">3</text>
+        <text x="42" y="337">6</text>
+        <text x="42" y="280">9</text>
+        <text x="35" y="223">12</text>
+        <text x="35" y="166">15</text>
+        <text x="35" y="109">18</text>
+        <text x="72" y="414">0</text>
+        <text x="209" y="414">250</text>
+        <text x="351" y="414">500</text>
+        <text x="493" y="414">750</text>
+        <text x="631" y="414">1000</text>
+        <text x="773" y="414">1250</text>
+        <text x="916" y="414">1500</text>
+        <text x="412" y="446" font-size="13">optimizer steps</text>
+        <text x="14" y="52" font-size="13">val loss</text>
+      </g>
+
+      <!-- coordinate mapping: x = 76 + step * 0.5693, y = 390 - (loss - 3) * 19 -->
+      <polyline fill="none" stroke="#2563eb" stroke-width="3" points="76,87.2 218.3,283.2 360.7,307.4 503,343.9"></polyline>
+      <polyline fill="none" stroke="#15803d" stroke-width="3" points="76,87.2 218.3,283.5 360.7,307.6 503,344.9 645.3,379.4 787.7,382.4 930,384.5"></polyline>
+      <polyline fill="none" stroke="#6d28d9" stroke-width="3" points="76,87.2 218.3,284.3 360.7,308.3 503,344.4 645.3,379.7 787.7,382.6 930,384.5"></polyline>
+      <polyline fill="none" stroke="#b45309" stroke-width="3" points="76,87.2 218.3,283.8 360.7,308.2 503,344.0 645.3,379.5 787.7,382.5 930,384.4"></polyline>
+      <polyline fill="none" stroke="#b42318" stroke-width="3" points="76,87.2 218.3,283.8 360.7,308.2 503,344.4 645.3,379.5 787.7,382.4 930,384.4"></polyline>
+      <polyline fill="none" stroke="#64748b" stroke-width="3" stroke-dasharray="7 5" points="76,87.2 218.3,284.0 360.7,308.2 503,344.0"></polyline>
+      <polyline fill="none" stroke="#0891b2" stroke-width="4" points="76,87.1 218.3,284.7"></polyline>
+      <polyline fill="none" stroke="#ea580c" stroke-width="3" stroke-dasharray="6 4" points="76,87.1 218.3,284.6 360.7,309.3 503,346.8"></polyline>
+      <polyline fill="none" stroke="#111827" stroke-width="3" stroke-dasharray="3 4" points="76,87.1 218.3,284.5 360.7,309.6 503,346.9 645.3,380.1 787.7,382.8 930,384.6"></polyline>
+      <polyline fill="none" stroke="#9333ea" stroke-width="3" stroke-dasharray="2 5" points="76,87.1 218.3,284.5 360.7,309.8 503,346.9 645.3,380.1 787.7,382.8 930,384.6"></polyline>
+      <polyline fill="none" stroke="#16a34a" stroke-width="4" stroke-dasharray="9 4" points="76,87.1 218.3,284.9 360.7,309.6 503,347.0 645.3,380.2 787.7,382.9 930,384.7"></polyline>
+      <polyline fill="none" stroke="#f59e0b" stroke-width="4" stroke-dasharray="10 3" points="76,87.1 218.3,284.9 360.7,309.9 503,347.0 645.3,380.3 787.7,383.0 930,384.7"></polyline>
+      <polyline fill="none" stroke="#0f766e" stroke-width="4" points="76,87.1 218.3,284.5 360.7,309.7 503,346.9 645.3,380.0 787.7,382.7 930,384.5"></polyline>
+      <polyline fill="none" stroke="#dc2626" stroke-width="4" points="76,87.1 218.3,284.8 360.7,309.1 503,347.0 645.3,380.1 787.7,382.8 930,384.6"></polyline>
+      <polyline fill="none" stroke="#7c2d12" stroke-width="3" stroke-dasharray="6 5" points="76,87.2 218.3,284.8 360.7,309.0 503,347.9 645.3,380.0"></polyline>
+      <polyline fill="none" stroke="#db2777" stroke-width="3" stroke-dasharray="6 5" points="76,87.2 218.3,284.7 360.7,309.5 503,347.9 645.3,380.0"></polyline>
+    </svg>
+    <div class="legend">
+      <span><span class="swatch" style="background:#2563eb"></span>built-in BF5 bigram baseline, partial</span>
+      <span><span class="swatch" style="background:#15803d"></span>BF5 Engram</span>
+      <span><span class="swatch" style="background:#6d28d9"></span>BF39 Engram</span>
+      <span><span class="swatch" style="background:#b45309"></span>BF39 Adam every step</span>
+      <span><span class="swatch" style="background:#b42318"></span>BF78 offloaded</span>
+      <span><span class="swatch" style="background:#64748b"></span>BF300 partial</span>
+      <span><span class="swatch" style="background:#0891b2"></span>BF99 sparse resident, LR 12.69 stopped</span>
+      <span><span class="swatch" style="background:#ea580c"></span>BF99 sparse resident, LR 12.69 floor 0.5 stopped</span>
+      <span><span class="swatch" style="background:#111827"></span>BF99 sparse resident, LR 12.69 floor 0.5 done</span>
+      <span><span class="swatch" style="background:#9333ea"></span>BF99 LR 12.69 floor, layers 2+6 done</span>
+      <span><span class="swatch" style="background:#16a34a"></span>BF99 layers 2+6, layer-specific hashes done</span>
+      <span><span class="swatch" style="background:#f59e0b"></span>BF99 layer hashes + per-layer readouts done</span>
+      <span><span class="swatch" style="background:#0f766e"></span>BF99 sparse resident, LR 6.35 done</span>
+      <span><span class="swatch" style="background:#dc2626"></span>BF39 dense, LR floor 0.5 done</span>
+      <span><span class="swatch" style="background:#7c2d12"></span>BF39 dense, LR floor 1.0 stopped</span>
+      <span><span class="swatch" style="background:#db2777"></span>BF39 dense, LR floor 0.25 stopped</span>
+    </div>
+
+    <h2>Run Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Run</th>
+          <th>Scale</th>
+          <th>Table params</th>
+          <th>Final / latest val</th>
+          <th>Step avg</th>
+          <th>Memory</th>
+          <th>Status</th>
+          <th class="note">Read</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Built-in BF5 bigram</td>
+          <td>5x, dim 768</td>
+          <td>~193M</td>
+          <td>5.2157 @ 750</td>
+          <td>940 ms @ 750</td>
+          <td>not logged final</td>
+          <td class="warn">partial</td>
+          <td class="note">Strong early curve; no completed 1500-step baseline in the current evidence set.</td>
+        </tr>
+        <tr>
+          <td>Engram BF5</td>
+          <td>5x, dim 1536, h8, n=2/3</td>
+          <td>~386M</td>
+          <td>3.3021</td>
+          <td>1262 ms</td>
+          <td>44.3 GiB</td>
+          <td class="ok">done</td>
+          <td class="note">Plain Engram lands close to per-head/canon variant, but not better than BF39.</td>
+        </tr>
+        <tr>
+          <td>Engram BF5 + per-head/canon</td>
+          <td>5x, dim 1536, h8, n=2/3</td>
+          <td>~386M</td>
+          <td>3.2998</td>
+          <td>1371 ms</td>
+          <td>47.5 GiB</td>
+          <td class="ok">done</td>
+          <td class="note">Small win from readout diversity plus token canonicalization.</td>
+        </tr>
+        <tr>
+          <td>Engram BF39 + per-head/canon</td>
+          <td>39x, dim 1536, h8, n=2/3</td>
+          <td>~3.01B</td>
+          <td>3.2880</td>
+          <td>1582 ms</td>
+          <td>86.6 GiB</td>
+          <td class="ok">done</td>
+          <td class="note">Previous best completed result. It improved final loss by ~0.012 over BF5 per-head/canon.</td>
+        </tr>
+        <tr>
+          <td>Engram BF39 + Adam every step</td>
+          <td>39x, dim 1536, h8, n=2/3</td>
+          <td>~3.01B</td>
+          <td>3.2887</td>
+          <td>1601 ms</td>
+          <td>86.6 GiB</td>
+          <td class="ok">done</td>
+          <td class="note">No meaningful gain; table update frequency was probably not the limiter.</td>
+        </tr>
+        <tr>
+          <td>Engram BF78 offloaded</td>
+          <td>78x, dim 1536, h8, n=2/3</td>
+          <td>~6.03B</td>
+          <td>3.2934</td>
+          <td>3037 ms</td>
+          <td>42.8 GiB GPU</td>
+          <td class="ok">done</td>
+          <td class="note">More rows plus offload did not help. This supports either LR under-scaling, optimizer-state weakness, or readout bottleneck.</td>
+        </tr>
+        <tr>
+          <td>Engram BF78 vector Adam resident</td>
+          <td>78x, dim 1536, h8, n=2/3</td>
+          <td>~6.03B</td>
+          <td>7.2675 @ 500</td>
+          <td>739 ms @ 500</td>
+          <td>86.2 GiB live</td>
+          <td class="warn">stopped</td>
+          <td class="note">Resident row-scalar second-moment Adam fit and was fast, but step-500 loss lagged BF99 LR 6.35 and update/param was already 3.3e-2.</td>
+        </tr>
+        <tr>
+          <td>Engram BF300 offload, bf16 moments</td>
+          <td>300x, dim 768, h6, n=2/3</td>
+          <td>~11.6B</td>
+          <td>5.4241 @ 750</td>
+          <td>1621 ms @ 750</td>
+          <td>not final</td>
+          <td class="warn">stopped</td>
+          <td class="note">Early curve not clearly better. Full fp32 moment version was too tight or unstable on memory.</td>
+        </tr>
+        <tr>
+          <td>Engram BF99 sparse resident, LR 12.69</td>
+          <td>99x, dim 768, h6, n=2/3</td>
+          <td>~3.82B</td>
+          <td>7.3161 @ 500</td>
+          <td>640 ms @ 500</td>
+          <td>68.6 GiB smoke, 75.6 GiB live</td>
+          <td class="warn">stopped</td>
+          <td class="note">Naive LR scaling gave the best step-250 point, then lost to BF39/BF78 by step 500. Update/param was ~7.3e-2 after the schedule transition.</td>
+        </tr>
+        <tr>
+          <td>Engram BF99 sparse resident, LR 12.69 floor 0.5</td>
+          <td>99x, dim 768, h6, n=2/3</td>
+          <td>~3.82B</td>
+          <td>3.2839</td>
+          <td>1353 ms</td>
+          <td>75.6 GiB live</td>
+          <td class="ok">done</td>
+          <td class="note">Corrected row-count LR scaling plus the floor is the new best completed Engram. Update/param starts hot at 7.33e-2 @500, cools to 1.33e-2 @1250, then ends at 1.20e-2.</td>
+        </tr>
+        <tr>
+          <td>Engram BF99 shared-table layers 2+6</td>
+          <td>99x, dim 768, h6, n=2/3, layers 2+6</td>
+          <td>~3.82B</td>
+          <td>3.2828</td>
+          <td>1483 ms</td>
+          <td>80.5 GiB early</td>
+          <td class="ok">done</td>
+          <td class="note">Shared-table approximation of the official second Engram insertion layer. It is slightly ahead of the single-layer best at steps 500, 750, 1250, and final, but briefly behind at step 1000.</td>
+        </tr>
+        <tr>
+          <td>Engram BF99 layers 2+6, layer-specific hashes</td>
+          <td>99x, dim 768, h6, n=2/3, layers 2+6</td>
+          <td>~3.82B</td>
+          <td>3.2774</td>
+          <td>1492 ms</td>
+          <td>80 GiB class</td>
+          <td class="ok">done</td>
+          <td class="note">Uses separate hash multipliers per insertion layer while sharing the table and readout. It touches about 17.2% of rows late and improves the shared-hash 2+6 run by 0.0054 at step 1250 and 0.0054 final.</td>
+        </tr>
+        <tr>
+          <td>Engram BF99 layer hashes + per-layer readouts</td>
+          <td>99x, dim 768, h6, n=2/3, layers 2+6</td>
+          <td>~3.82B + small dense readouts</td>
+          <td>3.2770</td>
+          <td>1491 ms</td>
+          <td>80.5 GiB class</td>
+          <td class="ok">done</td>
+          <td class="note">Keeps the shared sparse table but gives layers 2 and 6 separate value/key/short-conv readouts. It is ahead of the layer-hash winner from step 500 onward, but the final gain is small: 0.0004.</td>
+        </tr>
+        <tr>
+          <td>Engram BF99 equal-total layer partitions</td>
+          <td>99x total, dim 768, h6, n=2/3, layers 2+6</td>
+          <td>~3.82B split into disjoint layer ranges</td>
+          <td>7.2727 @ 500</td>
+          <td>706 ms @ 500</td>
+          <td>80.5 GiB class</td>
+          <td class="warn">stopped</td>
+          <td class="note">Same total sparse table budget as the best run, but layer 2 and 6 use disjoint row partitions. It was already worse at step 250 and clearly worse by step 500, so sharing the large table beats equal-budget partitioning.</td>
+        </tr>
+        <tr>
+          <td>Engram BF99 layer 6 only</td>
+          <td>99x, dim 768, h6, n=2/3, layer 6</td>
+          <td>~3.82B</td>
+          <td>5.2699 @ 750</td>
+          <td>855 ms @ 750</td>
+          <td>68.9 GiB warmup</td>
+          <td class="warn">stopped</td>
+          <td class="note">Layer 6 alone had a better step-250 point, then fell behind layer 2 and layers 2+6 by steps 500 and 750. The two-layer combination appears to matter.</td>
+        </tr>
+        <tr>
+          <td>Engram BF99 shared-table layers 2+5</td>
+          <td>99x, dim 768, h6, n=2/3, layers 2+5</td>
+          <td>~3.82B</td>
+          <td>8.5749 @ 250</td>
+          <td>681 ms @ 250</td>
+          <td>80.4 GiB live</td>
+          <td class="warn">stopped</td>
+          <td class="note">Negative placement ablation. Layer 5 as the second insertion point was worse immediately, so the 2+6 gain is not just any mid-depth second injection.</td>
+        </tr>
+        <tr>
+          <td>Engram BF99 sparse resident, LR 6.35</td>
+          <td>99x, dim 768, h6, n=2/3</td>
+          <td>~3.82B</td>
+          <td>3.2909</td>
+          <td>1361 ms</td>
+          <td>75.6 GiB live</td>
+          <td class="ok">done</td>
+          <td class="note">Half-scaled LR was the first clear mid-run win, beating BF39/BF78 at steps 500, 750, 1000, and 1250, but it lost the final by 0.0029. Update/param cooled to ~2.5e-3 at final.</td>
+        </tr>
+        <tr>
+          <td>Engram BF99 sparse resident, LR 6.35 floor 0.5</td>
+          <td>99x, dim 768, h6, n=2/3</td>
+          <td>~3.82B</td>
+          <td>3.2900</td>
+          <td>1361 ms</td>
+          <td>69.4 GiB peak</td>
+          <td class="ok">done</td>
+          <td class="note">The LR floor kept final update/param at ~8.2e-3 and recovered 0.0009 final loss, but still missed BF39 by 0.0020.</td>
+        </tr>
+        <tr>
+          <td>Engram BF99 sparse resident, LR 8.5 floor 0.5</td>
+          <td>99x, dim 768, h6, n=2/3</td>
+          <td>~3.82B</td>
+          <td>7.2656 @ 500</td>
+          <td>635 ms @ 500</td>
+          <td>75.6 GiB live</td>
+          <td class="warn">stopped</td>
+          <td class="note">Intermediate LR landed in the hot branch: step 250 improved, but step 500 matched the worse LR 12.69 replay and lost to LR 6.35.</td>
+        </tr>
+        <tr>
+          <td>Engram BF99 vectorial Adam, LR 6.35 floor 0.5</td>
+          <td>99x, dim 768, h6, n=2/3</td>
+          <td>~3.82B</td>
+          <td>7.2612 @ 500</td>
+          <td>636 ms @ 500</td>
+          <td>68.8 GiB smoke</td>
+          <td class="warn">stopped</td>
+          <td class="note">Uses per-element first moment and one row-scalar second moment from row RMS gradient. It was worse at step 500 than SparseAdam, so the run was stopped.</td>
+        </tr>
+        <tr>
+          <td>Engram BF99 sparse resident, LR 3.17 floor 0.5</td>
+          <td>99x, dim 768, h6, n=2/3</td>
+          <td>~3.82B</td>
+          <td>7.2749 @ 500</td>
+          <td>640 ms @ 500</td>
+          <td>68.5 GiB init</td>
+          <td class="warn">stopped</td>
+          <td class="note">Lower LR was worse at step 500. This suggests the LR 6.35 band was useful, and the remaining final gap is more likely architecture/readout or schedule interaction.</td>
+        </tr>
+        <tr>
+          <td>Engram BF99 MLA store 64/read 1536</td>
+          <td>99x, store 64, read 1536, h6, n=2/3</td>
+          <td>~0.32B table + projection</td>
+          <td>7.2974 @ 500</td>
+          <td>not summarized</td>
+          <td>68.7 GiB smoke</td>
+          <td class="warn">stopped</td>
+          <td class="note">Shared low-dimensional store plus up-projection was worse than direct BF99 readout; naive MLA-style compression did not recover the scaling gap.</td>
+        </tr>
+        <tr>
+          <td>Engram BF99 untied readout projections</td>
+          <td>99x, dim 768, h6, n=2/3</td>
+          <td>~3.82B</td>
+          <td>7.3399 @ 500</td>
+          <td>not summarized</td>
+          <td>68.6 GiB smoke</td>
+          <td class="warn">stopped</td>
+          <td class="note">Independent per-head projections increased readout freedom but degraded step-500 loss, so simple readout diversity was not the missing piece.</td>
+        </tr>
+        <tr>
+          <td>Engram BF99 wider rows</td>
+          <td>99x, dim 1152, h6, n=2/3</td>
+          <td>~5.74B</td>
+          <td>7.2562 @ 500</td>
+          <td>718 ms @ 500</td>
+          <td>75.9 GiB live</td>
+          <td class="warn">stopped</td>
+          <td class="note">Matched BF39's 96-dim per-row width while keeping BF99 row count. It fit, but did not beat dim-768 BF99 LR 6.35 at step 500.</td>
+        </tr>
+        <tr>
+          <td>Engram BF39 dense, LR floor 0.5</td>
+          <td>39x, dim 1536, h8, n=2/3</td>
+          <td>~3.01B</td>
+          <td>3.2858</td>
+          <td>1614 ms</td>
+          <td>86.6 GiB peak allocated</td>
+          <td class="ok">done</td>
+          <td class="note">New best completed Engram. The LR floor kept final update/param at ~4.5e-3 and improved old BF39 by 0.0022.</td>
+        </tr>
+        <tr>
+          <td>Engram BF39 dense, LR floor 1.0</td>
+          <td>39x, dim 1536, h8, n=2/3</td>
+          <td>~3.01B</td>
+          <td>3.5257 @ 1000</td>
+          <td>1291 ms @ 1000</td>
+          <td>91.7 GiB live</td>
+          <td class="warn">stopped</td>
+          <td class="note">Higher floor was worse than floor 0.5 through step 1000. Touched-row update/param was 2.25e-2 @250, 3.30e-2 @500, 2.05e-2 @750, and 1.60e-2 @1000.</td>
+        </tr>
+        <tr>
+          <td>Engram BF39 dense, LR floor 0.25</td>
+          <td>39x, dim 1536, h8, n=2/3</td>
+          <td>~3.01B</td>
+          <td>3.5242 @ 1000</td>
+          <td>1291 ms @ 1000</td>
+          <td>91.7 GiB live</td>
+          <td class="warn">stopped</td>
+          <td class="note">Lower floor was also worse than floor 0.5 by step 1000. It briefly had the best step-500 BF39 point, but lost that advantage by step 750.</td>
+        </tr>
+        <tr>
+          <td>Engram BF39 SparseAdam replay</td>
+          <td>39x, dim 1536, h8, n=2/3</td>
+          <td>~3.01B</td>
+          <td>3.5317 @ 1000</td>
+          <td>1045 ms @ 1000</td>
+          <td>57.6 GiB live</td>
+          <td class="warn">stopped</td>
+          <td class="note">Plain SparseAdam matched dense BF39 at step 500, then fell behind by step 750/1000. Optimizer path contributes, but does not explain BF99 scaling by itself.</td>
+        </tr>
+        <tr>
+          <td>Engram BF39 SparseAdam tail-1</td>
+          <td>39x, dim 1536, h8, n=2/3</td>
+          <td>~3.01B</td>
+          <td>7.2652 @ 500</td>
+          <td>756 ms @ 500</td>
+          <td>90.7 GiB live</td>
+          <td class="warn">stopped</td>
+          <td class="note">Kept the previous touched-row set active for one zero-grad Adam tail. It expanded active rows to 8.3M at step 500 but was worse than plain SparseAdam.</td>
+        </tr>
+        <tr>
+          <td>Engram BF39 SparseAdam tail-4</td>
+          <td>39x, dim 1536, h8, n=2/3</td>
+          <td>~3.01B</td>
+          <td>no checkpoint</td>
+          <td>not usable</td>
+          <td>96.8 GiB before step 250</td>
+          <td class="warn">stopped</td>
+          <td class="note">Four-step active tail was too memory-heavy on the current GPU before producing a useful checkpoint.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Update Metrics</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Adam step</th>
+          <th>Rows touched</th>
+          <th>Grad RMS</th>
+          <th>Update RMS</th>
+          <th>Param RMS</th>
+          <th>Update / Param</th>
+          <th>Effective LR</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>3,005,562</td>
+          <td>2.848e-04</td>
+          <td>1.550e-01</td>
+          <td>1.000e+00</td>
+          <td class="warn">1.549e-01</td>
+          <td>1.543e-01</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>4,630,093</td>
+          <td>5.767e-04</td>
+          <td>5.379e-02</td>
+          <td>1.002e+00</td>
+          <td>5.369e-02</td>
+          <td>6.871e-02</td>
+        </tr>
+        <tr>
+          <td>125, LR 12.69 full run step 250</td>
+          <td>2,096,283</td>
+          <td>8.971e-04</td>
+          <td>6.909e-02</td>
+          <td>1.150e+00</td>
+          <td>6.009e-02</td>
+          <td>1.015e-01</td>
+        </tr>
+        <tr>
+          <td>250, LR 12.69 full run step 500</td>
+          <td>3,823,458</td>
+          <td>9.201e-04</td>
+          <td>9.035e-02</td>
+          <td>1.233e+00</td>
+          <td>7.328e-02</td>
+          <td>1.543e-01</td>
+        </tr>
+        <tr>
+          <td>375, LR 12.69 floor step 750</td>
+          <td>3,828,431</td>
+          <td>7.056e-04</td>
+          <td>5.774e-02</td>
+          <td>1.449e+00</td>
+          <td>3.983e-02</td>
+          <td>1.281e-01</td>
+        </tr>
+        <tr>
+          <td>125, LR 6.35 step 250</td>
+          <td>2,096,283</td>
+          <td>1.060e-03</td>
+          <td>3.525e-02</td>
+          <td>1.044e+00</td>
+          <td>3.376e-02</td>
+          <td>5.077e-02</td>
+        </tr>
+        <tr>
+          <td>250, LR 6.35 step 500</td>
+          <td>3,823,458</td>
+          <td>1.186e-03</td>
+          <td>4.618e-02</td>
+          <td>1.068e+00</td>
+          <td>4.323e-02</td>
+          <td>7.717e-02</td>
+        </tr>
+        <tr>
+          <td>375, LR 6.35 step 750</td>
+          <td>3,828,431</td>
+          <td>9.747e-04</td>
+          <td>2.997e-02</td>
+          <td>1.139e+00</td>
+          <td>2.632e-02</td>
+          <td>6.407e-02</td>
+        </tr>
+        <tr>
+          <td>500, LR 6.35 step 1000</td>
+          <td>5,413,918</td>
+          <td>9.249e-04</td>
+          <td>2.126e-02</td>
+          <td>1.161e+00</td>
+          <td>1.831e-02</td>
+          <td>4.983e-02</td>
+        </tr>
+        <tr>
+          <td>625, LR 6.35 step 1250</td>
+          <td>5,395,703</td>
+          <td>9.421e-04</td>
+          <td>1.074e-02</td>
+          <td>1.181e+00</td>
+          <td>9.091e-03</td>
+          <td>2.694e-02</td>
+        </tr>
+        <tr>
+          <td>750, LR 6.35 final</td>
+          <td>5,399,501</td>
+          <td>9.419e-04</td>
+          <td>2.954e-03</td>
+          <td>1.184e+00</td>
+          <td>2.495e-03</td>
+          <td>7.615e-03</td>
+        </tr>
+        <tr>
+          <td>750, LR 6.35 floor 0.5 final</td>
+          <td>5,399,501</td>
+          <td>8.848e-04</td>
+          <td>9.755e-03</td>
+          <td>1.188e+00</td>
+          <td>8.214e-03</td>
+          <td>2.538e-02</td>
+        </tr>
+        <tr>
+          <td>125, BF39 dense LR floor step 250</td>
+          <td>31,390,756</td>
+          <td>1.086e-04</td>
+          <td>1.025e-02</td>
+          <td>1.046e+00</td>
+          <td>9.795e-03</td>
+          <td>4.000e-02</td>
+        </tr>
+        <tr>
+          <td>250, BF39 dense LR floor step 500</td>
+          <td>31,390,756</td>
+          <td>1.544e-04</td>
+          <td>2.036e-02</td>
+          <td>1.091e+00</td>
+          <td>1.866e-02</td>
+          <td>6.080e-02</td>
+        </tr>
+        <tr>
+          <td>375, BF39 dense LR floor step 750</td>
+          <td>31,390,756</td>
+          <td>1.188e-04</td>
+          <td>1.390e-02</td>
+          <td>1.197e+00</td>
+          <td>1.161e-02</td>
+          <td>5.048e-02</td>
+        </tr>
+        <tr>
+          <td>500, BF39 dense LR floor step 1000</td>
+          <td>31,390,756</td>
+          <td>1.337e-04</td>
+          <td>1.257e-02</td>
+          <td>1.249e+00</td>
+          <td>1.006e-02</td>
+          <td>3.926e-02</td>
+        </tr>
+        <tr>
+          <td>625, BF39 dense LR floor step 1250</td>
+          <td>31,390,756</td>
+          <td>1.386e-04</td>
+          <td>6.247e-03</td>
+          <td>1.277e+00</td>
+          <td>4.890e-03</td>
+          <td>2.122e-02</td>
+        </tr>
+        <tr>
+          <td>750, BF39 dense LR floor final</td>
+          <td>31,390,756</td>
+          <td>1.371e-04</td>
+          <td>5.842e-03</td>
+          <td>1.287e+00</td>
+          <td>4.539e-03</td>
+          <td>2.000e-02</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>BF99 LR 12.69 Floor Replay: Table-Normalized Metrics</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Step</th>
+          <th>Val loss</th>
+          <th>Touched fraction</th>
+          <th>Touched grad RMS</th>
+          <th>Touched update RMS</th>
+          <th>Touched update / param</th>
+          <th>Table grad RMS</th>
+          <th>Table update RMS</th>
+          <th>Effective LR</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>250</td>
+          <td>8.5474</td>
+          <td>3.508e-02</td>
+          <td>8.611e-04</td>
+          <td>6.933e-02</td>
+          <td>6.027e-02</td>
+          <td>1.613e-04</td>
+          <td>1.298e-02</td>
+          <td>1.015e-01</td>
+        </tr>
+        <tr>
+          <td>500</td>
+          <td>7.2652</td>
+          <td>6.398e-02</td>
+          <td>9.726e-04</td>
+          <td>9.068e-02</td>
+          <td>7.351e-02</td>
+          <td>2.460e-04</td>
+          <td>2.294e-02</td>
+          <td>1.543e-01</td>
+        </tr>
+        <tr>
+          <td>750</td>
+          <td>5.2751</td>
+          <td>6.406e-02</td>
+          <td>6.827e-04</td>
+          <td>5.772e-02</td>
+          <td>3.980e-02</td>
+          <td>1.728e-04</td>
+          <td>1.461e-02</td>
+          <td>1.281e-01</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>The LR 6.35 BF99 sparse run beat completed Engram runs through step 1250, then lost a small amount as table update/param collapsed to 0.0025. The row-count-scaled LR 12.69 run stayed much hotter, but was worse by step 750. The table-normalized replay confirms that the issue is not just touched-row reporting: the zero-including table update RMS is still large during the 250-750 window. The clean BF39 dense LR-floor run held update/param near 0.0045 at final and remains the best completed Engram loss.</p>
+
+    <h3>Live BF99 LR 12.69 Floor Rerun</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Step</th>
+          <th>Val loss</th>
+          <th>Touched fraction</th>
+          <th>Touched grad RMS</th>
+          <th>Touched update RMS</th>
+          <th>Touched update / param</th>
+          <th>Table grad RMS</th>
+          <th>Table update RMS</th>
+          <th>Effective LR</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>250</td>
+          <td>8.5516</td>
+          <td>3.508e-02</td>
+          <td>8.459e-04</td>
+          <td>6.929e-02</td>
+          <td>6.021e-02</td>
+          <td>1.584e-04</td>
+          <td>1.298e-02</td>
+          <td>1.015e-01</td>
+        </tr>
+        <tr>
+          <td>500</td>
+          <td>7.2304</td>
+          <td>6.398e-02</td>
+          <td>9.811e-04</td>
+          <td>9.046e-02</td>
+          <td>7.333e-02</td>
+          <td>2.482e-04</td>
+          <td>2.288e-02</td>
+          <td>1.543e-01</td>
+        </tr>
+        <tr>
+          <td>750</td>
+          <td>5.2694</td>
+          <td>6.406e-02</td>
+          <td>6.925e-04</td>
+          <td>5.782e-02</td>
+          <td>3.985e-02</td>
+          <td>1.753e-04</td>
+          <td>1.463e-02</td>
+          <td>1.281e-01</td>
+        </tr>
+        <tr>
+          <td>1000</td>
+          <td>3.5197</td>
+          <td>9.059e-02</td>
+          <td>6.833e-04</td>
+          <td>4.130e-02</td>
+          <td>2.720e-02</td>
+          <td>2.057e-04</td>
+          <td>1.243e-02</td>
+          <td>9.966e-02</td>
+        </tr>
+        <tr>
+          <td>1250</td>
+          <td>3.3787</td>
+          <td>9.029e-02</td>
+          <td>6.673e-04</td>
+          <td>2.094e-02</td>
+          <td>1.328e-02</td>
+          <td>2.005e-04</td>
+          <td>6.291e-03</td>
+          <td>5.387e-02</td>
+        </tr>
+        <tr>
+          <td>1500</td>
+          <td>3.2839</td>
+          <td>9.035e-02</td>
+          <td>6.794e-04</td>
+          <td>1.918e-02</td>
+          <td>1.201e-02</td>
+          <td>2.042e-04</td>
+          <td>5.765e-03</td>
+          <td>5.077e-02</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>The completed rerun overturns the earlier negative read on row-count LR scaling: with the floor and this seed, BF99 becomes the best completed Engram at 3.2839. The update-scale diagnosis still matters: the run starts with very large sparse updates and only becomes clearly competitive as the schedule cools them.</p>
+
+    <h3>BF99 Layers 2+6 With Layer-Specific Hashes</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Step</th>
+          <th>Val loss</th>
+          <th>Touched fraction</th>
+          <th>Touched grad RMS</th>
+          <th>Touched update RMS</th>
+          <th>Touched update / param</th>
+          <th>Table grad RMS</th>
+          <th>Table update RMS</th>
+          <th>Effective LR</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>250</td>
+          <td>8.5329</td>
+          <td>6.887e-02</td>
+          <td>5.577e-04</td>
+          <td>6.059e-02</td>
+          <td>5.141e-02</td>
+          <td>1.464e-04</td>
+          <td>1.590e-02</td>
+          <td>1.015e-01</td>
+        </tr>
+        <tr>
+          <td>500</td>
+          <td>7.2341</td>
+          <td>1.235e-01</td>
+          <td>6.176e-04</td>
+          <td>7.761e-02</td>
+          <td>6.044e-02</td>
+          <td>2.171e-04</td>
+          <td>2.728e-02</td>
+          <td>1.543e-01</td>
+        </tr>
+        <tr>
+          <td>750</td>
+          <td>5.2656</td>
+          <td>1.237e-01</td>
+          <td>4.774e-04</td>
+          <td>5.018e-02</td>
+          <td>3.265e-02</td>
+          <td>1.679e-04</td>
+          <td>1.765e-02</td>
+          <td>1.281e-01</td>
+        </tr>
+        <tr>
+          <td>1000</td>
+          <td>3.5164</td>
+          <td>1.723e-01</td>
+          <td>4.875e-04</td>
+          <td>3.761e-02</td>
+          <td>2.322e-02</td>
+          <td>2.023e-04</td>
+          <td>1.561e-02</td>
+          <td>9.966e-02</td>
+        </tr>
+        <tr>
+          <td>1250</td>
+          <td>3.3719</td>
+          <td>1.717e-01</td>
+          <td>4.934e-04</td>
+          <td>1.959e-02</td>
+          <td>1.161e-02</td>
+          <td>2.045e-04</td>
+          <td>8.119e-03</td>
+          <td>5.387e-02</td>
+        </tr>
+        <tr>
+          <td>1500</td>
+          <td>3.2774</td>
+          <td>1.719e-01</td>
+          <td>4.826e-04</td>
+          <td>1.823e-02</td>
+          <td>1.066e-02</td>
+          <td>2.001e-04</td>
+          <td>7.558e-03</td>
+          <td>5.077e-02</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Layer-specific hashes roughly double the touched-row footprint versus shared-hash 2+6, so the full-table update RMS is higher even while touched-row update/param is lower. The loss curve stays ahead through final, making the official per-layer hash detail the strongest architectural win so far.</p>
+
+    <h3>Live BF99 Layer Hashes Plus Per-Layer Readouts</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Step</th>
+          <th>Val loss</th>
+          <th>Touched fraction</th>
+          <th>Touched grad RMS</th>
+          <th>Touched update RMS</th>
+          <th>Touched update / param</th>
+          <th>Table grad RMS</th>
+          <th>Table update RMS</th>
+          <th>Effective LR</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>250</td>
+          <td>8.5338</td>
+          <td>6.887e-02</td>
+          <td>6.162e-04</td>
+          <td>6.043e-02</td>
+          <td>5.117e-02</td>
+          <td>1.617e-04</td>
+          <td>1.586e-02</td>
+          <td>1.015e-01</td>
+        </tr>
+        <tr>
+          <td>500</td>
+          <td>7.2152</td>
+          <td>1.235e-01</td>
+          <td>6.590e-04</td>
+          <td>7.781e-02</td>
+          <td>6.051e-02</td>
+          <td>2.316e-04</td>
+          <td>2.735e-02</td>
+          <td>1.543e-01</td>
+        </tr>
+        <tr>
+          <td>750</td>
+          <td>5.2609</td>
+          <td>1.237e-01</td>
+          <td>5.013e-04</td>
+          <td>4.998e-02</td>
+          <td>3.253e-02</td>
+          <td>1.763e-04</td>
+          <td>1.758e-02</td>
+          <td>1.281e-01</td>
+        </tr>
+        <tr>
+          <td>1000</td>
+          <td>3.5129</td>
+          <td>1.723e-01</td>
+          <td>5.150e-04</td>
+          <td>3.725e-02</td>
+          <td>2.302e-02</td>
+          <td>2.138e-04</td>
+          <td>1.546e-02</td>
+          <td>9.966e-02</td>
+        </tr>
+        <tr>
+          <td>1250</td>
+          <td>3.3706</td>
+          <td>1.717e-01</td>
+          <td>5.199e-04</td>
+          <td>1.950e-02</td>
+          <td>1.157e-02</td>
+          <td>2.154e-04</td>
+          <td>8.079e-03</td>
+          <td>5.387e-02</td>
+        </tr>
+        <tr>
+          <td>1500</td>
+          <td>3.2770</td>
+          <td>1.719e-01</td>
+          <td>4.932e-04</td>
+          <td>1.809e-02</td>
+          <td>1.059e-02</td>
+          <td>2.045e-04</td>
+          <td>7.501e-03</td>
+          <td>5.077e-02</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Separate per-layer readouts are a low-memory approximation of separate official Engram modules. The curve stays ahead of the completed layer-hash run from step 500 through final, but the final delta is small. This suggests the larger official-recipe win is probably from per-layer addressing/table independence, not just readout specialization.</p>
+
+    <h3>Equal-Total Layer Partitions</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Step</th>
+          <th>Val loss</th>
+          <th>Touched fraction</th>
+          <th>Touched grad RMS</th>
+          <th>Touched update RMS</th>
+          <th>Touched update / param</th>
+          <th>Table grad RMS</th>
+          <th>Table update RMS</th>
+          <th>Effective LR</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>250</td>
+          <td>8.5408</td>
+          <td>6.886e-02</td>
+          <td>5.764e-04</td>
+          <td>6.071e-02</td>
+          <td>5.138e-02</td>
+          <td>1.513e-04</td>
+          <td>1.593e-02</td>
+          <td>1.015e-01</td>
+        </tr>
+        <tr>
+          <td>500</td>
+          <td>7.2727</td>
+          <td>1.235e-01</td>
+          <td>6.780e-04</td>
+          <td>7.909e-02</td>
+          <td>6.141e-02</td>
+          <td>2.383e-04</td>
+          <td>2.780e-02</td>
+          <td>1.543e-01</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Equal-total disjoint partitions are worse than a shared table with layer-specific hashes. This argues against simply carving the existing capacity into layer-local tables; if separate official tables matter, they probably need additional total capacity rather than a split of the same rows.</p>
+
+    <h2>BF Scaling Suite</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>BF</th>
+          <th>LR mult</th>
+          <th>Table params</th>
+          <th>Final val</th>
+          <th>Step 500</th>
+          <th>Step 1000</th>
+          <th>Step avg</th>
+          <th>Late touched fraction</th>
+          <th class="note">Read</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>5</td>
+          <td>0.64</td>
+          <td>~0.19B</td>
+          <td>3.3090</td>
+          <td>7.2726</td>
+          <td>3.5530</td>
+          <td>1476 ms</td>
+          <td>0.960</td>
+          <td class="note">Tiny table is almost saturated by touched rows; late update/param is only 7.1e-4.</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>1.28</td>
+          <td>~0.39B</td>
+          <td>3.3065</td>
+          <td>7.3222</td>
+          <td>3.5551</td>
+          <td>1481 ms</td>
+          <td>0.822</td>
+          <td class="note">Small final gain over BF5, but worse mid-run at steps 500/1000.</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>2.56</td>
+          <td>~0.77B</td>
+          <td>3.3007</td>
+          <td>7.2884</td>
+          <td>3.5438</td>
+          <td>1484 ms</td>
+          <td>0.594</td>
+          <td class="note">Clear final improvement; still not enough update scale to match larger BF runs.</td>
+        </tr>
+        <tr>
+          <td>40</td>
+          <td>5.13</td>
+          <td>~1.55B</td>
+          <td>3.2910</td>
+          <td>7.2506</td>
+          <td>3.5336</td>
+          <td>1487 ms</td>
+          <td>0.369</td>
+          <td class="note">Best knee in the small-scale sweep; close to earlier BF39 behavior.</td>
+        </tr>
+        <tr>
+          <td>80</td>
+          <td>10.26</td>
+          <td>~3.09B</td>
+          <td>3.2816</td>
+          <td>7.2445</td>
+          <td>3.5208</td>
+          <td>1490 ms</td>
+          <td>0.208</td>
+          <td class="note">Best suite result and monotonic final scaling, but BF99 still wins at 3.2770.</td>
+        </tr>
+        <tr>
+          <td>99</td>
+          <td>12.69</td>
+          <td>~3.82B</td>
+          <td>3.2770</td>
+          <td>7.2152</td>
+          <td>3.5129</td>
+          <td>1491 ms</td>
+          <td>0.172</td>
+          <td class="note">Reference best: shared bank, layer hashes, and per-layer readouts.</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Final Loss vs Table Size (Log-Log)</h3>
+    <svg viewBox="0 0 980 410" role="img" aria-label="Log-log plot of final validation loss versus Engram table size">
+      <rect x="0" y="0" width="980" height="410" fill="#fff"></rect>
+      <g stroke="#e5e2d9" stroke-width="1">
+        <line x1="78" y1="60" x2="78" y2="350"></line>
+        <line x1="78" y1="350" x2="920" y2="350"></line>
+        <line x1="106.2" y1="60" x2="106.2" y2="350"></line>
+        <line x1="351.1" y1="60" x2="351.1" y2="350"></line>
+        <line x1="536.4" y1="60" x2="536.4" y2="350"></line>
+        <line x1="721.7" y1="60" x2="721.7" y2="350"></line>
+        <line x1="907.0" y1="60" x2="907.0" y2="350"></line>
+        <line x1="78" y1="310.6" x2="920" y2="310.6"></line>
+        <line x1="78" y1="232.0" x2="920" y2="232.0"></line>
+        <line x1="78" y1="153.7" x2="920" y2="153.7"></line>
+        <line x1="78" y1="75.6" x2="920" y2="75.6"></line>
+      </g>
+      <g fill="#6b6f68" font-size="12">
+        <text x="92" y="370">0.2B</text>
+        <text x="337" y="370">0.5B</text>
+        <text x="526" y="370">1B</text>
+        <text x="711" y="370">2B</text>
+        <text x="896" y="370">4B</text>
+        <text x="38" y="315">3.28</text>
+        <text x="38" y="236">3.29</text>
+        <text x="38" y="158">3.30</text>
+        <text x="38" y="80">3.31</text>
+        <text x="390" y="398" font-size="13">Engram table params, log scale</text>
+        <text x="16" y="42" font-size="13">final val loss, log scale</text>
+      </g>
+      <!-- x = log10(table params in billions), y = log10(final loss); tight y range 3.275-3.312 -->
+      <polyline fill="none" stroke="#f59e0b" stroke-width="4" points="96.9,83.4 282.2,102.9 467.5,148.2 652.7,224.2 838.0,298.0 895.0,334.2"></polyline>
+      <g fill="#f59e0b" stroke="#fff" stroke-width="2">
+        <circle cx="96.9" cy="83.4" r="5"></circle>
+        <circle cx="282.2" cy="102.9" r="5"></circle>
+        <circle cx="467.5" cy="148.2" r="5"></circle>
+        <circle cx="652.7" cy="224.2" r="5"></circle>
+        <circle cx="838.0" cy="298.0" r="5"></circle>
+        <circle cx="895.0" cy="334.2" r="5"></circle>
+      </g>
+      <g fill="#3f423d" font-size="12">
+        <text x="82" y="71">BF5</text>
+        <text x="266" y="90">BF10</text>
+        <text x="449" y="136">BF20</text>
+        <text x="633" y="212">BF40</text>
+        <text x="816" y="286">BF80</text>
+        <text x="874" y="326">BF99</text>
+      </g>
+    </svg>
+    <p>The BF5-80 sweep is monotonic at final loss: 3.3090 -> 3.3065 -> 3.3007 -> 3.2910 -> 3.2816. The curve has not flattened by BF80, and the prior BF99 best remains ahead at 3.2770.</p>
+
+    <h2>Current Interpretation</h2>
+    <div class="grid cols-2">
+      <div class="card">
+        <h3>What looks real</h3>
+        <ul>
+          <li>Engram is not flat at small scale: BF5 already reaches the same broad regime as the built-in bigram runs.</li>
+          <li>Per-head values plus canonicalized tokens gave a small, repeatable-looking win.</li>
+          <li>BF99 with row-count LR scaling, <code>ENGRAM_LR_FLOOR=0.5</code>, layers 2+6, layer-specific hashes, and per-layer readouts is the best completed Engram result so far, improving BF39 dense floor from 3.2858 to 3.2770.</li>
+          <li>BF78 and BF99 did not improve final loss just by adding rows; row scaling needed the larger LR schedule to show a final gain.</li>
+          <li>For BF99, linear row-count LR scaling is hot but viable with the floor: update/param stays around 6e-2 to 7e-2 through step 500, then cools to about 1.2e-2 by final.</li>
+          <li>Adding a second shared-table insertion at layer 6 gives a small final gain, matching the direction of the official Engram two-layer placement.</li>
+          <li>Layer 6 alone is not enough: it starts faster at step 250 but loses the advantage by step 500/750.</li>
+          <li>Layer 5 as the second insertion point is bad at step 250, so the 2+6 placement is specific rather than a generic two-layer effect.</li>
+          <li>Layer-specific hashes for layers 2+6 are a completed win: final 3.2774 versus 3.2828 for shared hashes, with essentially the same table parameter count.</li>
+          <li>Separate per-layer readouts add a smaller completed win on top: final 3.2770 versus 3.2774.</li>
+          <li>Equal-total layer table partitions are negative: step-500 loss 7.2727 versus 7.2152 for the shared-table readout run.</li>
+          <li>The BF5-80 scaling suite is cleanly monotonic at final loss, with BF80 reaching 3.2816 and BF99 still ahead at 3.2770.</li>
+          <li>BF99 with 96-dim rows fit at 5.74B table params, but did not improve step-500 loss, so row width alone is not the missing scaling knob.</li>
+          <li>CPU/offloaded optimizer paths are workable, but throughput cost is large and can confound comparisons.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Open mystery</h3>
+        <ul>
+          <li>More rows reduce collisions and still improve final loss through BF80/BF99, but BF198 with partitions/vector Adam did not beat the shared-bank BF99 run.</li>
+          <li>The floor sweep brackets the useful BF39 value: 0.25 and 1.0 were both worse than 0.5 at step 1000; BF99 confirms that the LR scale/floor interaction can matter more than raw table size alone.</li>
+          <li>Dense Adam moments are too expensive at larger scale; SparseAdam keeps BF99 resident, but the BF39 replay shows a small late optimizer-path gap.</li>
+          <li>A bounded sparse Adam tail did not recover dense behavior: tail-1 was worse at step 500 and tail-4 was too memory-heavy.</li>
+          <li>We now log both touched-row and zero-including table RMS for sparse Engram updates, so future row-scaling runs can be compared without mixing reporting conventions.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Next Queue</h2>
+    <ol>
+      <li>Use the BF5-99 curve to fit a simple scale trend and decide whether BF120/BF160 is worth trying with resident SparseAdam or a memory-saving optimizer.</li>
+      <li>Only test fully separate per-layer tables if we can afford more total table capacity; equal-total partitions were negative.</li>
+      <li>Compare against the official Engram recipe again: tokenizer compression, layer placement, hash mix, and any scaling/regularization details now matter more than raw table size.</li>
+      <li>Try a smaller readout bottleneck change that is closer to Engram's own implementation rather than naive untied projections or MLA-style shared up-projection.</li>
+      <li>Consider BF99 dim-768 full reruns only for variance estimates; LR 8.5 and dim 1152 were both negative at step 500.</li>
+      <li>Revisit vectorial Adam only if memory pressure blocks a specific official-recipe comparison; previous row-scalar second moment was negative at BF99.</li>
+      <li>Quantization path: FSQ/BSQ or row-wise int8 for cold Engram weights is attractive after architecture behavior is understood; do not combine with LR mystery yet.</li>
+      <li>Revisit ROM only if Engram readout saturates: ROM can be faster per row at smaller state, but write/read dynamics have already shown stability issues.</li>
+    </ol>
+
+    <h2>Evidence Paths</h2>
+    <p>Remote logs are under <code>ubuntu@154.54.100.67:~/modded-nanogpt/logs/</code>. Current run log stem:</p>
+    <p><code>engram_scaling_bf{5,10,20,40,80}_..._20260514_1236</code> (scaling suite), <code>engram_bf99_lr12p69_floor0p5_layers2_6_layerhash_readouts_dim768_h6_ng3_ga8_1500_20260514_1119</code> (best completed), <code>engram_bf99_lr12p69_floor0p5_layers2_6_layerhash_dim768_h6_ng3_ga8_1500_20260514_102658</code> (previous best completed)</p>
+  </main>
+</body>
+</html>

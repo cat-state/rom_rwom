@@ -1,0 +1,3342 @@
+{
+  "val_tokens_scanned": 2097152,
+  "top_rows_considered": 200,
+  "canonical_vocab_size": 39227,
+  "hot_rows_by_training_hits": [
+    {
+      "rank_by_training_hits": 1,
+      "absolute_row": 25428267,
+      "training_hit_count": 4412760,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 7,
+      "scan_layer_counts": {
+        "8": 4,
+        "2": 3
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 5,
+          "ngram": 2,
+          "text": " the AFC",
+          "count_in_scan": 4
+        },
+        {
+          "layer": 2,
+          "head_idx": 5,
+          "ngram": 2,
+          "text": "MCG",
+          "count_in_scan": 1
+        },
+        {
+          "layer": 2,
+          "head_idx": 5,
+          "ngram": 2,
+          "text": "mcg",
+          "count_in_scan": 1
+        },
+        {
+          "layer": 2,
+          "head_idx": 5,
+          "ngram": 2,
+          "text": "McG",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 2,
+      "absolute_row": 15006439,
+      "training_hit_count": 4412561,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 3,
+      "absolute_row": 10026382,
+      "training_hit_count": 4412527,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 2,
+      "scan_layer_counts": {
+        "8": 1,
+        "2": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 2,
+          "ngram": 2,
+          "text": " overview focuses",
+          "count_in_scan": 1
+        },
+        {
+          "layer": 2,
+          "head_idx": 2,
+          "ngram": 2,
+          "text": " elderly poverty",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 4,
+      "absolute_row": 10487866,
+      "training_hit_count": 4412525,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 5,
+      "absolute_row": 15467979,
+      "training_hit_count": 4412509,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 6,
+      "absolute_row": 66246,
+      "training_hit_count": 4412494,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "2": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 2,
+          "head_idx": 0,
+          "ngram": 2,
+          "text": "pe act",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 7,
+      "absolute_row": 20448106,
+      "training_hit_count": 4412477,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 8,
+      "absolute_row": 19986430,
+      "training_hit_count": 4412470,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 9,
+      "absolute_row": 527666,
+      "training_hit_count": 4412470,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 10,
+      "absolute_row": 24966559,
+      "training_hit_count": 4412468,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 11,
+      "absolute_row": 5046319,
+      "training_hit_count": 4412456,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 12,
+      "absolute_row": 5507763,
+      "training_hit_count": 4412449,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 13,
+      "absolute_row": 27809870,
+      "training_hit_count": 2523729,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 3,
+      "scan_layer_counts": {
+        "8": 3
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 5,
+          "ngram": 2,
+          "text": " to ESPN",
+          "count_in_scan": 3
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 14,
+      "absolute_row": 28874306,
+      "training_hit_count": 2521299,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 15,
+      "absolute_row": 12869861,
+      "training_hit_count": 2521274,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 16,
+      "absolute_row": 3973921,
+      "training_hit_count": 2521227,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 17,
+      "absolute_row": 18914144,
+      "training_hit_count": 2521223,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 18,
+      "absolute_row": 22829765,
+      "training_hit_count": 2521212,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 19,
+      "absolute_row": 23894169,
+      "training_hit_count": 2521206,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 20,
+      "absolute_row": 2909773,
+      "training_hit_count": 2521201,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 6,
+      "scan_layer_counts": {
+        "2": 6
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 2,
+          "head_idx": 0,
+          "ngram": 2,
+          "text": " major role",
+          "count_in_scan": 6
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 21,
+      "absolute_row": 17849876,
+      "training_hit_count": 2521199,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 22,
+      "absolute_row": 7889828,
+      "training_hit_count": 2521184,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 23,
+      "absolute_row": 13934073,
+      "training_hit_count": 2521182,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "2": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 2,
+          "head_idx": 2,
+          "ngram": 2,
+          "text": " yod",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 24,
+      "absolute_row": 8954000,
+      "training_hit_count": 2521180,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "8": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 1,
+          "ngram": 2,
+          "text": " bricks unlocked",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 25,
+      "absolute_row": 15826334,
+      "training_hit_count": 1634771,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 26,
+      "absolute_row": 21133982,
+      "training_hit_count": 1634362,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 27,
+      "absolute_row": 25786370,
+      "training_hit_count": 1634339,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 28,
+      "absolute_row": 16154025,
+      "training_hit_count": 1634272,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 29,
+      "absolute_row": 26114103,
+      "training_hit_count": 1634137,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 30,
+      "absolute_row": 10846305,
+      "training_hit_count": 1634085,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 31,
+      "absolute_row": 20806257,
+      "training_hit_count": 1634063,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 32,
+      "absolute_row": 11173982,
+      "training_hit_count": 1634049,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "2": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 2,
+          "head_idx": 2,
+          "ngram": 2,
+          "text": " (General",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 33,
+      "absolute_row": 5866262,
+      "training_hit_count": 1634046,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 34,
+      "absolute_row": 6193929,
+      "training_hit_count": 1634041,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 35,
+      "absolute_row": 886201,
+      "training_hit_count": 1634033,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 36,
+      "absolute_row": 1213862,
+      "training_hit_count": 1634016,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 37,
+      "absolute_row": 23322936,
+      "training_hit_count": 1306138,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 38,
+      "absolute_row": 15119934,
+      "training_hit_count": 1306054,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 39,
+      "absolute_row": 20099891,
+      "training_hit_count": 1305994,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 40,
+      "absolute_row": 5159838,
+      "training_hit_count": 1305917,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 41,
+      "absolute_row": 13362696,
+      "training_hit_count": 1305885,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 4,
+      "scan_layer_counts": {
+        "8": 4
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 2,
+          "ngram": 2,
+          "text": " pay in",
+          "count_in_scan": 4
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 42,
+      "absolute_row": 179771,
+      "training_hit_count": 1305856,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 43,
+      "absolute_row": 3402496,
+      "training_hit_count": 1305846,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 44,
+      "absolute_row": 18342809,
+      "training_hit_count": 1305827,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 45,
+      "absolute_row": 47434777,
+      "training_hit_count": 1305826,
+      "bucket_head_idx": 9,
+      "bucket_ngram": 3,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "2": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 2,
+          "head_idx": 9,
+          "ngram": 3,
+          "text": " at night \u2013",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 46,
+      "absolute_row": 25080012,
+      "training_hit_count": 1305810,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 47,
+      "absolute_row": 8382593,
+      "training_hit_count": 1305802,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 2,
+      "scan_layer_counts": {
+        "2": 2
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 2,
+          "head_idx": 1,
+          "ngram": 2,
+          "text": " and aggreg",
+          "count_in_scan": 2
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 48,
+      "absolute_row": 28303097,
+      "training_hit_count": 1305801,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "8": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 5,
+          "ngram": 2,
+          "text": "37700",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 49,
+      "absolute_row": 10139891,
+      "training_hit_count": 1305792,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 50,
+      "absolute_row": 37474423,
+      "training_hit_count": 1305727,
+      "bucket_head_idx": 7,
+      "bucket_ngram": 3,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 51,
+      "absolute_row": 52297958,
+      "training_hit_count": 1305682,
+      "bucket_head_idx": 10,
+      "bucket_ngram": 3,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 2,
+      "scan_layer_counts": {
+        "8": 2
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 10,
+          "ngram": 3,
+          "text": " like the simple",
+          "count_in_scan": 1
+        },
+        {
+          "layer": 8,
+          "head_idx": 10,
+          "ngram": 3,
+          "text": ", 7 tricky",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 52,
+      "absolute_row": 32494276,
+      "training_hit_count": 1305652,
+      "bucket_head_idx": 6,
+      "bucket_ngram": 3,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 53,
+      "absolute_row": 52414898,
+      "training_hit_count": 1305625,
+      "bucket_head_idx": 10,
+      "bucket_ngram": 3,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 54,
+      "absolute_row": 42337574,
+      "training_hit_count": 1305620,
+      "bucket_head_idx": 8,
+      "bucket_ngram": 3,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 2,
+      "scan_layer_counts": {
+        "2": 2
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 2,
+          "head_idx": 8,
+          "ngram": 3,
+          "text": " alternative insulation,",
+          "count_in_scan": 1
+        },
+        {
+          "layer": 2,
+          "head_idx": 8,
+          "ngram": 3,
+          "text": " got to January",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 55,
+      "absolute_row": 47317765,
+      "training_hit_count": 1305599,
+      "bucket_head_idx": 9,
+      "bucket_ngram": 3,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 56,
+      "absolute_row": 37357387,
+      "training_hit_count": 1305587,
+      "bucket_head_idx": 7,
+      "bucket_ngram": 3,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 57,
+      "absolute_row": 32377208,
+      "training_hit_count": 1305586,
+      "bucket_head_idx": 6,
+      "bucket_ngram": 3,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 58,
+      "absolute_row": 42454594,
+      "training_hit_count": 1305584,
+      "bucket_head_idx": 8,
+      "bucket_ngram": 3,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 59,
+      "absolute_row": 57395069,
+      "training_hit_count": 1305576,
+      "bucket_head_idx": 11,
+      "bucket_ngram": 3,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 60,
+      "absolute_row": 57278169,
+      "training_hit_count": 1305571,
+      "bucket_head_idx": 11,
+      "bucket_ngram": 3,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 61,
+      "absolute_row": 28271441,
+      "training_hit_count": 1264125,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 62,
+      "absolute_row": 23291320,
+      "training_hit_count": 1263756,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 63,
+      "absolute_row": 10341083,
+      "training_hit_count": 1263726,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 64,
+      "absolute_row": 13331320,
+      "training_hit_count": 1263714,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "8": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 2,
+          "ngram": 2,
+          "text": " and deft",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 65,
+      "absolute_row": 8351267,
+      "training_hit_count": 1263703,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 66,
+      "absolute_row": 20301035,
+      "training_hit_count": 1263697,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 67,
+      "absolute_row": 15321112,
+      "training_hit_count": 1263682,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "8": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 3,
+          "ngram": 2,
+          "text": "EL\ufffd",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 68,
+      "absolute_row": 380979,
+      "training_hit_count": 1263680,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 69,
+      "absolute_row": 5361040,
+      "training_hit_count": 1263675,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 70,
+      "absolute_row": 18311363,
+      "training_hit_count": 1263665,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 71,
+      "absolute_row": 25281148,
+      "training_hit_count": 1263659,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "8": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 5,
+          "ngram": 2,
+          "text": " associated python",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 72,
+      "absolute_row": 3371200,
+      "training_hit_count": 1263657,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "2": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 2,
+          "head_idx": 0,
+          "ngram": 2,
+          "text": "hand Ze",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 73,
+      "absolute_row": 29726212,
+      "training_hit_count": 1247614,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 74,
+      "absolute_row": 23668960,
+      "training_hit_count": 1247530,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 75,
+      "absolute_row": 3748520,
+      "training_hit_count": 1247466,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 76,
+      "absolute_row": 8728617,
+      "training_hit_count": 1247426,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 77,
+      "absolute_row": 19766134,
+      "training_hit_count": 1247405,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 78,
+      "absolute_row": 18688833,
+      "training_hit_count": 1247397,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 79,
+      "absolute_row": 28649121,
+      "training_hit_count": 1247375,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 80,
+      "absolute_row": 14786091,
+      "training_hit_count": 1247342,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 81,
+      "absolute_row": 24746091,
+      "training_hit_count": 1247339,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 82,
+      "absolute_row": 4825971,
+      "training_hit_count": 1247337,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "2": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 2,
+          "head_idx": 0,
+          "ngram": 2,
+          "text": " building across",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 83,
+      "absolute_row": 13708720,
+      "training_hit_count": 1247332,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 84,
+      "absolute_row": 9806038,
+      "training_hit_count": 1247328,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "8": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 1,
+          "ngram": 2,
+          "text": " growth -",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 85,
+      "absolute_row": 19371361,
+      "training_hit_count": 888690,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 86,
+      "absolute_row": 29331523,
+      "training_hit_count": 886613,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 87,
+      "absolute_row": 24351386,
+      "training_hit_count": 886538,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "8": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 4,
+          "ngram": 2,
+          "text": "PS magazines",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 88,
+      "absolute_row": 24593281,
+      "training_hit_count": 886514,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 89,
+      "absolute_row": 14633041,
+      "training_hit_count": 886413,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 90,
+      "absolute_row": 14391290,
+      "training_hit_count": 886394,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 91,
+      "absolute_row": 9652938,
+      "training_hit_count": 886379,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 92,
+      "absolute_row": 19613154,
+      "training_hit_count": 886376,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 93,
+      "absolute_row": 4431138,
+      "training_hit_count": 886365,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 94,
+      "absolute_row": 4672841,
+      "training_hit_count": 886363,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 95,
+      "absolute_row": 29573442,
+      "training_hit_count": 886359,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 96,
+      "absolute_row": 9411217,
+      "training_hit_count": 886356,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "2": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 2,
+          "head_idx": 1,
+          "ngram": 2,
+          "text": " radios.",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 97,
+      "absolute_row": 22906881,
+      "training_hit_count": 786176,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 98,
+      "absolute_row": 6020181,
+      "training_hit_count": 785905,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 99,
+      "absolute_row": 17926992,
+      "training_hit_count": 785885,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 100,
+      "absolute_row": 20960292,
+      "training_hit_count": 785792,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 101,
+      "absolute_row": 11000244,
+      "training_hit_count": 785748,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 102,
+      "absolute_row": 27886986,
+      "training_hit_count": 785730,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 103,
+      "absolute_row": 15980301,
+      "training_hit_count": 785729,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 104,
+      "absolute_row": 2986889,
+      "training_hit_count": 785724,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 105,
+      "absolute_row": 7966944,
+      "training_hit_count": 785720,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 106,
+      "absolute_row": 1040108,
+      "training_hit_count": 785706,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 5,
+      "scan_layer_counts": {
+        "8": 5
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 0,
+          "ngram": 2,
+          "text": " hospitality and",
+          "count_in_scan": 5
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 107,
+      "absolute_row": 25940421,
+      "training_hit_count": 785699,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 108,
+      "absolute_row": 12946977,
+      "training_hit_count": 785699,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 109,
+      "absolute_row": 4107070,
+      "training_hit_count": 783617,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 110,
+      "absolute_row": 24027510,
+      "training_hit_count": 783601,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 111,
+      "absolute_row": 7703228,
+      "training_hit_count": 783586,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 112,
+      "absolute_row": 9087167,
+      "training_hit_count": 783585,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 113,
+      "absolute_row": 19047383,
+      "training_hit_count": 783583,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 114,
+      "absolute_row": 17663324,
+      "training_hit_count": 783581,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 115,
+      "absolute_row": 2723161,
+      "training_hit_count": 783578,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 116,
+      "absolute_row": 14067270,
+      "training_hit_count": 783577,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 117,
+      "absolute_row": 22643281,
+      "training_hit_count": 783572,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 118,
+      "absolute_row": 29007671,
+      "training_hit_count": 783565,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 119,
+      "absolute_row": 27623402,
+      "training_hit_count": 783560,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 120,
+      "absolute_row": 12683281,
+      "training_hit_count": 783555,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "2": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 2,
+          "head_idx": 2,
+          "ngram": 2,
+          "text": "als more",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 121,
+      "absolute_row": 5900685,
+      "training_hit_count": 706401,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "2": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 2,
+          "head_idx": 1,
+          "ngram": 2,
+          "text": " less on",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 122,
+      "absolute_row": 20840680,
+      "training_hit_count": 706230,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "8": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 4,
+          "ngram": 2,
+          "text": " whose sound",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 123,
+      "absolute_row": 25964658,
+      "training_hit_count": 706213,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 124,
+      "absolute_row": 15860757,
+      "training_hit_count": 706167,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "2": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 2,
+          "head_idx": 3,
+          "ngram": 2,
+          "text": " does about",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 125,
+      "absolute_row": 25820793,
+      "training_hit_count": 706164,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 126,
+      "absolute_row": 6044484,
+      "training_hit_count": 706161,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 127,
+      "absolute_row": 920624,
+      "training_hit_count": 706159,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 128,
+      "absolute_row": 11024537,
+      "training_hit_count": 706156,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 3,
+      "scan_layer_counts": {
+        "8": 3
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 2,
+          "ngram": 2,
+          "text": "ards and",
+          "count_in_scan": 2
+        },
+        {
+          "layer": 8,
+          "head_idx": 2,
+          "ngram": 2,
+          "text": " ZFP",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 129,
+      "absolute_row": 10880728,
+      "training_hit_count": 706141,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "2": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 2,
+          "head_idx": 2,
+          "ngram": 2,
+          "text": " MIC will",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 130,
+      "absolute_row": 1064417,
+      "training_hit_count": 706139,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 131,
+      "absolute_row": 20984537,
+      "training_hit_count": 706133,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 132,
+      "absolute_row": 16004580,
+      "training_hit_count": 706132,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "8": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 3,
+          "ngram": 2,
+          "text": " strides,",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 133,
+      "absolute_row": 2791491,
+      "training_hit_count": 686911,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 134,
+      "absolute_row": 18748465,
+      "training_hit_count": 686872,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 135,
+      "absolute_row": 8788249,
+      "training_hit_count": 686866,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 136,
+      "absolute_row": 3808152,
+      "training_hit_count": 686844,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 137,
+      "absolute_row": 27691732,
+      "training_hit_count": 686838,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 138,
+      "absolute_row": 28708753,
+      "training_hit_count": 686834,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "8": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 5,
+          "ngram": 2,
+          "text": " more worthwhile",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 139,
+      "absolute_row": 7771558,
+      "training_hit_count": 686831,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 140,
+      "absolute_row": 13768352,
+      "training_hit_count": 686828,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 141,
+      "absolute_row": 17731654,
+      "training_hit_count": 686826,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 142,
+      "absolute_row": 22711611,
+      "training_hit_count": 686826,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 143,
+      "absolute_row": 12751611,
+      "training_hit_count": 686820,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 144,
+      "absolute_row": 23728592,
+      "training_hit_count": 686814,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 145,
+      "absolute_row": 12668874,
+      "training_hit_count": 620535,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 146,
+      "absolute_row": 17648903,
+      "training_hit_count": 619890,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 3,
+      "scan_layer_counts": {
+        "2": 3
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 2,
+          "head_idx": 3,
+          "ngram": 2,
+          "text": " or original",
+          "count_in_scan": 3
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 147,
+      "absolute_row": 12668429,
+      "training_hit_count": 619887,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 148,
+      "absolute_row": 22628525,
+      "training_hit_count": 619879,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 149,
+      "absolute_row": 27608939,
+      "training_hit_count": 619871,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 150,
+      "absolute_row": 2708770,
+      "training_hit_count": 619869,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 151,
+      "absolute_row": 7688831,
+      "training_hit_count": 619866,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "8": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 1,
+          "ngram": 2,
+          "text": " (bound",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 152,
+      "absolute_row": 2708277,
+      "training_hit_count": 619862,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "8": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 0,
+          "ngram": 2,
+          "text": "cluded ceremony",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 153,
+      "absolute_row": 27608662,
+      "training_hit_count": 619861,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 154,
+      "absolute_row": 7688356,
+      "training_hit_count": 619859,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 155,
+      "absolute_row": 22628826,
+      "training_hit_count": 619854,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 156,
+      "absolute_row": 17648500,
+      "training_hit_count": 619852,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 157,
+      "absolute_row": 347465,
+      "training_hit_count": 604244,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "8": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 0,
+          "ngram": 2,
+          "text": "er ranch",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 158,
+      "absolute_row": 5327526,
+      "training_hit_count": 603321,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 2,
+      "scan_layer_counts": {
+        "8": 2
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 1,
+          "ngram": 2,
+          "text": " enabling factor",
+          "count_in_scan": 2
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 159,
+      "absolute_row": 7602137,
+      "training_hit_count": 603095,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 160,
+      "absolute_row": 10307569,
+      "training_hit_count": 603058,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 161,
+      "absolute_row": 12582190,
+      "training_hit_count": 603035,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 5,
+      "scan_layer_counts": {
+        "8": 5
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 2,
+          "ngram": 2,
+          "text": " hunting is",
+          "count_in_scan": 5
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 162,
+      "absolute_row": 22542190,
+      "training_hit_count": 603004,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 2,
+      "scan_layer_counts": {
+        "8": 2
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 4,
+          "ngram": 2,
+          "text": " who expected",
+          "count_in_scan": 1
+        },
+        {
+          "layer": 8,
+          "head_idx": 4,
+          "ngram": 2,
+          "text": " Matthew Mac",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 163,
+      "absolute_row": 27522311,
+      "training_hit_count": 603002,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 164,
+      "absolute_row": 20267521,
+      "training_hit_count": 602997,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 165,
+      "absolute_row": 2622070,
+      "training_hit_count": 602990,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 166,
+      "absolute_row": 25247634,
+      "training_hit_count": 602981,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 167,
+      "absolute_row": 17562233,
+      "training_hit_count": 602977,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 168,
+      "absolute_row": 15287598,
+      "training_hit_count": 602967,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 169,
+      "absolute_row": 13595709,
+      "training_hit_count": 598709,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 2,
+      "scan_layer_counts": {
+        "2": 2
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 2,
+          "head_idx": 2,
+          "ngram": 2,
+          "text": "ollies",
+          "count_in_scan": 2
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 170,
+      "absolute_row": 26705968,
+      "training_hit_count": 598688,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 171,
+      "absolute_row": 21725839,
+      "training_hit_count": 598676,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 172,
+      "absolute_row": 3635669,
+      "training_hit_count": 598643,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 173,
+      "absolute_row": 23555469,
+      "training_hit_count": 598631,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 174,
+      "absolute_row": 18575682,
+      "training_hit_count": 598628,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 175,
+      "absolute_row": 1805655,
+      "training_hit_count": 598623,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 3,
+      "scan_layer_counts": {
+        "8": 3
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 0,
+          "ngram": 2,
+          "text": "head (",
+          "count_in_scan": 3
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 176,
+      "absolute_row": 6785728,
+      "training_hit_count": 598622,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 177,
+      "absolute_row": 11765791,
+      "training_hit_count": 598615,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 178,
+      "absolute_row": 8615706,
+      "training_hit_count": 598615,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 179,
+      "absolute_row": 16745848,
+      "training_hit_count": 598615,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 180,
+      "absolute_row": 28535550,
+      "training_hit_count": 598613,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 4,
+      "scan_layer_counts": {
+        "2": 4
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 2,
+          "head_idx": 5,
+          "ngram": 2,
+          "text": " tough on",
+          "count_in_scan": 3
+        },
+        {
+          "layer": 2,
+          "head_idx": 5,
+          "ngram": 2,
+          "text": " from Ty",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 181,
+      "absolute_row": 28468226,
+      "training_hit_count": 487297,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 182,
+      "absolute_row": 4455160,
+      "training_hit_count": 487136,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 183,
+      "absolute_row": 24375408,
+      "training_hit_count": 486945,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "8": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 4,
+          "ngram": 2,
+          "text": "against the",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 184,
+      "absolute_row": 19395383,
+      "training_hit_count": 486934,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 185,
+      "absolute_row": 23488113,
+      "training_hit_count": 486907,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 186,
+      "absolute_row": 18508190,
+      "training_hit_count": 486881,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 187,
+      "absolute_row": 29355545,
+      "training_hit_count": 486881,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 2,
+      "scan_layer_counts": {
+        "2": 2
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 2,
+          "head_idx": 5,
+          "ngram": 2,
+          "text": " for Modest",
+          "count_in_scan": 1
+        },
+        {
+          "layer": 2,
+          "head_idx": 5,
+          "ngram": 2,
+          "text": " for modest",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 188,
+      "absolute_row": 3568057,
+      "training_hit_count": 486867,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 189,
+      "absolute_row": 14415312,
+      "training_hit_count": 486865,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 190,
+      "absolute_row": 9435239,
+      "training_hit_count": 486864,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 191,
+      "absolute_row": 8548118,
+      "training_hit_count": 486862,
+      "bucket_head_idx": 1,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 1,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 192,
+      "absolute_row": 13528161,
+      "training_hit_count": 486861,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 193,
+      "absolute_row": 20280057,
+      "training_hit_count": 468929,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 1,
+      "scan_layer_counts": {
+        "2": 1
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 2,
+          "head_idx": 4,
+          "ngram": 2,
+          "text": " Art &",
+          "count_in_scan": 1
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 194,
+      "absolute_row": 359681,
+      "training_hit_count": 468721,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 195,
+      "absolute_row": 20258969,
+      "training_hit_count": 468656,
+      "bucket_head_idx": 4,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 4,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 196,
+      "absolute_row": 15299964,
+      "training_hit_count": 468630,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 197,
+      "absolute_row": 15279148,
+      "training_hit_count": 468614,
+      "bucket_head_idx": 3,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 3,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    },
+    {
+      "rank_by_training_hits": 198,
+      "absolute_row": 10299161,
+      "training_hit_count": 468614,
+      "bucket_head_idx": 2,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 2,
+      "scan_count_in_val_sample": 16,
+      "scan_layer_counts": {
+        "2": 16
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 2,
+          "head_idx": 2,
+          "ngram": 2,
+          "text": " fit the",
+          "count_in_scan": 16
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 199,
+      "absolute_row": 339105,
+      "training_hit_count": 468608,
+      "bucket_head_idx": 0,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 0,
+      "scan_count_in_val_sample": 4,
+      "scan_layer_counts": {
+        "8": 4
+      },
+      "top_ngram_examples": [
+        {
+          "layer": 8,
+          "head_idx": 0,
+          "ngram": 2,
+          "text": " and 23",
+          "count_in_scan": 4
+        }
+      ]
+    },
+    {
+      "rank_by_training_hits": 200,
+      "absolute_row": 25239058,
+      "training_hit_count": 468601,
+      "bucket_head_idx": 5,
+      "bucket_ngram": 2,
+      "bucket_hash_head": 5,
+      "scan_count_in_val_sample": 0,
+      "scan_layer_counts": {},
+      "top_ngram_examples": []
+    }
+  ],
+  "top_memory_rows_after_internal_gating": [
+    {
+      "head_idx": 3,
+      "ngram": 2,
+      "hash_head": 3,
+      "absolute_row": 15006439,
+      "count_in_analysis": 2821,
+      "avg_gate": 0.9298164248466492,
+      "avg_gated_output_norm": 32867.5078125,
+      "example_ngram_text": ".\\n",
+      "example_window_text": " out of it. And \"newfound\" feelings. Please. If only.\\nSTEFANO!! STEFANO, STEFANO, STE",
+      "training_hit_count": 4412561
+    },
+    {
+      "head_idx": 2,
+      "ngram": 2,
+      "hash_head": 2,
+      "absolute_row": 10026382,
+      "count_in_analysis": 2821,
+      "avg_gate": 0.9276654720306396,
+      "avg_gated_output_norm": 32357.228515625,
+      "example_ngram_text": ".\\n",
+      "example_window_text": " out of it. And \"newfound\" feelings. Please. If only.\\nSTEFANO!! STEFANO, STEFANO, STE",
+      "training_hit_count": 4412527
+    },
+    {
+      "head_idx": 5,
+      "ngram": 2,
+      "hash_head": 5,
+      "absolute_row": 24966559,
+      "count_in_analysis": 2821,
+      "avg_gate": 0.9261707067489624,
+      "avg_gated_output_norm": 32015.912109375,
+      "example_ngram_text": ".\\n",
+      "example_window_text": " out of it. And \"newfound\" feelings. Please. If only.\\nSTEFANO!! STEFANO, STEFANO, STE",
+      "training_hit_count": 4412468
+    },
+    {
+      "head_idx": 1,
+      "ngram": 2,
+      "hash_head": 1,
+      "absolute_row": 5046319,
+      "count_in_analysis": 2821,
+      "avg_gate": 0.9207978844642639,
+      "avg_gated_output_norm": 31246.544921875,
+      "example_ngram_text": ".\\n",
+      "example_window_text": " out of it. And \"newfound\" feelings. Please. If only.\\nSTEFANO!! STEFANO, STEFANO, STE",
+      "training_hit_count": 4412456
+    },
+    {
+      "head_idx": 0,
+      "ngram": 2,
+      "hash_head": 0,
+      "absolute_row": 66246,
+      "count_in_analysis": 2821,
+      "avg_gate": 0.9066628217697144,
+      "avg_gated_output_norm": 29758.65625,
+      "example_ngram_text": ".\\n",
+      "example_window_text": " out of it. And \"newfound\" feelings. Please. If only.\\nSTEFANO!! STEFANO, STEFANO, STE",
+      "training_hit_count": 4412494
+    },
+    {
+      "head_idx": 7,
+      "ngram": 3,
+      "hash_head": 1,
+      "absolute_row": 37474423,
+      "count_in_analysis": 595,
+      "avg_gate": 0.8982571363449097,
+      "avg_gated_output_norm": 25878.59765625,
+      "example_ngram_text": "\u2019s",
+      "example_window_text": " Together to Reduce Waste\\nIn a blog about how people share, it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SHARE",
+      "training_hit_count": 1305727
+    },
+    {
+      "head_idx": 7,
+      "ngram": 3,
+      "hash_head": 1,
+      "absolute_row": 37357387,
+      "count_in_analysis": 595,
+      "avg_gate": 0.9031528830528259,
+      "avg_gated_output_norm": 25006.28125,
+      "example_ngram_text": "\u2019s",
+      "example_window_text": " Together to Reduce Waste\\nIn a blog about how people share, it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SHARE",
+      "training_hit_count": 1305587
+    },
+    {
+      "head_idx": 1,
+      "ngram": 2,
+      "hash_head": 1,
+      "absolute_row": 5159838,
+      "count_in_analysis": 595,
+      "avg_gate": 0.8852028250694275,
+      "avg_gated_output_norm": 24982.947265625,
+      "example_ngram_text": "\ufffds",
+      "example_window_text": " Together to Reduce Waste\\nIn a blog about how people share, it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SHARE",
+      "training_hit_count": 1305917
+    },
+    {
+      "head_idx": 11,
+      "ngram": 3,
+      "hash_head": 5,
+      "absolute_row": 57278169,
+      "count_in_analysis": 595,
+      "avg_gate": 0.9027251601219177,
+      "avg_gated_output_norm": 24426.212890625,
+      "example_ngram_text": "\u2019s",
+      "example_window_text": " Together to Reduce Waste\\nIn a blog about how people share, it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SHARE",
+      "training_hit_count": 1305571
+    },
+    {
+      "head_idx": 10,
+      "ngram": 3,
+      "hash_head": 4,
+      "absolute_row": 52297958,
+      "count_in_analysis": 595,
+      "avg_gate": 0.9010375738143921,
+      "avg_gated_output_norm": 23992.349609375,
+      "example_ngram_text": "\u2019s",
+      "example_window_text": " Together to Reduce Waste\\nIn a blog about how people share, it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SHARE",
+      "training_hit_count": 1305682
+    },
+    {
+      "head_idx": 8,
+      "ngram": 3,
+      "hash_head": 2,
+      "absolute_row": 42337574,
+      "count_in_analysis": 595,
+      "avg_gate": 0.9142209887504578,
+      "avg_gated_output_norm": 23925.046875,
+      "example_ngram_text": "\u2019s",
+      "example_window_text": " Together to Reduce Waste\\nIn a blog about how people share, it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SHARE",
+      "training_hit_count": 1305620
+    },
+    {
+      "head_idx": 5,
+      "ngram": 2,
+      "hash_head": 5,
+      "absolute_row": 28303097,
+      "count_in_analysis": 595,
+      "avg_gate": 0.8759415745735168,
+      "avg_gated_output_norm": 23500.05859375,
+      "example_ngram_text": "\ufffds",
+      "example_window_text": " Together to Reduce Waste\\nIn a blog about how people share, it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SHARE",
+      "training_hit_count": 1305801
+    },
+    {
+      "head_idx": 3,
+      "ngram": 2,
+      "hash_head": 3,
+      "absolute_row": 18342809,
+      "count_in_analysis": 595,
+      "avg_gate": 0.8647319674491882,
+      "avg_gated_output_norm": 22882.734375,
+      "example_ngram_text": "\ufffds",
+      "example_window_text": " Together to Reduce Waste\\nIn a blog about how people share, it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SHARE",
+      "training_hit_count": 1305827
+    },
+    {
+      "head_idx": 4,
+      "ngram": 2,
+      "hash_head": 4,
+      "absolute_row": 24351386,
+      "count_in_analysis": 432,
+      "avg_gate": 0.8883259296417236,
+      "avg_gated_output_norm": 22697.984375,
+      "example_ngram_text": "\\n-",
+      "example_window_text": " calls for a new use for these eight cages. Here are my suggestions:\\n- Turn two of those cages into compost bins. Fill one with grass, leaves,",
+      "training_hit_count": 886538
+    },
+    {
+      "head_idx": 4,
+      "ngram": 2,
+      "hash_head": 4,
+      "absolute_row": 23322936,
+      "count_in_analysis": 595,
+      "avg_gate": 0.8761171102523804,
+      "avg_gated_output_norm": 22469.130859375,
+      "example_ngram_text": "\ufffds",
+      "example_window_text": " Together to Reduce Waste\\nIn a blog about how people share, it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SHARE",
+      "training_hit_count": 1306138
+    },
+    {
+      "head_idx": 9,
+      "ngram": 3,
+      "hash_head": 3,
+      "absolute_row": 47434777,
+      "count_in_analysis": 595,
+      "avg_gate": 0.7955694198608398,
+      "avg_gated_output_norm": 21513.791015625,
+      "example_ngram_text": "\u2019s",
+      "example_window_text": " Together to Reduce Waste\\nIn a blog about how people share, it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SHARE",
+      "training_hit_count": 1305826
+    },
+    {
+      "head_idx": 6,
+      "ngram": 3,
+      "hash_head": 0,
+      "absolute_row": 32377208,
+      "count_in_analysis": 595,
+      "avg_gate": 0.8467190265655518,
+      "avg_gated_output_norm": 21031.271484375,
+      "example_ngram_text": "\u2019s",
+      "example_window_text": " Together to Reduce Waste\\nIn a blog about how people share, it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SHARE",
+      "training_hit_count": 1305586
+    },
+    {
+      "head_idx": 0,
+      "ngram": 2,
+      "hash_head": 0,
+      "absolute_row": 3402496,
+      "count_in_analysis": 595,
+      "avg_gate": 0.7983341217041016,
+      "avg_gated_output_norm": 20374.21875,
+      "example_ngram_text": "\ufffds",
+      "example_window_text": " Together to Reduce Waste\\nIn a blog about how people share, it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SHARE",
+      "training_hit_count": 1305846
+    },
+    {
+      "head_idx": 1,
+      "ngram": 2,
+      "hash_head": 1,
+      "absolute_row": 5507763,
+      "count_in_analysis": 2821,
+      "avg_gate": 0.7171982526779175,
+      "avg_gated_output_norm": 20253.71484375,
+      "example_ngram_text": ".\\n",
+      "example_window_text": " out of it. And \"newfound\" feelings. Please. If only.\\nSTEFANO!! STEFANO, STEFANO, STE",
+      "training_hit_count": 4412449
+    },
+    {
+      "head_idx": 2,
+      "ngram": 2,
+      "hash_head": 2,
+      "absolute_row": 14786091,
+      "count_in_analysis": 825,
+      "avg_gate": 0.8258074522018433,
+      "avg_gated_output_norm": 19936.6015625,
+      "example_ngram_text": ", and",
+      "example_window_text": " wont use it again. I really do like 'Inner Life', though, and would love to use it in classroom presentations, from the BioVisions site,",
+      "training_hit_count": 1247342
+    },
+    {
+      "head_idx": 1,
+      "ngram": 2,
+      "hash_head": 1,
+      "absolute_row": 9411217,
+      "count_in_analysis": 432,
+      "avg_gate": 0.8148460984230042,
+      "avg_gated_output_norm": 19419.267578125,
+      "example_ngram_text": "\\n-",
+      "example_window_text": " calls for a new use for these eight cages. Here are my suggestions:\\n- Turn two of those cages into compost bins. Fill one with grass, leaves,",
+      "training_hit_count": 886356
+    },
+    {
+      "head_idx": 8,
+      "ngram": 3,
+      "hash_head": 2,
+      "absolute_row": 42454594,
+      "count_in_analysis": 595,
+      "avg_gate": 0.7801994681358337,
+      "avg_gated_output_norm": 19102.583984375,
+      "example_ngram_text": "\u2019s",
+      "example_window_text": " Together to Reduce Waste\\nIn a blog about how people share, it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SHARE",
+      "training_hit_count": 1305584
+    },
+    {
+      "head_idx": 10,
+      "ngram": 3,
+      "hash_head": 4,
+      "absolute_row": 52414898,
+      "count_in_analysis": 595,
+      "avg_gate": 0.7360972166061401,
+      "avg_gated_output_norm": 18864.416015625,
+      "example_ngram_text": "\u2019s",
+      "example_window_text": " Together to Reduce Waste\\nIn a blog about how people share, it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SHARE",
+      "training_hit_count": 1305625
+    },
+    {
+      "head_idx": 3,
+      "ngram": 2,
+      "hash_head": 3,
+      "absolute_row": 15119934,
+      "count_in_analysis": 595,
+      "avg_gate": 0.7321676015853882,
+      "avg_gated_output_norm": 18585.62109375,
+      "example_ngram_text": "\ufffds",
+      "example_window_text": " Together to Reduce Waste\\nIn a blog about how people share, it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SHARE",
+      "training_hit_count": 1306054
+    },
+    {
+      "head_idx": 0,
+      "ngram": 2,
+      "hash_head": 0,
+      "absolute_row": 4431138,
+      "count_in_analysis": 432,
+      "avg_gate": 0.7910889387130737,
+      "avg_gated_output_norm": 18139.576171875,
+      "example_ngram_text": "\\n-",
+      "example_window_text": " calls for a new use for these eight cages. Here are my suggestions:\\n- Turn two of those cages into compost bins. Fill one with grass, leaves,",
+      "training_hit_count": 886365
+    },
+    {
+      "head_idx": 3,
+      "ngram": 2,
+      "hash_head": 3,
+      "absolute_row": 19766134,
+      "count_in_analysis": 825,
+      "avg_gate": 0.7418869137763977,
+      "avg_gated_output_norm": 17558.5,
+      "example_ngram_text": ", and",
+      "example_window_text": " wont use it again. I really do like 'Inner Life', though, and would love to use it in classroom presentations, from the BioVisions site,",
+      "training_hit_count": 1247405
+    },
+    {
+      "head_idx": 4,
+      "ngram": 2,
+      "hash_head": 4,
+      "absolute_row": 24746091,
+      "count_in_analysis": 825,
+      "avg_gate": 0.7459633350372314,
+      "avg_gated_output_norm": 17557.810546875,
+      "example_ngram_text": ", and",
+      "example_window_text": " wont use it again. I really do like 'Inner Life', though, and would love to use it in classroom presentations, from the BioVisions site,",
+      "training_hit_count": 1247339
+    },
+    {
+      "head_idx": 11,
+      "ngram": 3,
+      "hash_head": 5,
+      "absolute_row": 57395069,
+      "count_in_analysis": 595,
+      "avg_gate": 0.7214813232421875,
+      "avg_gated_output_norm": 17460.728515625,
+      "example_ngram_text": "\u2019s",
+      "example_window_text": " Together to Reduce Waste\\nIn a blog about how people share, it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SHARE",
+      "training_hit_count": 1305576
+    },
+    {
+      "head_idx": 6,
+      "ngram": 3,
+      "hash_head": 0,
+      "absolute_row": 32494276,
+      "count_in_analysis": 595,
+      "avg_gate": 0.7182593941688538,
+      "avg_gated_output_norm": 17403.267578125,
+      "example_ngram_text": "\u2019s",
+      "example_window_text": " Together to Reduce Waste\\nIn a blog about how people share, it\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SHARE",
+      "training_hit_count": 1305652
+    },
+    {
+      "head_idx": 9,
+      "ngram": 3,
+      "hash_head": 3,
+      "absolute_row": 47316680,
+      "count_in_analysis": 170,
+      "avg_gate": 0.9172698259353638,
+      "avg_gated_output_norm": 17149.298828125,
+      "example_ngram_text": "\u2019T",
+      "example_window_text": "\u2019s worth the occasional reference to the bizarre ways that people DON\u2019T SHARE. Is it safe to say we live in a society that places great",
+      "training_hit_count": 462379
+    },
+    {
+      "head_idx": 2,
+      "ngram": 2,
+      "hash_head": 2,
+      "absolute_row": 14391290,
+      "count_in_analysis": 432,
+      "avg_gate": 0.7147510647773743,
+      "avg_gated_output_norm": 16791.328125,
+      "example_ngram_text": "\\n-",
+      "example_window_text": " calls for a new use for these eight cages. Here are my suggestions:\\n- Turn two of those cages into compost bins. Fill one with grass, leaves,",
+      "training_hit_count": 886394
+    },
+    {
+      "head_idx": 0,
+      "ngram": 2,
+      "hash_head": 0,
+      "absolute_row": 1133903,
+      "count_in_analysis": 242,
+      "avg_gate": 0.8654198050498962,
+      "avg_gated_output_norm": 16501.349609375,
+      "example_ngram_text": ". I",
+      "example_window_text": "Im sorry, I shouldnt have been using that animation in my paid presentations. I wont use it again. I really do like 'Inner Life', though,",
+      "training_hit_count": 460094
+    },
+    {
+      "head_idx": 2,
+      "ngram": 2,
+      "hash_head": 2,
+      "absolute_row": 11094103,
+      "count_in_analysis": 242,
+      "avg_gate": 0.8888227343559265,
+      "avg_gated_output_norm": 16271.875,
+      "example_ngram_text": ". I",
+      "example_window_text": "Im sorry, I shouldnt have been using that animation in my paid presentations. I wont use it again. I really do like 'Inner Life', though,",
+      "training_hit_count": 460091
+    },
+    {
+      "head_idx": 3,
+      "ngram": 2,
+      "hash_head": 3,
+      "absolute_row": 17731654,
+      "count_in_analysis": 647,
+      "avg_gate": 0.9119105339050293,
+      "avg_gated_output_norm": 16255.4326171875,
+      "example_ngram_text": ", the",
+      "example_window_text": " cells.... Urinary Incontinence\\nOverview The urinary tract includes the kidneys, the ureters, the bladder, and the urethra. The kidneys...",
+      "training_hit_count": 686826
+    },
+    {
+      "head_idx": 5,
+      "ngram": 2,
+      "hash_head": 5,
+      "absolute_row": 26034504,
+      "count_in_analysis": 242,
+      "avg_gate": 0.8880100250244141,
+      "avg_gated_output_norm": 16212.8212890625,
+      "example_ngram_text": ". I",
+      "example_window_text": "Im sorry, I shouldnt have been using that animation in my paid presentations. I wont use it again. I really do like 'Inner Life', though,",
+      "training_hit_count": 460114
+    },
+    {
+      "head_idx": 1,
+      "ngram": 2,
+      "hash_head": 1,
+      "absolute_row": 6114000,
+      "count_in_analysis": 242,
+      "avg_gate": 0.8437820672988892,
+      "avg_gated_output_norm": 16175.7470703125,
+      "example_ngram_text": ". I",
+      "example_window_text": "Im sorry, I shouldnt have been using that animation in my paid presentations. I wont use it again. I really do like 'Inner Life', though,",
+      "training_hit_count": 460094
+    },
+    {
+      "head_idx": 5,
+      "ngram": 2,
+      "hash_head": 5,
+      "absolute_row": 27623402,
+      "count_in_analysis": 535,
+      "avg_gate": 0.8407126069068909,
+      "avg_gated_output_norm": 16092.087890625,
+      "example_ngram_text": ". The",
+      "example_window_text": " kidneys, the ureters, the bladder, and the urethra. The kidneys... Advanced Directives\\nLiving Wills Every competent adult has, in most",
+      "training_hit_count": 783560
+    },
+    {
+      "head_idx": 2,
+      "ngram": 2,
+      "hash_head": 2,
+      "absolute_row": 12683281,
+      "count_in_analysis": 535,
+      "avg_gate": 0.845561146736145,
+      "avg_gated_output_norm": 15957.572265625,
+      "example_ngram_text": ". The",
+      "example_window_text": " kidneys, the ureters, the bladder, and the urethra. The kidneys... Advanced Directives\\nLiving Wills Every competent adult has, in most",
+      "training_hit_count": 783555
+    },
+    {
+      "head_idx": 4,
+      "ngram": 2,
+      "hash_head": 4,
+      "absolute_row": 24027510,
+      "count_in_analysis": 535,
+      "avg_gate": 0.8310785293579102,
+      "avg_gated_output_norm": 15801.4072265625,
+      "example_ngram_text": ". The",
+      "example_window_text": " kidneys, the ureters, the bladder, and the urethra. The kidneys... Advanced Directives\\nLiving Wills Every competent adult has, in most",
+      "training_hit_count": 783601
+    },
+    {
+      "head_idx": 1,
+      "ngram": 2,
+      "hash_head": 1,
+      "absolute_row": 7771558,
+      "count_in_analysis": 647,
+      "avg_gate": 0.9040652513504028,
+      "avg_gated_output_norm": 15688.2421875,
+      "example_ngram_text": ", the",
+      "example_window_text": " cells.... Urinary Incontinence\\nOverview The urinary tract includes the kidneys, the ureters, the bladder, and the urethra. The kidneys...",
+      "training_hit_count": 686831
+    },
+    {
+      "head_idx": 11,
+      "ngram": 3,
+      "hash_head": 5,
+      "absolute_row": 57456749,
+      "count_in_analysis": 357,
+      "avg_gate": 0.8977383971214294,
+      "avg_gated_output_norm": 15623.24609375,
+      "example_ngram_text": ".\\nThe",
+      "example_window_text": " scorecard to monitor and rank suppliers on whether they leverage the RRE.\\nThe RRE was created by FMI and GS1 US, Lawrenceville, N",
+      "training_hit_count": 404801
+    },
+    {
+      "head_idx": 4,
+      "ngram": 2,
+      "hash_head": 4,
+      "absolute_row": 22711611,
+      "count_in_analysis": 647,
+      "avg_gate": 0.9003002643585205,
+      "avg_gated_output_norm": 15580.60546875,
+      "example_ngram_text": ", the",
+      "example_window_text": " cells.... Urinary Incontinence\\nOverview The urinary tract includes the kidneys, the ureters, the bladder, and the urethra. The kidneys...",
+      "training_hit_count": 686826
+    },
+    {
+      "head_idx": 2,
+      "ngram": 2,
+      "hash_head": 2,
+      "absolute_row": 14146554,
+      "count_in_analysis": 214,
+      "avg_gate": 0.9162604808807373,
+      "avg_gated_output_norm": 15431.3154296875,
+      "example_ngram_text": ". It",
+      "example_window_text": "itational at Augustana College in Rock Island, Illinois on Saturday, September 24. It was an impressive second place finish for head coach Paul Olsen\u2019s crew as",
+      "training_hit_count": 375237
+    },
+    {
+      "head_idx": 2,
+      "ngram": 2,
+      "hash_head": 2,
+      "absolute_row": 12751611,
+      "count_in_analysis": 647,
+      "avg_gate": 0.8934051394462585,
+      "avg_gated_output_norm": 15377.9208984375,
+      "example_ngram_text": ", the",
+      "example_window_text": " cells.... Urinary Incontinence\\nOverview The urinary tract includes the kidneys, the ureters, the bladder, and the urethra. The kidneys...",
+      "training_hit_count": 686820
+    },
+    {
+      "head_idx": 1,
+      "ngram": 2,
+      "hash_head": 1,
+      "absolute_row": 9166451,
+      "count_in_analysis": 216,
+      "avg_gate": 0.9077239632606506,
+      "avg_gated_output_norm": 15322.392578125,
+      "example_ngram_text": "ock Park",
+      "example_window_text": " Bay Waterkeeper and Sierra Club put on a clean-up at Peacock Park in the Grove. Volunteers paddled nearby waters and gathered a huge amount of trash",
+      "training_hit_count": 375291
+    },
+    {
+      "head_idx": 0,
+      "ngram": 2,
+      "hash_head": 0,
+      "absolute_row": 2791491,
+      "count_in_analysis": 647,
+      "avg_gate": 0.8939390778541565,
+      "avg_gated_output_norm": 15259.1875,
+      "example_ngram_text": ", the",
+      "example_window_text": " cells.... Urinary Incontinence\\nOverview The urinary tract includes the kidneys, the ureters, the bladder, and the urethra. The kidneys...",
+      "training_hit_count": 686911
+    },
+    {
+      "head_idx": 3,
+      "ngram": 2,
+      "hash_head": 3,
+      "absolute_row": 18859697,
+      "count_in_analysis": 206,
+      "avg_gate": 0.9230331182479858,
+      "avg_gated_output_norm": 15143.978515625,
+      "example_ngram_text": ".<|endoftext|>",
+      "example_window_text": " done it, better admit it to Harvard now, apologize, and move on.<|endoftext|>A novel two-step immunotherapy approach has shown clinically beneficial responses in patients with",
+      "training_hit_count": 368595
+    },
+    {
+      "head_idx": 3,
+      "ngram": 2,
+      "hash_head": 3,
+      "absolute_row": 19047383,
+      "count_in_analysis": 535,
+      "avg_gate": 0.7820941209793091,
+      "avg_gated_output_norm": 15137.8046875,
+      "example_ngram_text": ". The",
+      "example_window_text": " kidneys, the ureters, the bladder, and the urethra. The kidneys... Advanced Directives\\nLiving Wills Every competent adult has, in most",
+      "training_hit_count": 783583
+    },
+    {
+      "head_idx": 3,
+      "ngram": 2,
+      "hash_head": 3,
+      "absolute_row": 17663324,
+      "count_in_analysis": 535,
+      "avg_gate": 0.7989212274551392,
+      "avg_gated_output_norm": 15096.2060546875,
+      "example_ngram_text": ". The",
+      "example_window_text": " kidneys, the ureters, the bladder, and the urethra. The kidneys... Advanced Directives\\nLiving Wills Every competent adult has, in most",
+      "training_hit_count": 783581
+    },
+    {
+      "head_idx": 3,
+      "ngram": 2,
+      "hash_head": 3,
+      "absolute_row": 19126667,
+      "count_in_analysis": 214,
+      "avg_gate": 0.8947126269340515,
+      "avg_gated_output_norm": 15062.2509765625,
+      "example_ngram_text": ". It",
+      "example_window_text": "itational at Augustana College in Rock Island, Illinois on Saturday, September 24. It was an impressive second place finish for head coach Paul Olsen\u2019s crew as",
+      "training_hit_count": 375230
+    }
+  ],
+  "analysis_json": "logs/engram_bf99_attnres_poshit_normreadout_canon_shortconv_hist_ckpt500_20260517_003531/engram_analysis_step001500_top100.json"
+}

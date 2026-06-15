@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Embedded experiment workspace: track source/scripts/reports selectively, not raw data.
+experiments/modded_nanogpt_work/.git-nested-backup/
+experiments/modded_nanogpt_work/__pycache__/
+experiments/modded_nanogpt_work/reports/__pycache__/
+experiments/modded_nanogpt_work/data/
+experiments/modded_nanogpt_work/logs/
+experiments/modded_nanogpt_work/records/
+experiments/modded_nanogpt_work/remote_logs/
+experiments/modded_nanogpt_work/remote_analysis_*/
+experiments/modded_nanogpt_work/tmp_remote*/
+experiments/modded_nanogpt_work/reports/engram_row_norm_hit_bf80_h1_tail1_best_1500/
+experiments/modded_nanogpt_work/reports/engram_row_norm_hit_bf99_poshit_attnres_lowinit/

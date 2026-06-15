@@ -1,0 +1,44 @@
+{
+  "run_name": "full_h1_gain1p5_bf80_adamtail1_beta2_0p9_1500",
+  "checkpoint": "logs/full_h1_gain1p5_bf80_adamtail1_beta2_0p9_1500_ckpt_20260518_115641/state_step001500.pt",
+  "hit_hist": "logs/full_h1_gain1p5_bf80_adamtail1_beta2_0p9_1500_ckpt_20260518_115641/engram_hit_hist_step001500.pt",
+  "weight_key": "bigram_embed.embedding.weight",
+  "weight_shape": [
+    8048694,
+    384
+  ],
+  "rows_total": 8048694,
+  "sample_rows": 27918,
+  "hit_fraction_total": 0.9999813437461853,
+  "sample_hit_min": 0,
+  "sample_hit_max": 4355514,
+  "sample_hit_median": 138.0,
+  "row_rms_min": 0.009075475856661797,
+  "row_rms_max": 2.5766048431396484,
+  "row_rms_median": 0.6324371695518494,
+  "pca_raw_explained_variance_ratio": [
+    0.013332040049135685,
+    0.011556976474821568,
+    0.011037073098123074,
+    0.009117218665778637,
+    0.008531127125024796,
+    0.008253536187112331,
+    0.007987071759998798,
+    0.007666140329092741,
+    0.007467033341526985,
+    0.007048195227980614
+  ],
+  "pca_direction_explained_variance_ratio": [
+    0.01028824970126152,
+    0.009915392845869064,
+    0.009173652157187462,
+    0.008643642999231815,
+    0.008175330236554146,
+    0.007612762041389942,
+    0.007244136184453964,
+    0.007057845126837492,
+    0.006656995043158531,
+    0.0065315281972289085
+  ],
+  "umap_error": null
+}

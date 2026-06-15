@@ -1,0 +1,8 @@
+{
+  "checkpoint_path": "logs/bf120_h1_layerpart_tail1_origsched_ckpt_1500_20260519_0840/state_step001500.pt",
+  "checkpoint_step": 1500,
+  "val_tokens": 1048576,
+  "val_loss": 3.2956223487854004,
+  "engram_mask_unhit_eval": true,
+  "engram_hit_hist": "logs/bf120_h1_layerpart_tail1_origsched_ckpt_1500_20260519_0840/engram_hit_hist_step001500_mask_semantic_top25.pt"
+}

@@ -1,0 +1,131 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd /root/modded-nanogpt
+mkdir -p logs
+
+export UV_BIN=/root/.local/bin/uv
+export PYTHON_BIN=/root/.venvs/modded-nanogpt/bin/python
+source scripts/env_cuda_uv.sh
+
+export WANDB=1
+export WANDB_MODE=offline
+export WANDB_PROJECT=rom-rwom
+export WANDB_ENTITY=uwu1
+export WANDB_GROUP=bf300-structural-reruns-20260611
+export WANDB_TAGS=engram,research,bf300,structural-rerun,sota
+export WANDB_HISTOGRAMS=1
+export WANDB_HIST_EVERY=250
+export WANDB_HIST_ROWS=131072
+
+export ENGRAM_BIGRAM=1
+export BIGRAM_FACTOR=300
+export GRAD_ACCUM_STEPS=16
+export MODEL_SEED=5
+export TRAIN_DATA_SEED=0
+export ROM_LAYERS=2,8
+export ENGRAM_DIM=768
+export ENGRAM_HEADS=1
+export ENGRAM_MAX_NGRAM=3
+export ENGRAM_NGRAM_ROW_FACTORS=0.5,1.5
+export ENGRAM_SHORT_CONV=1
+export ENGRAM_LAYER_HASHES=1
+export ENGRAM_LAYER_READOUTS=0
+export ENGRAM_LAYER_PARTITIONS=1
+export ENGRAM_LAYER_PARTITION_GROUPS=1
+export ENGRAM_LAYER_SIGNS=0
+export ENGRAM_LAYER_ROW_SIGNS=0
+export ENGRAM_HEAD_MIX=1
+export ENGRAM_HEAD_MIX_INIT=0.5,-0.5
+export ENGRAM_PER_HEAD=1
+export ENGRAM_CANONICALIZE=1
+export ENGRAM_NORMALIZE_READOUT=1
+export ENGRAM_NORMALIZE_MEMORY_HEADS=1
+export ENGRAM_INIT_STD=0.01
+export ENGRAM_UNTIED_PROJ=1
+export ENGRAM_ATTNRES_MERGE=1
+export ENGRAM_ATTNRES_MERGE_GAIN=1.5
+export ENGRAM_READ_HIT_SCALE_EXPONENT=0.25
+export ENGRAM_READ_HIT_SCALE_OFFSET=1.0
+export ENGRAM_READ_HIT_SCALE_MIN=0.25
+export ENGRAM_READ_HIT_SCALE_MAX=4.0
+export ENGRAM_READ_HIT_SCALE_NORM_MEAN=1
+export ENGRAM_LR_MUL=5.0
+export ENGRAM_LR_FLOOR=0
+export ENGRAM_SPARSE_ADAM=0
+export ENGRAM_SPARSE_VECTOR_ADAM=0
+export ENGRAM_SPARSE_SCALAR_ADAM=1
+export ENGRAM_SPARSE_ROW_ADAGRAD=0
+export ENGRAM_SPARSE_ADAM_TAIL_STEPS=0
+export ENGRAM_ADAM_EVERY_STEP=1
+export ENGRAM_HIT_HIST=1
+export ENGRAM_UPDATE_METRICS=1
+export ENGRAM_UPDATE_METRICS_EVERY=250
+export NUM_SCHEDULED_ITERATIONS=1500
+export NUM_EXTENSION_ITERATIONS=0
+export VAL_LOSS_EVERY=250
+export SAVE_CHECKPOINT=0
+export SAVE_CHECKPOINT_EVERY=0
+export COMPILE_MODEL=0
+export COMPILE_LAYER_MODULES=0
+export COMPILE_DENSE_LAYER_BODY=1
+
+run_one() {
+  local gpu="$1"
+  local variant="$2"
+  local run="$3"
+
+  if [[ -f "logs/${run}.console.txt" ]]; then
+    echo "$(date -Is) skip existing ${run}"
+    return 0
+  fi
+
+  echo "$(date -Is) launch gpu${gpu} ${run} variant=${variant}"
+  (
+    export CUDA_VISIBLE_DEVICES="$gpu"
+    export RUN_ID="$run"
+    export WANDB_NAME="$run"
+
+    case "$variant" in
+      hotsplitv2_full32)
+        export ENGRAM_LAYER_READOUT_DELTA=1
+        export ENGRAM_SUPERPOSE_K=2
+        export ENGRAM_SUPERPOSE_INCLUDE_BASE=1
+        export ENGRAM_SUPERPOSE_AUX_SCALE=0.5
+        export ENGRAM_SUPERPOSE_AUX_SCALE_FINAL=0.5
+        export ENGRAM_HOT_SPLIT=1
+        export ENGRAM_HOT_SPLIT_MIN_HITS=32
+        export ENGRAM_HOT_SPLIT_AUX_SCALE=0.025
+        export ENGRAM_HOT_SPLIT_AUX_SCALE_FINAL=0.025
+        export ENGRAM_HOT_SPLIT_AUX_SLOTS=2
+        ;;
+      sketch_slotmix_balanced)
+        export ENGRAM_LAYER_READOUT_DELTA=0
+        export ENGRAM_SUPERPOSE_K=1
+        export ENGRAM_SUPERPOSE_INCLUDE_BASE=0
+        export ENGRAM_SKETCH_K=2
+        export ENGRAM_SKETCH_DIM_SIGNS=1
+        export ENGRAM_SKETCH_DIM_SIGN_MODE=balanced
+        export ENGRAM_SKETCH_SCALAR_SIGN_MODE=balanced
+        export ENGRAM_SKETCH_INCLUDE_BASE=1
+        export ENGRAM_SKETCH_SLOT_READOUT=1
+        export ENGRAM_SKETCH_SLOT_MIX=1
+        export ENGRAM_SKETCH_AUX_SCALE=0.5
+        export ENGRAM_SKETCH_AUX_SCALE_FINAL=0.5
+        ;;
+      *)
+        echo "unknown variant: ${variant}" >&2
+        exit 2
+        ;;
+    esac
+
+    exec "$UV_BIN" run --python "$PYTHON_BIN" python -m torch.distributed.run --standalone --nproc_per_node=1 train_gpt.py
+  ) > "logs/${run}.console.txt" 2>&1
+  local status=$?
+  echo "$(date -Is) finished ${run} exit=${status}" >> "logs/${run}.console.txt"
+  return "$status"
+}
+
+run_one 0 hotsplitv2_full32 bf300_sota_k2_headmix_layerdelta_norowsigns_hotsplitv2_full32_auxslots2_aux0025_rerun2_seed5_1500_20260611 &
+run_one 1 sketch_slotmix_balanced bf300_sketchk2_slotreadout_slotmix_dimsigns_balanced_base_aux05_rerun2_seed5_1500_20260611 &
+wait

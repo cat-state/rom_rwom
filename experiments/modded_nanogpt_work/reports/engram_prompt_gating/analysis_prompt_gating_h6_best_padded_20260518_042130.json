@@ -1,0 +1,5304 @@
+{
+  "run_id": "analysis_prompt_gating_h6_best_padded_20260518_042130",
+  "checkpoint_path": "logs/bf80_hitlrexp0_untiedkv_h6_headdrop0p05_1500_ckpt_20260518_011120/state_step001500.pt",
+  "prompts": [
+    {
+      "prompt_index": 0,
+      "prompt": "Alexander the Great was born in",
+      "loss": 8.734811782836914,
+      "tokens": [
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 38708,
+          "text": "Alexander"
+        },
+        {
+          "id": 262,
+          "text": " the"
+        },
+        {
+          "id": 3878,
+          "text": " Great"
+        },
+        {
+          "id": 373,
+          "text": " was"
+        },
+        {
+          "id": 4642,
+          "text": " born"
+        },
+        {
+          "id": 287,
+          "text": " in"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        }
+      ],
+      "layers": [
+        {
+          "layer_id": 2,
+          "readout_kind": "lm",
+          "gate_mean": 0.5701607465744019,
+          "gate_max": 0.6616604924201965,
+          "attnres_weight_mean": 0.8165283203125,
+          "attnres_weight_max": 1.3828125,
+          "memory_cos_mean": 0.06936577707529068,
+          "memory_rms_ratio_mean": 0.21836474537849426,
+          "output_norm_mean": 45.111106872558594,
+          "output_norm_max": 68.7134017944336,
+          "tokens": [
+            {
+              "pos": 0,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6121298670768738,
+              "attnres_weight": 0.83984375,
+              "memory_cos": 0.042977266013622284,
+              "memory_rms_ratio": 0.05926394462585449,
+              "output_norm": 68.7134017944336,
+              "top_head": 9,
+              "top_head_output_norm": 57.643898010253906
+            },
+            {
+              "pos": 1,
+              "token_id": 38708,
+              "token_text": "Alexander",
+              "gate": 0.36512812972068787,
+              "attnres_weight": 0.341796875,
+              "memory_cos": 0.1097482368350029,
+              "memory_rms_ratio": 0.31466546654701233,
+              "output_norm": 4.04446268081665,
+              "top_head": 3,
+              "top_head_output_norm": 13.096057891845703
+            },
+            {
+              "pos": 2,
+              "token_id": 262,
+              "token_text": " the",
+              "gate": 0.6616604924201965,
+              "attnres_weight": 1.2421875,
+              "memory_cos": 0.059685468673706055,
+              "memory_rms_ratio": 0.5006710886955261,
+              "output_norm": 17.81779670715332,
+              "top_head": 3,
+              "top_head_output_norm": 30.117542266845703
+            },
+            {
+              "pos": 3,
+              "token_id": 3878,
+              "token_text": " Great",
+              "gate": 0.6593514084815979,
+              "attnres_weight": 1.3828125,
+              "memory_cos": 0.06458991765975952,
+              "memory_rms_ratio": 0.36833280324935913,
+              "output_norm": 35.10691452026367,
+              "top_head": 3,
+              "top_head_output_norm": 51.864131927490234
+            },
+            {
+              "pos": 4,
+              "token_id": 373,
+              "token_text": " was",
+              "gate": 0.5457640290260315,
+              "attnres_weight": 0.78515625,
+              "memory_cos": 0.019848505035042763,
+              "memory_rms_ratio": 0.5415868759155273,
+              "output_norm": 7.233919620513916,
+              "top_head": 9,
+              "top_head_output_norm": 15.724205017089844
+            },
+            {
+              "pos": 5,
+              "token_id": 4642,
+              "token_text": " born",
+              "gate": 0.6016276478767395,
+              "attnres_weight": 0.8125,
+              "memory_cos": 0.18462806940078735,
+              "memory_rms_ratio": 0.4298258423805237,
+              "output_norm": 35.08228302001953,
+              "top_head": 5,
+              "top_head_output_norm": 48.831180572509766
+            },
+            {
+              "pos": 6,
+              "token_id": 287,
+              "token_text": " in",
+              "gate": 0.3778187334537506,
+              "attnres_weight": 0.82421875,
+              "memory_cos": 0.15352971851825714,
+              "memory_rms_ratio": 0.6157586574554443,
+              "output_norm": 35.38625717163086,
+              "top_head": 5,
+              "top_head_output_norm": 57.38249206542969
+            },
+            {
+              "pos": 7,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.5095872282981873,
+              "attnres_weight": 0.609375,
+              "memory_cos": 0.07563001662492752,
+              "memory_rms_ratio": 0.07387644052505493,
+              "output_norm": 16.233295440673828,
+              "top_head": 5,
+              "top_head_output_norm": 39.14533233642578
+            },
+            {
+              "pos": 8,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4817674458026886,
+              "attnres_weight": 0.65625,
+              "memory_cos": 0.05336509644985199,
+              "memory_rms_ratio": 0.07312358915805817,
+              "output_norm": 34.68096160888672,
+              "top_head": 1,
+              "top_head_output_norm": 52.78303909301758
+            },
+            {
+              "pos": 9,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6161463856697083,
+              "attnres_weight": 0.796875,
+              "memory_cos": 0.04974592477083206,
+              "memory_rms_ratio": 0.07386007159948349,
+              "output_norm": 66.73748779296875,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 10,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6154536604881287,
+              "attnres_weight": 0.80078125,
+              "memory_cos": 0.04811791703104973,
+              "memory_rms_ratio": 0.07356583327054977,
+              "output_norm": 67.3142318725586,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 11,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6153758764266968,
+              "attnres_weight": 0.80078125,
+              "memory_cos": 0.04766790196299553,
+              "memory_rms_ratio": 0.07359444350004196,
+              "output_norm": 67.63263702392578,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 12,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6153039336204529,
+              "attnres_weight": 0.796875,
+              "memory_cos": 0.04931746423244476,
+              "memory_rms_ratio": 0.07355693727731705,
+              "output_norm": 66.70799255371094,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 13,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6151432991027832,
+              "attnres_weight": 0.796875,
+              "memory_cos": 0.0494115948677063,
+              "memory_rms_ratio": 0.0740131288766861,
+              "output_norm": 66.65681457519531,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 14,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6151924729347229,
+              "attnres_weight": 0.7890625,
+              "memory_cos": 0.05103000998497009,
+              "memory_rms_ratio": 0.07402878999710083,
+              "output_norm": 66.2448959350586,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 15,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.615120530128479,
+              "attnres_weight": 0.7890625,
+              "memory_cos": 0.050559356808662415,
+              "memory_rms_ratio": 0.07411205023527145,
+              "output_norm": 66.18440246582031,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            }
+          ]
+        },
+        {
+          "layer_id": 8,
+          "readout_kind": "lm",
+          "gate_mean": 0.5101243853569031,
+          "gate_max": 0.7444382309913635,
+          "attnres_weight_mean": 0.5340576171875,
+          "attnres_weight_max": 1.7578125,
+          "memory_cos_mean": 0.014715749770402908,
+          "memory_rms_ratio_mean": 0.11855051666498184,
+          "output_norm_mean": 32.734676361083984,
+          "output_norm_max": 46.730491638183594,
+          "tokens": [
+            {
+              "pos": 0,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4716161787509918,
+              "attnres_weight": 0.333984375,
+              "memory_cos": 0.0007347017526626587,
+              "memory_rms_ratio": 0.06316602975130081,
+              "output_norm": 39.83687973022461,
+              "top_head": 2,
+              "top_head_output_norm": 69.17251586914062
+            },
+            {
+              "pos": 1,
+              "token_id": 38708,
+              "token_text": "Alexander",
+              "gate": 0.7444382309913635,
+              "attnres_weight": 0.30859375,
+              "memory_cos": 0.016834266483783722,
+              "memory_rms_ratio": 0.217316135764122,
+              "output_norm": 14.350589752197266,
+              "top_head": 2,
+              "top_head_output_norm": 18.204484939575195
+            },
+            {
+              "pos": 2,
+              "token_id": 262,
+              "token_text": " the",
+              "gate": 0.5366156697273254,
+              "attnres_weight": 1.7578125,
+              "memory_cos": 0.018760573118925095,
+              "memory_rms_ratio": 0.20044945180416107,
+              "output_norm": 15.75131893157959,
+              "top_head": 0,
+              "top_head_output_norm": 24.452667236328125
+            },
+            {
+              "pos": 3,
+              "token_id": 3878,
+              "token_text": " Great",
+              "gate": 0.6848563551902771,
+              "attnres_weight": 0.91796875,
+              "memory_cos": 0.011220625601708889,
+              "memory_rms_ratio": 0.21240966022014618,
+              "output_norm": 33.92641067504883,
+              "top_head": 2,
+              "top_head_output_norm": 57.86846923828125
+            },
+            {
+              "pos": 4,
+              "token_id": 373,
+              "token_text": " was",
+              "gate": 0.39341580867767334,
+              "attnres_weight": 0.341796875,
+              "memory_cos": 0.012725898995995522,
+              "memory_rms_ratio": 0.1927657276391983,
+              "output_norm": 9.855239868164062,
+              "top_head": 8,
+              "top_head_output_norm": 20.434589385986328
+            },
+            {
+              "pos": 5,
+              "token_id": 4642,
+              "token_text": " born",
+              "gate": 0.4534018039703369,
+              "attnres_weight": 0.80078125,
+              "memory_cos": 0.04371779412031174,
+              "memory_rms_ratio": 0.21408472955226898,
+              "output_norm": 32.24001693725586,
+              "top_head": 4,
+              "top_head_output_norm": 58.05121612548828
+            },
+            {
+              "pos": 6,
+              "token_id": 287,
+              "token_text": " in",
+              "gate": 0.5942237973213196,
+              "attnres_weight": 0.90234375,
+              "memory_cos": 0.09379369020462036,
+              "memory_rms_ratio": 0.17411699891090393,
+              "output_norm": 46.730491638183594,
+              "top_head": 4,
+              "top_head_output_norm": 62.954227447509766
+            },
+            {
+              "pos": 7,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.5805997252464294,
+              "attnres_weight": 0.453125,
+              "memory_cos": 0.023825753480196,
+              "memory_rms_ratio": 0.06884770095348358,
+              "output_norm": 23.3310546875,
+              "top_head": 5,
+              "top_head_output_norm": 43.33634567260742
+            },
+            {
+              "pos": 8,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.38638541102409363,
+              "attnres_weight": 0.412109375,
+              "memory_cos": -0.022237250581383705,
+              "memory_rms_ratio": 0.06889010965824127,
+              "output_norm": 23.890581130981445,
+              "top_head": 2,
+              "top_head_output_norm": 69.82267761230469
+            },
+            {
+              "pos": 9,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4737693965435028,
+              "attnres_weight": 0.33203125,
+              "memory_cos": 0.005678920075297356,
+              "memory_rms_ratio": 0.06927292048931122,
+              "output_norm": 40.238243103027344,
+              "top_head": 2,
+              "top_head_output_norm": 69.82267761230469
+            },
+            {
+              "pos": 10,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4738211929798126,
+              "attnres_weight": 0.328125,
+              "memory_cos": 0.004868263378739357,
+              "memory_rms_ratio": 0.06919138878583908,
+              "output_norm": 40.15337371826172,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 11,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4739218056201935,
+              "attnres_weight": 0.333984375,
+              "memory_cos": 0.004378568381071091,
+              "memory_rms_ratio": 0.06941870599985123,
+              "output_norm": 40.49864196777344,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 12,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4738749563694,
+              "attnres_weight": 0.33203125,
+              "memory_cos": 0.005221914499998093,
+              "memory_rms_ratio": 0.0693226009607315,
+              "output_norm": 40.57029342651367,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 13,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47365257143974304,
+              "attnres_weight": 0.328125,
+              "memory_cos": 0.005568049848079681,
+              "memory_rms_ratio": 0.06913052499294281,
+              "output_norm": 40.704368591308594,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 14,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47364047169685364,
+              "attnres_weight": 0.33203125,
+              "memory_cos": 0.004771249368786812,
+              "memory_rms_ratio": 0.06913614273071289,
+              "output_norm": 40.81260681152344,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 15,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4737568199634552,
+              "attnres_weight": 0.330078125,
+              "memory_cos": 0.005588984116911888,
+              "memory_rms_ratio": 0.06928937137126923,
+              "output_norm": 40.86473846435547,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "prompt_index": 1,
+      "prompt": "The Milky Way is a",
+      "loss": 9.19648551940918,
+      "tokens": [
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 464,
+          "text": "The"
+        },
+        {
+          "id": 34822,
+          "text": " Milky"
+        },
+        {
+          "id": 6378,
+          "text": " Way"
+        },
+        {
+          "id": 318,
+          "text": " is"
+        },
+        {
+          "id": 257,
+          "text": " a"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        }
+      ],
+      "layers": [
+        {
+          "layer_id": 2,
+          "readout_kind": "lm",
+          "gate_mean": 0.5929684638977051,
+          "gate_max": 0.6592208743095398,
+          "attnres_weight_mean": 0.794921875,
+          "attnres_weight_max": 1.6171875,
+          "memory_cos_mean": 0.08570214360952377,
+          "memory_rms_ratio_mean": 0.19845065474510193,
+          "output_norm_mean": 49.905059814453125,
+          "output_norm_max": 68.7134017944336,
+          "tokens": [
+            {
+              "pos": 0,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6121298670768738,
+              "attnres_weight": 0.83984375,
+              "memory_cos": 0.042977266013622284,
+              "memory_rms_ratio": 0.05926394462585449,
+              "output_norm": 68.7134017944336,
+              "top_head": 9,
+              "top_head_output_norm": 57.643898010253906
+            },
+            {
+              "pos": 1,
+              "token_id": 464,
+              "token_text": "The",
+              "gate": 0.5693426132202148,
+              "attnres_weight": 0.42578125,
+              "memory_cos": 0.2604553699493408,
+              "memory_rms_ratio": 0.34084969758987427,
+              "output_norm": 49.79743194580078,
+              "top_head": 1,
+              "top_head_output_norm": 53.601566314697266
+            },
+            {
+              "pos": 2,
+              "token_id": 34822,
+              "token_text": " Milky",
+              "gate": 0.6592208743095398,
+              "attnres_weight": 1.015625,
+              "memory_cos": 0.2039482146501541,
+              "memory_rms_ratio": 0.3636513352394104,
+              "output_norm": 15.765324592590332,
+              "top_head": 6,
+              "top_head_output_norm": 29.439983367919922
+            },
+            {
+              "pos": 3,
+              "token_id": 6378,
+              "token_text": " Way",
+              "gate": 0.49449455738067627,
+              "attnres_weight": 1.6171875,
+              "memory_cos": 0.03619939833879471,
+              "memory_rms_ratio": 0.6312603950500488,
+              "output_norm": 18.107112884521484,
+              "top_head": 5,
+              "top_head_output_norm": 31.257083892822266
+            },
+            {
+              "pos": 4,
+              "token_id": 318,
+              "token_text": " is",
+              "gate": 0.47693848609924316,
+              "attnres_weight": 0.46484375,
+              "memory_cos": 0.030803102999925613,
+              "memory_rms_ratio": 0.4895913302898407,
+              "output_norm": 14.785155296325684,
+              "top_head": 1,
+              "top_head_output_norm": 37.218048095703125
+            },
+            {
+              "pos": 5,
+              "token_id": 257,
+              "token_text": " a",
+              "gate": 0.5916644930839539,
+              "attnres_weight": 0.8203125,
+              "memory_cos": 0.2377917468547821,
+              "memory_rms_ratio": 0.5525617003440857,
+              "output_norm": 29.686473846435547,
+              "top_head": 3,
+              "top_head_output_norm": 41.629547119140625
+            },
+            {
+              "pos": 6,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.5647175908088684,
+              "attnres_weight": 0.44921875,
+              "memory_cos": 0.11153685301542282,
+              "memory_rms_ratio": 0.07540443539619446,
+              "output_norm": 34.784912109375,
+              "top_head": 4,
+              "top_head_output_norm": 42.36233901977539
+            },
+            {
+              "pos": 7,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.5960250496864319,
+              "attnres_weight": 0.74609375,
+              "memory_cos": 0.05745324119925499,
+              "memory_rms_ratio": 0.07261831313371658,
+              "output_norm": 33.87302017211914,
+              "top_head": 1,
+              "top_head_output_norm": 52.78303909301758
+            },
+            {
+              "pos": 8,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6154232621192932,
+              "attnres_weight": 0.8046875,
+              "memory_cos": 0.045624807476997375,
+              "memory_rms_ratio": 0.073081374168396,
+              "output_norm": 67.8690414428711,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 9,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.615776002407074,
+              "attnres_weight": 0.79296875,
+              "memory_cos": 0.04855481535196304,
+              "memory_rms_ratio": 0.07351288944482803,
+              "output_norm": 66.79299926757812,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 10,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6155548691749573,
+              "attnres_weight": 0.79296875,
+              "memory_cos": 0.04867371544241905,
+              "memory_rms_ratio": 0.07360679656267166,
+              "output_norm": 66.68141174316406,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 11,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6154810190200806,
+              "attnres_weight": 0.79296875,
+              "memory_cos": 0.04805493354797363,
+              "memory_rms_ratio": 0.07363643497228622,
+              "output_norm": 66.76295471191406,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 12,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6152545809745789,
+              "attnres_weight": 0.79296875,
+              "memory_cos": 0.04890309274196625,
+              "memory_rms_ratio": 0.07403811812400818,
+              "output_norm": 66.6639175415039,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 13,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6152642965316772,
+              "attnres_weight": 0.7890625,
+              "memory_cos": 0.049623388797044754,
+              "memory_rms_ratio": 0.07401500642299652,
+              "output_norm": 66.19911193847656,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 14,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6151162981987,
+              "attnres_weight": 0.7890625,
+              "memory_cos": 0.05004926770925522,
+              "memory_rms_ratio": 0.07405925542116165,
+              "output_norm": 66.12431335449219,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 15,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6150916218757629,
+              "attnres_weight": 0.78515625,
+              "memory_cos": 0.05058503895998001,
+              "memory_rms_ratio": 0.07405957579612732,
+              "output_norm": 65.87435150146484,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            }
+          ]
+        },
+        {
+          "layer_id": 8,
+          "readout_kind": "lm",
+          "gate_mean": 0.4780893623828888,
+          "gate_max": 0.6943954825401306,
+          "attnres_weight_mean": 0.5067138671875,
+          "attnres_weight_max": 1.546875,
+          "memory_cos_mean": 0.019282400608062744,
+          "memory_rms_ratio_mean": 0.11036260426044464,
+          "output_norm_mean": 33.09169387817383,
+          "output_norm_max": 43.071388244628906,
+          "tokens": [
+            {
+              "pos": 0,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4716161787509918,
+              "attnres_weight": 0.333984375,
+              "memory_cos": 0.0007347017526626587,
+              "memory_rms_ratio": 0.06316602975130081,
+              "output_norm": 39.83687973022461,
+              "top_head": 2,
+              "top_head_output_norm": 69.17251586914062
+            },
+            {
+              "pos": 1,
+              "token_id": 464,
+              "token_text": "The",
+              "gate": 0.5769910216331482,
+              "attnres_weight": 0.36328125,
+              "memory_cos": 0.13650652766227722,
+              "memory_rms_ratio": 0.16179253160953522,
+              "output_norm": 43.071388244628906,
+              "top_head": 0,
+              "top_head_output_norm": 62.16327667236328
+            },
+            {
+              "pos": 2,
+              "token_id": 34822,
+              "token_text": " Milky",
+              "gate": 0.6943954825401306,
+              "attnres_weight": 0.9921875,
+              "memory_cos": 0.05409305542707443,
+              "memory_rms_ratio": 0.259735643863678,
+              "output_norm": 14.466936111450195,
+              "top_head": 4,
+              "top_head_output_norm": 21.710155487060547
+            },
+            {
+              "pos": 3,
+              "token_id": 6378,
+              "token_text": " Way",
+              "gate": 0.38718509674072266,
+              "attnres_weight": 1.546875,
+              "memory_cos": 0.030272435396909714,
+              "memory_rms_ratio": 0.230340376496315,
+              "output_norm": 14.909745216369629,
+              "top_head": 1,
+              "top_head_output_norm": 25.6883487701416
+            },
+            {
+              "pos": 4,
+              "token_id": 318,
+              "token_text": " is",
+              "gate": 0.49033525586128235,
+              "attnres_weight": 0.890625,
+              "memory_cos": 0.02012423798441887,
+              "memory_rms_ratio": 0.190934419631958,
+              "output_norm": 23.232309341430664,
+              "top_head": 0,
+              "top_head_output_norm": 40.6163330078125
+            },
+            {
+              "pos": 5,
+              "token_id": 257,
+              "token_text": " a",
+              "gate": 0.39196357131004333,
+              "attnres_weight": 0.408203125,
+              "memory_cos": 0.07012290507555008,
+              "memory_rms_ratio": 0.16895292699337006,
+              "output_norm": 24.927127838134766,
+              "top_head": 3,
+              "top_head_output_norm": 46.94398498535156
+            },
+            {
+              "pos": 6,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.5594103932380676,
+              "attnres_weight": 0.51953125,
+              "memory_cos": -0.001731622964143753,
+              "memory_rms_ratio": 0.06931470334529877,
+              "output_norm": 21.48501968383789,
+              "top_head": 0,
+              "top_head_output_norm": 41.221214294433594
+            },
+            {
+              "pos": 7,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.28512492775917053,
+              "attnres_weight": 0.423828125,
+              "memory_cos": -0.035529326647520065,
+              "memory_rms_ratio": 0.06847114115953445,
+              "output_norm": 22.742475509643555,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 8,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47432270646095276,
+              "attnres_weight": 0.328125,
+              "memory_cos": 0.003501519560813904,
+              "memory_rms_ratio": 0.06882967054843903,
+              "output_norm": 40.10210037231445,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 9,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4741257429122925,
+              "attnres_weight": 0.328125,
+              "memory_cos": 0.004190724343061447,
+              "memory_rms_ratio": 0.0691118836402893,
+              "output_norm": 40.308372497558594,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 10,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47394803166389465,
+              "attnres_weight": 0.33203125,
+              "memory_cos": 0.0033304020762443542,
+              "memory_rms_ratio": 0.06907912343740463,
+              "output_norm": 40.54227066040039,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 11,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4740568697452545,
+              "attnres_weight": 0.328125,
+              "memory_cos": 0.004106167703866959,
+              "memory_rms_ratio": 0.06930980831384659,
+              "output_norm": 40.650062561035156,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 12,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4741656482219696,
+              "attnres_weight": 0.330078125,
+              "memory_cos": 0.004964254796504974,
+              "memory_rms_ratio": 0.06931532174348831,
+              "output_norm": 40.67296600341797,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 13,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47419580817222595,
+              "attnres_weight": 0.330078125,
+              "memory_cos": 0.004830086603760719,
+              "memory_rms_ratio": 0.06919396668672562,
+              "output_norm": 40.832889556884766,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 14,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47383585572242737,
+              "attnres_weight": 0.326171875,
+              "memory_cos": 0.004357233643531799,
+              "memory_rms_ratio": 0.06911800056695938,
+              "output_norm": 40.842350006103516,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 15,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4737571179866791,
+              "attnres_weight": 0.326171875,
+              "memory_cos": 0.0046451035887002945,
+              "memory_rms_ratio": 0.06913606077432632,
+              "output_norm": 40.844200134277344,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "prompt_index": 2,
+      "prompt": "Diana, Princess of Wales, was married to",
+      "loss": 6.366537094116211,
+      "tokens": [
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 35,
+          "text": "D"
+        },
+        {
+          "id": 7484,
+          "text": "iana"
+        },
+        {
+          "id": 11,
+          "text": ","
+        },
+        {
+          "id": 8449,
+          "text": " Princess"
+        },
+        {
+          "id": 286,
+          "text": " of"
+        },
+        {
+          "id": 11769,
+          "text": " Wales"
+        },
+        {
+          "id": 11,
+          "text": ","
+        },
+        {
+          "id": 373,
+          "text": " was"
+        },
+        {
+          "id": 6405,
+          "text": " married"
+        },
+        {
+          "id": 284,
+          "text": " to"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        }
+      ],
+      "layers": [
+        {
+          "layer_id": 2,
+          "readout_kind": "lm",
+          "gate_mean": 0.5342683792114258,
+          "gate_max": 0.627906858921051,
+          "attnres_weight_mean": 0.8070068359375,
+          "attnres_weight_max": 1.546875,
+          "memory_cos_mean": 0.06062716990709305,
+          "memory_rms_ratio_mean": 0.32517117261886597,
+          "output_norm_mean": 32.563602447509766,
+          "output_norm_max": 68.7134017944336,
+          "tokens": [
+            {
+              "pos": 0,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6121298670768738,
+              "attnres_weight": 0.83984375,
+              "memory_cos": 0.042977266013622284,
+              "memory_rms_ratio": 0.05926394462585449,
+              "output_norm": 68.7134017944336,
+              "top_head": 9,
+              "top_head_output_norm": 57.643898010253906
+            },
+            {
+              "pos": 1,
+              "token_id": 35,
+              "token_text": "D",
+              "gate": 0.5619205832481384,
+              "attnres_weight": 0.337890625,
+              "memory_cos": 0.08152797818183899,
+              "memory_rms_ratio": 0.35967373847961426,
+              "output_norm": 44.442604064941406,
+              "top_head": 0,
+              "top_head_output_norm": 52.180870056152344
+            },
+            {
+              "pos": 2,
+              "token_id": 7484,
+              "token_text": "iana",
+              "gate": 0.627906858921051,
+              "attnres_weight": 1.515625,
+              "memory_cos": 0.0877859890460968,
+              "memory_rms_ratio": 0.5118465423583984,
+              "output_norm": 22.543800354003906,
+              "top_head": 0,
+              "top_head_output_norm": 42.355987548828125
+            },
+            {
+              "pos": 3,
+              "token_id": 11,
+              "token_text": ",",
+              "gate": 0.4600689113140106,
+              "attnres_weight": 0.2431640625,
+              "memory_cos": -0.04576950520277023,
+              "memory_rms_ratio": 0.5069184303283691,
+              "output_norm": 8.813312530517578,
+              "top_head": 3,
+              "top_head_output_norm": 27.59284782409668
+            },
+            {
+              "pos": 4,
+              "token_id": 8449,
+              "token_text": " Princess",
+              "gate": 0.3928138017654419,
+              "attnres_weight": 0.515625,
+              "memory_cos": 0.13220900297164917,
+              "memory_rms_ratio": 0.3237060010433197,
+              "output_norm": 7.078527450561523,
+              "top_head": 5,
+              "top_head_output_norm": 23.191509246826172
+            },
+            {
+              "pos": 5,
+              "token_id": 286,
+              "token_text": " of",
+              "gate": 0.6157426834106445,
+              "attnres_weight": 1.328125,
+              "memory_cos": 0.147009938955307,
+              "memory_rms_ratio": 0.5454886555671692,
+              "output_norm": 16.040136337280273,
+              "top_head": 0,
+              "top_head_output_norm": 19.616622924804688
+            },
+            {
+              "pos": 6,
+              "token_id": 11769,
+              "token_text": " Wales",
+              "gate": 0.5805476307868958,
+              "attnres_weight": 1.546875,
+              "memory_cos": -0.011676660738885403,
+              "memory_rms_ratio": 0.460659384727478,
+              "output_norm": 14.059708595275879,
+              "top_head": 3,
+              "top_head_output_norm": 20.766950607299805
+            },
+            {
+              "pos": 7,
+              "token_id": 11,
+              "token_text": ",",
+              "gate": 0.4184960424900055,
+              "attnres_weight": 0.404296875,
+              "memory_cos": 0.0332937054336071,
+              "memory_rms_ratio": 0.4952165186405182,
+              "output_norm": 13.84311580657959,
+              "top_head": 2,
+              "top_head_output_norm": 33.11106872558594
+            },
+            {
+              "pos": 8,
+              "token_id": 373,
+              "token_text": " was",
+              "gate": 0.44515249133110046,
+              "attnres_weight": 0.2099609375,
+              "memory_cos": 0.11754580587148666,
+              "memory_rms_ratio": 0.4445852041244507,
+              "output_norm": 25.32980728149414,
+              "top_head": 2,
+              "top_head_output_norm": 43.44548034667969
+            },
+            {
+              "pos": 9,
+              "token_id": 6405,
+              "token_text": " married",
+              "gate": 0.5438938736915588,
+              "attnres_weight": 0.99609375,
+              "memory_cos": 0.14354538917541504,
+              "memory_rms_ratio": 0.40548616647720337,
+              "output_norm": 23.066919326782227,
+              "top_head": 1,
+              "top_head_output_norm": 33.51605987548828
+            },
+            {
+              "pos": 10,
+              "token_id": 284,
+              "token_text": " to",
+              "gate": 0.478644996881485,
+              "attnres_weight": 1.390625,
+              "memory_cos": 0.05143163353204727,
+              "memory_rms_ratio": 0.7203636169433594,
+              "output_norm": 27.903175354003906,
+              "top_head": 4,
+              "top_head_output_norm": 45.47921371459961
+            },
+            {
+              "pos": 11,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.48397311568260193,
+              "attnres_weight": 0.462890625,
+              "memory_cos": -0.0059759486466646194,
+              "memory_rms_ratio": 0.0755118802189827,
+              "output_norm": 14.035926818847656,
+              "top_head": 0,
+              "top_head_output_norm": 39.62487030029297
+            },
+            {
+              "pos": 12,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4812255799770355,
+              "attnres_weight": 0.7109375,
+              "memory_cos": 0.0550442710518837,
+              "memory_rms_ratio": 0.07312239706516266,
+              "output_norm": 32.39705276489258,
+              "top_head": 1,
+              "top_head_output_norm": 52.78303909301758
+            },
+            {
+              "pos": 13,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6154078841209412,
+              "attnres_weight": 0.80078125,
+              "memory_cos": 0.04662931337952614,
+              "memory_rms_ratio": 0.07354715466499329,
+              "output_norm": 67.43919372558594,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 14,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6151180863380432,
+              "attnres_weight": 0.8046875,
+              "memory_cos": 0.046636804938316345,
+              "memory_rms_ratio": 0.0736449584364891,
+              "output_norm": 68.0125732421875,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 15,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6152506470680237,
+              "attnres_weight": 0.8046875,
+              "memory_cos": 0.047819770872592926,
+              "memory_rms_ratio": 0.07370413094758987,
+              "output_norm": 67.29834747314453,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            }
+          ]
+        },
+        {
+          "layer_id": 8,
+          "readout_kind": "lm",
+          "gate_mean": 0.45468565821647644,
+          "gate_max": 0.6318919062614441,
+          "attnres_weight_mean": 0.63372802734375,
+          "attnres_weight_max": 1.640625,
+          "memory_cos_mean": 0.020858030766248703,
+          "memory_rms_ratio_mean": 0.16009913384914398,
+          "output_norm_mean": 26.56085968017578,
+          "output_norm_max": 40.613853454589844,
+          "tokens": [
+            {
+              "pos": 0,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4716161787509918,
+              "attnres_weight": 0.333984375,
+              "memory_cos": 0.0007347017526626587,
+              "memory_rms_ratio": 0.06316602975130081,
+              "output_norm": 39.83687973022461,
+              "top_head": 2,
+              "top_head_output_norm": 69.17251586914062
+            },
+            {
+              "pos": 1,
+              "token_id": 35,
+              "token_text": "D",
+              "gate": 0.5966790318489075,
+              "attnres_weight": 0.703125,
+              "memory_cos": 0.06922899931669235,
+              "memory_rms_ratio": 0.23199012875556946,
+              "output_norm": 38.45055389404297,
+              "top_head": 0,
+              "top_head_output_norm": 62.15851974487305
+            },
+            {
+              "pos": 2,
+              "token_id": 7484,
+              "token_text": "iana",
+              "gate": 0.4763450622558594,
+              "attnres_weight": 0.546875,
+              "memory_cos": 0.03765946254134178,
+              "memory_rms_ratio": 0.22059109807014465,
+              "output_norm": 16.389802932739258,
+              "top_head": 5,
+              "top_head_output_norm": 37.795494079589844
+            },
+            {
+              "pos": 3,
+              "token_id": 11,
+              "token_text": ",",
+              "gate": 0.43796709179878235,
+              "attnres_weight": 0.8125,
+              "memory_cos": 0.029582642018795013,
+              "memory_rms_ratio": 0.1839187890291214,
+              "output_norm": 14.453689575195312,
+              "top_head": 5,
+              "top_head_output_norm": 26.813997268676758
+            },
+            {
+              "pos": 4,
+              "token_id": 8449,
+              "token_text": " Princess",
+              "gate": 0.2867790758609772,
+              "attnres_weight": 0.85546875,
+              "memory_cos": 0.004953533411026001,
+              "memory_rms_ratio": 0.21877560019493103,
+              "output_norm": 8.660385131835938,
+              "top_head": 4,
+              "top_head_output_norm": 19.989736557006836
+            },
+            {
+              "pos": 5,
+              "token_id": 286,
+              "token_text": " of",
+              "gate": 0.447919100522995,
+              "attnres_weight": 1.640625,
+              "memory_cos": 0.012711185961961746,
+              "memory_rms_ratio": 0.23747237026691437,
+              "output_norm": 14.893511772155762,
+              "top_head": 2,
+              "top_head_output_norm": 25.869384765625
+            },
+            {
+              "pos": 6,
+              "token_id": 11769,
+              "token_text": " Wales",
+              "gate": 0.4638225734233856,
+              "attnres_weight": 0.93359375,
+              "memory_cos": 0.026801783591508865,
+              "memory_rms_ratio": 0.2365138828754425,
+              "output_norm": 17.117746353149414,
+              "top_head": 3,
+              "top_head_output_norm": 28.993494033813477
+            },
+            {
+              "pos": 7,
+              "token_id": 11,
+              "token_text": ",",
+              "gate": 0.3804890215396881,
+              "attnres_weight": 0.419921875,
+              "memory_cos": 0.021774105727672577,
+              "memory_rms_ratio": 0.19061332941055298,
+              "output_norm": 15.776405334472656,
+              "top_head": 2,
+              "top_head_output_norm": 32.08930587768555
+            },
+            {
+              "pos": 8,
+              "token_id": 373,
+              "token_text": " was",
+              "gate": 0.5683261752128601,
+              "attnres_weight": 0.1728515625,
+              "memory_cos": 0.0007039997726678848,
+              "memory_rms_ratio": 0.1800272911787033,
+              "output_norm": 39.22737121582031,
+              "top_head": 0,
+              "top_head_output_norm": 59.56766128540039
+            },
+            {
+              "pos": 9,
+              "token_id": 6405,
+              "token_text": " married",
+              "gate": 0.6318919062614441,
+              "attnres_weight": 0.921875,
+              "memory_cos": 0.05436155945062637,
+              "memory_rms_ratio": 0.236951544880867,
+              "output_norm": 26.092967987060547,
+              "top_head": 3,
+              "top_head_output_norm": 40.0809326171875
+            },
+            {
+              "pos": 10,
+              "token_id": 284,
+              "token_text": " to",
+              "gate": 0.4879392683506012,
+              "attnres_weight": 0.9375,
+              "memory_cos": 0.08834719657897949,
+              "memory_rms_ratio": 0.2162119746208191,
+              "output_norm": 32.73136520385742,
+              "top_head": 3,
+              "top_head_output_norm": 49.33341979980469
+            },
+            {
+              "pos": 11,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.3137912154197693,
+              "attnres_weight": 0.474609375,
+              "memory_cos": 0.01738094724714756,
+              "memory_rms_ratio": 0.0691404715180397,
+              "output_norm": 17.185012817382812,
+              "top_head": 2,
+              "top_head_output_norm": 41.072898864746094
+            },
+            {
+              "pos": 12,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.2880270779132843,
+              "attnres_weight": 0.39453125,
+              "memory_cos": -0.04161209613084793,
+              "memory_rms_ratio": 0.06911151856184006,
+              "output_norm": 23.0838565826416,
+              "top_head": 2,
+              "top_head_output_norm": 70.16455841064453
+            },
+            {
+              "pos": 13,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.474321573972702,
+              "attnres_weight": 0.33203125,
+              "memory_cos": 0.0036054644733667374,
+              "memory_rms_ratio": 0.06887061148881912,
+              "output_norm": 40.22465133666992,
+              "top_head": 2,
+              "top_head_output_norm": 69.82267761230469
+            },
+            {
+              "pos": 14,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47452279925346375,
+              "attnres_weight": 0.326171875,
+              "memory_cos": 0.0032003019005060196,
+              "memory_rms_ratio": 0.06913609802722931,
+              "output_norm": 40.23572540283203,
+              "top_head": 2,
+              "top_head_output_norm": 69.82267761230469
+            },
+            {
+              "pos": 15,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4745335578918457,
+              "attnres_weight": 0.333984375,
+              "memory_cos": 0.004294700920581818,
+              "memory_rms_ratio": 0.06909531354904175,
+              "output_norm": 40.613853454589844,
+              "top_head": 2,
+              "top_head_output_norm": 69.82267761230469
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "prompt_index": 3,
+      "prompt": "The capital of France is",
+      "loss": 9.509123802185059,
+      "tokens": [
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 464,
+          "text": "The"
+        },
+        {
+          "id": 3139,
+          "text": " capital"
+        },
+        {
+          "id": 286,
+          "text": " of"
+        },
+        {
+          "id": 4881,
+          "text": " France"
+        },
+        {
+          "id": 318,
+          "text": " is"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        }
+      ],
+      "layers": [
+        {
+          "layer_id": 2,
+          "readout_kind": "lm",
+          "gate_mean": 0.5980339050292969,
+          "gate_max": 0.6823358535766602,
+          "attnres_weight_mean": 0.7493896484375,
+          "attnres_weight_max": 1.484375,
+          "memory_cos_mean": 0.07044942677021027,
+          "memory_rms_ratio_mean": 0.18276134133338928,
+          "output_norm_mean": 50.612327575683594,
+          "output_norm_max": 68.7134017944336,
+          "tokens": [
+            {
+              "pos": 0,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6121298670768738,
+              "attnres_weight": 0.83984375,
+              "memory_cos": 0.042977266013622284,
+              "memory_rms_ratio": 0.05926394462585449,
+              "output_norm": 68.7134017944336,
+              "top_head": 9,
+              "top_head_output_norm": 57.643898010253906
+            },
+            {
+              "pos": 1,
+              "token_id": 464,
+              "token_text": "The",
+              "gate": 0.5693426132202148,
+              "attnres_weight": 0.42578125,
+              "memory_cos": 0.2604553699493408,
+              "memory_rms_ratio": 0.34084969758987427,
+              "output_norm": 49.79743194580078,
+              "top_head": 1,
+              "top_head_output_norm": 53.601566314697266
+            },
+            {
+              "pos": 2,
+              "token_id": 3139,
+              "token_text": " capital",
+              "gate": 0.35075029730796814,
+              "attnres_weight": 0.9375,
+              "memory_cos": 0.06566987931728363,
+              "memory_rms_ratio": 0.4075181186199188,
+              "output_norm": 14.123054504394531,
+              "top_head": 3,
+              "top_head_output_norm": 45.10495376586914
+            },
+            {
+              "pos": 3,
+              "token_id": 286,
+              "token_text": " of",
+              "gate": 0.6516801118850708,
+              "attnres_weight": 1.484375,
+              "memory_cos": 0.07782169431447983,
+              "memory_rms_ratio": 0.6279191970825195,
+              "output_norm": 42.42818069458008,
+              "top_head": 4,
+              "top_head_output_norm": 42.99541473388672
+            },
+            {
+              "pos": 4,
+              "token_id": 4881,
+              "token_text": " France",
+              "gate": 0.5776064991950989,
+              "attnres_weight": 0.4609375,
+              "memory_cos": 0.14836204051971436,
+              "memory_rms_ratio": 0.32202962040901184,
+              "output_norm": 27.041540145874023,
+              "top_head": 0,
+              "top_head_output_norm": 42.8442268371582
+            },
+            {
+              "pos": 5,
+              "token_id": 318,
+              "token_text": " is",
+              "gate": 0.6823358535766602,
+              "attnres_weight": 0.224609375,
+              "memory_cos": 0.02117156609892845,
+              "memory_rms_ratio": 0.43440482020378113,
+              "output_norm": 19.162477493286133,
+              "top_head": 0,
+              "top_head_output_norm": 47.3692741394043
+            },
+            {
+              "pos": 6,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6558378338813782,
+              "attnres_weight": 0.5703125,
+              "memory_cos": 0.062089938670396805,
+              "memory_rms_ratio": 0.0715610608458519,
+              "output_norm": 21.776748657226562,
+              "top_head": 1,
+              "top_head_output_norm": 32.3330078125
+            },
+            {
+              "pos": 7,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.546009361743927,
+              "attnres_weight": 0.70703125,
+              "memory_cos": 0.0575183629989624,
+              "memory_rms_ratio": 0.07247791439294815,
+              "output_norm": 33.036956787109375,
+              "top_head": 1,
+              "top_head_output_norm": 53.039424896240234
+            },
+            {
+              "pos": 8,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6157348155975342,
+              "attnres_weight": 0.8046875,
+              "memory_cos": 0.044761888682842255,
+              "memory_rms_ratio": 0.07275249809026718,
+              "output_norm": 68.42179107666016,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 9,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6155663728713989,
+              "attnres_weight": 0.79296875,
+              "memory_cos": 0.049093056470155716,
+              "memory_rms_ratio": 0.07306589186191559,
+              "output_norm": 66.66605377197266,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 10,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6155005097389221,
+              "attnres_weight": 0.79296875,
+              "memory_cos": 0.04852017015218735,
+              "memory_rms_ratio": 0.07338110357522964,
+              "output_norm": 66.9021987915039,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 11,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6153436303138733,
+              "attnres_weight": 0.796875,
+              "memory_cos": 0.04821796342730522,
+              "memory_rms_ratio": 0.07350535690784454,
+              "output_norm": 67.0979232788086,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 12,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6153564453125,
+              "attnres_weight": 0.79296875,
+              "memory_cos": 0.049235716462135315,
+              "memory_rms_ratio": 0.07355237752199173,
+              "output_norm": 66.62236785888672,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 13,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6150100231170654,
+              "attnres_weight": 0.7890625,
+              "memory_cos": 0.04958673566579819,
+              "memory_rms_ratio": 0.07393089681863785,
+              "output_norm": 66.36441040039062,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 14,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6151691675186157,
+              "attnres_weight": 0.78515625,
+              "memory_cos": 0.050507523119449615,
+              "memory_rms_ratio": 0.073997862637043,
+              "output_norm": 65.96166229248047,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 15,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6151691675186157,
+              "attnres_weight": 0.78515625,
+              "memory_cos": 0.05120173841714859,
+              "memory_rms_ratio": 0.07397119700908661,
+              "output_norm": 65.68106079101562,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            }
+          ]
+        },
+        {
+          "layer_id": 8,
+          "readout_kind": "lm",
+          "gate_mean": 0.498097687959671,
+          "gate_max": 0.5873159766197205,
+          "attnres_weight_mean": 0.40155029296875,
+          "attnres_weight_max": 0.953125,
+          "memory_cos_mean": 0.012879440560936928,
+          "memory_rms_ratio_mean": 0.10860654711723328,
+          "output_norm_mean": 34.81285858154297,
+          "output_norm_max": 43.071388244628906,
+          "tokens": [
+            {
+              "pos": 0,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4716161787509918,
+              "attnres_weight": 0.333984375,
+              "memory_cos": 0.0007347017526626587,
+              "memory_rms_ratio": 0.06316602975130081,
+              "output_norm": 39.83687973022461,
+              "top_head": 2,
+              "top_head_output_norm": 69.17251586914062
+            },
+            {
+              "pos": 1,
+              "token_id": 464,
+              "token_text": "The",
+              "gate": 0.5769910216331482,
+              "attnres_weight": 0.36328125,
+              "memory_cos": 0.13650652766227722,
+              "memory_rms_ratio": 0.16179253160953522,
+              "output_norm": 43.071388244628906,
+              "top_head": 0,
+              "top_head_output_norm": 62.16327667236328
+            },
+            {
+              "pos": 2,
+              "token_id": 3139,
+              "token_text": " capital",
+              "gate": 0.5867305994033813,
+              "attnres_weight": 0.8359375,
+              "memory_cos": 0.06938501447439194,
+              "memory_rms_ratio": 0.25576019287109375,
+              "output_norm": 33.99470520019531,
+              "top_head": 0,
+              "top_head_output_norm": 53.52837371826172
+            },
+            {
+              "pos": 3,
+              "token_id": 286,
+              "token_text": " of",
+              "gate": 0.5873159766197205,
+              "attnres_weight": 0.953125,
+              "memory_cos": -0.006801221519708633,
+              "memory_rms_ratio": 0.19915592670440674,
+              "output_norm": 35.069095611572266,
+              "top_head": 1,
+              "top_head_output_norm": 47.56458282470703
+            },
+            {
+              "pos": 4,
+              "token_id": 4881,
+              "token_text": " France",
+              "gate": 0.5847753882408142,
+              "attnres_weight": 0.1865234375,
+              "memory_cos": 0.010290945880115032,
+              "memory_rms_ratio": 0.18492795526981354,
+              "output_norm": 28.287168502807617,
+              "top_head": 3,
+              "top_head_output_norm": 42.65452575683594
+            },
+            {
+              "pos": 5,
+              "token_id": 318,
+              "token_text": " is",
+              "gate": 0.49326422810554504,
+              "attnres_weight": 0.326171875,
+              "memory_cos": 0.0005556698888540268,
+              "memory_rms_ratio": 0.18554843962192535,
+              "output_norm": 11.085843086242676,
+              "top_head": 1,
+              "top_head_output_norm": 19.493091583251953
+            },
+            {
+              "pos": 6,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.5398246049880981,
+              "attnres_weight": 0.439453125,
+              "memory_cos": 0.00413804966956377,
+              "memory_rms_ratio": 0.06793182343244553,
+              "output_norm": 17.54102325439453,
+              "top_head": 4,
+              "top_head_output_norm": 31.29013442993164
+            },
+            {
+              "pos": 7,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.3396865129470825,
+              "attnres_weight": 0.39453125,
+              "memory_cos": -0.034546226263046265,
+              "memory_rms_ratio": 0.06850980967283249,
+              "output_norm": 23.284931182861328,
+              "top_head": 2,
+              "top_head_output_norm": 69.82267761230469
+            },
+            {
+              "pos": 8,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4737788438796997,
+              "attnres_weight": 0.326171875,
+              "memory_cos": 0.0019885655492544174,
+              "memory_rms_ratio": 0.06838218122720718,
+              "output_norm": 40.08317184448242,
+              "top_head": 2,
+              "top_head_output_norm": 69.82267761230469
+            },
+            {
+              "pos": 9,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47385692596435547,
+              "attnres_weight": 0.3203125,
+              "memory_cos": 0.0031961631029844284,
+              "memory_rms_ratio": 0.06871718168258667,
+              "output_norm": 40.32475662231445,
+              "top_head": 2,
+              "top_head_output_norm": 69.82267761230469
+            },
+            {
+              "pos": 10,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47402694821357727,
+              "attnres_weight": 0.32421875,
+              "memory_cos": 0.002723628655076027,
+              "memory_rms_ratio": 0.06872128695249557,
+              "output_norm": 40.64198303222656,
+              "top_head": 2,
+              "top_head_output_norm": 69.82267761230469
+            },
+            {
+              "pos": 11,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47374972701072693,
+              "attnres_weight": 0.32421875,
+              "memory_cos": 0.001954182982444763,
+              "memory_rms_ratio": 0.06897401064634323,
+              "output_norm": 40.63046646118164,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 12,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47350144386291504,
+              "attnres_weight": 0.32421875,
+              "memory_cos": 0.0037457887083292007,
+              "memory_rms_ratio": 0.06892921775579453,
+              "output_norm": 40.63267517089844,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 13,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47343185544013977,
+              "attnres_weight": 0.32421875,
+              "memory_cos": 0.0039582084864377975,
+              "memory_rms_ratio": 0.06902019679546356,
+              "output_norm": 40.84189987182617,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 14,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4735506474971771,
+              "attnres_weight": 0.32421875,
+              "memory_cos": 0.0035417750477790833,
+              "memory_rms_ratio": 0.0689859539270401,
+              "output_norm": 40.83841323852539,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 15,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4734618663787842,
+              "attnres_weight": 0.32421875,
+              "memory_cos": 0.004699297249317169,
+              "memory_rms_ratio": 0.0691819116473198,
+              "output_norm": 40.84138870239258,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "prompt_index": 4,
+      "prompt": "The chemical symbol for gold is",
+      "loss": 9.303719520568848,
+      "tokens": [
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 464,
+          "text": "The"
+        },
+        {
+          "id": 5931,
+          "text": " chemical"
+        },
+        {
+          "id": 6194,
+          "text": " symbol"
+        },
+        {
+          "id": 329,
+          "text": " for"
+        },
+        {
+          "id": 3869,
+          "text": " gold"
+        },
+        {
+          "id": 318,
+          "text": " is"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        }
+      ],
+      "layers": [
+        {
+          "layer_id": 2,
+          "readout_kind": "lm",
+          "gate_mean": 0.5856851935386658,
+          "gate_max": 0.6584919095039368,
+          "attnres_weight_mean": 0.6925048828125,
+          "attnres_weight_max": 0.94921875,
+          "memory_cos_mean": 0.06897135078907013,
+          "memory_rms_ratio_mean": 0.19988535344600677,
+          "output_norm_mean": 44.47018814086914,
+          "output_norm_max": 68.7134017944336,
+          "tokens": [
+            {
+              "pos": 0,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6121298670768738,
+              "attnres_weight": 0.83984375,
+              "memory_cos": 0.042977266013622284,
+              "memory_rms_ratio": 0.05926394462585449,
+              "output_norm": 68.7134017944336,
+              "top_head": 9,
+              "top_head_output_norm": 57.643898010253906
+            },
+            {
+              "pos": 1,
+              "token_id": 464,
+              "token_text": "The",
+              "gate": 0.5693426132202148,
+              "attnres_weight": 0.42578125,
+              "memory_cos": 0.2604553699493408,
+              "memory_rms_ratio": 0.34084969758987427,
+              "output_norm": 49.79743194580078,
+              "top_head": 1,
+              "top_head_output_norm": 53.601566314697266
+            },
+            {
+              "pos": 2,
+              "token_id": 5931,
+              "token_text": " chemical",
+              "gate": 0.6584919095039368,
+              "attnres_weight": 0.439453125,
+              "memory_cos": 0.05467519164085388,
+              "memory_rms_ratio": 0.3481939733028412,
+              "output_norm": 22.893587112426758,
+              "top_head": 2,
+              "top_head_output_norm": 33.42754364013672
+            },
+            {
+              "pos": 3,
+              "token_id": 6194,
+              "token_text": " symbol",
+              "gate": 0.5344417095184326,
+              "attnres_weight": 0.94921875,
+              "memory_cos": 0.031921789050102234,
+              "memory_rms_ratio": 0.4445325434207916,
+              "output_norm": 9.2651948928833,
+              "top_head": 5,
+              "top_head_output_norm": 29.3654842376709
+            },
+            {
+              "pos": 4,
+              "token_id": 329,
+              "token_text": " for",
+              "gate": 0.5759679675102234,
+              "attnres_weight": 0.63671875,
+              "memory_cos": 0.12440526485443115,
+              "memory_rms_ratio": 0.5985326170921326,
+              "output_norm": 17.014184951782227,
+              "top_head": 5,
+              "top_head_output_norm": 28.249858856201172
+            },
+            {
+              "pos": 5,
+              "token_id": 3869,
+              "token_text": " gold",
+              "gate": 0.3827088177204132,
+              "attnres_weight": 0.78125,
+              "memory_cos": 0.0879935622215271,
+              "memory_rms_ratio": 0.3477727174758911,
+              "output_norm": 9.58415412902832,
+              "top_head": 1,
+              "top_head_output_norm": 21.537067413330078
+            },
+            {
+              "pos": 6,
+              "token_id": 318,
+              "token_text": " is",
+              "gate": 0.5989618897438049,
+              "attnres_weight": 0.20703125,
+              "memory_cos": 0.04394347593188286,
+              "memory_rms_ratio": 0.3995667099952698,
+              "output_norm": 13.929652214050293,
+              "top_head": 3,
+              "top_head_output_norm": 25.30083656311035
+            },
+            {
+              "pos": 7,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.5810681581497192,
+              "attnres_weight": 0.53515625,
+              "memory_cos": 0.05727114900946617,
+              "memory_rms_ratio": 0.07207868993282318,
+              "output_norm": 19.103403091430664,
+              "top_head": 1,
+              "top_head_output_norm": 32.48226547241211
+            },
+            {
+              "pos": 8,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.5469066500663757,
+              "attnres_weight": 0.71484375,
+              "memory_cos": 0.05647497624158859,
+              "memory_rms_ratio": 0.0724906474351883,
+              "output_norm": 33.34984588623047,
+              "top_head": 1,
+              "top_head_output_norm": 53.039424896240234
+            },
+            {
+              "pos": 9,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6161419153213501,
+              "attnres_weight": 0.79296875,
+              "memory_cos": 0.04904428869485855,
+              "memory_rms_ratio": 0.07271330058574677,
+              "output_norm": 67.07229614257812,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 10,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6162801384925842,
+              "attnres_weight": 0.79296875,
+              "memory_cos": 0.048437103629112244,
+              "memory_rms_ratio": 0.07301358133554459,
+              "output_norm": 67.13069152832031,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 11,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6160202622413635,
+              "attnres_weight": 0.796875,
+              "memory_cos": 0.047691501677036285,
+              "memory_rms_ratio": 0.07351021468639374,
+              "output_norm": 67.35069274902344,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 12,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6159762740135193,
+              "attnres_weight": 0.796875,
+              "memory_cos": 0.04880550876259804,
+              "memory_rms_ratio": 0.07356921583414078,
+              "output_norm": 67.01734161376953,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 13,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6155857443809509,
+              "attnres_weight": 0.79296875,
+              "memory_cos": 0.04983840882778168,
+              "memory_rms_ratio": 0.07403431087732315,
+              "output_norm": 66.58711242675781,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 14,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6154255270957947,
+              "attnres_weight": 0.79296875,
+              "memory_cos": 0.04923248663544655,
+              "memory_rms_ratio": 0.07403209805488586,
+              "output_norm": 66.6956787109375,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 15,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6155138611793518,
+              "attnres_weight": 0.78515625,
+              "memory_cos": 0.05037430301308632,
+              "memory_rms_ratio": 0.0740116536617279,
+              "output_norm": 66.01828002929688,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            }
+          ]
+        },
+        {
+          "layer_id": 8,
+          "readout_kind": "lm",
+          "gate_mean": 0.48521047830581665,
+          "gate_max": 0.639978289604187,
+          "attnres_weight_mean": 0.3941650390625,
+          "attnres_weight_max": 0.8671875,
+          "memory_cos_mean": 0.01392615307122469,
+          "memory_rms_ratio_mean": 0.12097100168466568,
+          "output_norm_mean": 30.43960952758789,
+          "output_norm_max": 43.071388244628906,
+          "tokens": [
+            {
+              "pos": 0,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4716161787509918,
+              "attnres_weight": 0.333984375,
+              "memory_cos": 0.0007347017526626587,
+              "memory_rms_ratio": 0.06316602975130081,
+              "output_norm": 39.83687973022461,
+              "top_head": 2,
+              "top_head_output_norm": 69.17251586914062
+            },
+            {
+              "pos": 1,
+              "token_id": 464,
+              "token_text": "The",
+              "gate": 0.5769910216331482,
+              "attnres_weight": 0.36328125,
+              "memory_cos": 0.13650652766227722,
+              "memory_rms_ratio": 0.16179253160953522,
+              "output_norm": 43.071388244628906,
+              "top_head": 0,
+              "top_head_output_norm": 62.16327667236328
+            },
+            {
+              "pos": 2,
+              "token_id": 5931,
+              "token_text": " chemical",
+              "gate": 0.5128806829452515,
+              "attnres_weight": 0.67578125,
+              "memory_cos": 0.056419529020786285,
+              "memory_rms_ratio": 0.24162791669368744,
+              "output_norm": 25.392066955566406,
+              "top_head": 2,
+              "top_head_output_norm": 49.5205192565918
+            },
+            {
+              "pos": 3,
+              "token_id": 6194,
+              "token_text": " symbol",
+              "gate": 0.49985018372535706,
+              "attnres_weight": 0.8671875,
+              "memory_cos": 0.030393319204449654,
+              "memory_rms_ratio": 0.23551277816295624,
+              "output_norm": 8.657920837402344,
+              "top_head": 0,
+              "top_head_output_norm": 12.13114070892334
+            },
+            {
+              "pos": 4,
+              "token_id": 329,
+              "token_text": " for",
+              "gate": 0.4752531349658966,
+              "attnres_weight": 0.376953125,
+              "memory_cos": 0.02594716101884842,
+              "memory_rms_ratio": 0.21246397495269775,
+              "output_norm": 11.368313789367676,
+              "top_head": 1,
+              "top_head_output_norm": 16.961477279663086
+            },
+            {
+              "pos": 5,
+              "token_id": 3869,
+              "token_text": " gold",
+              "gate": 0.639978289604187,
+              "attnres_weight": 0.2578125,
+              "memory_cos": -0.0024088677018880844,
+              "memory_rms_ratio": 0.2000916302204132,
+              "output_norm": 18.42991065979004,
+              "top_head": 4,
+              "top_head_output_norm": 30.34450912475586
+            },
+            {
+              "pos": 6,
+              "token_id": 318,
+              "token_text": " is",
+              "gate": 0.45126307010650635,
+              "attnres_weight": 0.341796875,
+              "memory_cos": -0.019428351894021034,
+              "memory_rms_ratio": 0.20145416259765625,
+              "output_norm": 16.85354995727539,
+              "top_head": 5,
+              "top_head_output_norm": 32.76106262207031
+            },
+            {
+              "pos": 7,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.476957231760025,
+              "attnres_weight": 0.423828125,
+              "memory_cos": 0.010049700736999512,
+              "memory_rms_ratio": 0.06820707768201828,
+              "output_norm": 16.69275665283203,
+              "top_head": 2,
+              "top_head_output_norm": 31.572032928466797
+            },
+            {
+              "pos": 8,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.33889544010162354,
+              "attnres_weight": 0.400390625,
+              "memory_cos": -0.03332721069455147,
+              "memory_rms_ratio": 0.06872878223657608,
+              "output_norm": 23.076072692871094,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 9,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47482141852378845,
+              "attnres_weight": 0.322265625,
+              "memory_cos": 0.00044708698987960815,
+              "memory_rms_ratio": 0.06860890984535217,
+              "output_norm": 40.14286422729492,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 10,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47444412112236023,
+              "attnres_weight": 0.3203125,
+              "memory_cos": 0.002208428457379341,
+              "memory_rms_ratio": 0.06894972920417786,
+              "output_norm": 40.15315246582031,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 11,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47434744238853455,
+              "attnres_weight": 0.32421875,
+              "memory_cos": 0.002112084999680519,
+              "memory_rms_ratio": 0.0688624456524849,
+              "output_norm": 40.49565505981445,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 12,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4742194712162018,
+              "attnres_weight": 0.326171875,
+              "memory_cos": 0.001802939921617508,
+              "memory_rms_ratio": 0.0688043087720871,
+              "output_norm": 40.52259826660156,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 13,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4738284647464752,
+              "attnres_weight": 0.32421875,
+              "memory_cos": 0.003698023036122322,
+              "memory_rms_ratio": 0.06905541568994522,
+              "output_norm": 40.66736602783203,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 14,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4740541875362396,
+              "attnres_weight": 0.32421875,
+              "memory_cos": 0.0040112268179655075,
+              "memory_rms_ratio": 0.06898362934589386,
+              "output_norm": 40.81194305419922,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 15,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4739670753479004,
+              "attnres_weight": 0.32421875,
+              "memory_cos": 0.0036521311849355698,
+              "memory_rms_ratio": 0.06922682374715805,
+              "output_norm": 40.861351013183594,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "prompt_index": 5,
+      "prompt": "The theory of relativity was developed by",
+      "loss": 8.114906311035156,
+      "tokens": [
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 464,
+          "text": "The"
+        },
+        {
+          "id": 4583,
+          "text": " theory"
+        },
+        {
+          "id": 286,
+          "text": " of"
+        },
+        {
+          "id": 44449,
+          "text": " relativity"
+        },
+        {
+          "id": 373,
+          "text": " was"
+        },
+        {
+          "id": 4166,
+          "text": " developed"
+        },
+        {
+          "id": 416,
+          "text": " by"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        }
+      ],
+      "layers": [
+        {
+          "layer_id": 2,
+          "readout_kind": "lm",
+          "gate_mean": 0.5585745573043823,
+          "gate_max": 0.6169529557228088,
+          "attnres_weight_mean": 0.68450927734375,
+          "attnres_weight_max": 1.34375,
+          "memory_cos_mean": 0.08248326927423477,
+          "memory_rms_ratio_mean": 0.22485743463039398,
+          "output_norm_mean": 44.21958923339844,
+          "output_norm_max": 68.7134017944336,
+          "tokens": [
+            {
+              "pos": 0,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6121298670768738,
+              "attnres_weight": 0.83984375,
+              "memory_cos": 0.042977266013622284,
+              "memory_rms_ratio": 0.05926394462585449,
+              "output_norm": 68.7134017944336,
+              "top_head": 9,
+              "top_head_output_norm": 57.643898010253906
+            },
+            {
+              "pos": 1,
+              "token_id": 464,
+              "token_text": "The",
+              "gate": 0.5693426132202148,
+              "attnres_weight": 0.42578125,
+              "memory_cos": 0.2604553699493408,
+              "memory_rms_ratio": 0.34084969758987427,
+              "output_norm": 49.79743194580078,
+              "top_head": 1,
+              "top_head_output_norm": 53.601566314697266
+            },
+            {
+              "pos": 2,
+              "token_id": 4583,
+              "token_text": " theory",
+              "gate": 0.4587423503398895,
+              "attnres_weight": 0.490234375,
+              "memory_cos": 0.16732892394065857,
+              "memory_rms_ratio": 0.4092773497104645,
+              "output_norm": 19.0328426361084,
+              "top_head": 5,
+              "top_head_output_norm": 32.78172302246094
+            },
+            {
+              "pos": 3,
+              "token_id": 286,
+              "token_text": " of",
+              "gate": 0.5065650343894958,
+              "attnres_weight": 1.34375,
+              "memory_cos": 0.10888757556676865,
+              "memory_rms_ratio": 0.5941188931465149,
+              "output_norm": 33.38443374633789,
+              "top_head": 2,
+              "top_head_output_norm": 40.380313873291016
+            },
+            {
+              "pos": 4,
+              "token_id": 44449,
+              "token_text": " relativity",
+              "gate": 0.6002658009529114,
+              "attnres_weight": 0.6796875,
+              "memory_cos": 0.051590487360954285,
+              "memory_rms_ratio": 0.3561532497406006,
+              "output_norm": 16.29448890686035,
+              "top_head": 0,
+              "top_head_output_norm": 30.518341064453125
+            },
+            {
+              "pos": 5,
+              "token_id": 373,
+              "token_text": " was",
+              "gate": 0.5717657208442688,
+              "attnres_weight": 0.2197265625,
+              "memory_cos": -0.020352009683847427,
+              "memory_rms_ratio": 0.3835233151912689,
+              "output_norm": 7.699403285980225,
+              "top_head": 10,
+              "top_head_output_norm": 21.60283088684082
+            },
+            {
+              "pos": 6,
+              "token_id": 4166,
+              "token_text": " developed",
+              "gate": 0.47135376930236816,
+              "attnres_weight": 0.51171875,
+              "memory_cos": 0.10450048744678497,
+              "memory_rms_ratio": 0.356184184551239,
+              "output_norm": 30.917020797729492,
+              "top_head": 2,
+              "top_head_output_norm": 44.20517349243164
+            },
+            {
+              "pos": 7,
+              "token_id": 416,
+              "token_text": " by",
+              "gate": 0.5016162991523743,
+              "attnres_weight": 0.48828125,
+              "memory_cos": 0.15477846562862396,
+              "memory_rms_ratio": 0.5117586851119995,
+              "output_norm": 32.696163177490234,
+              "top_head": 3,
+              "top_head_output_norm": 51.18379211425781
+            },
+            {
+              "pos": 8,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4436092674732208,
+              "attnres_weight": 0.5,
+              "memory_cos": 0.09964310377836227,
+              "memory_rms_ratio": 0.07409447431564331,
+              "output_norm": 13.35531997680664,
+              "top_head": 1,
+              "top_head_output_norm": 25.86618423461914
+            },
+            {
+              "pos": 9,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.5029817819595337,
+              "attnres_weight": 0.6875,
+              "memory_cos": 0.059566136449575424,
+              "memory_rms_ratio": 0.07238907366991043,
+              "output_norm": 31.8642520904541,
+              "top_head": 1,
+              "top_head_output_norm": 53.039424896240234
+            },
+            {
+              "pos": 10,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6169529557228088,
+              "attnres_weight": 0.79296875,
+              "memory_cos": 0.04769694805145264,
+              "memory_rms_ratio": 0.07289350032806396,
+              "output_norm": 67.64669799804688,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 11,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6166636347770691,
+              "attnres_weight": 0.796875,
+              "memory_cos": 0.04719596356153488,
+              "memory_rms_ratio": 0.07303566485643387,
+              "output_norm": 67.70637512207031,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 12,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6164455413818359,
+              "attnres_weight": 0.80078125,
+              "memory_cos": 0.04776379093527794,
+              "memory_rms_ratio": 0.0733976662158966,
+              "output_norm": 67.8200454711914,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 13,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6163100600242615,
+              "attnres_weight": 0.79296875,
+              "memory_cos": 0.04893562197685242,
+              "memory_rms_ratio": 0.07359723001718521,
+              "output_norm": 67.09038543701172,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 14,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6162603497505188,
+              "attnres_weight": 0.7890625,
+              "memory_cos": 0.04903668910264969,
+              "memory_rms_ratio": 0.07359392940998077,
+              "output_norm": 66.69303131103516,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 15,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6161872744560242,
+              "attnres_weight": 0.79296875,
+              "memory_cos": 0.04972756281495094,
+              "memory_rms_ratio": 0.07358821481466293,
+              "output_norm": 66.8021469116211,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            }
+          ]
+        },
+        {
+          "layer_id": 8,
+          "readout_kind": "lm",
+          "gate_mean": 0.48832565546035767,
+          "gate_max": 0.6775498390197754,
+          "attnres_weight_mean": 0.44769287109375,
+          "attnres_weight_max": 1.375,
+          "memory_cos_mean": 0.010181163437664509,
+          "memory_rms_ratio_mean": 0.12224768102169037,
+          "output_norm_mean": 31.439863204956055,
+          "output_norm_max": 43.071388244628906,
+          "tokens": [
+            {
+              "pos": 0,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4716161787509918,
+              "attnres_weight": 0.333984375,
+              "memory_cos": 0.0007347017526626587,
+              "memory_rms_ratio": 0.06316602975130081,
+              "output_norm": 39.83687973022461,
+              "top_head": 2,
+              "top_head_output_norm": 69.17251586914062
+            },
+            {
+              "pos": 1,
+              "token_id": 464,
+              "token_text": "The",
+              "gate": 0.5769910216331482,
+              "attnres_weight": 0.36328125,
+              "memory_cos": 0.13650652766227722,
+              "memory_rms_ratio": 0.16179253160953522,
+              "output_norm": 43.071388244628906,
+              "top_head": 0,
+              "top_head_output_norm": 62.16327667236328
+            },
+            {
+              "pos": 2,
+              "token_id": 4583,
+              "token_text": " theory",
+              "gate": 0.4247843325138092,
+              "attnres_weight": 0.6484375,
+              "memory_cos": 0.019816581159830093,
+              "memory_rms_ratio": 0.21617712080478668,
+              "output_norm": 22.657936096191406,
+              "top_head": 1,
+              "top_head_output_norm": 46.84071350097656
+            },
+            {
+              "pos": 3,
+              "token_id": 286,
+              "token_text": " of",
+              "gate": 0.6775498390197754,
+              "attnres_weight": 1.375,
+              "memory_cos": 0.03496738523244858,
+              "memory_rms_ratio": 0.2126098871231079,
+              "output_norm": 36.9913215637207,
+              "top_head": 3,
+              "top_head_output_norm": 47.01522445678711
+            },
+            {
+              "pos": 4,
+              "token_id": 44449,
+              "token_text": " relativity",
+              "gate": 0.5007433295249939,
+              "attnres_weight": 0.341796875,
+              "memory_cos": 0.023752011358737946,
+              "memory_rms_ratio": 0.2106412798166275,
+              "output_norm": 10.22812271118164,
+              "top_head": 7,
+              "top_head_output_norm": 16.795969009399414
+            },
+            {
+              "pos": 5,
+              "token_id": 373,
+              "token_text": " was",
+              "gate": 0.4004225432872772,
+              "attnres_weight": 0.40234375,
+              "memory_cos": -0.037293415516614914,
+              "memory_rms_ratio": 0.18701687455177307,
+              "output_norm": 7.850152969360352,
+              "top_head": 7,
+              "top_head_output_norm": 16.099201202392578
+            },
+            {
+              "pos": 6,
+              "token_id": 4166,
+              "token_text": " developed",
+              "gate": 0.5590474009513855,
+              "attnres_weight": 0.640625,
+              "memory_cos": 0.035935692489147186,
+              "memory_rms_ratio": 0.1819348782300949,
+              "output_norm": 32.13362503051758,
+              "top_head": 2,
+              "top_head_output_norm": 51.70793914794922
+            },
+            {
+              "pos": 7,
+              "token_id": 416,
+              "token_text": " by",
+              "gate": 0.5727580785751343,
+              "attnres_weight": 0.2412109375,
+              "memory_cos": -0.020311633124947548,
+              "memory_rms_ratio": 0.17418336868286133,
+              "output_norm": 31.038488388061523,
+              "top_head": 0,
+              "top_head_output_norm": 53.33982849121094
+            },
+            {
+              "pos": 8,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4316267669200897,
+              "attnres_weight": 0.47265625,
+              "memory_cos": -0.01456005685031414,
+              "memory_rms_ratio": 0.0685935840010643,
+              "output_norm": 13.304774284362793,
+              "top_head": 2,
+              "top_head_output_norm": 24.59733772277832
+            },
+            {
+              "pos": 9,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.34954872727394104,
+              "attnres_weight": 0.40625,
+              "memory_cos": -0.03474604710936546,
+              "memory_rms_ratio": 0.06810157001018524,
+              "output_norm": 23.01443862915039,
+              "top_head": 2,
+              "top_head_output_norm": 69.82267761230469
+            },
+            {
+              "pos": 10,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47531285881996155,
+              "attnres_weight": 0.318359375,
+              "memory_cos": 0.0037092920392751694,
+              "memory_rms_ratio": 0.0684177428483963,
+              "output_norm": 40.23523712158203,
+              "top_head": 2,
+              "top_head_output_norm": 69.82267761230469
+            },
+            {
+              "pos": 11,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4749408960342407,
+              "attnres_weight": 0.322265625,
+              "memory_cos": 0.0022411849349737167,
+              "memory_rms_ratio": 0.06860017031431198,
+              "output_norm": 40.15009307861328,
+              "top_head": 2,
+              "top_head_output_norm": 69.82267761230469
+            },
+            {
+              "pos": 12,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47453010082244873,
+              "attnres_weight": 0.326171875,
+              "memory_cos": 0.0022702012211084366,
+              "memory_rms_ratio": 0.06874320656061172,
+              "output_norm": 40.4395637512207,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 13,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4744609296321869,
+              "attnres_weight": 0.322265625,
+              "memory_cos": 0.004018144682049751,
+              "memory_rms_ratio": 0.06850036978721619,
+              "output_norm": 40.68112564086914,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 14,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4744768440723419,
+              "attnres_weight": 0.322265625,
+              "memory_cos": 0.002322128042578697,
+              "memory_rms_ratio": 0.0687771886587143,
+              "output_norm": 40.630401611328125,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 15,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4743999242782593,
+              "attnres_weight": 0.326171875,
+              "memory_cos": 0.0035359058529138565,
+              "memory_rms_ratio": 0.06870712339878082,
+              "output_norm": 40.774227142333984,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "prompt_index": 6,
+      "prompt": "By the way, I wanted to ask",
+      "loss": 7.308901309967041,
+      "tokens": [
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 3886,
+          "text": "By"
+        },
+        {
+          "id": 262,
+          "text": " the"
+        },
+        {
+          "id": 835,
+          "text": " way"
+        },
+        {
+          "id": 11,
+          "text": ","
+        },
+        {
+          "id": 314,
+          "text": " I"
+        },
+        {
+          "id": 2227,
+          "text": " wanted"
+        },
+        {
+          "id": 284,
+          "text": " to"
+        },
+        {
+          "id": 1265,
+          "text": " ask"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        }
+      ],
+      "layers": [
+        {
+          "layer_id": 2,
+          "readout_kind": "lm",
+          "gate_mean": 0.5479661226272583,
+          "gate_max": 0.6166290640830994,
+          "attnres_weight_mean": 0.9345703125,
+          "attnres_weight_max": 1.6171875,
+          "memory_cos_mean": 0.07772460579872131,
+          "memory_rms_ratio_mean": 0.3103034496307373,
+          "output_norm_mean": 45.29261779785156,
+          "output_norm_max": 68.7134017944336,
+          "tokens": [
+            {
+              "pos": 0,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6121298670768738,
+              "attnres_weight": 0.83984375,
+              "memory_cos": 0.042977266013622284,
+              "memory_rms_ratio": 0.05926394462585449,
+              "output_norm": 68.7134017944336,
+              "top_head": 9,
+              "top_head_output_norm": 57.643898010253906
+            },
+            {
+              "pos": 1,
+              "token_id": 3886,
+              "token_text": "By",
+              "gate": 0.5712283849716187,
+              "attnres_weight": 0.85546875,
+              "memory_cos": 0.20963868498802185,
+              "memory_rms_ratio": 0.37590017914772034,
+              "output_norm": 45.77298355102539,
+              "top_head": 0,
+              "top_head_output_norm": 52.772029876708984
+            },
+            {
+              "pos": 2,
+              "token_id": 262,
+              "token_text": " the",
+              "gate": 0.5881975293159485,
+              "attnres_weight": 1.4296875,
+              "memory_cos": 0.0777202919125557,
+              "memory_rms_ratio": 0.5568147897720337,
+              "output_norm": 23.852914810180664,
+              "top_head": 3,
+              "top_head_output_norm": 40.586612701416016
+            },
+            {
+              "pos": 3,
+              "token_id": 835,
+              "token_text": " way",
+              "gate": 0.6058797836303711,
+              "attnres_weight": 1.6171875,
+              "memory_cos": -0.015192802995443344,
+              "memory_rms_ratio": 0.7596136331558228,
+              "output_norm": 51.750267028808594,
+              "top_head": 11,
+              "top_head_output_norm": 61.63914489746094
+            },
+            {
+              "pos": 4,
+              "token_id": 11,
+              "token_text": ",",
+              "gate": 0.41178831458091736,
+              "attnres_weight": 1.25,
+              "memory_cos": 0.010738867335021496,
+              "memory_rms_ratio": 0.5660930275917053,
+              "output_norm": 29.191556930541992,
+              "top_head": 11,
+              "top_head_output_norm": 41.781009674072266
+            },
+            {
+              "pos": 5,
+              "token_id": 314,
+              "token_text": " I",
+              "gate": 0.3205975592136383,
+              "attnres_weight": 0.68359375,
+              "memory_cos": 0.22039145231246948,
+              "memory_rms_ratio": 0.5859168767929077,
+              "output_norm": 19.293378829956055,
+              "top_head": 5,
+              "top_head_output_norm": 39.516056060791016
+            },
+            {
+              "pos": 6,
+              "token_id": 2227,
+              "token_text": " wanted",
+              "gate": 0.6095072031021118,
+              "attnres_weight": 0.625,
+              "memory_cos": 0.1347230225801468,
+              "memory_rms_ratio": 0.40040263533592224,
+              "output_norm": 42.95695114135742,
+              "top_head": 5,
+              "top_head_output_norm": 46.9692497253418
+            },
+            {
+              "pos": 7,
+              "token_id": 284,
+              "token_text": " to",
+              "gate": 0.514677882194519,
+              "attnres_weight": 1.140625,
+              "memory_cos": 0.15362989902496338,
+              "memory_rms_ratio": 0.7144016027450562,
+              "output_norm": 46.46000289916992,
+              "top_head": 1,
+              "top_head_output_norm": 50.9903450012207
+            },
+            {
+              "pos": 8,
+              "token_id": 1265,
+              "token_text": " ask",
+              "gate": 0.4555869400501251,
+              "attnres_weight": 1.1875,
+              "memory_cos": 0.09600944817066193,
+              "memory_rms_ratio": 0.43603426218032837,
+              "output_norm": 16.854127883911133,
+              "top_head": 6,
+              "top_head_output_norm": 25.07979965209961
+            },
+            {
+              "pos": 9,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.5186861157417297,
+              "attnres_weight": 0.6328125,
+              "memory_cos": 0.026491079479455948,
+              "memory_rms_ratio": 0.07051409035921097,
+              "output_norm": 11.616223335266113,
+              "top_head": 1,
+              "top_head_output_norm": 27.43376922607422
+            },
+            {
+              "pos": 10,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4789031744003296,
+              "attnres_weight": 0.70703125,
+              "memory_cos": 0.04804513230919838,
+              "memory_rms_ratio": 0.07260411977767944,
+              "output_norm": 32.461795806884766,
+              "top_head": 1,
+              "top_head_output_norm": 52.78303909301758
+            },
+            {
+              "pos": 11,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6166290640830994,
+              "attnres_weight": 0.796875,
+              "memory_cos": 0.047410815954208374,
+              "memory_rms_ratio": 0.07304344326257706,
+              "output_norm": 67.02184295654297,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 12,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6162024736404419,
+              "attnres_weight": 0.80078125,
+              "memory_cos": 0.047282349318265915,
+              "memory_rms_ratio": 0.0733879804611206,
+              "output_norm": 67.427490234375,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 13,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6161431670188904,
+              "attnres_weight": 0.80078125,
+              "memory_cos": 0.046124786138534546,
+              "memory_rms_ratio": 0.07360856980085373,
+              "output_norm": 67.96172332763672,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 14,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6158424019813538,
+              "attnres_weight": 0.79296875,
+              "memory_cos": 0.04863200709223747,
+              "memory_rms_ratio": 0.07364264875650406,
+              "output_norm": 66.62214660644531,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 15,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6154581904411316,
+              "attnres_weight": 0.79296875,
+              "memory_cos": 0.04897134006023407,
+              "memory_rms_ratio": 0.07361355423927307,
+              "output_norm": 66.72508239746094,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            }
+          ]
+        },
+        {
+          "layer_id": 8,
+          "readout_kind": "lm",
+          "gate_mean": 0.4827439486980438,
+          "gate_max": 0.7119215130805969,
+          "attnres_weight_mean": 0.5018310546875,
+          "attnres_weight_max": 1.0078125,
+          "memory_cos_mean": 0.05484936386346817,
+          "memory_rms_ratio_mean": 0.13374194502830505,
+          "output_norm_mean": 34.11204528808594,
+          "output_norm_max": 53.999855041503906,
+          "tokens": [
+            {
+              "pos": 0,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4716161787509918,
+              "attnres_weight": 0.333984375,
+              "memory_cos": 0.0007347017526626587,
+              "memory_rms_ratio": 0.06316602975130081,
+              "output_norm": 39.83687973022461,
+              "top_head": 2,
+              "top_head_output_norm": 69.17251586914062
+            },
+            {
+              "pos": 1,
+              "token_id": 3886,
+              "token_text": "By",
+              "gate": 0.4623151123523712,
+              "attnres_weight": 0.82421875,
+              "memory_cos": 0.09881673753261566,
+              "memory_rms_ratio": 0.20488835871219635,
+              "output_norm": 37.25656509399414,
+              "top_head": 3,
+              "top_head_output_norm": 72.29997253417969
+            },
+            {
+              "pos": 2,
+              "token_id": 262,
+              "token_text": " the",
+              "gate": 0.4539816081523895,
+              "attnres_weight": 1.0078125,
+              "memory_cos": 0.17558005452156067,
+              "memory_rms_ratio": 0.2071952521800995,
+              "output_norm": 18.751550674438477,
+              "top_head": 3,
+              "top_head_output_norm": 24.681781768798828
+            },
+            {
+              "pos": 3,
+              "token_id": 835,
+              "token_text": " way",
+              "gate": 0.5472064018249512,
+              "attnres_weight": 0.83203125,
+              "memory_cos": 0.15322396159172058,
+              "memory_rms_ratio": 0.22490499913692474,
+              "output_norm": 42.5553092956543,
+              "top_head": 6,
+              "top_head_output_norm": 58.16124725341797
+            },
+            {
+              "pos": 4,
+              "token_id": 11,
+              "token_text": ",",
+              "gate": 0.5581158399581909,
+              "attnres_weight": 0.57421875,
+              "memory_cos": 0.09193609654903412,
+              "memory_rms_ratio": 0.1659979522228241,
+              "output_norm": 37.81566619873047,
+              "top_head": 10,
+              "top_head_output_norm": 54.61824035644531
+            },
+            {
+              "pos": 5,
+              "token_id": 314,
+              "token_text": " I",
+              "gate": 0.2211218923330307,
+              "attnres_weight": 0.423828125,
+              "memory_cos": 0.0342758484184742,
+              "memory_rms_ratio": 0.1989738792181015,
+              "output_norm": 11.193897247314453,
+              "top_head": 6,
+              "top_head_output_norm": 23.987661361694336
+            },
+            {
+              "pos": 6,
+              "token_id": 2227,
+              "token_text": " wanted",
+              "gate": 0.6547296643257141,
+              "attnres_weight": 0.427734375,
+              "memory_cos": 0.12050232291221619,
+              "memory_rms_ratio": 0.20358693599700928,
+              "output_norm": 47.03438186645508,
+              "top_head": 4,
+              "top_head_output_norm": 62.555572509765625
+            },
+            {
+              "pos": 7,
+              "token_id": 284,
+              "token_text": " to",
+              "gate": 0.7119215130805969,
+              "attnres_weight": 0.6875,
+              "memory_cos": 0.08113272488117218,
+              "memory_rms_ratio": 0.1970411092042923,
+              "output_norm": 53.999855041503906,
+              "top_head": 2,
+              "top_head_output_norm": 58.34455490112305
+            },
+            {
+              "pos": 8,
+              "token_id": 1265,
+              "token_text": " ask",
+              "gate": 0.49405816197395325,
+              "attnres_weight": 0.61328125,
+              "memory_cos": 0.13541707396507263,
+              "memory_rms_ratio": 0.19398105144500732,
+              "output_norm": 23.26326560974121,
+              "top_head": 4,
+              "top_head_output_norm": 43.30305099487305
+            },
+            {
+              "pos": 9,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.39598605036735535,
+              "attnres_weight": 0.330078125,
+              "memory_cos": -0.0010155420750379562,
+              "memory_rms_ratio": 0.0674884021282196,
+              "output_norm": 8.515947341918945,
+              "top_head": 7,
+              "top_head_output_norm": 15.650960922241211
+            },
+            {
+              "pos": 10,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.3878064453601837,
+              "attnres_weight": 0.37109375,
+              "memory_cos": -0.026108793914318085,
+              "memory_rms_ratio": 0.06834585219621658,
+              "output_norm": 23.81352996826172,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 11,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4728665351867676,
+              "attnres_weight": 0.3203125,
+              "memory_cos": 0.0023006275296211243,
+              "memory_rms_ratio": 0.06856980174779892,
+              "output_norm": 39.977020263671875,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 12,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4729193150997162,
+              "attnres_weight": 0.318359375,
+              "memory_cos": 0.0029292888939380646,
+              "memory_rms_ratio": 0.0689256340265274,
+              "output_norm": 40.12733459472656,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 13,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47300460934638977,
+              "attnres_weight": 0.322265625,
+              "memory_cos": 0.0022906605154275894,
+              "memory_rms_ratio": 0.06888564676046371,
+              "output_norm": 40.38436508178711,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 14,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4730628728866577,
+              "attnres_weight": 0.322265625,
+              "memory_cos": 0.002518385648727417,
+              "memory_rms_ratio": 0.06887562572956085,
+              "output_norm": 40.582340240478516,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 15,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47319090366363525,
+              "attnres_weight": 0.3203125,
+              "memory_cos": 0.0030557140707969666,
+              "memory_rms_ratio": 0.06904452294111252,
+              "output_norm": 40.6848258972168,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "prompt_index": 7,
+      "prompt": "In conclusion, the results show that",
+      "loss": 8.334187507629395,
+      "tokens": [
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 818,
+          "text": "In"
+        },
+        {
+          "id": 7664,
+          "text": " conclusion"
+        },
+        {
+          "id": 11,
+          "text": ","
+        },
+        {
+          "id": 262,
+          "text": " the"
+        },
+        {
+          "id": 2482,
+          "text": " results"
+        },
+        {
+          "id": 905,
+          "text": " show"
+        },
+        {
+          "id": 326,
+          "text": " that"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        }
+      ],
+      "layers": [
+        {
+          "layer_id": 2,
+          "readout_kind": "lm",
+          "gate_mean": 0.5561473965644836,
+          "gate_max": 0.6861204504966736,
+          "attnres_weight_mean": 0.711669921875,
+          "attnres_weight_max": 1.2734375,
+          "memory_cos_mean": 0.08990468829870224,
+          "memory_rms_ratio_mean": 0.255121111869812,
+          "output_norm_mean": 44.38851547241211,
+          "output_norm_max": 68.7134017944336,
+          "tokens": [
+            {
+              "pos": 0,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6121298670768738,
+              "attnres_weight": 0.83984375,
+              "memory_cos": 0.042977266013622284,
+              "memory_rms_ratio": 0.05926394462585449,
+              "output_norm": 68.7134017944336,
+              "top_head": 9,
+              "top_head_output_norm": 57.643898010253906
+            },
+            {
+              "pos": 1,
+              "token_id": 818,
+              "token_text": "In",
+              "gate": 0.47484609484672546,
+              "attnres_weight": 0.37109375,
+              "memory_cos": 0.17984098196029663,
+              "memory_rms_ratio": 0.3413505256175995,
+              "output_norm": 42.851806640625,
+              "top_head": 2,
+              "top_head_output_norm": 57.42144775390625
+            },
+            {
+              "pos": 2,
+              "token_id": 7664,
+              "token_text": " conclusion",
+              "gate": 0.5754795074462891,
+              "attnres_weight": 1.2734375,
+              "memory_cos": 0.11290442198514938,
+              "memory_rms_ratio": 0.5396468639373779,
+              "output_norm": 25.593835830688477,
+              "top_head": 3,
+              "top_head_output_norm": 34.26918411254883
+            },
+            {
+              "pos": 3,
+              "token_id": 11,
+              "token_text": ",",
+              "gate": 0.29593145847320557,
+              "attnres_weight": 0.7734375,
+              "memory_cos": -0.0012629851698875427,
+              "memory_rms_ratio": 0.5378355383872986,
+              "output_norm": 12.956192016601562,
+              "top_head": 9,
+              "top_head_output_norm": 32.91505813598633
+            },
+            {
+              "pos": 4,
+              "token_id": 262,
+              "token_text": " the",
+              "gate": 0.3859728276729584,
+              "attnres_weight": 0.416015625,
+              "memory_cos": 0.199239581823349,
+              "memory_rms_ratio": 0.5771054029464722,
+              "output_norm": 19.194486618041992,
+              "top_head": 0,
+              "top_head_output_norm": 36.310245513916016
+            },
+            {
+              "pos": 5,
+              "token_id": 2482,
+              "token_text": " results",
+              "gate": 0.4938357174396515,
+              "attnres_weight": 0.5625,
+              "memory_cos": 0.22597834467887878,
+              "memory_rms_ratio": 0.4132799506187439,
+              "output_norm": 32.49505615234375,
+              "top_head": 1,
+              "top_head_output_norm": 48.68601989746094
+            },
+            {
+              "pos": 6,
+              "token_id": 905,
+              "token_text": " show",
+              "gate": 0.6190242767333984,
+              "attnres_weight": 0.54296875,
+              "memory_cos": 0.17517566680908203,
+              "memory_rms_ratio": 0.3978140950202942,
+              "output_norm": 21.25689697265625,
+              "top_head": 5,
+              "top_head_output_norm": 24.765087127685547
+            },
+            {
+              "pos": 7,
+              "token_id": 326,
+              "token_text": " that",
+              "gate": 0.6861204504966736,
+              "attnres_weight": 0.498046875,
+              "memory_cos": 0.07033669203519821,
+              "memory_rms_ratio": 0.6299278736114502,
+              "output_norm": 39.765174865722656,
+              "top_head": 0,
+              "top_head_output_norm": 48.18649673461914
+            },
+            {
+              "pos": 8,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.48329153656959534,
+              "attnres_weight": 0.6484375,
+              "memory_cos": 0.08326590806245804,
+              "memory_rms_ratio": 0.07069751620292664,
+              "output_norm": 14.44163990020752,
+              "top_head": 4,
+              "top_head_output_norm": 31.594308853149414
+            },
+            {
+              "pos": 9,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.5801427960395813,
+              "attnres_weight": 0.6953125,
+              "memory_cos": 0.05643250420689583,
+              "memory_rms_ratio": 0.0729026347398758,
+              "output_norm": 31.982797622680664,
+              "top_head": 1,
+              "top_head_output_norm": 52.78303909301758
+            },
+            {
+              "pos": 10,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6156341433525085,
+              "attnres_weight": 0.796875,
+              "memory_cos": 0.04787551984190941,
+              "memory_rms_ratio": 0.07352074980735779,
+              "output_norm": 67.2328872680664,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 11,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6155458688735962,
+              "attnres_weight": 0.796875,
+              "memory_cos": 0.04913560301065445,
+              "memory_rms_ratio": 0.07360611110925674,
+              "output_norm": 66.79547882080078,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 12,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6156466007232666,
+              "attnres_weight": 0.80078125,
+              "memory_cos": 0.04805697128176689,
+              "memory_rms_ratio": 0.0736607015132904,
+              "output_norm": 67.74773406982422,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 13,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6151232123374939,
+              "attnres_weight": 0.79296875,
+              "memory_cos": 0.04907514899969101,
+              "memory_rms_ratio": 0.07361593097448349,
+              "output_norm": 66.61829376220703,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 14,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6148908734321594,
+              "attnres_weight": 0.7890625,
+              "memory_cos": 0.04946004971861839,
+              "memory_rms_ratio": 0.0736629068851471,
+              "output_norm": 66.24797821044922,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 15,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.614743173122406,
+              "attnres_weight": 0.7890625,
+              "memory_cos": 0.04998335242271423,
+              "memory_rms_ratio": 0.07404710352420807,
+              "output_norm": 66.32255554199219,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            }
+          ]
+        },
+        {
+          "layer_id": 8,
+          "readout_kind": "lm",
+          "gate_mean": 0.4965340793132782,
+          "gate_max": 0.6760962009429932,
+          "attnres_weight_mean": 0.3848876953125,
+          "attnres_weight_max": 0.70703125,
+          "memory_cos_mean": 0.014173763804137707,
+          "memory_rms_ratio_mean": 0.12212403118610382,
+          "output_norm_mean": 32.08396911621094,
+          "output_norm_max": 43.05083084106445,
+          "tokens": [
+            {
+              "pos": 0,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4716161787509918,
+              "attnres_weight": 0.333984375,
+              "memory_cos": 0.0007347017526626587,
+              "memory_rms_ratio": 0.06316602975130081,
+              "output_norm": 39.83687973022461,
+              "top_head": 2,
+              "top_head_output_norm": 69.17251586914062
+            },
+            {
+              "pos": 1,
+              "token_id": 818,
+              "token_text": "In",
+              "gate": 0.5056959986686707,
+              "attnres_weight": 0.455078125,
+              "memory_cos": 0.08943016827106476,
+              "memory_rms_ratio": 0.19721639156341553,
+              "output_norm": 39.9560661315918,
+              "top_head": 0,
+              "top_head_output_norm": 69.88145446777344
+            },
+            {
+              "pos": 2,
+              "token_id": 7664,
+              "token_text": " conclusion",
+              "gate": 0.5940982699394226,
+              "attnres_weight": 0.70703125,
+              "memory_cos": 0.04413793608546257,
+              "memory_rms_ratio": 0.2678202986717224,
+              "output_norm": 22.156761169433594,
+              "top_head": 4,
+              "top_head_output_norm": 35.9003791809082
+            },
+            {
+              "pos": 3,
+              "token_id": 11,
+              "token_text": ",",
+              "gate": 0.5616545677185059,
+              "attnres_weight": 0.443359375,
+              "memory_cos": 0.019144561141729355,
+              "memory_rms_ratio": 0.17202597856521606,
+              "output_norm": 25.367650985717773,
+              "top_head": 3,
+              "top_head_output_norm": 36.48289489746094
+            },
+            {
+              "pos": 4,
+              "token_id": 262,
+              "token_text": " the",
+              "gate": 0.42904090881347656,
+              "attnres_weight": 0.2041015625,
+              "memory_cos": 0.0033792704343795776,
+              "memory_rms_ratio": 0.16596898436546326,
+              "output_norm": 15.673293113708496,
+              "top_head": 3,
+              "top_head_output_norm": 32.4713249206543
+            },
+            {
+              "pos": 5,
+              "token_id": 2482,
+              "token_text": " results",
+              "gate": 0.6283280253410339,
+              "attnres_weight": 0.6796875,
+              "memory_cos": 0.1118180900812149,
+              "memory_rms_ratio": 0.21203288435935974,
+              "output_norm": 43.05083084106445,
+              "top_head": 5,
+              "top_head_output_norm": 60.96315002441406
+            },
+            {
+              "pos": 6,
+              "token_id": 905,
+              "token_text": " show",
+              "gate": 0.6760962009429932,
+              "attnres_weight": 0.1943359375,
+              "memory_cos": -0.004270551726222038,
+              "memory_rms_ratio": 0.17352597415447235,
+              "output_norm": 19.325366973876953,
+              "top_head": 1,
+              "top_head_output_norm": 29.52872085571289
+            },
+            {
+              "pos": 7,
+              "token_id": 326,
+              "token_text": " that",
+              "gate": 0.3718467950820923,
+              "attnres_weight": 0.294921875,
+              "memory_cos": -0.0031310562044382095,
+              "memory_rms_ratio": 0.15689590573310852,
+              "output_norm": 26.611103057861328,
+              "top_head": 4,
+              "top_head_output_norm": 60.03527069091797
+            },
+            {
+              "pos": 8,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.535480260848999,
+              "attnres_weight": 0.5390625,
+              "memory_cos": -0.004321066662669182,
+              "memory_rms_ratio": 0.06693901121616364,
+              "output_norm": 15.25325870513916,
+              "top_head": 4,
+              "top_head_output_norm": 27.583332061767578
+            },
+            {
+              "pos": 9,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.3273301422595978,
+              "attnres_weight": 0.361328125,
+              "memory_cos": -0.04590172320604324,
+              "memory_rms_ratio": 0.06788671016693115,
+              "output_norm": 23.367399215698242,
+              "top_head": 2,
+              "top_head_output_norm": 69.17251586914062
+            },
+            {
+              "pos": 10,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4741385877132416,
+              "attnres_weight": 0.322265625,
+              "memory_cos": 0.0012920871376991272,
+              "memory_rms_ratio": 0.06817144900560379,
+              "output_norm": 40.1011848449707,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 11,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47409138083457947,
+              "attnres_weight": 0.32421875,
+              "memory_cos": 0.002600777894258499,
+              "memory_rms_ratio": 0.06814148277044296,
+              "output_norm": 40.002742767333984,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 12,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4737887680530548,
+              "attnres_weight": 0.32421875,
+              "memory_cos": 0.002631416544318199,
+              "memory_rms_ratio": 0.0683901384472847,
+              "output_norm": 40.558128356933594,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 13,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4736747443675995,
+              "attnres_weight": 0.32421875,
+              "memory_cos": 0.0026332028210163116,
+              "memory_rms_ratio": 0.06843284517526627,
+              "output_norm": 40.661685943603516,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 14,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4739610254764557,
+              "attnres_weight": 0.326171875,
+              "memory_cos": 0.002876313403248787,
+              "memory_rms_ratio": 0.06867171078920364,
+              "output_norm": 40.58910369873047,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 15,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47370317578315735,
+              "attnres_weight": 0.32421875,
+              "memory_cos": 0.0037260986864566803,
+              "memory_rms_ratio": 0.06869866698980331,
+              "output_norm": 40.83207321166992,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "prompt_index": 8,
+      "prompt": "Question: Who wrote Pride and Prejudice?\nAnswer:",
+      "loss": 4.246464729309082,
+      "tokens": [
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 24361,
+          "text": "Question"
+        },
+        {
+          "id": 25,
+          "text": ":"
+        },
+        {
+          "id": 5338,
+          "text": " Who"
+        },
+        {
+          "id": 2630,
+          "text": " wrote"
+        },
+        {
+          "id": 21735,
+          "text": " Pride"
+        },
+        {
+          "id": 290,
+          "text": " and"
+        },
+        {
+          "id": 3771,
+          "text": " Pre"
+        },
+        {
+          "id": 10456,
+          "text": "jud"
+        },
+        {
+          "id": 501,
+          "text": "ice"
+        },
+        {
+          "id": 30,
+          "text": "?"
+        },
+        {
+          "id": 198,
+          "text": "\n"
+        },
+        {
+          "id": 33706,
+          "text": "Answer"
+        },
+        {
+          "id": 25,
+          "text": ":"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        }
+      ],
+      "layers": [
+        {
+          "layer_id": 2,
+          "readout_kind": "lm",
+          "gate_mean": 0.5516397356987,
+          "gate_max": 0.6391124725341797,
+          "attnres_weight_mean": 0.9664306640625,
+          "attnres_weight_max": 1.703125,
+          "memory_cos_mean": 0.07313201576471329,
+          "memory_rms_ratio_mean": 0.41843125224113464,
+          "output_norm_mean": 25.643503189086914,
+          "output_norm_max": 68.7134017944336,
+          "tokens": [
+            {
+              "pos": 0,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6121298670768738,
+              "attnres_weight": 0.83984375,
+              "memory_cos": 0.042977266013622284,
+              "memory_rms_ratio": 0.05926394462585449,
+              "output_norm": 68.7134017944336,
+              "top_head": 9,
+              "top_head_output_norm": 57.643898010253906
+            },
+            {
+              "pos": 1,
+              "token_id": 24361,
+              "token_text": "Question",
+              "gate": 0.6248173117637634,
+              "attnres_weight": 0.984375,
+              "memory_cos": 0.13550782203674316,
+              "memory_rms_ratio": 0.4073787033557892,
+              "output_norm": 19.00349235534668,
+              "top_head": 1,
+              "top_head_output_norm": 26.88039779663086
+            },
+            {
+              "pos": 2,
+              "token_id": 25,
+              "token_text": ":",
+              "gate": 0.5124948024749756,
+              "attnres_weight": 1.5390625,
+              "memory_cos": 0.0795707106590271,
+              "memory_rms_ratio": 0.5710271596908569,
+              "output_norm": 34.485435485839844,
+              "top_head": 5,
+              "top_head_output_norm": 48.98048400878906
+            },
+            {
+              "pos": 3,
+              "token_id": 5338,
+              "token_text": " Who",
+              "gate": 0.4745135009288788,
+              "attnres_weight": 0.56640625,
+              "memory_cos": 0.14714379608631134,
+              "memory_rms_ratio": 0.37925252318382263,
+              "output_norm": 12.798686981201172,
+              "top_head": 5,
+              "top_head_output_norm": 28.202045440673828
+            },
+            {
+              "pos": 4,
+              "token_id": 2630,
+              "token_text": " wrote",
+              "gate": 0.4863194525241852,
+              "attnres_weight": 1.03125,
+              "memory_cos": 0.04486333578824997,
+              "memory_rms_ratio": 0.47118431329727173,
+              "output_norm": 13.295577049255371,
+              "top_head": 0,
+              "top_head_output_norm": 31.51072883605957
+            },
+            {
+              "pos": 5,
+              "token_id": 21735,
+              "token_text": " Pride",
+              "gate": 0.6261319518089294,
+              "attnres_weight": 0.328125,
+              "memory_cos": 0.06900131702423096,
+              "memory_rms_ratio": 0.4226513206958771,
+              "output_norm": 6.865993499755859,
+              "top_head": 3,
+              "top_head_output_norm": 17.339445114135742
+            },
+            {
+              "pos": 6,
+              "token_id": 290,
+              "token_text": " and",
+              "gate": 0.5288416743278503,
+              "attnres_weight": 1.234375,
+              "memory_cos": 0.06031619757413864,
+              "memory_rms_ratio": 0.47040364146232605,
+              "output_norm": 26.596759796142578,
+              "top_head": 4,
+              "top_head_output_norm": 36.089576721191406
+            },
+            {
+              "pos": 7,
+              "token_id": 3771,
+              "token_text": " Pre",
+              "gate": 0.5501993894577026,
+              "attnres_weight": 1.1953125,
+              "memory_cos": 0.06868748366832733,
+              "memory_rms_ratio": 0.43027806282043457,
+              "output_norm": 21.267974853515625,
+              "top_head": 2,
+              "top_head_output_norm": 39.48137664794922
+            },
+            {
+              "pos": 8,
+              "token_id": 10456,
+              "token_text": "jud",
+              "gate": 0.6098697781562805,
+              "attnres_weight": 1.703125,
+              "memory_cos": 0.04780097305774689,
+              "memory_rms_ratio": 0.5064646005630493,
+              "output_norm": 20.932968139648438,
+              "top_head": 10,
+              "top_head_output_norm": 25.520984649658203
+            },
+            {
+              "pos": 9,
+              "token_id": 501,
+              "token_text": "ice",
+              "gate": 0.5614759922027588,
+              "attnres_weight": 1.640625,
+              "memory_cos": 0.05790109187364578,
+              "memory_rms_ratio": 0.5498306751251221,
+              "output_norm": 19.146448135375977,
+              "top_head": 4,
+              "top_head_output_norm": 19.80780029296875
+            },
+            {
+              "pos": 10,
+              "token_id": 30,
+              "token_text": "?",
+              "gate": 0.4286658763885498,
+              "attnres_weight": 0.353515625,
+              "memory_cos": -0.01112845167517662,
+              "memory_rms_ratio": 0.560067892074585,
+              "output_norm": 7.285839080810547,
+              "top_head": 9,
+              "top_head_output_norm": 13.702592849731445
+            },
+            {
+              "pos": 11,
+              "token_id": 198,
+              "token_text": "\n",
+              "gate": 0.5584555268287659,
+              "attnres_weight": 0.51171875,
+              "memory_cos": 0.09972982108592987,
+              "memory_rms_ratio": 0.6885309219360352,
+              "output_norm": 41.91449737548828,
+              "top_head": 2,
+              "top_head_output_norm": 51.05148696899414
+            },
+            {
+              "pos": 12,
+              "token_id": 33706,
+              "token_text": "Answer",
+              "gate": 0.6391124725341797,
+              "attnres_weight": 1.0078125,
+              "memory_cos": 0.11949273943901062,
+              "memory_rms_ratio": 0.4447759985923767,
+              "output_norm": 25.851478576660156,
+              "top_head": 2,
+              "top_head_output_norm": 30.17231559753418
+            },
+            {
+              "pos": 13,
+              "token_id": 25,
+              "token_text": ":",
+              "gate": 0.4270756244659424,
+              "attnres_weight": 1.3203125,
+              "memory_cos": 0.07124078273773193,
+              "memory_rms_ratio": 0.5638290643692017,
+              "output_norm": 21.024654388427734,
+              "top_head": 0,
+              "top_head_output_norm": 36.12001037597656
+            },
+            {
+              "pos": 14,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.555550754070282,
+              "attnres_weight": 0.47265625,
+              "memory_cos": 0.08699174970388412,
+              "memory_rms_ratio": 0.08848948776721954,
+              "output_norm": 38.59670639038086,
+              "top_head": 1,
+              "top_head_output_norm": 54.297237396240234
+            },
+            {
+              "pos": 15,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6305822134017944,
+              "attnres_weight": 0.734375,
+              "memory_cos": 0.05001547560095787,
+              "memory_rms_ratio": 0.08147168904542923,
+              "output_norm": 32.5161018371582,
+              "top_head": 1,
+              "top_head_output_norm": 53.039424896240234
+            }
+          ]
+        },
+        {
+          "layer_id": 8,
+          "readout_kind": "lm",
+          "gate_mean": 0.5275073051452637,
+          "gate_max": 0.6594549417495728,
+          "attnres_weight_mean": 0.7994384765625,
+          "attnres_weight_max": 1.796875,
+          "memory_cos_mean": 0.02028474025428295,
+          "memory_rms_ratio_mean": 0.18513184785842896,
+          "output_norm_mean": 22.702232360839844,
+          "output_norm_max": 39.83687973022461,
+          "tokens": [
+            {
+              "pos": 0,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4716161787509918,
+              "attnres_weight": 0.333984375,
+              "memory_cos": 0.0007347017526626587,
+              "memory_rms_ratio": 0.06316602975130081,
+              "output_norm": 39.83687973022461,
+              "top_head": 2,
+              "top_head_output_norm": 69.17251586914062
+            },
+            {
+              "pos": 1,
+              "token_id": 24361,
+              "token_text": "Question",
+              "gate": 0.6594549417495728,
+              "attnres_weight": 1.1796875,
+              "memory_cos": 0.05395972728729248,
+              "memory_rms_ratio": 0.25229912996292114,
+              "output_norm": 21.535669326782227,
+              "top_head": 4,
+              "top_head_output_norm": 29.42913818359375
+            },
+            {
+              "pos": 2,
+              "token_id": 25,
+              "token_text": ":",
+              "gate": 0.5136305689811707,
+              "attnres_weight": 0.83984375,
+              "memory_cos": 0.07943874597549438,
+              "memory_rms_ratio": 0.22040987014770508,
+              "output_norm": 29.762310028076172,
+              "top_head": 5,
+              "top_head_output_norm": 53.002017974853516
+            },
+            {
+              "pos": 3,
+              "token_id": 5338,
+              "token_text": " Who",
+              "gate": 0.4639192521572113,
+              "attnres_weight": 0.67578125,
+              "memory_cos": 0.04476410150527954,
+              "memory_rms_ratio": 0.19489581882953644,
+              "output_norm": 19.536670684814453,
+              "top_head": 0,
+              "top_head_output_norm": 40.683555603027344
+            },
+            {
+              "pos": 4,
+              "token_id": 2630,
+              "token_text": " wrote",
+              "gate": 0.46547308564186096,
+              "attnres_weight": 0.58203125,
+              "memory_cos": 0.020056501030921936,
+              "memory_rms_ratio": 0.1931101381778717,
+              "output_norm": 16.22684097290039,
+              "top_head": 4,
+              "top_head_output_norm": 33.6861686706543
+            },
+            {
+              "pos": 5,
+              "token_id": 21735,
+              "token_text": " Pride",
+              "gate": 0.5187910199165344,
+              "attnres_weight": 0.2578125,
+              "memory_cos": -0.05136891454458237,
+              "memory_rms_ratio": 0.22172755002975464,
+              "output_norm": 9.35725212097168,
+              "top_head": 5,
+              "top_head_output_norm": 15.020036697387695
+            },
+            {
+              "pos": 6,
+              "token_id": 290,
+              "token_text": " and",
+              "gate": 0.5871900916099548,
+              "attnres_weight": 1.796875,
+              "memory_cos": 0.030093636363744736,
+              "memory_rms_ratio": 0.16827154159545898,
+              "output_norm": 27.513187408447266,
+              "top_head": 1,
+              "top_head_output_norm": 44.22576904296875
+            },
+            {
+              "pos": 7,
+              "token_id": 3771,
+              "token_text": " Pre",
+              "gate": 0.5070518851280212,
+              "attnres_weight": 1.6484375,
+              "memory_cos": 0.009563123807311058,
+              "memory_rms_ratio": 0.2541278898715973,
+              "output_norm": 21.548358917236328,
+              "top_head": 4,
+              "top_head_output_norm": 45.47278594970703
+            },
+            {
+              "pos": 8,
+              "token_id": 10456,
+              "token_text": "jud",
+              "gate": 0.4879448711872101,
+              "attnres_weight": 1.7421875,
+              "memory_cos": -0.06965603679418564,
+              "memory_rms_ratio": 0.24145649373531342,
+              "output_norm": 18.374773025512695,
+              "top_head": 1,
+              "top_head_output_norm": 25.26774024963379
+            },
+            {
+              "pos": 9,
+              "token_id": 501,
+              "token_text": "ice",
+              "gate": 0.5300971269607544,
+              "attnres_weight": 0.5390625,
+              "memory_cos": 0.014995763078331947,
+              "memory_rms_ratio": 0.17603282630443573,
+              "output_norm": 16.884628295898438,
+              "top_head": 8,
+              "top_head_output_norm": 21.870237350463867
+            },
+            {
+              "pos": 10,
+              "token_id": 30,
+              "token_text": "?",
+              "gate": 0.5648899674415588,
+              "attnres_weight": 0.2109375,
+              "memory_cos": -0.0689876526594162,
+              "memory_rms_ratio": 0.20108036696910858,
+              "output_norm": 13.52086353302002,
+              "top_head": 3,
+              "top_head_output_norm": 21.225332260131836
+            },
+            {
+              "pos": 11,
+              "token_id": 198,
+              "token_text": "\n",
+              "gate": 0.5616981387138367,
+              "attnres_weight": 0.40625,
+              "memory_cos": 0.033960971981287,
+              "memory_rms_ratio": 0.2199743390083313,
+              "output_norm": 22.476634979248047,
+              "top_head": 1,
+              "top_head_output_norm": 39.57343673706055
+            },
+            {
+              "pos": 12,
+              "token_id": 33706,
+              "token_text": "Answer",
+              "gate": 0.5835502743721008,
+              "attnres_weight": 1.2578125,
+              "memory_cos": 0.14424782991409302,
+              "memory_rms_ratio": 0.218793585896492,
+              "output_norm": 24.35542106628418,
+              "top_head": 2,
+              "top_head_output_norm": 36.55589294433594
+            },
+            {
+              "pos": 13,
+              "token_id": 25,
+              "token_text": ":",
+              "gate": 0.5151003003120422,
+              "attnres_weight": 0.62890625,
+              "memory_cos": 0.0791616439819336,
+              "memory_rms_ratio": 0.19284647703170776,
+              "output_norm": 24.1259822845459,
+              "top_head": 5,
+              "top_head_output_norm": 40.77914047241211
+            },
+            {
+              "pos": 14,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.5757836103439331,
+              "attnres_weight": 0.263671875,
+              "memory_cos": 0.030442722141742706,
+              "memory_rms_ratio": 0.0727008581161499,
+              "output_norm": 34.38582992553711,
+              "top_head": 2,
+              "top_head_output_norm": 65.6806869506836
+            },
+            {
+              "pos": 15,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.43392491340637207,
+              "attnres_weight": 0.427734375,
+              "memory_cos": -0.026851002126932144,
+              "memory_rms_ratio": 0.07121672481298447,
+              "output_norm": 23.7944278717041,
+              "top_head": 2,
+              "top_head_output_norm": 69.82267761230469
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "prompt_index": 9,
+      "prompt": "Title: Memory Layers\n\n- first point\n- second point\n-",
+      "loss": 8.214932441711426,
+      "tokens": [
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 19160,
+          "text": "Title"
+        },
+        {
+          "id": 25,
+          "text": ":"
+        },
+        {
+          "id": 14059,
+          "text": " Memory"
+        },
+        {
+          "id": 406,
+          "text": " L"
+        },
+        {
+          "id": 6962,
+          "text": "ayers"
+        },
+        {
+          "id": 198,
+          "text": "\n"
+        },
+        {
+          "id": 198,
+          "text": "\n"
+        },
+        {
+          "id": 12,
+          "text": "-"
+        },
+        {
+          "id": 717,
+          "text": " first"
+        },
+        {
+          "id": 966,
+          "text": " point"
+        },
+        {
+          "id": 198,
+          "text": "\n"
+        },
+        {
+          "id": 12,
+          "text": "-"
+        },
+        {
+          "id": 1218,
+          "text": " second"
+        },
+        {
+          "id": 966,
+          "text": " point"
+        },
+        {
+          "id": 198,
+          "text": "\n"
+        },
+        {
+          "id": 12,
+          "text": "-"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        },
+        {
+          "id": 50256,
+          "text": "<|endoftext|>"
+        }
+      ],
+      "layers": [
+        {
+          "layer_id": 2,
+          "readout_kind": "lm",
+          "gate_mean": 0.5447553992271423,
+          "gate_max": 0.6444544196128845,
+          "attnres_weight_mean": 0.744720458984375,
+          "attnres_weight_max": 1.4609375,
+          "memory_cos_mean": 0.0709005743265152,
+          "memory_rms_ratio_mean": 0.3045622706413269,
+          "output_norm_mean": 39.71541213989258,
+          "output_norm_max": 68.69239044189453,
+          "tokens": [
+            {
+              "pos": 0,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6119337677955627,
+              "attnres_weight": 0.83984375,
+              "memory_cos": 0.04306164011359215,
+              "memory_rms_ratio": 0.05925147607922554,
+              "output_norm": 68.69239044189453,
+              "top_head": 9,
+              "top_head_output_norm": 57.643898010253906
+            },
+            {
+              "pos": 1,
+              "token_id": 19160,
+              "token_text": "Title",
+              "gate": 0.6048423647880554,
+              "attnres_weight": 0.6484375,
+              "memory_cos": 0.15669038891792297,
+              "memory_rms_ratio": 0.3910311758518219,
+              "output_norm": 19.097652435302734,
+              "top_head": 5,
+              "top_head_output_norm": 27.837665557861328
+            },
+            {
+              "pos": 2,
+              "token_id": 25,
+              "token_text": ":",
+              "gate": 0.6052494645118713,
+              "attnres_weight": 1.4609375,
+              "memory_cos": 0.08364658802747726,
+              "memory_rms_ratio": 0.5767310857772827,
+              "output_norm": 29.19234848022461,
+              "top_head": 1,
+              "top_head_output_norm": 35.86683654785156
+            },
+            {
+              "pos": 3,
+              "token_id": 14059,
+              "token_text": " Memory",
+              "gate": 0.2904544770717621,
+              "attnres_weight": 0.31640625,
+              "memory_cos": -0.010074447840452194,
+              "memory_rms_ratio": 0.4147164523601532,
+              "output_norm": 5.432946681976318,
+              "top_head": 10,
+              "top_head_output_norm": 12.637179374694824
+            },
+            {
+              "pos": 4,
+              "token_id": 406,
+              "token_text": " L",
+              "gate": 0.509985625743866,
+              "attnres_weight": 0.70703125,
+              "memory_cos": 0.04058009386062622,
+              "memory_rms_ratio": 0.47080156207084656,
+              "output_norm": 6.878575325012207,
+              "top_head": 10,
+              "top_head_output_norm": 14.444878578186035
+            },
+            {
+              "pos": 5,
+              "token_id": 6962,
+              "token_text": "ayers",
+              "gate": 0.6389914155006409,
+              "attnres_weight": 1.4296875,
+              "memory_cos": 0.20275792479515076,
+              "memory_rms_ratio": 0.5104534029960632,
+              "output_norm": 20.828264236450195,
+              "top_head": 2,
+              "top_head_output_norm": 25.435670852661133
+            },
+            {
+              "pos": 6,
+              "token_id": 198,
+              "token_text": "\n",
+              "gate": 0.48207977414131165,
+              "attnres_weight": 0.1923828125,
+              "memory_cos": 0.005269978195428848,
+              "memory_rms_ratio": 0.5331011414527893,
+              "output_norm": 8.579118728637695,
+              "top_head": 6,
+              "top_head_output_norm": 13.958057403564453
+            },
+            {
+              "pos": 7,
+              "token_id": 198,
+              "token_text": "\n",
+              "gate": 0.4134812653064728,
+              "attnres_weight": 0.58203125,
+              "memory_cos": 0.03351989760994911,
+              "memory_rms_ratio": 0.5825005173683167,
+              "output_norm": 11.820011138916016,
+              "top_head": 3,
+              "top_head_output_norm": 22.709657669067383
+            },
+            {
+              "pos": 8,
+              "token_id": 12,
+              "token_text": "-",
+              "gate": 0.5174788236618042,
+              "attnres_weight": 0.8828125,
+              "memory_cos": 0.21012693643569946,
+              "memory_rms_ratio": 0.603573203086853,
+              "output_norm": 38.24258804321289,
+              "top_head": 4,
+              "top_head_output_norm": 47.058109283447266
+            },
+            {
+              "pos": 9,
+              "token_id": 717,
+              "token_text": " first",
+              "gate": 0.46153154969215393,
+              "attnres_weight": 0.60546875,
+              "memory_cos": 0.10359983146190643,
+              "memory_rms_ratio": 0.567554771900177,
+              "output_norm": 26.326541900634766,
+              "top_head": 8,
+              "top_head_output_norm": 33.57536315917969
+            },
+            {
+              "pos": 10,
+              "token_id": 966,
+              "token_text": " point",
+              "gate": 0.5293782353401184,
+              "attnres_weight": 0.8359375,
+              "memory_cos": 0.0610310323536396,
+              "memory_rms_ratio": 0.5935729146003723,
+              "output_norm": 11.6858491897583,
+              "top_head": 0,
+              "top_head_output_norm": 20.563356399536133
+            },
+            {
+              "pos": 11,
+              "token_id": 198,
+              "token_text": "\n",
+              "gate": 0.3235330283641815,
+              "attnres_weight": 0.57421875,
+              "memory_cos": 0.10618814080953598,
+              "memory_rms_ratio": 0.5365429520606995,
+              "output_norm": 6.1441755294799805,
+              "top_head": 9,
+              "top_head_output_norm": 12.568208694458008
+            },
+            {
+              "pos": 12,
+              "token_id": 12,
+              "token_text": "-",
+              "gate": 0.47453656792640686,
+              "attnres_weight": 0.7578125,
+              "memory_cos": 0.1475769281387329,
+              "memory_rms_ratio": 0.6314241290092468,
+              "output_norm": 32.28253936767578,
+              "top_head": 4,
+              "top_head_output_norm": 46.627933502197266
+            },
+            {
+              "pos": 13,
+              "token_id": 1218,
+              "token_text": " second",
+              "gate": 0.6444544196128845,
+              "attnres_weight": 0.373046875,
+              "memory_cos": 0.02087545022368431,
+              "memory_rms_ratio": 0.543022871017456,
+              "output_norm": 24.490760803222656,
+              "top_head": 0,
+              "top_head_output_norm": 36.965023040771484
+            },
+            {
+              "pos": 14,
+              "token_id": 966,
+              "token_text": " point",
+              "gate": 0.4162626564502716,
+              "attnres_weight": 0.89453125,
+              "memory_cos": 0.0725872665643692,
+              "memory_rms_ratio": 0.5013896822929382,
+              "output_norm": 9.921424865722656,
+              "top_head": 1,
+              "top_head_output_norm": 26.517288208007812
+            },
+            {
+              "pos": 15,
+              "token_id": 198,
+              "token_text": "\n",
+              "gate": 0.35340237617492676,
+              "attnres_weight": 0.53125,
+              "memory_cos": 0.043206118047237396,
+              "memory_rms_ratio": 0.4849396347999573,
+              "output_norm": 7.189809322357178,
+              "top_head": 6,
+              "top_head_output_norm": 13.066751480102539
+            },
+            {
+              "pos": 16,
+              "token_id": 12,
+              "token_text": "-",
+              "gate": 0.4661850035190582,
+              "attnres_weight": 0.75,
+              "memory_cos": 0.15554822981357574,
+              "memory_rms_ratio": 0.5587554574012756,
+              "output_norm": 31.419424057006836,
+              "top_head": 4,
+              "top_head_output_norm": 46.397762298583984
+            },
+            {
+              "pos": 17,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.5329431295394897,
+              "attnres_weight": 0.50390625,
+              "memory_cos": 0.06946472078561783,
+              "memory_rms_ratio": 0.09913352876901627,
+              "output_norm": 19.403783798217773,
+              "top_head": 4,
+              "top_head_output_norm": 35.07122039794922
+            },
+            {
+              "pos": 18,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.5531288385391235,
+              "attnres_weight": 0.6640625,
+              "memory_cos": 0.06845179200172424,
+              "memory_rms_ratio": 0.08492784947156906,
+              "output_norm": 31.88329315185547,
+              "top_head": 1,
+              "top_head_output_norm": 53.039424896240234
+            },
+            {
+              "pos": 19,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6162810325622559,
+              "attnres_weight": 0.796875,
+              "memory_cos": 0.048346906900405884,
+              "memory_rms_ratio": 0.08194475620985031,
+              "output_norm": 67.65648651123047,
+              "top_head": 9,
+              "top_head_output_norm": 58.16194152832031
+            },
+            {
+              "pos": 20,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6159346103668213,
+              "attnres_weight": 0.796875,
+              "memory_cos": 0.04986713454127312,
+              "memory_rms_ratio": 0.08015097677707672,
+              "output_norm": 66.87210845947266,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 21,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6158808469772339,
+              "attnres_weight": 0.80078125,
+              "memory_cos": 0.04770463705062866,
+              "memory_rms_ratio": 0.0788925439119339,
+              "output_norm": 67.22901916503906,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 22,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6155698299407959,
+              "attnres_weight": 0.796875,
+              "memory_cos": 0.04896823316812515,
+              "memory_rms_ratio": 0.07842408865690231,
+              "output_norm": 67.07770538330078,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 23,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6155855059623718,
+              "attnres_weight": 0.79296875,
+              "memory_cos": 0.05043403059244156,
+              "memory_rms_ratio": 0.07798128575086594,
+              "output_norm": 66.14569091796875,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 24,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6156594753265381,
+              "attnres_weight": 0.79296875,
+              "memory_cos": 0.04928196966648102,
+              "memory_rms_ratio": 0.07724388688802719,
+              "output_norm": 66.5938720703125,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 25,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6155351996421814,
+              "attnres_weight": 0.7890625,
+              "memory_cos": 0.05065368115901947,
+              "memory_rms_ratio": 0.07625850290060043,
+              "output_norm": 66.1854248046875,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 26,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.615368664264679,
+              "attnres_weight": 0.78515625,
+              "memory_cos": 0.05171959847211838,
+              "memory_rms_ratio": 0.07582730799913406,
+              "output_norm": 65.55168151855469,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 27,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.615522563457489,
+              "attnres_weight": 0.7890625,
+              "memory_cos": 0.05139055475592613,
+              "memory_rms_ratio": 0.07580150663852692,
+              "output_norm": 65.80630493164062,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 28,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6153785586357117,
+              "attnres_weight": 0.78515625,
+              "memory_cos": 0.05184437334537506,
+              "memory_rms_ratio": 0.07544334977865219,
+              "output_norm": 65.57128143310547,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 29,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6152167916297913,
+              "attnres_weight": 0.78515625,
+              "memory_cos": 0.05138435959815979,
+              "memory_rms_ratio": 0.07489965111017227,
+              "output_norm": 65.57128143310547,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 30,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6152305603027344,
+              "attnres_weight": 0.78515625,
+              "memory_cos": 0.051578737795352936,
+              "memory_rms_ratio": 0.07485923171043396,
+              "output_norm": 65.56044006347656,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            },
+            {
+              "pos": 31,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.6151564121246338,
+              "attnres_weight": 0.78515625,
+              "memory_cos": 0.051535628736019135,
+              "memory_rms_ratio": 0.07484079152345657,
+              "output_norm": 65.56044006347656,
+              "top_head": 9,
+              "top_head_output_norm": 57.88875198364258
+            }
+          ]
+        },
+        {
+          "layer_id": 8,
+          "readout_kind": "lm",
+          "gate_mean": 0.46836453676223755,
+          "gate_max": 0.602124035358429,
+          "attnres_weight_mean": 0.437591552734375,
+          "attnres_weight_max": 1.359375,
+          "memory_cos_mean": 0.009649734012782574,
+          "memory_rms_ratio_mean": 0.1442585438489914,
+          "output_norm_mean": 27.67476463317871,
+          "output_norm_max": 41.15885925292969,
+          "tokens": [
+            {
+              "pos": 0,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47182464599609375,
+              "attnres_weight": 0.333984375,
+              "memory_cos": 0.0008728671818971634,
+              "memory_rms_ratio": 0.0631868913769722,
+              "output_norm": 39.84768295288086,
+              "top_head": 2,
+              "top_head_output_norm": 69.17251586914062
+            },
+            {
+              "pos": 1,
+              "token_id": 19160,
+              "token_text": "Title",
+              "gate": 0.5815219283103943,
+              "attnres_weight": 0.984375,
+              "memory_cos": 0.040942948311567307,
+              "memory_rms_ratio": 0.2485380321741104,
+              "output_norm": 18.19202995300293,
+              "top_head": 0,
+              "top_head_output_norm": 26.153945922851562
+            },
+            {
+              "pos": 2,
+              "token_id": 25,
+              "token_text": ":",
+              "gate": 0.4815272092819214,
+              "attnres_weight": 0.359375,
+              "memory_cos": -0.005129758268594742,
+              "memory_rms_ratio": 0.23338063061237335,
+              "output_norm": 27.17896842956543,
+              "top_head": 5,
+              "top_head_output_norm": 46.13751220703125
+            },
+            {
+              "pos": 3,
+              "token_id": 14059,
+              "token_text": " Memory",
+              "gate": 0.44940876960754395,
+              "attnres_weight": 0.2138671875,
+              "memory_cos": -0.010524616576731205,
+              "memory_rms_ratio": 0.2268223911523819,
+              "output_norm": 8.969430923461914,
+              "top_head": 2,
+              "top_head_output_norm": 20.740516662597656
+            },
+            {
+              "pos": 4,
+              "token_id": 406,
+              "token_text": " L",
+              "gate": 0.602124035358429,
+              "attnres_weight": 1.359375,
+              "memory_cos": 0.06051361560821533,
+              "memory_rms_ratio": 0.24959568679332733,
+              "output_norm": 10.182599067687988,
+              "top_head": 6,
+              "top_head_output_norm": 15.6638765335083
+            },
+            {
+              "pos": 5,
+              "token_id": 6962,
+              "token_text": "ayers",
+              "gate": 0.5089665055274963,
+              "attnres_weight": 0.77734375,
+              "memory_cos": 0.037735503166913986,
+              "memory_rms_ratio": 0.20107464492321014,
+              "output_norm": 18.546276092529297,
+              "top_head": 3,
+              "top_head_output_norm": 29.520139694213867
+            },
+            {
+              "pos": 6,
+              "token_id": 198,
+              "token_text": "\n",
+              "gate": 0.4847240746021271,
+              "attnres_weight": 0.216796875,
+              "memory_cos": -0.04956788942217827,
+              "memory_rms_ratio": 0.17299912869930267,
+              "output_norm": 13.555668830871582,
+              "top_head": 3,
+              "top_head_output_norm": 30.300867080688477
+            },
+            {
+              "pos": 7,
+              "token_id": 198,
+              "token_text": "\n",
+              "gate": 0.3482929766178131,
+              "attnres_weight": 0.69140625,
+              "memory_cos": -0.034261029213666916,
+              "memory_rms_ratio": 0.1920156478881836,
+              "output_norm": 14.223775863647461,
+              "top_head": 3,
+              "top_head_output_norm": 28.216264724731445
+            },
+            {
+              "pos": 8,
+              "token_id": 12,
+              "token_text": "-",
+              "gate": 0.49170026183128357,
+              "attnres_weight": 0.365234375,
+              "memory_cos": 0.04425083473324776,
+              "memory_rms_ratio": 0.21195074915885925,
+              "output_norm": 19.35909080505371,
+              "top_head": 4,
+              "top_head_output_norm": 37.432708740234375
+            },
+            {
+              "pos": 9,
+              "token_id": 717,
+              "token_text": " first",
+              "gate": 0.41995275020599365,
+              "attnres_weight": 0.73046875,
+              "memory_cos": 0.01726527512073517,
+              "memory_rms_ratio": 0.2378748059272766,
+              "output_norm": 24.067678451538086,
+              "top_head": 10,
+              "top_head_output_norm": 37.6335563659668
+            },
+            {
+              "pos": 10,
+              "token_id": 966,
+              "token_text": " point",
+              "gate": 0.5079939961433411,
+              "attnres_weight": 0.5390625,
+              "memory_cos": 0.02217346429824829,
+              "memory_rms_ratio": 0.241897851228714,
+              "output_norm": 13.29321002960205,
+              "top_head": 8,
+              "top_head_output_norm": 23.206220626831055
+            },
+            {
+              "pos": 11,
+              "token_id": 198,
+              "token_text": "\n",
+              "gate": 0.4723263680934906,
+              "attnres_weight": 0.390625,
+              "memory_cos": 0.018756939098238945,
+              "memory_rms_ratio": 0.18725846707820892,
+              "output_norm": 17.780521392822266,
+              "top_head": 0,
+              "top_head_output_norm": 32.13621520996094
+            },
+            {
+              "pos": 12,
+              "token_id": 12,
+              "token_text": "-",
+              "gate": 0.4259190261363983,
+              "attnres_weight": 0.326171875,
+              "memory_cos": 0.006012881174683571,
+              "memory_rms_ratio": 0.23569349944591522,
+              "output_norm": 23.546873092651367,
+              "top_head": 3,
+              "top_head_output_norm": 41.946739196777344
+            },
+            {
+              "pos": 13,
+              "token_id": 1218,
+              "token_text": " second",
+              "gate": 0.3541792929172516,
+              "attnres_weight": 0.6328125,
+              "memory_cos": 0.028173232451081276,
+              "memory_rms_ratio": 0.2641173303127289,
+              "output_norm": 18.13184928894043,
+              "top_head": 5,
+              "top_head_output_norm": 39.784324645996094
+            },
+            {
+              "pos": 14,
+              "token_id": 966,
+              "token_text": " point",
+              "gate": 0.532164990901947,
+              "attnres_weight": 0.38671875,
+              "memory_cos": 0.0438949353992939,
+              "memory_rms_ratio": 0.22448904812335968,
+              "output_norm": 10.653414726257324,
+              "top_head": 7,
+              "top_head_output_norm": 18.49327850341797
+            },
+            {
+              "pos": 15,
+              "token_id": 198,
+              "token_text": "\n",
+              "gate": 0.4955472946166992,
+              "attnres_weight": 0.365234375,
+              "memory_cos": 0.007217557169497013,
+              "memory_rms_ratio": 0.17537511885166168,
+              "output_norm": 17.926483154296875,
+              "top_head": 0,
+              "top_head_output_norm": 32.77009582519531
+            },
+            {
+              "pos": 16,
+              "token_id": 12,
+              "token_text": "-",
+              "gate": 0.3718682825565338,
+              "attnres_weight": 0.3671875,
+              "memory_cos": 0.01713760942220688,
+              "memory_rms_ratio": 0.1983814835548401,
+              "output_norm": 19.305219650268555,
+              "top_head": 4,
+              "top_head_output_norm": 36.62716293334961
+            },
+            {
+              "pos": 17,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.41040417551994324,
+              "attnres_weight": 0.435546875,
+              "memory_cos": 0.06712882220745087,
+              "memory_rms_ratio": 0.07417416572570801,
+              "output_norm": 16.32839012145996,
+              "top_head": 1,
+              "top_head_output_norm": 33.18505096435547
+            },
+            {
+              "pos": 18,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.39829036593437195,
+              "attnres_weight": 0.337890625,
+              "memory_cos": -0.03792563080787659,
+              "memory_rms_ratio": 0.07119012624025345,
+              "output_norm": 23.58179473876953,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 19,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47728660702705383,
+              "attnres_weight": 0.322265625,
+              "memory_cos": -2.944841980934143e-05,
+              "memory_rms_ratio": 0.0706920176744461,
+              "output_norm": 40.2596549987793,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 20,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47655776143074036,
+              "attnres_weight": 0.322265625,
+              "memory_cos": 0.0033972710371017456,
+              "memory_rms_ratio": 0.07018923759460449,
+              "output_norm": 40.21419906616211,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 21,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4760197699069977,
+              "attnres_weight": 0.322265625,
+              "memory_cos": 0.0014888308942317963,
+              "memory_rms_ratio": 0.06986071914434433,
+              "output_norm": 40.59770965576172,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 22,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47545909881591797,
+              "attnres_weight": 0.322265625,
+              "memory_cos": -0.00022000260651111603,
+              "memory_rms_ratio": 0.07002948224544525,
+              "output_norm": 40.744564056396484,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 23,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4752707779407501,
+              "attnres_weight": 0.322265625,
+              "memory_cos": 0.002930857241153717,
+              "memory_rms_ratio": 0.06989606469869614,
+              "output_norm": 40.72362518310547,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 24,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47515055537223816,
+              "attnres_weight": 0.32421875,
+              "memory_cos": 0.003792988136410713,
+              "memory_rms_ratio": 0.06975849717855453,
+              "output_norm": 40.86517333984375,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 25,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4749138057231903,
+              "attnres_weight": 0.322265625,
+              "memory_cos": 0.0024078059941530228,
+              "memory_rms_ratio": 0.06948523223400116,
+              "output_norm": 40.99646759033203,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 26,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4749138057231903,
+              "attnres_weight": 0.32421875,
+              "memory_cos": 0.0033702459186315536,
+              "memory_rms_ratio": 0.0693126767873764,
+              "output_norm": 40.97075653076172,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 27,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.474932998418808,
+              "attnres_weight": 0.3203125,
+              "memory_cos": 0.0034003257751464844,
+              "memory_rms_ratio": 0.06958580017089844,
+              "output_norm": 41.05409240722656,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 28,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47484326362609863,
+              "attnres_weight": 0.322265625,
+              "memory_cos": 0.003596995025873184,
+              "memory_rms_ratio": 0.06948917359113693,
+              "output_norm": 41.15885925292969,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 29,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.4746677875518799,
+              "attnres_weight": 0.322265625,
+              "memory_cos": 0.003400065004825592,
+              "memory_rms_ratio": 0.06934354454278946,
+              "output_norm": 41.13019561767578,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 30,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47455456852912903,
+              "attnres_weight": 0.322265625,
+              "memory_cos": 0.003388669341802597,
+              "memory_rms_ratio": 0.06933771073818207,
+              "output_norm": 41.10682678222656,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            },
+            {
+              "pos": 31,
+              "token_id": 50256,
+              "token_text": "<|endoftext|>",
+              "gate": 0.47435709834098816,
+              "attnres_weight": 0.3203125,
+              "memory_cos": 0.0031993482261896133,
+              "memory_rms_ratio": 0.06927799433469772,
+              "output_norm": 41.099456787109375,
+              "top_head": 2,
+              "top_head_output_norm": 69.4954833984375
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

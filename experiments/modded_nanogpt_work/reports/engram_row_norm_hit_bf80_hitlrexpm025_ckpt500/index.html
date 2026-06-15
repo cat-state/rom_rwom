@@ -1,0 +1,57 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Engram Row Norm vs Hit Count</title>
+<style>
+body { font-family: system-ui, -apple-system, sans-serif; margin: 32px; max-width: 1100px; }
+img { max-width: 100%; border: 1px solid #ddd; }
+code, pre { background: #f6f6f6; padding: 2px 4px; }
+pre { padding: 16px; overflow: auto; }
+</style>
+<h1>Engram Row Norm vs Hit Count</h1>
+<p><b>Run:</b> diagnostic_hitbucket_bf80_hitlrexpm025_ckpt500_20260517_212153</p>
+<p><b>Rows:</b> 48,293,264; <b>corr(log10(hit+1), row RMS):</b> 0.6526</p>
+<img src="row_norm_vs_log_hit_all.png" alt="row norm vs log hit count">
+<h2>Metadata</h2>
+<pre>{
+  &quot;run_name&quot;: &quot;diagnostic_hitbucket_bf80_hitlrexpm025_ckpt500_20260517_212153&quot;,
+  &quot;checkpoint&quot;: &quot;logs/diagnostic_hitbucket_bf80_hitlrexpm025_ckpt500_20260517_212153/state_step000500.pt&quot;,
+  &quot;hit_hist&quot;: &quot;logs/diagnostic_hitbucket_bf80_hitlrexpm025_ckpt500_20260517_212153/engram_hit_hist_step000500.pt&quot;,
+  &quot;weight_key&quot;: &quot;bigram_embed.embedding.weight&quot;,
+  &quot;weight_shape&quot;: [
+    48293264,
+    64
+  ],
+  &quot;rows&quot;: 48293264,
+  &quot;hit_fraction&quot;: 0.9976152574818716,
+  &quot;corr_log_hit_row_rms&quot;: 0.6526118683812213,
+  &quot;hit_quantiles&quot;: {
+    &quot;0&quot;: 0.0,
+    &quot;0.1&quot;: 6.0,
+    &quot;0.25&quot;: 15.0,
+    &quot;0.5&quot;: 35.0,
+    &quot;0.75&quot;: 55.0,
+    &quot;0.9&quot;: 94.0,
+    &quot;0.99&quot;: 501.0,
+    &quot;1.0&quot;: 1455647.0
+  },
+  &quot;log_hit_quantiles&quot;: {
+    &quot;0&quot;: 0.0,
+    &quot;0.1&quot;: 0.8450980186462402,
+    &quot;0.25&quot;: 1.2041200399398804,
+    &quot;0.5&quot;: 1.556302547454834,
+    &quot;0.75&quot;: 1.7481880187988281,
+    &quot;0.9&quot;: 1.9777235984802246,
+    &quot;0.99&quot;: 2.7007036209106445,
+    &quot;1.0&quot;: 6.163056373596191
+  },
+  &quot;row_rms_quantiles&quot;: {
+    &quot;0&quot;: 0.006654371973127127,
+    &quot;0.1&quot;: 0.14328864216804504,
+    &quot;0.25&quot;: 0.18237537145614624,
+    &quot;0.5&quot;: 0.21328747272491455,
+    &quot;0.75&quot;: 0.24136051535606384,
+    &quot;0.9&quot;: 0.26591065526008606,
+    &quot;0.99&quot;: 0.3101028501987457,
+    &quot;1.0&quot;: 0.5717232823371887
+  }
+}</pre>

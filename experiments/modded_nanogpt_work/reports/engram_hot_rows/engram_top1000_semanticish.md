@@ -1,0 +1,407 @@
+# Semantic-ish Engram Rows in Top 1000
+
+Ranked by average gated output norm in the Engram analysis sample.
+
+Total top slots: 1000
+Semantic-ish after filter: 304
+
+- #41 row `57456749` 3-gram/head5, count `357`, gate `0.898`, norm `15620.9`: `.\nThe`
+  - window: ` scorecard to monitor and rank suppliers on whether they leverage the RRE.\nThe RRE was created by FMI and GS1 US, Lawrenceville, N`
+- #45 row `9166451` 2-gram/head1, count `216`, gate `0.908`, norm `15321.8`: `ock Park`
+  - window: ` Bay Waterkeeper and Sierra Club put on a clean-up at Peacock Park in the Grove. Volunteers paddled nearby waters and gathered a huge amount of trash`
+- #47 row `18859697` 2-gram/head3, count `206`, gate `0.923`, norm `15144.0`: `.<|endoftext|>`
+  - window: ` done it, better admit it to Harvard now, apologize, and move on.<|endoftext|>A novel two-step immunotherapy approach has shown clinically beneficial responses in patients with`
+- #53 row `12668874` 2-gram/head2, count `565`, gate `0.899`, norm `14936.5`: `\nThe`
+  - window: ` for Patients and Families... Genomic Test May Help Guide Prostate Cancer Treatment\nThe Oncotype DX® Prostate Cancer Test strongly predicts aggressiveness of disease.`
+- #54 row `23837240` 2-gram/head4, count `206`, gate `0.917`, norm `14911.9`: `.<|endoftext|>`
+  - window: ` done it, better admit it to Harvard now, apologize, and move on.<|endoftext|>A novel two-step immunotherapy approach has shown clinically beneficial responses in patients with`
+- #55 row `27608939` 2-gram/head5, count `564`, gate `0.900`, norm `14706.3`: `\nThe`
+  - window: ` for Patients and Families... Genomic Test May Help Guide Prostate Cancer Treatment\nThe Oncotype DX® Prostate Cancer Test strongly predicts aggressiveness of disease.`
+- #56 row `42516244` 3-gram/head2, count `357`, gate `0.913`, norm `14523.1`: `.\nThe`
+  - window: ` scorecard to monitor and rank suppliers on whether they leverage the RRE.\nThe RRE was created by FMI and GS1 US, Lawrenceville, N`
+- #57 row `28816793` 2-gram/head5, count `206`, gate `0.895`, norm `14508.6`: `.<|endoftext|>`
+  - window: ` done it, better admit it to Harvard now, apologize, and move on.<|endoftext|>A novel two-step immunotherapy approach has shown clinically beneficial responses in patients with`
+- #58 row `47496429` 3-gram/head3, count `357`, gate `0.920`, norm `14446.7`: `.\nThe`
+  - window: ` scorecard to monitor and rank suppliers on whether they leverage the RRE.\nThe RRE was created by FMI and GS1 US, Lawrenceville, N`
+- #59 row `7688831` 2-gram/head1, count `564`, gate `0.891`, norm `14386.6`: `\nThe`
+  - window: ` for Patients and Families... Genomic Test May Help Guide Prostate Cancer Treatment\nThe Oncotype DX® Prostate Cancer Test strongly predicts aggressiveness of disease.`
+- #60 row `3921664` 2-gram/head0, count `206`, gate `0.916`, norm `14371.7`: `.<|endoftext|>`
+  - window: ` done it, better admit it to Harvard now, apologize, and move on.<|endoftext|>A novel two-step immunotherapy approach has shown clinically beneficial responses in patients with`
+- #62 row `7688356` 2-gram/head1, count `564`, gate `0.786`, norm `14333.4`: `\nThe`
+  - window: ` for Patients and Families... Genomic Test May Help Guide Prostate Cancer Treatment\nThe Oncotype DX® Prostate Cancer Test strongly predicts aggressiveness of disease.`
+- #63 row `2708277` 2-gram/head0, count `564`, gate `0.770`, norm `14271.2`: `\nThe`
+  - window: ` for Patients and Families... Genomic Test May Help Guide Prostate Cancer Treatment\nThe Oncotype DX® Prostate Cancer Test strongly predicts aggressiveness of disease.`
+- #64 row `13880648` 2-gram/head2, count `207`, gate `0.921`, norm `14218.6`: `. Session`
+  - window: `\nCheck out the up-to-date list of speakers and abstracts. Session topics include data mining, forecasting, fraud detection, text mining, data visualization,`
+- #74 row `8901305` 2-gram/head1, count `207`, gate `0.890`, norm `13262.3`: ` blood did`
+  - window: `. Whatsoever blood he shed in persecuting the righteous, what kind of blood did he shed? Righteous mens blood, indeed, he shed; they were`
+- #75 row `42729280` 3-gram/head2, count `124`, gate `0.934`, norm `13261.4`: ` his ex still`
+  - window: `’t be an issue for me but it is pretty obvious that his ex still has some serious feelings for him. I don’t bring it up because`
+- #76 row `52476568` 3-gram/head4, count `357`, gate `0.882`, norm `13259.1`: `.\nThe`
+  - window: ` scorecard to monitor and rank suppliers on whether they leverage the RRE.\nThe RRE was created by FMI and GS1 US, Lawrenceville, N`
+- #78 row `1526097` 2-gram/head0, count `255`, gate `0.901`, norm `13134.9`: `ual growth`
+  - window: ` risk being driven out of business or swallowed by a larger enterprise. Perpetual growth, whether of a particular company or an entire economy, is of course an absurdity`
+- #88 row `42566787` 3-gram/head2, count `357`, gate `0.859`, norm `12648.6`: `.\nThe`
+  - window: ` scorecard to monitor and rank suppliers on whether they leverage the RRE.\nThe RRE was created by FMI and GS1 US, Lawrenceville, N`
+- #90 row `22628525` 2-gram/head4, count `564`, gate `0.714`, norm `12566.3`: `\nThe`
+  - window: ` for Patients and Families... Genomic Test May Help Guide Prostate Cancer Treatment\nThe Oncotype DX® Prostate Cancer Test strongly predicts aggressiveness of disease.`
+- #96 row `47546966` 3-gram/head3, count `357`, gate `0.870`, norm `12268.4`: `.\nThe`
+  - window: ` scorecard to monitor and rank suppliers on whether they leverage the RRE.\nThe RRE was created by FMI and GS1 US, Lawrenceville, N`
+- #110 row `29010023` 2-gram/head5, count `111`, gate `0.907`, norm `11769.3`: `\nI`
+  - window: ` classroom presentations, from the BioVisions site, if that is acceptable."\nI sat here, for two months, waiting for that to happen, anything to happen`
+- #112 row `24029886` 2-gram/head4, count `111`, gate `0.914`, norm `11659.3`: `\nI`
+  - window: ` classroom presentations, from the BioVisions site, if that is acceptable."\nI sat here, for two months, waiting for that to happen, anything to happen`
+- #125 row `2259309` 2-gram/head0, count `98`, gate `0.917`, norm `11431.1`: `. If`
+  - window: `-Stares out of it. And "newfound" feelings. Please. If only.\nSTEFANO!! STEFANO, STEFAN`
+- #127 row `9089717` 2-gram/head1, count `111`, gate `0.901`, norm `11411.8`: `\nI`
+  - window: ` classroom presentations, from the BioVisions site, if that is acceptable."\nI sat here, for two months, waiting for that to happen, anything to happen`
+- #128 row `32606493` 3-gram/head0, count `357`, gate `0.776`, norm `11385.6`: `.\nThe`
+  - window: ` scorecard to monitor and rank suppliers on whether they leverage the RRE.\nThe RRE was created by FMI and GS1 US, Lawrenceville, N`
+- #131 row `14069790` 2-gram/head2, count `111`, gate `0.901`, norm `11300.3`: `\nI`
+  - window: ` classroom presentations, from the BioVisions site, if that is acceptable."\nI sat here, for two months, waiting for that to happen, anything to happen`
+- #144 row `7718713` 2-gram/head1, count `105`, gate `0.934`, norm `11015.1`: `\nIn`
+  - window: ` us would immediately connect. And yet... Cooking with Fruits and Vegetables\nIn the introduction to Ripe: A Fresh, Colorful Approach to Fruits and`
+- #146 row `4109638` 2-gram/head0, count `111`, gate `0.898`, norm `11005.9`: `\nI`
+  - window: ` classroom presentations, from the BioVisions site, if that is acceptable."\nI sat here, for two months, waiting for that to happen, anything to happen`
+- #150 row `19049861` 2-gram/head3, count `111`, gate `0.857`, norm `10971.5`: `\nI`
+  - window: ` classroom presentations, from the BioVisions site, if that is acceptable."\nI sat here, for two months, waiting for that to happen, anything to happen`
+- #151 row `22658882` 2-gram/head4, count `105`, gate `0.918`, norm `10947.5`: `\nIn`
+  - window: ` us would immediately connect. And yet... Cooking with Fruits and Vegetables\nIn the introduction to Ripe: A Fresh, Colorful Approach to Fruits and`
+- #155 row `37586624` 3-gram/head1, count `357`, gate `0.770`, norm `10850.1`: `.\nThe`
+  - window: ` scorecard to monitor and rank suppliers on whether they leverage the RRE.\nThe RRE was created by FMI and GS1 US, Lawrenceville, N`
+- #156 row `59478746` 3-gram/head5, count `43`, gate `0.949`, norm `10807.6`: `’re`
+  - window: ` the time honoured Black Band Tee. Every band has one. If you’re in a band and you ain’t got a Black Band Tee then you`
+- #172 row `7239406` 2-gram/head1, count `98`, gate `0.893`, norm `10547.8`: `. If`
+  - window: `-Stares out of it. And "newfound" feelings. Please. If only.\nSTEFANO!! STEFANO, STEFAN`
+- #176 row `17648500` 2-gram/head3, count `564`, gate `0.622`, norm `10466.6`: `\nThe`
+  - window: ` for Patients and Families... Genomic Test May Help Guide Prostate Cancer Treatment\nThe Oncotype DX® Prostate Cancer Test strongly predicts aggressiveness of disease.`
+- #199 row `26616014` 2-gram/head5, count `111`, gate `0.928`, norm `10158.2`: `\nI`
+  - window: ` classroom presentations, from the BioVisions site, if that is acceptable."\nI sat here, for two months, waiting for that to happen, anything to happen`
+- #201 row `17678857` 2-gram/head3, count `105`, gate `0.862`, norm `10106.0`: `\nIn`
+  - window: ` us would immediately connect. And yet... Cooking with Fruits and Vegetables\nIn the introduction to Ripe: A Fresh, Colorful Approach to Fruits and`
+- #208 row `22179749` 2-gram/head4, count `98`, gate `0.860`, norm `10035.7`: `. If`
+  - window: `-Stares out of it. And "newfound" feelings. Please. If only.\nSTEFANO!! STEFANO, STEFAN`
+- #211 row `15814397` 2-gram/head3, count `80`, gate `0.911`, norm `10006.6`: ` as well`
+  - window: ` Studios this weekend to check out works I have created over the last year, as well as find some neat works from my artistic past in tje awesome sales bins created`
+- #214 row `6695510` 2-gram/head1, count `111`, gate `0.919`, norm `9938.4`: `\nI`
+  - window: ` classroom presentations, from the BioVisions site, if that is acceptable."\nI sat here, for two months, waiting for that to happen, anything to happen`
+- #220 row `11675613` 2-gram/head2, count `111`, gate `0.915`, norm `9905.2`: `\nI`
+  - window: ` classroom presentations, from the BioVisions site, if that is acceptable."\nI sat here, for two months, waiting for that to happen, anything to happen`
+- #223 row `51176541` 3-gram/head4, count `43`, gate `0.927`, norm `9889.4`: `’re`
+  - window: ` the time honoured Black Band Tee. Every band has one. If you’re in a band and you ain’t got a Black Band Tee then you`
+- #227 row `874264` 2-gram/head0, count `80`, gate `0.900`, norm `9831.2`: ` as well`
+  - window: ` Studios this weekend to check out works I have created over the last year, as well as find some neat works from my artistic past in tje awesome sales bins created`
+- #229 row `49469384` 3-gram/head3, count `47`, gate `0.885`, norm `9820.1`: ` DON’`
+  - window: ` it’s worth the occasional reference to the bizarre ways that people DON’T SHARE. Is it safe to say we live in a society that places`
+- #237 row `16655726` 2-gram/head3, count `111`, gate `0.906`, norm `9707.0`: `\nI`
+  - window: ` classroom presentations, from the BioVisions site, if that is acceptable."\nI sat here, for two months, waiting for that to happen, anything to happen`
+- #238 row `23177944` 2-gram/head4, count `206`, gate `0.859`, norm `9697.7`: `.<|endoftext|>`
+  - window: ` done it, better admit it to Harvard now, apologize, and move on.<|endoftext|>A novel two-step immunotherapy approach has shown clinically beneficial responses in patients with`
+- #242 row `15755687` 2-gram/head3, count `74`, gate `0.912`, norm `9677.8`: `, so`
+  - window: ` by these incarcerated cans and could not help myself. I returned with my camera, so that I could share my question with the world: Why can’t people`
+- #244 row `34577953` 3-gram/head0, count `43`, gate `0.885`, norm `9673.6`: `’re`
+  - window: ` the time honoured Black Band Tee. Every band has one. If you’re in a band and you ain’t got a Black Band Tee then you`
+- #250 row `8283305` 2-gram/head1, count `206`, gate `0.848`, norm `9631.6`: `.<|endoftext|>`
+  - window: ` done it, better admit it to Harvard now, apologize, and move on.<|endoftext|>A novel two-step immunotherapy approach has shown clinically beneficial responses in patients with`
+- #253 row `3283257` 2-gram/head0, count `41`, gate `0.945`, norm `9610.6`: `\nWe`
+  - window: ` WordStream: Facebook Ads are Very Boring and not Very Imaginative\nWealth Daily (May 18, 2012) - Facebook IPO Hype: Buy When`
+- #257 row `1715413` 2-gram/head0, count `111`, gate `0.905`, norm `9599.6`: `\nI`
+  - window: ` classroom presentations, from the BioVisions site, if that is acceptable."\nI sat here, for two months, waiting for that to happen, anything to happen`
+- #262 row `28151801` 2-gram/head5, count `206`, gate `0.856`, norm `9565.4`: `.<|endoftext|>`
+  - window: ` done it, better admit it to Harvard now, apologize, and move on.<|endoftext|>A novel two-step immunotherapy approach has shown clinically beneficial responses in patients with`
+- #273 row `22663630` 2-gram/head4, count `128`, gate `0.827`, norm `9477.9`: `If you`
+  - window: ` pass on some advice to you I learned from the atheistic community:\nIf you have set yourself on fire, do not run.\nOkay? Okay?? Please`
+- #277 row `3307936` 2-gram/head0, count `206`, gate `0.851`, norm `9437.1`: `.<|endoftext|>`
+  - window: ` done it, better admit it to Harvard now, apologize, and move on.<|endoftext|>A novel two-step immunotherapy approach has shown clinically beneficial responses in patients with`
+- #285 row `21635853` 2-gram/head4, count `111`, gate `0.901`, norm `9384.1`: `\nI`
+  - window: ` classroom presentations, from the BioVisions site, if that is acceptable."\nI sat here, for two months, waiting for that to happen, anything to happen`
+- #288 row `46196456` 3-gram/head3, count `43`, gate `0.926`, norm `9377.2`: `’re`
+  - window: ` the time honoured Black Band Tee. Every band has one. If you’re in a band and you ain’t got a Black Band Tee then you`
+- #292 row `18224609` 2-gram/head3, count `206`, gate `0.851`, norm `9332.5`: `.<|endoftext|>`
+  - window: ` done it, better admit it to Harvard now, apologize, and move on.<|endoftext|>A novel two-step immunotherapy approach has shown clinically beneficial responses in patients with`
+- #296 row `13255528` 2-gram/head2, count `206`, gate `0.833`, norm `9274.7`: `.<|endoftext|>`
+  - window: ` done it, better admit it to Harvard now, apologize, and move on.<|endoftext|>A novel two-step immunotherapy approach has shown clinically beneficial responses in patients with`
+- #318 row `38462765` 3-gram/head1, count `72`, gate `0.850`, norm `9007.2`: ` circuit board which`
+  - window: ` The LAN adapter circuitry preferably is configured to be mounted on a single printed circuit board which may be inserted into an expansion slot of the master computer. Upon being inserted into`
+- #326 row `22034990` 2-gram/head4, count `59`, gate `0.969`, norm `8895.6`: ` well as`
+  - window: ` this weekend to check out works I have created over the last year, as well as find some neat works from my artistic past in tje awesome sales bins created just`
+- #327 row `59429620` 3-gram/head5, count `47`, gate `0.883`, norm `8885.5`: ` DON’`
+  - window: ` it’s worth the occasional reference to the bizarre ways that people DON’T SHARE. Is it safe to say we live in a society that places`
+- #328 row `20794320` 2-gram/head4, count `80`, gate `0.861`, norm `8883.8`: ` as well`
+  - window: ` Studios this weekend to check out works I have created over the last year, as well as find some neat works from my artistic past in tje awesome sales bins created`
+- #332 row `39558100` 3-gram/head1, count `43`, gate `0.914`, norm `8869.5`: `’re`
+  - window: ` the time honoured Black Band Tee. Every band has one. If you’re in a band and you ain’t got a Black Band Tee then you`
+- #336 row `54498575` 3-gram/head4, count `43`, gate `0.909`, norm `8853.3`: `’re`
+  - window: ` the time honoured Black Band Tee. Every band has one. If you’re in a band and you ain’t got a Black Band Tee then you`
+- #339 row `15259936` 2-gram/head3, count `105`, gate `0.851`, norm `8817.5`: `\nIn`
+  - window: ` us would immediately connect. And yet... Cooking with Fruits and Vegetables\nIn the introduction to Ripe: A Fresh, Colorful Approach to Fruits and`
+- #341 row `13462909` 2-gram/head2, count `77`, gate `0.861`, norm `8787.6`: `\nThis`
+  - window: `.\nIs There Hope For Gasoline Prices to Return to 2009 Levels?\nThis is highly unlikely as the global financial crisis scared the energy markets into a severe dip`
+- #347 row `25774433` 2-gram/head5, count `80`, gate `0.811`, norm `8729.1`: ` as well`
+  - window: ` Studios this weekend to check out works I have created over the last year, as well as find some neat works from my artistic past in tje awesome sales bins created`
+- #348 row `13243409` 2-gram/head2, count `41`, gate `0.908`, norm `8727.8`: `\nWe`
+  - window: ` WordStream: Facebook Ads are Very Boring and not Very Imaginative\nWealth Daily (May 18, 2012) - Facebook IPO Hype: Buy When`
+- #353 row `13900742` 2-gram/head2, count `101`, gate `0.886`, norm `8699.5`: `\nA`
+  - window: ` the person-in-charge to develop a complete employee health policy.|\nA complete employee health policy must have the following elements: 1) Employee training on food`
+- #358 row `8482836` 2-gram/head1, count `77`, gate `0.839`, norm `8639.8`: `\nThis`
+  - window: `.\nIs There Hope For Gasoline Prices to Return to 2009 Levels?\nThis is highly unlikely as the global financial crisis scared the energy markets into a severe dip`
+- #360 row `319803` 2-gram/head0, count `105`, gate `0.845`, norm `8634.1`: `\nIn`
+  - window: ` us would immediately connect. And yet... Cooking with Fruits and Vegetables\nIn the introduction to Ripe: A Fresh, Colorful Approach to Fruits and`
+- #363 row `24643835` 2-gram/head4, count `98`, gate `0.897`, norm `8597.3`: `. If`
+  - window: `-Stares out of it. And "newfound" feelings. Please. If only.\nSTEFANO!! STEFANO, STEFAN`
+- #364 row `5795495` 2-gram/head1, count `74`, gate `0.801`, norm `8566.5`: `, so`
+  - window: ` by these incarcerated cans and could not help myself. I returned with my camera, so that I could share my question with the world: Why can’t people`
+- #365 row `8338676` 2-gram/head1, count `130`, gate `0.924`, norm `8562.4`: ` said.`
+  - window: ` and more than 1,000 have not yet joined,” Roberson said. “We need to have the entire food industry collaborating on the Rapid Recall Exchange`
+- #367 row `27015023` 2-gram/head5, count `59`, gate `0.915`, norm `8537.8`: ` well as`
+  - window: ` this weekend to check out works I have created over the last year, as well as find some neat works from my artistic past in tje awesome sales bins created just`
+- #368 row `2742769` 2-gram/head0, count `77`, gate `0.906`, norm `8536.6`: `\nThis`
+  - window: `.\nIs There Hope For Gasoline Prices to Return to 2009 Levels?\nThis is highly unlikely as the global financial crisis scared the energy markets into a severe dip`
+- #369 row `9703840` 2-gram/head1, count `98`, gate `0.887`, norm `8532.8`: `. If`
+  - window: `-Stares out of it. And "newfound" feelings. Please. If only.\nSTEFANO!! STEFANO, STEFAN`
+- #374 row `59148990` 3-gram/head5, count `34`, gate `0.875`, norm `8509.2`: `ade County Public`
+  - window: ` District, Chicago Public Schools, Dallas Independent School District, Miami-Dade County Public Schools and Orange County Public Schools in Orlando, officially formed USFA earlier this year`
+- #376 row `18442980` 2-gram/head3, count `77`, gate `0.809`, norm `8491.5`: `\nThis`
+  - window: `.\nIs There Hope For Gasoline Prices to Return to 2009 Levels?\nThis is highly unlikely as the global financial crisis scared the energy markets into a severe dip`
+- #377 row `25219972` 2-gram/head5, count `114`, gate `0.826`, norm `8491.4`: `\nIn`
+  - window: ` us would immediately connect. And yet... Cooking with Fruits and Vegetables\nIn the introduction to Ripe: A Fresh, Colorful Approach to Fruits and`
+- #379 row `48823026` 3-gram/head3, count `59`, gate `0.925`, norm `8488.5`: ` as well as`
+  - window: ` this weekend to check out works I have created over the last year, as well as find some neat works from my artistic past in tje awesome sales bins created just`
+- #380 row `54449469` 3-gram/head4, count `47`, gate `0.886`, norm `8485.6`: ` DON’`
+  - window: ` it’s worth the occasional reference to the bizarre ways that people DON’T SHARE. Is it safe to say we live in a society that places`
+- #382 row `49518454` 3-gram/head3, count `43`, gate `0.896`, norm `8451.5`: `’re`
+  - window: ` the time honoured Black Band Tee. Every band has one. If you’re in a band and you ain’t got a Black Band Tee then you`
+- #385 row `14683883` 2-gram/head2, count `98`, gate `0.891`, norm `8447.9`: `. If`
+  - window: `-Stares out of it. And "newfound" feelings. Please. If only.\nSTEFANO!! STEFANO, STEFAN`
+- #389 row `16116643` 2-gram/head3, count `61`, gate `0.905`, norm `8409.4`: ` However,`
+  - window: ` that many yards against any of the talented backs it faced all last season. However, the players and coaches have insisted Rainey's big day was more a result of`
+- #392 row `56156692` 3-gram/head5, count `45`, gate `0.892`, norm `8402.8`: `’re`
+  - window: ` the time honoured Black Band Tee. Every band has one. If you’re in a band and you ain’t got a Black Band Tee then you`
+- #393 row `34248197` 3-gram/head0, count `33`, gate `0.884`, norm `8397.4`: `’ve`
+  - window: ` have been filed related to other allegations brought by the women.<|endoftext|>I’ve a new release of NYTProf ready to upload but I’m stuck.`
+- #394 row `31255983` 3-gram/head0, count `43`, gate `0.902`, norm `8369.3`: `’re`
+  - window: ` the time honoured Black Band Tee. Every band has one. If you’re in a band and you ain’t got a Black Band Tee then you`
+- #397 row `52238178` 3-gram/head4, count `47`, gate `0.904`, norm `8320.1`: ` DON’`
+  - window: ` it’s worth the occasional reference to the bizarre ways that people DON’T SHARE. Is it safe to say we live in a society that places`
+- #398 row `7095575` 2-gram/head1, count `59`, gate `0.917`, norm `8319.8`: ` well as`
+  - window: ` this weekend to check out works I have created over the last year, as well as find some neat works from my artistic past in tje awesome sales bins created just`
+- #403 row `18298676` 2-gram/head3, count `130`, gate `0.897`, norm `8303.3`: ` said.`
+  - window: ` and more than 1,000 have not yet joined,” Roberson said. “We need to have the entire food industry collaborating on the Rapid Recall Exchange`
+- #405 row `44489205` 3-gram/head2, count `47`, gate `0.902`, norm `8284.6`: ` DON’`
+  - window: ` it’s worth the occasional reference to the bizarre ways that people DON’T SHARE. Is it safe to say we live in a society that places`
+- #407 row `11066242` 2-gram/head2, count `36`, gate `0.945`, norm `8278.7`: `. So`
+  - window: ` represents 28% of the analysts $0.09 consensus estimate for Q1. So a minor 2% shift up in gasoline costs can shift earnings lower by 28%`
+- #412 row `34528911` 3-gram/head0, count `47`, gate `0.874`, norm `8266.2`: ` DON’`
+  - window: ` it’s worth the occasional reference to the bizarre ways that people DON’T SHARE. Is it safe to say we live in a society that places`
+- #413 row `1177470` 2-gram/head0, count `61`, gate `0.902`, norm `8260.2`: ` However,`
+  - window: ` that many yards against any of the talented backs it faced all last season. However, the players and coaches have insisted Rainey's big day was more a result of`
+- #415 row `4352487` 2-gram/head0, count `74`, gate `0.933`, norm `8256.1`: ` I'm`
+  - window: `|\n|Tesla's fight with America's car dealers|\n|Why I'm protesting against Gap over Bangladesh|\n|The biggest merger you didn't hear about`
+- #416 row `21095478` 2-gram/head4, count `61`, gate `0.892`, norm `8255.5`: ` However,`
+  - window: ` that many yards against any of the talented backs it faced all last season. However, the players and coaches have insisted Rainey's big day was more a result of`
+- #419 row `2155887` 2-gram/head0, count `62`, gate `0.877`, norm `8232.6`: ` able to`
+  - window: ` tje awesome sales bins created just for this weekend. You will also be able to see the upcycled creations of Lisa Brunetta. From popcan earrings`
+- #420 row `29623948` 2-gram/head5, count `98`, gate `0.870`, norm `8227.3`: `. If`
+  - window: `-Stares out of it. And "newfound" feelings. Please. If only.\nSTEFANO!! STEFANO, STEFAN`
+- #422 row `39002932` 3-gram/head1, count `55`, gate `0.939`, norm `8220.5`: `.\nI`
+  - window: `, 2013\nOpening reception Sat. Apr. 27 1-3 pm.\nI just found out that one of my mixed media textiles will be featured in the`
+- #424 row `47258039` 3-gram/head3, count `47`, gate `0.915`, norm `8193.3`: ` DON’`
+  - window: ` it’s worth the occasional reference to the bizarre ways that people DON’T SHARE. Is it safe to say we live in a society that places`
+- #425 row `43983107` 3-gram/head2, count `55`, gate `0.951`, norm `8189.8`: `.\nI`
+  - window: `, 2013\nOpening reception Sat. Apr. 27 1-3 pm.\nI just found out that one of my mixed media textiles will be featured in the`
+- #427 row `27523858` 2-gram/head5, count `55`, gate `0.901`, norm `8176.6`: `\nIt`
+  - window: ` and will be appear in the chilled dairy aisle next to plain Philadelphia Light.\nIt is launching in a 160g tub and a 120g four-pack of mini`
+- #428 row `38330837` 3-gram/head1, count `35`, gate `0.952`, norm `8176.6`: `.\nThis`
+  - window: `Gesellschaft, Leipzig, 1860 and 1879.\nThis book was printed in the United States of America.\nDover books are made`
+- #429 row `43842867` 3-gram/head2, count `59`, gate `0.949`, norm `8171.6`: ` as well as`
+  - window: ` this weekend to check out works I have created over the last year, as well as find some neat works from my artistic past in tje awesome sales bins created just`
+- #430 row `815404` 2-gram/head0, count `74`, gate `0.846`, norm `8168.8`: `, so`
+  - window: ` by these incarcerated cans and could not help myself. I returned with my camera, so that I could share my question with the world: Why can’t people`
+- #432 row `12186457` 2-gram/head2, count `95`, gate `0.865`, norm `8160.0`: ` to move`
+  - window: ` leave was Kenseth's -- though it certainly doesn't hurt Roush to move one of its younger, cheaper drivers in Ricky Stenhouse Jr. up the`
+- #434 row `19663912` 2-gram/head3, count `98`, gate `0.859`, norm `8144.3`: `. If`
+  - window: `-Stares out of it. And "newfound" feelings. Please. If only.\nSTEFANO!! STEFANO, STEFAN`
+- #439 row `28403142` 2-gram/head5, count `77`, gate `0.786`, norm `8133.8`: `\nThis`
+  - window: `.\nIs There Hope For Gasoline Prices to Return to 2009 Levels?\nThis is highly unlikely as the global financial crisis scared the energy markets into a severe dip`
+- #443 row `39509042` 3-gram/head1, count `47`, gate `0.867`, norm `8105.9`: ` DON’`
+  - window: ` it’s worth the occasional reference to the bizarre ways that people DON’T SHARE. Is it safe to say we live in a society that places`
+- #447 row `24294636` 2-gram/head4, count `62`, gate `0.923`, norm `8084.2`: `, including`
+  - window: ` Connect Live conference here earlier this month.\nMajor food distributors in the exchange, including Kroger, Wegmans and Wakefern, have recently sent letters to`
+- #448 row `12698786` 2-gram/head2, count `105`, gate `0.676`, norm `8077.0`: `\nIn`
+  - window: ` us would immediately connect. And yet... Cooking with Fruits and Vegetables\nIn the introduction to Ripe: A Fresh, Colorful Approach to Fruits and`
+- #450 row `32520957` 3-gram/head0, count `75`, gate `0.942`, norm `8069.7`: `.\nIn`
+  - window: ` in Italy and Germany, using Milka chocolate and targeting the breakfast occasion.\nIn Germany, Philadelphia with Milka has generated €22.2m in sales since`
+- #451 row `26075335` 2-gram/head5, count `61`, gate `0.909`, norm `8069.5`: ` However,`
+  - window: ` that many yards against any of the talented backs it faced all last season. However, the players and coaches have insisted Rainey's big day was more a result of`
+- #453 row `25715933` 2-gram/head5, count `74`, gate `0.792`, norm `8061.1`: `, so`
+  - window: ` by these incarcerated cans and could not help myself. I returned with my camera, so that I could share my question with the world: Why can’t people`
+- #455 row `50005453` 3-gram/head4, count `31`, gate `0.924`, norm `8034.0`: `. If you`
+  - window: `* If youve set yourself on fire, do not run, DI. If youve done it, better admit it to Harvard now, apologize, and move on`
+- #458 row `12075518` 2-gram/head2, count `59`, gate `0.865`, norm `8007.7`: ` well as`
+  - window: ` this weekend to check out works I have created over the last year, as well as find some neat works from my artistic past in tje awesome sales bins created just`
+- #459 row `4723779` 2-gram/head0, count `98`, gate `0.859`, norm `8006.7`: `. If`
+  - window: `-Stares out of it. And "newfound" feelings. Please. If only.\nSTEFANO!! STEFANO, STEFAN`
+- #463 row `13318689` 2-gram/head2, count `130`, gate `0.855`, norm `7979.8`: ` said.`
+  - window: ` and more than 1,000 have not yet joined,” Roberson said. “We need to have the entire food industry collaborating on the Rapid Recall Exchange`
+- #468 row `4528716` 2-gram/head0, count `50`, gate `0.884`, norm `7952.7`: `Want to`
+  - window: ` the snot out of all the other billionaires. Good for you.\nWant to be a Civil Civic model? Send us photos of yourself/friends/animals`
+- #469 row `37297679` 3-gram/head1, count `47`, gate `0.897`, norm `7945.2`: ` DON’`
+  - window: ` it’s worth the occasional reference to the bizarre ways that people DON’T SHARE. Is it safe to say we live in a society that places`
+- #473 row `27159910` 2-gram/head5, count `98`, gate `0.746`, norm `7919.8`: `. If`
+  - window: `-Stares out of it. And "newfound" feelings. Please. If only.\nSTEFANO!! STEFANO, STEFAN`
+- #479 row `9279533` 2-gram/head1, count `130`, gate `0.963`, norm `7895.1`: ` said.`
+  - window: ` and more than 1,000 have not yet joined,” Roberson said. “We need to have the entire food industry collaborating on the Rapid Recall Exchange`
+- #480 row `5650567` 2-gram/head1, count `61`, gate `0.910`, norm `7884.5`: ` opening day`
+  - window: `, I mean right now,” said Vice President Joe Biden at the opening day of the first Costco in Washington, D.C. “I’`
+- #484 row `37501112` 3-gram/head1, count `75`, gate `0.903`, norm `7866.5`: `.\nIn`
+  - window: ` in Italy and Germany, using Milka chocolate and targeting the breakfast occasion.\nIn Germany, Philadelphia with Milka has generated €22.2m in sales since`
+- #485 row `32317524` 3-gram/head0, count `47`, gate `0.892`, norm `7857.4`: ` DON’`
+  - window: ` it’s worth the occasional reference to the bizarre ways that people DON’T SHARE. Is it safe to say we live in a society that places`
+- #487 row `19239701` 2-gram/head3, count `130`, gate `0.948`, norm `7821.2`: ` said.`
+  - window: ` and more than 1,000 have not yet joined,” Roberson said. “We need to have the entire food industry collaborating on the Rapid Recall Exchange`
+- #490 row `15610759` 2-gram/head3, count `61`, gate `0.892`, norm `7801.9`: `\nOrd`
+  - window: ` where applicable). Shipping and handling charges are taxable in the State of Florida.\nOrders placed in Florida are not subject to sales tax if the order is shipped outside`
+- #492 row `24219760` 2-gram/head4, count `130`, gate `0.958`, norm `7793.8`: ` said.`
+  - window: ` and more than 1,000 have not yet joined,” Roberson said. “We need to have the entire food industry collaborating on the Rapid Recall Exchange`
+- #493 row `27890825` 2-gram/head5, count `63`, gate `0.911`, norm `7792.5`: `snout`
+  - window: `imal symptoms of cognitive or motor dysfunction characteristic of ADC, or mild signs (snout response, slowed extremity movements), but without impairment of work or capacity to perform`
+- #497 row `1106058` 2-gram/head0, count `36`, gate `0.926`, norm `7774.2`: `. So`
+  - window: ` represents 28% of the analysts $0.09 consensus estimate for Q1. So a minor 2% shift up in gasoline costs can shift earnings lower by 28%`
+- #499 row `20735780` 2-gram/head4, count `74`, gate `0.783`, norm `7768.9`: `, so`
+  - window: ` by these incarcerated cans and could not help myself. I returned with my camera, so that I could share my question with the world: Why can’t people`
+- #503 row `29199905` 2-gram/head5, count `130`, gate `0.946`, norm `7763.8`: ` said.`
+  - window: ` and more than 1,000 have not yet joined,” Roberson said. “We need to have the entire food industry collaborating on the Rapid Recall Exchange`
+- #505 row `22543721` 2-gram/head4, count `55`, gate `0.942`, norm `7755.7`: `\nIt`
+  - window: ` and will be appear in the chilled dairy aisle next to plain Philadelphia Light.\nIt is launching in a 160g tub and a 120g four-pack of mini`
+- #511 row `17930663` 2-gram/head3, count `63`, gate `0.935`, norm `7725.7`: ` contact Tech`
+  - window: ` log-in to the site.\nNot a member yet?\nPlease contact Tech Support to request further assistance.\nEnter contests by redeeming your points for entry`
+- #514 row `54168819` 3-gram/head4, count `34`, gate `0.842`, norm `7709.4`: ` features of a`
+  - window: ` sales activity. By recognizing that the full keyboard, video screen and other features of a full-feature input computer are not necessary, applicants have lowered the cost and space`
+- #516 row `18001536` 2-gram/head3, count `55`, gate `0.928`, norm `7702.7`: ` during the`
+  - window: `’s game. The Super Bowl is the second biggest day for food during the year, trailing only Thanksgiving, and wings are the most consumed item on this most`
+- #517 row `58782982` 3-gram/head5, count `59`, gate `0.928`, norm `7691.4`: ` as well as`
+  - window: ` this weekend to check out works I have created over the last year, as well as find some neat works from my artistic past in tje awesome sales bins created just`
+- #524 row `2623473` 2-gram/head0, count `55`, gate `0.851`, norm `7649.0`: `\nIt`
+  - window: ` and will be appear in the chilled dairy aisle next to plain Philadelphia Light.\nIt is launching in a 160g tub and a 120g four-pack of mini`
+- #528 row `42481287` 3-gram/head2, count `75`, gate `0.904`, norm `7629.9`: `.\nIn`
+  - window: ` in Italy and Germany, using Milka chocolate and targeting the breakfast occasion.\nIn Germany, Philadelphia with Milka has generated €22.2m in sales since`
+- #530 row `12583625` 2-gram/head2, count `55`, gate `0.905`, norm `7624.3`: `\nIt`
+  - window: ` and will be appear in the chilled dairy aisle next to plain Philadelphia Light.\nIt is launching in a 160g tub and a 120g four-pack of mini`
+- #534 row `27960984` 2-gram/head5, count `55`, gate `0.925`, norm `7615.6`: ` during the`
+  - window: `’s game. The Super Bowl is the second biggest day for food during the year, trailing only Thanksgiving, and wings are the most consumed item on this most`
+- #539 row `3358633` 2-gram/head0, count `130`, gate `0.849`, norm `7586.9`: ` said.`
+  - window: ` and more than 1,000 have not yet joined,” Roberson said. “We need to have the entire food industry collaborating on the Rapid Recall Exchange`
+- #549 row `16046341` 2-gram/head3, count `36`, gate `0.906`, norm `7551.7`: `. So`
+  - window: ` represents 28% of the analysts $0.09 consensus estimate for Q1. So a minor 2% shift up in gasoline costs can shift earnings lower by 28%`
+- #550 row `8019620` 2-gram/head1, count `41`, gate `0.900`, norm `7548.1`: `\nWe`
+  - window: ` WordStream: Facebook Ads are Very Boring and not Very Imaginative\nWealth Daily (May 18, 2012) - Facebook IPO Hype: Buy When`
+- #552 row `8041800` 2-gram/head1, count `55`, gate `0.907`, norm `7531.4`: ` during the`
+  - window: `’s game. The Super Bowl is the second biggest day for food during the year, trailing only Thanksgiving, and wings are the most consumed item on this most`
+- #553 row `57218359` 3-gram/head5, count `47`, gate `0.908`, norm `7524.3`: ` DON’`
+  - window: ` it’s worth the occasional reference to the bizarre ways that people DON’T SHARE. Is it safe to say we live in a society that places`
+- #554 row `42136945` 3-gram/head2, count `41`, gate `0.898`, norm `7514.7`: ` a lot of`
+  - window: ` game to play in when you're expected to win and expected to score a lot of goals," said head coach Don Hay. "It's not easy to do.`
+- #558 row `6157339` 2-gram/head1, count `61`, gate `0.808`, norm `7494.7`: ` However,`
+  - window: ` that many yards against any of the talented backs it faced all last season. However, the players and coaches have insisted Rainey's big day was more a result of`
+- #562 row `17563696` 2-gram/head3, count `55`, gate `0.864`, norm `7485.3`: `\nIt`
+  - window: ` and will be appear in the chilled dairy aisle next to plain Philadelphia Light.\nIt is launching in a 160g tub and a 120g four-pack of mini`
+- #564 row `42277854` 3-gram/head2, count `47`, gate `0.880`, norm `7482.4`: ` DON’`
+  - window: ` it’s worth the occasional reference to the bizarre ways that people DON’T SHARE. Is it safe to say we live in a society that places`
+- #566 row `27080085` 2-gram/head5, count `104`, gate `0.699`, norm `7461.4`: ` still rising`
+  - window: ` blow would fall on commercial property in Class 4, where billable assessments are still rising from past assessment increases on which taxes are being phased in. Additionally there would be`
+- #569 row `53802931` 3-gram/head4, count `59`, gate `0.850`, norm `7449.3`: ` as well as`
+  - window: ` this weekend to check out works I have created over the last year, as well as find some neat works from my artistic past in tje awesome sales bins created just`
+- #574 row `44173750` 3-gram/head2, count `27`, gate `0.851`, norm `7432.1`: `’ll`
+  - window: `ribute, and take a few other measures to reduce your waste, you’ll have almost no trash each week.\n- Install a bicycle rack or locked bicycle`
+- #575 row `43237512` 3-gram/head2, count `33`, gate `0.901`, norm `7429.1`: `’ve`
+  - window: ` have been filed related to other allegations brought by the women.<|endoftext|>I’ve a new release of NYTProf ready to upload but I’m stuck.`
+- #576 row `7145620` 2-gram/head1, count `73`, gate `0.907`, norm `7425.2`: ` according to`
+  - window: ` it more?\nAnd now we get Casey weighing in on the issue, according to cre8id at AboveTopSecret.com-- PBS/NOVA online -`
+- #579 row `53943431` 3-gram/head4, count `55`, gate `0.849`, norm `7411.6`: `.\nI`
+  - window: `, 2013\nOpening reception Sat. Apr. 27 1-3 pm.\nI just found out that one of my mixed media textiles will be featured in the`
+- #582 row `51409293` 3-gram/head4, count `72`, gate `0.877`, norm `7399.4`: ` U.S`
+  - window: ` information with individual stores. The exchange's retail membership represents 85% of U.S. grocery volume — including 21 of the 24 largest supermarket chains based in the United`
+- #584 row `30084895` 3-gram/head0, count `31`, gate `0.906`, norm `7396.4`: `. If you`
+  - window: `* If youve set yourself on fire, do not run, DI. If youve done it, better admit it to Harvard now, apologize, and move on`
+- #592 row `14334492` 2-gram/head2, count `62`, gate `0.864`, norm `7342.0`: `, including`
+  - window: ` Connect Live conference here earlier this month.\nMajor food distributors in the exchange, including Kroger, Wegmans and Wakefern, have recently sent letters to`
+- #595 row `48963292` 3-gram/head3, count `55`, gate `0.858`, norm `7333.9`: `.\nI`
+  - window: `, 2013\nOpening reception Sat. Apr. 27 1-3 pm.\nI just found out that one of my mixed media textiles will be featured in the`
+- #596 row `57421792` 3-gram/head5, count `75`, gate `0.947`, norm `7333.5`: `.\nIn`
+  - window: ` in Italy and Germany, using Milka chocolate and targeting the breakfast occasion.\nIn Germany, Philadelphia with Milka has generated €22.2m in sales since`
+- #597 row `6086149` 2-gram/head1, count `36`, gate `0.892`, norm `7332.4`: `. So`
+  - window: ` represents 28% of the analysts $0.09 consensus estimate for Q1. So a minor 2% shift up in gasoline costs can shift earnings lower by 28%`
+- #599 row `2115574` 2-gram/head0, count `59`, gate `0.806`, norm `7329.5`: ` well as`
+  - window: ` this weekend to check out works I have created over the last year, as well as find some neat works from my artistic past in tje awesome sales bins created just`
+- #608 row `19292740` 2-gram/head3, count `74`, gate `0.883`, norm `7297.9`: ` I'm`
+  - window: `|\n|Tesla's fight with America's car dealers|\n|Why I'm protesting against Gap over Bangladesh|\n|The biggest merger you didn't hear about`
+- #609 row `17442598` 2-gram/head3, count `128`, gate `0.794`, norm `7297.6`: `It's`
+  - window: ` economy has gotten better," said Mario Morrow, spokesman for the department. "It's a good news/bad news situation."\nMichigan is not the only state laying`
+- #614 row `32176855` 3-gram/head0, count `42`, gate `0.871`, norm `7268.2`: ` a lot of`
+  - window: ` game to play in when you're expected to win and expected to score a lot of goals," said head coach Don Hay. "It's not easy to do.`
+- #616 row `57076850` 3-gram/head5, count `41`, gate `0.924`, norm `7249.7`: ` a lot of`
+  - window: ` game to play in when you're expected to win and expected to score a lot of goals," said head coach Don Hay. "It's not easy to do.`
+- #620 row `4299448` 2-gram/head0, count `130`, gate `0.931`, norm `7225.3`: ` said.`
+  - window: ` and more than 1,000 have not yet joined,” Roberson said. “We need to have the entire food industry collaborating on the Rapid Recall Exchange`
+- #622 row `17979668` 2-gram/head3, count `41`, gate `0.885`, norm `7210.2`: `\nWe`
+  - window: ` WordStream: Facebook Ads are Very Boring and not Very Imaginative\nWealth Daily (May 18, 2012) - Facebook IPO Hype: Buy When`
+- #625 row `9354409` 2-gram/head1, count `62`, gate `0.833`, norm `7203.1`: `, including`
+  - window: ` Connect Live conference here earlier this month.\nMajor food distributors in the exchange, including Kroger, Wegmans and Wakefern, have recently sent letters to`
+- #627 row `17055407` 2-gram/head3, count `59`, gate `0.785`, norm `7194.1`: ` well as`
+  - window: ` this weekend to check out works I have created over the last year, as well as find some neat works from my artistic past in tje awesome sales bins created just`
+- #632 row `47117090` 3-gram/head3, count `41`, gate `0.887`, norm `7151.9`: ` a lot of`
+  - window: ` game to play in when you're expected to win and expected to score a lot of goals," said head coach Don Hay. "It's not easy to do.`
+- #634 row `54985604` 3-gram/head5, count `31`, gate `0.912`, norm `7144.5`: `. If you`
+  - window: `* If youve set yourself on fire, do not run, DI. If youve done it, better admit it to Harvard now, apologize, and move on`
+- #636 row `29274781` 2-gram/head5, count `62`, gate `0.889`, norm `7140.7`: `, including`
+  - window: ` Connect Live conference here earlier this month.\nMajor food distributors in the exchange, including Kroger, Wegmans and Wakefern, have recently sent letters to`
+- #638 row `28840975` 2-gram/head5, count `101`, gate `0.692`, norm `7134.7`: `\nA`
+  - window: ` the person-in-charge to develop a complete employee health policy.|\nA complete employee health policy must have the following elements: 1) Employee training on food`
+- #641 row `52096869` 3-gram/head4, count `41`, gate `0.916`, norm `7129.4`: ` a lot of`
+  - window: ` game to play in when you're expected to win and expected to score a lot of goals," said head coach Don Hay. "It's not easy to do.`
+- #642 row `38257345` 3-gram/head1, count `33`, gate `0.876`, norm `7124.6`: `’ve`
+  - window: ` have been filed related to other allegations brought by the women.<|endoftext|>I’ve a new release of NYTProf ready to upload but I’m stuck.`
+- #643 row `12999653` 2-gram/head2, count `41`, gate `0.870`, norm `7121.1`: `\nWe`
+  - window: ` WordStream: Facebook Ads are Very Boring and not Very Imaginative\nWealth Daily (May 18, 2012) - Facebook IPO Hype: Buy When`
+- #644 row `53301323` 3-gram/head4, count `27`, gate `0.922`, norm `7118.4`: `’ll`
+  - window: `ribute, and take a few other measures to reduce your waste, you’ll have almost no trash each week.\n- Install a bicycle rack or locked bicycle`
+- #648 row `22959557` 2-gram/head4, count `41`, gate `0.845`, norm `7095.5`: `\nWe`
+  - window: ` WordStream: Facebook Ads are Very Boring and not Very Imaginative\nWealth Daily (May 18, 2012) - Facebook IPO Hype: Buy When`
+- #650 row `33882693` 3-gram/head0, count `60`, gate `0.880`, norm `7086.5`: ` goals," said`
+  - window: ` in when you're expected to win and expected to score a lot of goals," said head coach Don Hay. "It's not easy to do. But we got`
+- #652 row `7970519` 2-gram/head1, count `62`, gate `0.755`, norm `7075.6`: `\nIf`
+  - window: ` me pass on some advice to you I learned from the atheistic community:\nIf you have set yourself on fire, do not run.\nOkay? Okay??`
+- #653 row `47712958` 3-gram/head3, count `44`, gate `0.918`, norm `7072.6`: `.\nIf`
+  - window: ` volume sales – equivalent to about £10m – in the first year.\nIf they reached this volume of sales, the new Philadelphia with Cadbury would have the`
+- #655 row `22910688` 2-gram/head4, count `62`, gate `0.768`, norm `7070.4`: `\nIf`
+  - window: ` me pass on some advice to you I learned from the atheistic community:\nIf you have set yourself on fire, do not run.\nOkay? Okay??`
+- #656 row `36622405` 3-gram/head1, count `55`, gate `0.907`, norm `7066.0`: `.\nI`
+  - window: `, 2013\nOpening reception Sat. Apr. 27 1-3 pm.\nI just found out that one of my mixed media textiles will be featured in the`
+- #658 row `17929783` 2-gram/head3, count `34`, gate `0.940`, norm `7056.5`: `. These`
+  - window: ` hygiene reasons and are therefore described as non-returnable on the product page. These conditions do not affect your statutory rights.<|endoftext|>Southridge Minerals Hires New`
+- #665 row `27102100` 2-gram/head5, count `43`, gate `0.892`, norm `7036.2`: ` lot of`
+  - window: ` game to play in when you're expected to win and expected to score a lot of goals," said head coach Don Hay. "It's not easy to do.`
+- #667 row `33277206` 3-gram/head0, count `33`, gate `0.861`, norm `7013.5`: `’ve`
+  - window: ` have been filed related to other allegations brought by the women.<|endoftext|>I’ve a new release of NYTProf ready to upload but I’m stuck.`
+- #668 row `49422293` 3-gram/head3, count `59`, gate `0.897`, norm `7006.4`: ` as well as`
+  - window: ` this weekend to check out works I have created over the last year, as well as find some neat works from my artistic past in tje awesome sales bins created just`
+- #670 row `10319996` 2-gram/head2, count `59`, gate `0.923`, norm `6998.7`: ` well as`
+  - window: ` this weekend to check out works I have created over the last year, as well as find some neat works from my artistic past in tje awesome sales bins created just`
+- #671 row `46582783` 3-gram/head3, count `55`, gate `0.921`, norm `6998.3`: `.\nI`
+  - window: `, 2013\nOpening reception Sat. Apr. 27 1-3 pm.\nI just found out that one of my mixed media textiles will be featured in the`
+- #673 row `45025368` 3-gram/head3, count `31`, gate `0.872`, norm `6991.3`: `. If you`
+  - window: `* If youve set yourself on fire, do not run, DI. If youve done it, better admit it to Harvard now, apologize, and move on`
+- #680 row `36000732` 3-gram/head1, count `23`, gate `0.950`, norm `6979.3`: `\nIf you`
+  - window: ` pass on some advice to you I learned from the atheistic community:\nIf you have set yourself on fire, do not run.\nOkay? Okay?? Please`
+- #684 row `42562656` 3-gram/head2, count `32`, gate `0.926`, norm `6966.7`: `.\nIt`
+  - window: ` and will be appear in the chilled dairy aisle next to plain Philadelphia Light.\nIt is launching in a 160g tub and a 120g four-pack of mini`
+- #696 row `59382669` 3-gram/head5, count `59`, gate `0.905`, norm `6906.8`: ` as well as`
+  - window: ` this weekend to check out works I have created over the last year, as well as find some neat works from my artistic past in tje awesome sales bins created just`
+- #698 row `54402468` 3-gram/head4, count `59`, gate `0.898`, norm `6903.4`: ` as well as`
+  - window: ` this weekend to check out works I have created over the last year, as well as find some neat works from my artistic past in tje awesome sales bins created just`
+- #699 row `47542841` 3-gram/head3, count `32`, gate `0.934`, norm `6901.3`: `.\nIt`
+  - window: ` and will be appear in the chilled dairy aisle next to plain Philadelphia Light.\nIt is launching in a 160g tub and a 120g four-pack of mini`
+- #700 row `3218396` 2-gram/head0, count `43`, gate `0.862`, norm `6894.5`: `\nFor`
+  - window: ` Launches Social Networking Site for Patients and Families with Hereditary Cancers\nFor Immediate Release May 14, 2013 UCSF Launches Social Networking Site for`
+- #702 row `44538271` 3-gram/head2, count `43`, gate `0.750`, norm `6891.1`: `’re`
+  - window: ` the time honoured Black Band Tee. Every band has one. If you’re in a band and you ain’t got a Black Band Tee then you`

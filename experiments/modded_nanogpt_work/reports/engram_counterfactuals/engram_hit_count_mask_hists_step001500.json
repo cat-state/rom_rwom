@@ -1,0 +1,76 @@
+{
+  "total_rows": 59761952,
+  "total_hits": 9563013120,
+  "outputs": [
+    {
+      "kind": "below_threshold",
+      "label": "hit_lt_2",
+      "path": "logs/engram_bf99_attnres_poshit_normreadout_canon_shortconv_hist_ckpt500_20260517_003531/engram_hit_hist_step001500_mask_hit_lt_2.pt",
+      "threshold": 2,
+      "masked_rows": 32414,
+      "masked_row_fraction": 0.0005423852286484886,
+      "masked_hits": 32414,
+      "masked_hit_fraction": 3.3895174662272136e-06
+    },
+    {
+      "kind": "below_threshold",
+      "label": "hit_lt_4",
+      "path": "logs/engram_bf99_attnres_poshit_normreadout_canon_shortconv_hist_ckpt500_20260517_003531/engram_hit_hist_step001500_mask_hit_lt_4.pt",
+      "threshold": 4,
+      "masked_rows": 268654,
+      "masked_row_fraction": 0.004495402024351548,
+      "masked_hits": 658986,
+      "masked_hit_fraction": 6.890987095079923e-05
+    },
+    {
+      "kind": "below_threshold",
+      "label": "hit_lt_8",
+      "path": "logs/engram_bf99_attnres_poshit_normreadout_canon_shortconv_hist_ckpt500_20260517_003531/engram_hit_hist_step001500_mask_hit_lt_8.pt",
+      "threshold": 8,
+      "masked_rows": 1749229,
+      "masked_row_fraction": 0.029269944194593913,
+      "masked_hits": 9224443,
+      "masked_hit_fraction": 0.0009645958741505941
+    },
+    {
+      "kind": "below_threshold",
+      "label": "hit_lt_16",
+      "path": "logs/engram_bf99_attnres_poshit_normreadout_canon_shortconv_hist_ckpt500_20260517_003531/engram_hit_hist_step001500_mask_hit_lt_16.pt",
+      "threshold": 16,
+      "masked_rows": 6835769,
+      "masked_row_fraction": 0.11438329524443913,
+      "masked_hits": 68243862,
+      "masked_hit_fraction": 0.007136230092299612
+    },
+    {
+      "kind": "below_threshold",
+      "label": "hit_lt_64",
+      "path": "logs/engram_bf99_attnres_poshit_normreadout_canon_shortconv_hist_ckpt500_20260517_003531/engram_hit_hist_step001500_mask_hit_lt_64.pt",
+      "threshold": 64,
+      "masked_rows": 22592483,
+      "masked_row_fraction": 0.3780412493889089,
+      "masked_hits": 620479874,
+      "masked_hit_fraction": 0.06488330259657743
+    },
+    {
+      "kind": "below_threshold",
+      "label": "hit_lt_256",
+      "path": "logs/engram_bf99_attnres_poshit_normreadout_canon_shortconv_hist_ckpt500_20260517_003531/engram_hit_hist_step001500_mask_hit_lt_256.pt",
+      "threshold": 256,
+      "masked_rows": 54699700,
+      "masked_row_fraction": 0.9152930613779149,
+      "masked_hits": 4427985621,
+      "masked_hit_fraction": 0.46303247370217976
+    },
+    {
+      "kind": "below_threshold",
+      "label": "hit_lt_1024",
+      "path": "logs/engram_bf99_attnres_poshit_normreadout_canon_shortconv_hist_ckpt500_20260517_003531/engram_hit_hist_step001500_mask_hit_lt_1024.pt",
+      "threshold": 1024,
+      "masked_rows": 58970084,
+      "masked_row_fraction": 0.9867496295971055,
+      "masked_hits": 6319338126,
+      "masked_hit_fraction": 0.6608103582733555
+    }
+  ]
+}

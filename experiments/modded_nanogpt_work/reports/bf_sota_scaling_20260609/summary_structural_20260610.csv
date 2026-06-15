@@ -1,0 +1,168 @@
+family,bf,seed,completed,last_step,last_val,table_rows,store_dim,table_params,log
+AttnRes extra 2->8,300,5,0,250,8.542900,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_attnresextra2to8_seed5_1500_20260610.txt
+AttnRes extra 5->8,300,5,0,500,7.241500,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_attnresextra5to8_seed5_1500_20260610.txt
+AttnRes extra 5->8 bias -1,300,5,0,500,7.244200,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_attnresextra5to8_biasm1_seed5_1500_20260610.txt
+AttnRes extra 5->8 bias -1.5,300,5,0,250,8.509300,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_attnresextra5to8_biasm1p5_seed5_1500_20260610.txt
+AttnRes extra 5->8 bias -2,300,5,0,500,7.237900,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_attnresextra5to8_biasm2_seed5_1500_20260610.txt
+AttnRes extra 5->8 bias -2 scale1.25 decay,300,5,0,500,7.235500,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_attnresextra5to8_biasm2_singlefix_scale1p25to0_s250_250_seed5_1500_20260610.txt
+AttnRes extra 5->8 bias -2 scale1.5 decay,300,5,1,1500,3.247700,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_attnresextra5to8_biasm2_singlefix_scale1p5to0_s250_250_full_seed5_1500_20260611.txt
+AttnRes extra 5->8 bias -2 scale1.5 decay,300,5,0,250,8.511000,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_attnresextra5to8_biasm2_singlefix_scale1p5to0_s250_250_rerun2_seed5_1500_20260610.txt
+AttnRes extra 5->8 bias -2 scale1.5 decay,300,5,0,500,7.237200,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_attnresextra5to8_biasm2_singlefix_scale1p5to0_s250_250_rerun3_seed5_1500_20260610.txt
+AttnRes extra 5->8 bias -2 scale1.5 decay,300,5,0,500,7.231900,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_attnresextra5to8_biasm2_singlefix_scale1p5to0_s250_250_rerun_seed5_1500_20260610.txt
+AttnRes extra 5->8 bias -2 scale1.5 decay,300,5,0,500,7.231900,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_attnresextra5to8_biasm2_singlefix_scale1p5to0_s250_250_seed5_1500_20260610.txt
+AttnRes extra 5->8 bias -2 scale1.5 decay,300,5,0,500,7.262900,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_attnresextra5to8_biasm2_singlefix_scale1p5to0_s500_500_headmix_seed5_1500_20260610.txt
+AttnRes extra 5->8 bias -2 scale1.5 decay,300,5,0,250,8.511000,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_attnresextra5to8_biasm2_singlefix_scale1p5to0_s500_500_seed5_1500_20260610.txt
+AttnRes extra 5->8 bias -2 scale2 decay,300,5,0,500,7.245100,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_attnresextra5to8_biasm2_singlefix_scale2to0_s250_250_seed5_1500_20260610.txt
+AttnRes extra 5->8 bias -2 single,300,5,0,250,8.520900,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_attnresextra5to8_biasm2_singlefix_seed5_1500_20260610.txt
+AttnRes extra 5->8 bias -2 single decay,300,5,0,250,8.520900,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_attnresextra5to8_biasm2_singlefix_scale1to0_s250_250_seed5_1500_20260610.txt
+AttnRes extra 5->8 bias -4,300,5,0,500,7.238000,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_attnresextra5to8_biasm4_seed5_1500_20260610.txt
+K2 aux decay,400,5,0,1000,3.503500,40243242,384,15453404928,bf400_sota_readoutdelta_superposek2_base_aux05to025_s500_500_headmixinit05_norowsigns_seed5_1500_20260610.txt
+SOTA ngramrows replay,400,,1,1500,3.247100,40243242,384,15453404928,bf400_sota_ngramrows_trigramheavy_0p5_1p5_readhit025_s3_1500_20260609.txt
+SOTA ngramrows replay,400,,1,1500,3.246100,40243242,384,15453404928,bf400_sota_ngramrows_trigramheavy_0p5_1p5_readhit025_s4_1500_20260609.txt
+SOTA ngramrows replay,400,5,1,1500,3.246000,40243242,384,15453404928,bf400_ngramrows_trigramheavy_0p5_1p5_readhit025_current_seed5_1500_20260610.txt
+aux0.25 control,300,5,0,500,7.246500,30182422,384,11590050048,bf300_sota_k2_headmix_norowsigns_aux025_seed5_1500_20260611.txt
+aux0.35 control,300,5,1,1500,3.246100,30182422,384,11590050048,bf300_sota_k2_headmix_norowsigns_aux035_seed5_1500_20260610.txt
+aux0.35 to 0.5 schedule,300,5,0,500,7.238300,30182422,384,11590050048,bf300_sota_k2_headmix_norowsigns_aux035to05_s500_500_seed5_1500_20260611.txt
+aux0.5 current-code control,300,5,1,1500,3.244800,30182422,384,11590050048,bf300_sota_k2_headmix_norowsigns_aux05_currentcode_seed5_1500_20260610.txt
+aux0.5 no head mix,300,5,1,1500,3.245300,30182422,384,11590050048,bf300_sota_k2_noheadmix_norowsigns_aux05_seed5_1500_20260610.txt
+aux0.65 control,300,5,0,500,7.249400,30182422,384,11590050048,bf300_sota_k2_headmix_norowsigns_aux065_seed5_1500_20260610.txt
+avalanche hash,300,5,0,750,5.350800,30182422,384,11590050048,bf300_sota_k2_headmix_norowsigns_avalanchehash_seed5_1500_20260610.txt
+avalanche hash,400,5,0,750,5.356900,40243242,384,15453404928,bf400_sota_k2_headmix_norowsigns_avalanchehash_seed5_1500_20260610.txt
+avalanche hash + hash seed 1,400,5,0,500,7.237900,40243242,384,15453404928,bf400_sota_k2_headmix_norowsigns_avalanchehash_hashseed1_seed5_1500_20260610.txt
+batch-frequency norm,300,5,0,500,7.237700,30182422,384,11590050048,bf300_sota_k2_headmix_batchfreqnorm_seed5_1500_20260610.txt
+cold-row RMS floor,300,5,0,250,8.522900,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_rowrmsfloor014_hit31_seed5_1500_20260610.txt
+count-sketch bounded combine-mix,300,5,0,500,7.236000,30182422,384,11590050048,bf300_sketchk2_combinemix_bounded01_dimsigns_balanced_base_aux05_seed5_1500_20260611.txt
+count-sketch bounded combine-mix + hash seed 1,300,5,1,1500,3.246200,30182422,384,11590050048,bf300_hashseed1_sketchk2_combinemix_bounded01_dimsigns_balanced_base_aux05_seed5_1500_20260611.txt
+count-sketch bounded combine-mix + hash seed 1,400,5,0,750,5.355500,40243242,384,15453404928,bf400_hashseed1_sketchk2_combinemix_bounded01_dimsigns_balanced_base_aux05_seed5_1500_20260611.txt
+count-sketch bounded combine-mix + hash seed 1 + layerdelta,300,5,0,250,8.508700,30182422,384,11590050048,bf300_hashseed1_sketchk2_combinemix_bounded01_dimsigns_balanced_base_aux05_layerdelta_seed5_1500_20260611.txt
+count-sketch bounded combine-mix + hash seed 1 aux decay,300,5,0,1000,3.504600,30182422,384,11590050048,bf300_hashseed1_sketchk2_combinemix_bounded01_dimsigns_balanced_base_aux05to0_s750_500_seed5_1500_20260611.txt
+count-sketch bounded combine-mix + hash seed 1 base hit-hist,300,5,0,250,8.511300,30182422,384,11590050048,bf300_hashseed1_sketchk2_combinemix_bounded01_dimsigns_balanced_base_aux05_basehist_seed5_1500_20260611.txt
+count-sketch bounded combine-mix + layerdelta,300,5,0,500,7.248300,30182422,384,11590050048,bf300_sketchk2_combinemix_bounded01_dimsigns_balanced_base_aux05_layerdelta_seed5_1500_20260611.txt
+count-sketch bounded combine-mix base hit-hist,300,5,1,1500,3.245400,30182422,384,11590050048,bf300_sketchk2_combinemix_bounded01_dimsigns_balanced_base_aux05_basehist_seed5_1500_20260611.txt
+count-sketch bounded combine-mix base hit-hist,400,5,1,1500,3.245500,40243242,384,15453404928,bf400_sketchk2_combinemix_bounded01_dimsigns_balanced_base_aux05_basehist_seed5_1500_20260611.txt
+count-sketch bounded combine-mix base hit-hist + layerdelta 0.25,300,5,0,500,7.244100,30182422,384,11590050048,bf300_sketchk2_combinemix_bounded01_dimsigns_balanced_base_aux05_layerdelta_scale025_basehist_seed5_1500_20260611.txt
+count-sketch bounded combine-mix base hit-hist + layerdelta ramp,300,5,1,1500,3.245300,30182422,384,11590050048,bf300_sketchk2_combinemix_bounded01_dimsigns_balanced_base_aux05_layerdelta_0to1_s500_500_basehist_seed5_1500_20260611.txt
+count-sketch bounded combine-mix base hit-hist + layerdelta ramp 0.25,300,5,1,1500,3.245100,30182422,384,11590050048,bf300_sketchk2_combinemix_bounded01_dimsigns_balanced_base_aux05_layerdelta_0to025_s500_500_basehist_seed5_1500_20260611.txt
+count-sketch bounded combine-mix base hit-hist + layerdelta ramp 0.5,300,5,1,1500,3.245000,30182422,384,11590050048,bf300_sketchk2_combinemix_bounded01_dimsigns_balanced_base_aux05_layerdelta_0to05_s500_500_basehist_seed5_1500_20260611.txt
+count-sketch bounded combine-mix base hit-hist + learned layerdelta scale,300,5,0,1250,3.344800,30182422,384,11590050048,bf300_sketchk2_combinemix_bounded01_dimsigns_balanced_base_aux05_layerdelta_learnscale025_s500_500_basehist_seed5_1500_20260611.txt
+count-sketch bounded0.2 combine-mix + hash seed 1,300,5,0,500,7.241400,30182422,384,11590050048,bf300_hashseed1_sketchk2_combinemix_bounded02_dimsigns_balanced_base_aux05_seed5_1500_20260611.txt
+count-sketch k3 bounded combine-mix base hit-hist,300,5,0,1000,3.500600,30182422,384,11590050048,bf300_sketchk3_combinemix_bounded01_dimsigns_balanced_base_aux03536_basehist_seed5_1500_20260611.txt
+count-sketch slot-mix,300,5,0,250,8.509600,30182422,384,11590050048,bf300_sketchk2_slotreadout_slotmix_dimsigns_balanced_base_aux05_layerdelta_seed5_1500_20260611.txt
+count-sketch slot-mix,300,5,1,1500,3.245200,30182422,384,11590050048,bf300_sketchk2_slotreadout_slotmix_dimsigns_balanced_base_aux05_rerun2_seed5_1500_20260611.txt
+count-sketch slot-mix,300,5,0,500,7.233400,30182422,384,11590050048,bf300_sketchk2_slotreadout_slotmix_dimsigns_balanced_base_aux05_seed5_1500_20260610.txt
+count-sketch slot-mix,300,6,0,1000,3.502100,30182422,384,11590050048,bf300_sketchk2_slotreadout_slotmix_dimsigns_balanced_base_aux05_seed6_1500_20260611.txt
+count-sketch slot-mix,300,7,1,1500,3.246100,30182422,384,11590050048,bf300_sketchk2_slotreadout_slotmix_dimsigns_balanced_base_aux05_seed7_1500_20260611.txt
+count-sketch slot-mix + AttnRes extra 1.0 decay,300,5,0,500,7.232200,30182422,384,11590050048,bf300_sketchk2_slotreadout_slotmix_dimsigns_balanced_base_aux05_attnresextra5to8_biasm2_scale1p0to0_s250_250_seed5_1500_20260611.txt
+count-sketch slot-mix + AttnRes extra 1.25 decay,300,5,1,1500,3.246000,30182422,384,11590050048,bf300_sketchk2_slotreadout_slotmix_dimsigns_balanced_base_aux05_attnresextra5to8_biasm2_scale1p25to0_s250_250_seed5_1500_20260611.txt
+count-sketch slot-mix + AttnRes extra 1.25 decay,400,5,0,500,7.239800,40243242,384,15453404928,bf400_sketchk2_slotreadout_slotmix_dimsigns_balanced_base_aux05_attnresextra5to8_biasm2_scale1p25to0_s250_250_seed5_1500_20260611.txt
+count-sketch slot-mix + AttnRes extra 1.5 decay,300,5,0,500,7.231100,30182422,384,11590050048,bf300_sketchk2_slotreadout_slotmix_dimsigns_balanced_base_aux05_attnresextra5to8_biasm2_scale1p5to0_s250_250_seed5_1500_20260611.txt
+count-sketch slot-mix + hashseed1 + AttnRes extra 1.25 decay,400,5,0,250,8.517900,40243242,384,15453404928,bf400_hashseed1_sketchk2_slotreadout_slotmix_dimsigns_balanced_base_aux05_attnresextra5to8_biasm2_scale1p25to0_s250_250_seed5_1500_20260611.txt
+count-sketch slot-mix + late AttnRes extra 1.25,300,5,0,1000,3.504400,30182422,384,11590050048,bf300_sketchk2_slotreadout_slotmix_dimsigns_balanced_base_aux05_attnresextra5to8_biasm2_scale0to1p25_s500_500_seed5_1500_20260611.txt
+count-sketch slot-mix aux0.25 + AttnRes extra 1.25 decay,300,5,0,250,8.513800,30182422,384,11590050048,bf300_sketchk2_slotreadout_slotmix_dimsigns_balanced_base_aux025_attnresextra5to8_biasm2_scale1p25to0_s250_250_seed5_1500_20260611.txt
+count-sketch softmax combine-mix + hash seed 1,300,5,0,500,7.238200,30182422,384,11590050048,bf300_hashseed1_sketchk2_combinemix_softmax_dimsigns_balanced_base_aux05_seed5_1500_20260611.txt
+count-sketch softmax combine-mix + hash seed 1 aux0.25,300,5,0,250,8.513400,30182422,384,11590050048,bf300_hashseed1_sketchk2_combinemix_softmax_dimsigns_balanced_base_aux025_seed5_1500_20260611.txt
+count-sketch sum,300,5,0,500,7.238500,30182422,384,11590050048,bf300_readoutdelta_sketchk2_dimsigns_balanced_base_aux05_seed5_1500_20260610.txt
+current-code control,300,5,1,1500,3.246600,30182422,384,11590050048,bf300_sota_k2_headmix_norowsigns_control_currentcode_seed5_1500_20260610.txt
+hash seed 1,300,5,0,250,8.513900,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hashseed1_seed5_1500_20260611.txt
+hash seed 1,300,5,0,750,5.352000,30182422,384,11590050048,bf300_sota_k2_headmix_norowsigns_hashseed1_seed5_1500_20260610.txt
+hash seed 1,400,,0,1000,3.504700,40243242,384,15453404928,bf400_sota_k2_headmix_norowsigns_hashseed1_seed6rerun_1500_20260610.txt
+hash seed 1,400,5,1,1500,3.244200,40243242,384,15453404928,bf400_sota_k2_headmix_norowsigns_hashseed1_seed5_1500_20260610.txt
+hash seed 1,400,6,0,500,7.246900,40243242,384,15453404928,bf400_sota_k2_headmix_norowsigns_hashseed1_seed6_1500_20260610.txt
+hash seed 10,400,5,0,250,8.541800,40243242,384,15453404928,bf400_sota_k2_headmix_layerdelta_norowsigns_hashseed10_seed5_1500_20260611.txt
+hash seed 2,400,5,0,250,8.513800,40243242,384,15453404928,bf400_sota_k2_headmix_norowsigns_hashseed2_seed5_1500_20260610.txt
+hash seed 26,400,5,0,250,8.521400,40243242,384,15453404928,bf400_sota_k2_headmix_layerdelta_norowsigns_hashseed26_seed5_1500_20260611.txt
+hash seed 3,400,5,0,500,7.242400,40243242,384,15453404928,bf400_sota_k2_headmix_norowsigns_hashseed3_seed5_1500_20260610.txt
+hash seed 4,400,5,0,500,7.242500,40243242,384,15453404928,bf400_sota_k2_headmix_layerdelta_norowsigns_hashseed4_seed5_1500_20260611.txt
+hash seed 47,400,5,0,250,8.516300,40243242,384,15453404928,bf400_sota_k2_headmix_layerdelta_norowsigns_hashseed47_seed5_1500_20260611.txt
+hash seed 5,400,5,0,750,5.352000,40243242,384,15453404928,bf400_sota_k2_headmix_layerdelta_norowsigns_hashseed5_seed5_1500_20260611.txt
+hash seed 6,400,5,0,250,8.518900,40243242,384,15453404928,bf400_sota_k2_headmix_layerdelta_norowsigns_hashseed6_seed5_1500_20260611.txt
+hash seed 7,400,5,0,500,7.239900,40243242,384,15453404928,bf400_sota_k2_headmix_layerdelta_norowsigns_hashseed7_seed5_1500_20260611.txt
+hash seed 8,400,5,0,500,7.239500,40243242,384,15453404928,bf400_sota_k2_headmix_layerdelta_norowsigns_hashseed8_seed5_1500_20260611.txt
+hash seed 9,400,5,0,500,7.249200,40243242,384,15453404928,bf400_sota_k2_headmix_layerdelta_norowsigns_hashseed9_seed5_1500_20260611.txt
+hot-drop 10% >=1024,300,5,0,500,7.238600,30182422,384,11590050048,bf300_sota_readoutdelta_superposek2_base_aux05_headmixinit05_hitdrop10_min1024_seed5_1500_20260610.txt
+hot-drop 10% >=256,300,5,0,500,7.237300,30182422,384,11590050048,bf300_sota_readoutdelta_superposek2_base_aux05_headmixinit05_hitdrop10_min256_seed5_1500_20260610.txt
+hot-drop 10% >=32,300,5,0,500,7.235800,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hitdropv1_p010_min32_decay500_seed5_1500_20260610.txt
+hot-split full auxslot1,300,5,0,500,7.269500,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hotsplitv5_full32_auxslots1_aux0025_seed5_1500_20260610.txt
+hot-split full dedup aux,300,5,0,750,5.351900,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hotsplitv6_full32_auxslots2_aux0025_dedupaux_seed5_1500_20260610.txt
+hot-split full dedup aux decay,300,5,0,750,5.353000,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hotsplitv7_full32_auxslots2_aux0025to0_s500_500_dedupaux_seed5_1500_20260610.txt
+hot-split full detach decay,300,5,0,1000,3.502500,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hotsplitv8_full32_auxslots2_aux005to0_s500_500_detachaux_seed5_1500_20260610.txt
+hot-split full detach-aux,300,5,0,250,8.520300,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hotsplitv4_full128_auxslots2_aux0025_detachaux_seed5_1500_20260610.txt
+hot-split full detach-aux,300,5,0,500,7.236600,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hotsplitv4_full32_auxslots2_aux0025_detachaux_seed5_1500_20260610.txt
+hot-split full detach-aux,300,5,1,1500,3.246200,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hotsplitv4_full32_auxslots2_aux005_detachaux_seed5_1500_20260610.txt
+hot-split full grad hook,300,5,0,500,7.244100,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hotsplitv2_full32_auxslots2_aux0025_gradhook_seed5_1500_20260611.txt
+hot-split full grad hook start500,300,5,0,1000,3.501400,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hotsplitv2_full32_auxslots2_aux0025_gradhookstart500_manualfp32start1000_seed5_1500_20260611.txt
+hot-split full grad hook start500,300,5,0,1000,3.501400,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hotsplitv2_full32_auxslots2_aux0025_gradhookstart500_manualstart1000_seed5_1500_20260611.txt
+hot-split full grad hook start500,300,5,0,1000,3.501400,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hotsplitv2_full32_auxslots2_aux0025_gradhookstart500_seed5_1500_20260611.txt
+hot-split full grad hook start500,300,6,0,1000,3.503100,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hotsplitv2_full32_auxslots2_aux0025_gradhookstart500_seed6_1500_20260611.txt
+hot-split full grad hook start501,300,5,0,500,7.232500,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hotsplitv2_full32_auxslots2_aux0025_gradhookstart501_seed5_1500_20260611.txt
+hot-split full manual coalesce,300,5,0,500,7.236100,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hotsplitv3_full128_auxslots2_aux0025_manualcoalesce_seed5_1500_20260610.txt
+hot-split full manual coalesce,300,5,0,500,7.240000,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hotsplitv3_full32_auxslots2_aux0025_manualcoalesce_rerun_seed5_1500_20260611.txt
+hot-split full manual coalesce,300,5,0,500,7.234500,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hotsplitv3_full32_auxslots2_aux0025_manualcoalesce_seed5_1500_20260610.txt
+hot-split full superpose,300,5,0,500,7.233000,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hotsplitv2_full128_auxslots2_aux0025_seed5_1500_20260610.txt
+hot-split full superpose,300,5,0,500,7.232500,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hotsplitv2_full32_auxslots2_aux0025_rerun2_seed5_1500_20260611.txt
+hot-split full superpose,300,5,0,500,7.232500,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hotsplitv2_full32_auxslots2_aux0025_seed5_1500_20260610.txt
+hot-split full train-only,300,5,0,1000,3.502700,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hotsplitv9_full32_auxslots2_aux005_trainonly_detachaux_seed5_1500_20260610.txt
+hot-split value-only,300,5,0,1250,3.346500,30182422,384,11590050048,bf300_sota_k2_headmix_norowsigns_hotsplit_valueonly16384_auxslots2_aux0025_seed5_1500_20260610.txt
+hot-split value-only + layer delta,300,5,0,250,8.522700,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hotsplit_valueonly128_auxslots2_aux0025_seed5_1500_20260610.txt
+hot-split value-only + layer delta,300,5,0,500,7.238500,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hotsplit_valueonly16384_auxslots2_aux0025_seed5_1500_20260610.txt
+inverse FAL scalar Adam,300,5,1,1500,3.245800,30182422,384,11590050048,bf300_sota_k2_headmix_ifal025to4_seed5_1500_20260610.txt
+inverse FAL scalar Adam,400,5,1,1500,3.244600,40243242,384,15453404928,bf400_sota_k2_headmix_ifal025to4_seed5_1500_20260610.txt
+inverse FAL scalar Adam,400,5,0,1000,3.500700,40243242,384,15453404928,bf400_sota_k2_headmix_norowsigns_ifalsched_seed5_1500_20260610.txt
+late AttnRes extra 1.25,300,5,0,500,7.245500,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_attnresextra5to8_biasm2_scale0to1p25_s500_500_seed5_1500_20260611.txt
+latent BSQ24 addressing,300,5,0,500,7.318700,30182400,384,11590041600,bf300_latentbsq24_mixngram_nopart_fix_seed5_1500_20260610.txt
+latent FSQ addressing,300,5,0,500,7.331100,30182400,384,11590041600,bf300_latentfsq_mixngram_nopart_fix_seed5_1500_20260610.txt
+latent FSQ aux 0.1 to zero,300,5,0,500,7.247300,30182400,384,11590041600,bf300_latentfsq_aux010to0_s250_250_nopart_headmix_seed5_1500_20260611.txt
+latent FSQ aux 0.1 to zero by 250,300,5,0,250,8.521000,30182400,384,11590041600,bf300_latentfsq_aux010to0_s0_250_nopart_headmix_seed5_1500_20260611.txt
+latent aux 0.03,300,5,0,500,7.251500,30182400,384,11590041600,bf300_k2_headmix_latentaux_fsq_mixngram_s003_nopart_seed5_1500_20260610.txt
+latent aux 0.1,300,5,0,500,7.245600,30182400,384,11590041600,bf300_k2_headmix_latentaux_fsq_mixngram_s01_nopart_seed5_1500_20260610.txt
+latent aux 0.1 to zero,300,5,0,500,7.247300,30182400,384,11590041600,bf300_k2_headmix_latentaux_fsq_mixngram_s01to0_250_250_nopart_headmixfix_seed5_1500_20260610.txt
+latent aux 0.1 to zero,300,5,0,250,8.519100,30182400,384,11590041600,bf300_k2_headmix_latentaux_fsq_mixngram_s01to0_250_250_nopart_seed5_1500_20260610.txt
+latent aux 0.5,300,5,0,250,8.531100,30182400,384,11590041600,bf300_k2_headmix_latentaux_bsq24_mixngram_s05_nopart_seed5_1500_20260610.txt
+latent aux 0.5,300,5,0,500,7.247100,30182400,384,11590041600,bf300_k2_headmix_latentaux_fsq_mixngram_s05_nopart_seed5_1500_20260610.txt
+ngram read-scale 1.15/0.85,300,5,0,500,7.238200,30182422,384,11590050048,bf300_sota_k2_headmix_norowsigns_ngramread115_085_seed5_1500_20260610.txt
+ngram read-scale 1.15/0.85,400,5,0,250,8.512200,40243242,384,15453404928,bf400_sota_k2_headmix_norowsigns_ngramread115_085_seed5_1500_20260610.txt
+no head mix,300,5,1,1500,3.246200,30182422,384,11590050048,bf300_sota_k2_noheadmix_norowsigns_diag_seed5_1500_20260610.txt
+no head mix,300,6,0,500,7.244200,30182422,384,11590050048,bf300_sota_k2_noheadmix_norowsigns_seed6_1500_20260610.txt
+no head mix,300,7,0,500,7.243600,30182422,384,11590050048,bf300_sota_k2_noheadmix_norowsigns_seed7_1500_20260610.txt
+no-partition control,300,5,1,1500,3.244800,30182422,384,11590050048,bf300_k2_headmix_nopart_control_seed5_1500_20260610.txt
+no-partition control,400,5,1,1500,3.244700,40243242,384,15453404928,bf400_k2_headmix_nopart_control_seed5_1500_20260610.txt
+no-row-sign control,300,5,1,1500,3.244000,30182422,384,11590050048,bf300_sota_k2_headmix_norowsigns_control_seed5_ckpthist_1500_20260610.txt
+no-row-sign control,300,5,1,1500,3.244100,30182422,384,11590050048,bf300_sota_readoutdelta_superposek2_base_aux05_headmixinit05_norowsigns_control_seed5_1500_20260610.txt
+no-row-sign control,300,6,1,1500,3.245200,30182422,384,11590050048,bf300_sota_k2_headmix_norowsigns_control_seed6_1500_20260610.txt
+no-row-sign control,300,7,1,1500,3.245100,30182422,384,11590050048,bf300_sota_k2_headmix_norowsigns_control_seed7_1500_20260610.txt
+no-row-sign control,400,5,1,1500,3.244700,40243242,384,15453404928,bf400_sota_k2_headmix_norowsigns_control_seed5_ckpthist_1500_20260610.txt
+no-row-sign control,400,5,1,1500,3.245900,40243242,384,15453404928,bf400_sota_layerreadouts_superposek2_base_aux05_norowsigns_seed5_1500_20260610.txt
+no-row-sign control,400,5,1,1500,3.244700,40243242,384,15453404928,bf400_sota_readoutdelta_superposek2_base_aux05_headmixinit05_norowsigns_control_seed5_1500_20260610.txt
+no-row-sign control,400,6,1,1500,3.245500,40243242,384,15453404928,bf400_sota_k2_headmix_norowsigns_control_seed6_1500_20260610.txt
+no-row-sign control,400,7,1,1500,3.245400,40243242,384,15453404928,bf400_sota_k2_headmix_norowsigns_control_seed7_1500_20260610.txt
+no-row-sign control + base hit-hist,300,5,0,500,7.234700,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hashseed0_basehist_seed5_1500_20260611.txt
+no-row-sign control seed sweep,300,8,1,1500,3.244400,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hashseed0_seed8_1500_20260611.txt
+no-row-sign control seed sweep,300,9,1,1500,3.244800,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hashseed0_seed9_1500_20260611.txt
+no-row-sign control seed sweep,300,10,1,1500,3.247800,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hashseed0_seed10_1500_20260611.txt
+no-row-sign control seed sweep,300,11,1,1500,3.246100,30182422,384,11590050048,bf300_sota_k2_headmix_layerdelta_norowsigns_hashseed0_seed11_1500_20260611.txt
+output dropout 0.05 to 0,300,5,0,250,8.523600,30182422,384,11590050048,bf300_sota_k2_headmix_norowsigns_outdrop005to0_s500_500_seed5_1500_20260611_fixed.txt
+output dropout 0.05 to 0,300,5,0,250,8.517400,30182422,384,11590050048,bf300_sota_k2_headmix_norowsigns_outdrop005to0_s500_500_seed5_1500_20260611b.txt
+output dropout 0.10 to 0,300,5,0,0,18.939700,30182422,384,11590050048,bf300_sota_k2_headmix_norowsigns_outdrop010to0_s500_500_seed5_1500_20260611.txt
+output dropout 0.10 to 0,300,5,0,250,8.531300,30182422,384,11590050048,bf300_sota_k2_headmix_norowsigns_outdrop010to0_s500_500_seed5_1500_20260611_fixed.txt
+per-layer head mix,300,5,0,500,7.252200,30182422,384,11590050048,bf300_sota_k2_layerheadmix_norowsigns_seed5_1500_20260610.txt
+per-layer head-mix delta,300,5,0,500,7.246400,30182422,384,11590050048,bf300_sota_k2_headmix_layerheaddelta_norowsigns_seed5_1500_20260610.txt
+row-wise Adagrad,300,5,0,250,8.523600,30182422,384,11590050048,bf300_sota_k2_headmix_rowadagrad_seed5_1500_20260610.txt
+scheduled inverse FAL,300,5,0,1000,3.505300,30182422,384,11590050048,bf300_sota_k2_headmix_ifal_sched1to0_500_250_seed5_1500_20260610.txt
+scheduled inverse FAL,400,5,0,750,5.356800,40243242,384,15453404928,bf400_sota_k2_headmix_ifal_sched1to0_500_250_seed5_1500_20260610.txt
+shared relative layer hash,300,5,0,1000,3.500700,30182422,384,11590050048,bf300_sota_k2_headmix_norowsigns_layerhash0_seed5_1500_20260610.txt
+shared relative layer hash,400,5,0,750,5.349800,40243242,384,15453404928,bf400_sota_k2_headmix_norowsigns_layerhash0_seed5_1500_20260610.txt
+slot-attn,300,5,0,750,5.355100,30182422,384,11590050048,bf300_sketchk2_slotattention_base_aux05_norowsigns_seed5_1500_20260610.txt
+slot-attn + layer readouts,300,5,0,250,8.514800,30182422,384,11590050048,bf300_sketchk2_slotattention_layerreadouts_base_aux05_norowsigns_seed5_1500_20260610.txt
+slot-mix,300,5,1,1500,3.245800,30182422,384,11590050048,bf300_sketchk2_slotreadout_slotmix_base_aux05_norowsigns_seed5_1500_20260610b.txt
+slot-mix,300,6,0,500,7.234500,30182422,384,11590050048,bf300_sketchk2_slotreadout_slotmix_base_aux05_norowsigns_seed6_1500_20260610.txt
+slot-mix,400,5,0,750,5.350500,40243242,384,15453404928,bf400_sketchk2_slotreadout_slotmix_base_aux05_norowsigns_seed5_1500_20260610.txt
+slot-mix + layer readouts,300,5,0,1000,3.502400,30182422,384,11590050048,bf300_sketchk2_slotreadout_slotmix_layerreadouts_base_aux05_norowsigns_seed5_1500_20260610.txt
+slot-mix aux decay,400,5,0,1000,3.502900,40243242,384,15453404928,bf400_sketchk2_slotreadout_slotmix_aux05to01_s500_500_norowsigns_seed5_1500_20260610.txt
+slot-mix aux to zero,300,5,1,1500,3.245900,30182422,384,11590050048,bf300_slotreadout_slotmix_aux05to025_s1000_250_norowsigns_seed5_1500_20260610.txt
+slot-mix aux to zero,300,5,0,1250,3.354100,30182422,384,11590050048,bf300_slotreadout_slotmix_aux05to0_s1000_250_norowsigns_seed5_1500_20260610.txt
+slot-mix aux to zero,300,5,0,1000,3.511900,30182422,384,11590050048,bf300_slotreadout_slotmix_aux05to0_s500_500_norowsigns_seed5_1500_20260610.txt
+slot-mix aux to zero,300,5,0,1250,3.353800,30182422,384,11590050048,bf300_slotreadout_slotmix_aux05to0_s750_500_norowsigns_seed5_1500_20260610.txt
+slot-mix aux to zero,400,5,0,1000,3.506200,40243242,384,15453404928,bf400_sketchk2_slotreadout_slotmix_aux05to0_s500_500_norowsigns_seed5_1500_20260610.txt
+two layer partition groups,300,5,0,500,7.239600,30182492,384,11590076928,bf300_sota_k2_headmix_norowsigns_partgrp2_seed5_1500_20260610.txt
+two layer partition groups,400,5,0,750,5.356100,40243246,384,15453406464,bf400_sota_k2_headmix_norowsigns_partgrp2_seed5_1500_20260610.txt
+two partition groups + hash seed 1,400,5,0,500,7.272700,40243246,384,15453406464,bf400_sota_k2_headmix_norowsigns_partgrp2_hashseed1_seed5_1500_20260610.txt
