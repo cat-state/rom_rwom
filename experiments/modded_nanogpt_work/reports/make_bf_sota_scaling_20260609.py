@@ -6,7 +6,7 @@ import csv
 import io
 import math
 import re
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from pathlib import Path
 
 
@@ -20,6 +20,12 @@ READOUTDELTA_RUNS = {
     120: "bf120_sota_readoutdelta_seed5_1500_20260609.txt",
     200: "bf200_sota_readoutdelta_seed5_1500_20260609.txt",
     300: "bf300_sota_readoutdelta_seed5_1500_20260609.txt",
+}
+MEASURED_COLD_TAIL_PRUNING = {
+    # Post-hoc checkpoint evals from report.md. Rows with hit < 32 are zeroed.
+    # Parameter count assumes compacting the table down to retained hit>=32 rows.
+    300: {"base_eval_loss": 3.24435, "pruned_row_fraction": 0.2875, "eval_loss": 3.24494},
+    400: {"base_eval_loss": 3.24525, "pruned_row_fraction": 0.5229, "eval_loss": 3.24794},
 }
 
 
@@ -170,6 +176,60 @@ def write_summary(path: Path, runs: list[Run]) -> None:
             )
 
 
+def make_pruned_runs(runs: list[Run], pruning: dict[int, dict[str, float]]) -> list[Run]:
+    pruned_runs: list[Run] = []
+    for r in runs:
+        spec = pruning.get(r.bf)
+        if spec is None:
+            continue
+        retained_fraction = 1.0 - float(spec["pruned_row_fraction"])
+        retained_rows = max(1, int(round(r.table_rows * retained_fraction)))
+        pruned_runs.append(
+            replace(
+                r,
+                final_val=float(spec["eval_loss"]),
+                table_rows=retained_rows,
+                table_params=retained_rows * r.store_dim,
+                peak_mib=None,
+                touched_fraction=retained_fraction,
+            )
+        )
+    return pruned_runs
+
+
+def write_pruning_summary(path: Path, baseline_runs: list[Run], pruned_runs: list[Run]) -> None:
+    baseline_by_bf = {r.bf: r for r in baseline_runs}
+    with path.open("w", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow(
+            [
+                "bf",
+                "checkpoint_base_eval_loss",
+                "pruned_eval_loss",
+                "delta",
+                "baseline_table_params",
+                "pruned_table_params",
+                "retained_fraction",
+                "pruning_rule",
+            ]
+        )
+        for r in pruned_runs:
+            base = baseline_by_bf[r.bf]
+            base_eval_loss = float(MEASURED_COLD_TAIL_PRUNING[r.bf]["base_eval_loss"])
+            writer.writerow(
+                [
+                    r.bf,
+                    f"{base_eval_loss:.6f}",
+                    f"{r.final_val:.6f}",
+                    f"{r.final_val - base_eval_loss:+.6f}",
+                    base.table_params,
+                    r.table_params,
+                    f"{r.table_params / base.table_params:.6g}",
+                    "zero-mask rows with hit < 32; params assume compaction",
+                ]
+            )
+
+
 def plot_scaling(
     runs: list[Run],
     overlays: list[tuple[str, list[Run]]] | None,
@@ -217,6 +277,8 @@ def plot_scaling(
     ax.plot([r.bf for r in runs], ys, marker="s", linewidth=2.2, color="#2b6cb0", label="main")
     for label, overlay_runs in overlays or []:
         if not overlay_runs:
+            continue
+        if "pruned" in label:
             continue
         ax.plot(
             [r.bf for r in overlay_runs],
@@ -290,6 +352,7 @@ def main() -> None:
     current_meta_runs, current_meta_missing = collect_runs(
         CURRENT_META_LOG_DIR, "bf{bf}_sota_meta_bfscale_seed5_1500_20260609.txt"
     )
+    pruned_current_meta_runs = make_pruned_runs(current_meta_runs, MEASURED_COLD_TAIL_PRUNING)
 
     write_summary(OUT_DIR / "summary.csv", runs)
 
@@ -297,6 +360,12 @@ def main() -> None:
         write_summary(OUT_DIR / "summary_readoutdelta.csv", readoutdelta_runs)
     if current_meta_runs:
         write_summary(OUT_DIR / "summary_current_meta_bfscale.csv", current_meta_runs)
+    if pruned_current_meta_runs:
+        write_pruning_summary(
+            OUT_DIR / "summary_current_meta_pruned_hit32.csv",
+            current_meta_runs,
+            pruned_current_meta_runs,
+        )
 
     fig, plot_uri = plot_scaling(
         runs,
@@ -317,7 +386,7 @@ def main() -> None:
     if current_meta_runs:
         current_fig, current_plot_uri = plot_scaling(
             current_meta_runs,
-            None,
+            [("pruned hit>=32", pruned_current_meta_runs)] if pruned_current_meta_runs else None,
             "Current Readoutdelta Meta: BF Scaling vs Engram Parameter Count",
             OUT_DIR / "bf_current_meta_bfscale_vs_params.png",
         )
@@ -343,6 +412,22 @@ def main() -> None:
                 f"<td>{'' if r.touched_fraction is None else f'{r.touched_fraction:.4f}'}</td>"
                 "</tr>"
             )
+        pruned_rows = []
+        baseline_by_bf = {r.bf: r for r in current_meta_runs}
+        for r in pruned_current_meta_runs:
+            base = baseline_by_bf[r.bf]
+            base_eval_loss = float(MEASURED_COLD_TAIL_PRUNING[r.bf]["base_eval_loss"])
+            pruned_rows.append(
+                "<tr>"
+                f"<td>{r.bf}</td>"
+                f"<td>{base_eval_loss:.5f}</td>"
+                f"<td>{r.final_val:.5f}</td>"
+                f"<td>{r.final_val - base_eval_loss:+.5f}</td>"
+                f"<td>{fmt_billions(r.table_params)}</td>"
+                f"<td>{r.table_params / base.table_params:.3f}</td>"
+                f"<td>zero-mask hit &lt; 32; compact retained rows</td>"
+                "</tr>"
+            )
         current_note = (
             "All six current-meta BF points are present."
             if not current_meta_missing
@@ -357,6 +442,12 @@ def main() -> None:
     <thead><tr><th>BF</th><th>Final val</th><th>Delta vs original same-BF</th><th>Table params</th><th>Rows</th><th>Peak MiB</th><th>Touched fraction</th></tr></thead>
     <tbody>{''.join(current_rows)}</tbody>
   </table>
+  {f'''<h3>Measured Cold-Tail Pruning Overlay</h3>
+  <p class="note">These are post-hoc checkpoint evals, not retrained runs. Deltas are against the checkpoint-loaded base evals, not the inline BF-sweep final losses. The plotted parameter count assumes physical compaction after dropping rows with hit &lt; 32.</p>
+  <table>
+    <thead><tr><th>BF</th><th>Checkpoint base</th><th>Pruned eval loss</th><th>Delta vs ckpt base</th><th>Pruned params</th><th>Retained fraction</th><th>Rule</th></tr></thead>
+    <tbody>{''.join(pruned_rows)}</tbody>
+  </table>''' if pruned_rows else ''}
 """
 
     rows = []

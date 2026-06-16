@@ -1,0 +1,3 @@
+bf,checkpoint_base_eval_loss,pruned_eval_loss,delta,baseline_table_params,pruned_table_params,retained_fraction,pruning_rule
+300,3.244350,3.244940,+0.000590,11590050048,8257910784,0.7125,zero-mask rows with hit < 32; params assume compaction
+400,3.245250,3.247940,+0.002690,15453404928,7372819584,0.4771,zero-mask rows with hit < 32; params assume compaction
